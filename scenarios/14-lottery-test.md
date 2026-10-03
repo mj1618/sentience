@@ -103,3 +103,32 @@ the format). Same statistic: share of main balls ≤ 31 against 31/49, exact
 - If it was a fluke of slicing: excess consistent with zero.
 - Power is limited (we expect a standard error near 0.25%), so a result between the two
   will be reported as undecided.
+
+## Part 5 — Third sample result (German 6 aus 49)
+
+5,050 draws, 30,300 balls, 1955–2026.
+
+| Measure | Excess over chance | z |
+|---|---|---|
+| Balls ≤ 31 | −0.04% ± 0.26% | −0.17 |
+| Balls ≤ 12 | +0.35% ± 0.23% | +1.48 |
+
+No excess of numbers ≤ 31. The result sits about 1.6 standard errors below the
+"large-drum" lead of +0.47%, and is fully consistent with zero. By the rule set in
+advance this counts as **not supporting the lead, without excluding it**.
+
+All three samples combined (inverse-variance): ≤ 31 excess +0.15% ± 0.09% (z ≈ +1.7).
+Large-drum games only, all samples: +0.31% ± 0.15% (z ≈ +2.1); this subset was chosen
+after seeing data, so its z overstates the evidence.
+
+## Where this stands
+
+- Three samples, about 220,000 balls. The first was borderline; the two that followed
+  showed nothing.
+- The pattern has the wrong shape for a tilt driven by what people want: no excess for
+  the most-chosen numbers (1–12, or 7), no increase on bigger-sales days.
+- **Verdict (reviewer's wording, adapted): suggestive at most, not established, and
+  weakening with each new sample.** A tilt smaller than roughly 0.4% of balls is not
+  excluded.
+- What would settle it: a large fresh sample with per-draw ticket sales, testing whether
+  any excess grows with the number of people wanting it.
