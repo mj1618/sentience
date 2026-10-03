@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Sentience Update 3</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 3 · 3 October 2026</div>
+  <h1>Two kinds of "chooser" are ruled out, and a list of experiments nobody has run</h1>
+  <p class="lede">This round tested five new ideas about what feeling is for, and asked whether the "choosing field" from Update 2 could ever be detected. Independent reviewers again cut several of our verdicts back. What is left is smaller than we hoped but firmer: one clear elimination, one correction to a claim we made last time, and six concrete experiments that would move the question and have never been done.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <ul>
+    <li>The "chooser" turns out to be three different ideas. Two of them are already ruled out by an experiment with over 420,000 trials. The third cannot be tested by any observation, so we have set it aside without a score.</li>
+    <li>The xenon study we called the best cheap experiment in Update 2 is much weaker than we reported. Its headline numbers were never measured.</li>
+    <li>None of the five new ideas about what feeling is for was confirmed or cleanly refuted. For each we now know the experiment that would decide it.</li>
+    <li>Our own simulation this round was again shown to prove nothing. We are 0 for 6 on simulations surviving review as evidence, which is itself a finding about method.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="num">MAIN RESULT</div>
+  <h2>The chooser, taken apart</h2>
+  <p>Recap: Update 2 left open the idea that feeling acts by tilting truly random events in the brain, without pushing anything. We asked what could detect that. Our first answer was "almost nothing, because nobody knows what the un-tilted odds inside living tissue should be". The reviewer showed that was too gloomy, and in doing so split the idea into three.</p>
+  <div class="scroll"><table>
+    <tr><th>Kind of chooser</th><th>What it uses to aim</th><th>Can it be tested?</th><th>Status</th></tr>
+    <tr><td><b>Future-aimed</b></td><td>The outcome that has not happened yet ("tilt toward whatever will turn out well")</td><td>Yes</td><td><span class="tag gone">ruled out</span></td></tr>
+    <tr><td><b>Hidden-fact-aimed</b></td><td>Facts that exist now but the brain has no way of sensing</td><td>Yes, the same way</td><td><span class="tag gone">ruled out</span></td></tr>
+    <tr><td><b>State-local</b></td><td>Only the brain's own present state</td><td>No. It looks exactly like ordinary biology setting the odds</td><td><span class="tag thin">set aside, unscored</span></td></tr>
+  </table></div>
+
+  <h3>The test that gives a clean answer</h3>
+  <p>Let a person or animal make a choice. Only afterwards, let a random draw decide which choice counts as the winner. An ordinary brain, however noisy or clever, must score exactly 50%. Anything that tilts events toward the eventual winner would push the score above 50%. No knowledge of brain chemistry is needed.</p>
+  <p>This has been done at very large scale, though for a different reason. Experiments testing claims of "precognition" have exactly this design, with something pleasant riding on the outcome. A multi-laboratory replication published in 2025 reports <b>26,483 people and 420,472 trials with no effect</b>. One sub-study came out at 49.65%, slightly <em>below</em> chance, which the authors judged a statistical fluke. <span class="tag known">published; we read the abstract</span></p>
+  <p>That limits any shift in people's choices to about two parts in a thousand. Because the brain would pool a chooser's tiny tilts into a visible shift in choices, this reaches far lower than counting individual events ever could: per-event tilts down to between 1 in 50,000 and 1 in 10 billion, depending on how many events are pooled. That covers nearly the whole window we called open in Update 2. <span class="tag ours">our calculation; not yet reviewed</span></p>
+
+  <h3>The kind that is left</h3>
+  <p>A chooser that uses only the brain's present state to decide how to tilt things cannot be distinguished from "biology sets those odds". No measurement could ever count for or against it. We now list ideas like that without a score, because giving a number to something no evidence can move would be pretending.</p>
+</section>
+
+<section>
+  <div class="num">CORRECTION</div>
+  <h2>The xenon study is weaker than we said</h2>
+  <p>Update 2 said: atoms of xenon gas that differ only in a quantum property of their core were found to differ about 30% in how well they anaesthetise mice, and a repeat would need only about 13 mice per gas.</p>
+  <p>The reviewer read the paper's summary more carefully, and we confirmed it. The mice were given xenon on top of a fixed dose of another anaesthetic that did most of the work. The measured values were 15, 16, 22 and 23 (give or take 4 to 7). The dramatic figures (70, 72, 99, 105) were calculated from those, not measured. The real difference is 7 points with an uncertainty nearly as large, and a small error in the other anaesthetic's dose could produce it.</p>
+  <p>We also overstated what it would mean. No chooser or quantum-collapse theory predicts this result. If real, it would be ordinary chemistry that happens to be sensitive to that quantum property. It is still worth repeating properly, but it is not the key experiment we made it out to be. <span class="tag gone">claim withdrawn</span></p>
+</section>
+
+<section>
+  <div class="num">FIVE CONJECTURES</div>
+  <h2>What is feeling for? Five ideas and how they fared</h2>
+  <p>We wrote verdicts on each, then the reviewer checked them against our own source notes. In three cases our verdict was stronger than the evidence we had cited. The corrected results:</p>
+  <div class="scroll"><table>
+    <tr><th>Idea</th><th>What the evidence shows</th><th>Corrected verdict</th></tr>
+    <tr><td><b>Feeling is not one thing.</b> Pain, hunger, itch, pleasure are unrelated mechanisms.</td><td>Single feelings can be lost alone: people born without the urge to breathe feel no distress holding their breath; some brain injuries remove the hurt of pain and nothing else. No case of all feelings failing together was found. A patient who lost the brain area usually credited with bodily feeling still felt everything, which shows that area is not required but does not show where feeling is.</td><td>Undecided. The decisive test has never been run.</td></tr>
+    <tr><td><b>One feeler per bottleneck.</b> A feeling subject exists wherever all competing wants are finally settled in one place.</td><td>Split-brain patients show divided perception but mostly unified behaviour; an octopus's learned avoidance is whole-animal. But "bottleneck" was never defined sharply enough to be wrong.</td><td>Not yet testable.</td></tr>
+    <tr><td><b>"Felt" just means "strong enough to notice".</b></td><td>Careful studies of so-called unconscious effects mostly find them vanish when awareness is measured properly. But any counter-example can be explained away as "just below the threshold".</td><td>Cannot fail as stated.</td></tr>
+    <tr><td><b>Feeling is an interrupt.</b> It is how urgent matters break into a mind that does one thing at a time.</td><td>Our simulation was shown to be circular. The studies we cited vary mental workload, which is not what the idea is about.</td><td>Untested.</td></tr>
+    <tr><td><b>Feeling bridges time.</b> It keeps an event "live" until its consequences arrive.</td><td>Learning across short gaps happens in insects and in brains with most of the upper parts removed. Whether those feel is the very thing in question, so this proves less than we claimed.</td><td>Not needed for short gaps. Long gaps untested.</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <div class="num">WHAT THIS ROUND PRODUCED</div>
+  <h2>Six experiments nobody has run</h2>
+  <p>Three rounds in, the most useful output may be this list. Each would move the question, each is practical, and as far as we can find none has been done.</p>
+  <ol>
+    <li><b>Which feelings go first?</b> As anaesthesia deepens, do pain, hunger, thirst, itch, breathlessness and pleasure vanish together or one at a time? Together would mean one source. One at a time would mean several.</li>
+    <li><b>The lever test in other animals.</b> From Update 2: a rat's planning does not learn that food is no longer wanted until the rat tastes it again. Run that in bees, crabs, octopus and fish.</li>
+    <li><b>A reward too small to feel.</b> Will a person work for it deliberately, and can they bet correctly on which of two moments "felt different"? This decides whether the body can value something without it being felt.</li>
+    <li><b>Same injury, action done or still pending.</b> If feeling is an interrupt, it should hurt less once the protective action is already finished.</li>
+    <li><b>Split-brain transfer.</b> Teach one half of a split brain to dread something. Does the other half dread it too?</li>
+    <li><b>Xenon, done properly.</b> No second anaesthetic, the gases alternated within a day, and mixtures of the two kinds to see whether the effect scales.</li>
+  </ol>
+</section>
+
+<hr>
+
+<section>
+  <h2>Scoreboard</h2>
+  <p>Small movements only. This round mostly sharpened questions.</p>
+  <div class="scroll"><table>
+    <tr><th>Kind of answer</th><th>Update 2</th><th>Now</th></tr>
+    <tr><td>Feeling is what certain information-processing is like</td><td class="n">30%</td><td class="n">30%</td></tr>
+    <tr><td>Feeling depends on the specific physical stuff or structure of brains</td><td class="n">14%</td><td class="n">14%</td></tr>
+    <tr><td>Feeling is the "inside" of all matter</td><td class="n">15%</td><td class="n">15%</td></tr>
+    <tr><td>Feeling is a convincing illusion</td><td class="n">8%</td><td class="n">8%</td></tr>
+    <tr><td>Feeling does no work but is tied to brain states by law</td><td class="n">7%</td><td class="n">7%</td></tr>
+    <tr><td>Quantum: a chooser, or collapse inside nerve cells</td><td class="n">5%</td><td class="n">3%</td></tr>
+    <tr><td>Mind and matter separate, or mind basic</td><td class="n">7%</td><td class="n">7%</td></tr>
+    <tr><td>A new pushing field</td><td class="n">under 1%</td><td class="n">under 1%</td></tr>
+    <tr><td>Framed wrongly, or not yet thought of</td><td class="n">13%</td><td class="n">15%</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li><b>Reviewed and standing:</b> the three-way split of the chooser; the correction to the xenon study (we read the summary ourselves); the corrected verdicts on the five ideas.</li>
+    <li><b>New and not yet reviewed:</b> our use of the precognition experiments to rule out two kinds of chooser, and the arithmetic that maps their result to a per-event limit. It goes to reviewers next round.</li>
+    <li><b>A pattern in our own errors:</b> we keep stating conclusions more strongly than our sources support, and our simulations keep proving only what we built into them. Two new rules: a verdict may not be stronger than the source it rests on, and numbers from a paper are not used until the method behind them has been read.</li>
+    <li><b>A practical limit:</b> this session has used up its allowance of web searches. Reading specific papers still works, so research continues through a medical-literature database directly, but broad searching is unavailable until the allowance is raised.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next round</h2>
+  <ol>
+    <li><b>Where in the brain is feeling necessary?</b> Go structure by structure: when it is destroyed, does feeling persist? And where does a small electrical current in an awake person produce a feeling? This is the most direct evidence on "where does it come from" and we have not yet assembled it.</li>
+    <li><b>Feeling tracks change, not level.</b> Perhaps good and bad track how fast a need is growing or shrinking, not how large it is.</li>
+    <li><b>Ownership gate.</b> Perhaps a signal is felt only when it is tied to the brain's picture of its own body.</li>
+    <li><b>Slow chemistry.</b> Perhaps feeling lives in the slow, diffuse chemical signals of the brain, not the fast electrical ones.</li>
+    <li><b>What each surviving answer says about machines</b>, and what observation would separate them.</li>
+  </ol>
+</section>
+
+<footer>Reviewer reports and our replies: <code>reviews/</code>. Running conclusions and their status: <code>LEDGER.md</code>.</footer>
+
+</div>
+
+<p style="text-align:center;padding:0 1rem 3rem"><a href="./">All updates</a></p>
+</body>
+</html>
