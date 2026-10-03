@@ -33,3 +33,48 @@ in trouble if reported feeling and planner-accessible value never come apart in 
 these situations despite adequate tests.
 
 Flexible choice and "unfelt" are defined as in Scenario 18, Part 1b.
+
+## Part 1b — Amendment after the independent fairness check, made before evidence was gathered
+
+The check (`reviews/round11-fairness-precheck.md`) found:
+
+- "Higher-order" is two views. **HO-L** (LeDoux & Brown; Lau): feeling is a
+  re-representation in a working-memory network (lateral and medial prefrontal, parietal,
+  insular). **HO-R** (Rolls): a state is felt when it enters the multistep planning
+  system, which is the identity claim in other words. HO-R is declared not separable
+  from ID.
+- No proponent claims unfelt *multistep planning*; they claim unfelt defensive, habitual
+  and at most single-step goal-directed control. Our rows 3, 4, 5 and 6 mis-stated HO or
+  could not fail.
+- ID as we wrote it was circular (availability inferred from the choice or the report).
+  It is made testable by defining availability independently.
+- Every discriminating outcome is a difference in *reported* feeling. No observation
+  separates ID from HO-L without self-report, which is taken as the criterion for both.
+
+What follows replaces Part 1 for scoring.
+
+### Amended definitions, table and scoring
+
+**Definitions.**
+- **A, available**: the same value drives at least two distinct criterion-meeting uses other than the affect rating, one of them multistep or first-trial novel (criterion 3); or a sustained, decodable frontoparietal value code. Single-step devaluation sensitivity alone is not A.
+- **F, felt**: self-rated good/bad valence, anticipatory and consummatory; emotion naming does not count. Floor = unfelt. Neither side may appeal to unreported feeling.
+- **HO** is scored as **HO-L**. **HO-R is declared not separable from ID** except on row 2′.
+
+**Corrected table.**
+
+| # | Situation | ID | HO-L | HO-R |
+|---|---|---|---|---|
+| 1′ | A met, performance matched, across conditions | F equal | F can differ | as ID |
+| 2′ | Single-step goal-directed choice (criteria 1, 2, 4), A not met | silent | may be unfelt | may be unfelt |
+| 3′ | Bilateral lateral/polar prefrontal disruption, verified by a metacognitive drop | F unchanged if A unchanged | F falls or decouples from value | silent |
+| 4, 5, 6 | As Part 1 | no test | no test | no test |
+
+**Scoring.**
+- **ID fails**: A met with F at floor, replicated (row 1′); or F falls with A unchanged (row 3′).
+- **HO-L fails**: verified disruption with F and A unchanged (row 3′). If F and A never dissociate across adequately powered matched designs (row 1′), score "strained", not failed.
+- A not shown, or A and F both change: **no test**.
+
+### If nothing separates them
+
+If F and A never come apart, HO-L is strained; against HO-R nothing observable decides. The choice then rests on argument: whether a state can be felt without being represented as one's own; whether empty higher-order states are coherent; parsimony; and whether "feeling" in ID is a discovery or a stipulation.
+
