@@ -1,0 +1,187 @@
+<title>Sentience Update 4</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 4 · 3 October 2026</div>
+  <h1>Where in the brain is feeling? One firm result, and the wall every question hits</h1>
+  <p class="lede">This round went straight at "where does it come from": for each part of the brain, does feeling survive when that part is destroyed, and does stimulating it produce a feeling? The reviewers cut the conclusion down to one firm result. They also overturned last update's headline. Four rounds in, a pattern is clear enough to state.</p>
+</header>
+
+<section class="short">
+  <h3>The short version (reviewed claims only)</h3>
+  <ul>
+    <li>The brain regions most often credited with producing feeling (the insula, the anterior cingulate and the amygdala) are <b>not required</b> for it. Two patients who lost all three still reported pain, hunger, fear and pleasure.</li>
+    <li>That does <b>not</b> tell us whether feeling comes from the deep, old parts of the brain or from the outer cortex that remained. Both views predict those two patients equally well.</li>
+    <li>No part of the brain passes a fair test for being "where feeling is generated".</li>
+    <li>Update 3's headline, that two kinds of "chooser" are ruled out, was wrong. The experiments limit far less than we claimed.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="num">CORRECTION TO UPDATE 3</div>
+  <h2>The chooser is not ruled out after all</h2>
+  <p>Last time we said that large "precognition" experiments (people choose first, a random draw then decides which choice wins) ruled out any chooser that aims at future outcomes. We flagged that as not yet reviewed. It has now been reviewed and it fell, for three reasons.</p>
+  <ul>
+    <li>The "random draw" was a computer formula, not a truly random physical event. So the experiments test whether people can sense a hidden computer result, not whether something tilts genuine chance.</li>
+    <li>The reward was an erotic picture instead of a grey screen, shown to a paid online panel with an average age of 49. Nobody measured whether the participants wanted it. Some will have liked it and some not, which would cancel out.</li>
+    <li>The four parts of the study came out at 49.48%, 50.10%, 49.65% and 50.07%. They disagree with each other more than chance should allow, so "no effect" is too tidy a summary.</li>
+  </ul>
+  <p>What the data do support: when little is at stake, people cannot guess a hidden computer draw better than chance by more than about 0.15%. A chooser tied to real pleasure or pain has still never been tested. <span class="tag gone">claim withdrawn</span></p>
+</section>
+
+<section>
+  <div class="num">MAIN WORK THIS ROUND</div>
+  <h2>A map of the brain: where does feeling survive, and where can it be switched on?</h2>
+  <p>The idea being tested (it is close to yours): raw feeling is made by the old, deep parts of the brain that regulate the body, and the outer cortex, where thinking happens, only elaborates it.</p>
+  <p>Two kinds of evidence. <b>Damage:</b> when a part is destroyed, do patients still report feelings? <b>Stimulation:</b> when surgeons pass a small current through a part in an awake patient, does the patient report a feeling?</p>
+
+  <h3>What damage shows</h3>
+  <div class="scroll"><table>
+    <tr><th>Part lost</th><th>Do feelings persist?</th><th>How we know</th></tr>
+    <tr><td>Cerebellum, hippocampus</td><td>Yes</td><td>patients' reports</td></tr>
+    <tr><td>Amygdala ("fear centre")</td><td>Yes. Fear of outside threats goes, but all three patients tested panicked when breathing air rich in CO₂</td><td>reports; paper read in full</td></tr>
+    <tr><td>Insula, anterior cingulate and amygdala together</td><td><b>Yes.</b> Hunger, thirst, pain, happiness, fear of needles. In one patient feelings were muted, in the other exaggerated</td><td>two patients; papers read in full</td></tr>
+    <tr><td>Nearly all of the outer cortex (children born that way)</td><td>Emotional <em>behaviour</em> persists: preferences, delight, distress</td><td>behaviour only. They cannot tell us</td></tr>
+    <tr><td>A deep salt-sensing region</td><td>Thirst lost in one well-documented case</td><td>report. Probably the sensor failing, not the feeling</td></tr>
+    <tr><td>Core of the upper brainstem</td><td>Everything goes: coma</td><td>dozens of stroke cases. Feeling cannot be tested</td></tr>
+  </table></div>
+
+  <h3>What stimulation shows</h3>
+  <p>Strong feelings have been reported from stimulating deep sites: terror and a sense of impending death from a midbrain region, panic from the hypothalamus, euphoria and laughter from a reward region, sudden despair that lifts within 90 seconds of switching off. Feelings are also reported from several cortical sites (mirth, anxiety, sadness, a sense of foreboding with determination). We had first written that the cortex is "nearly silent". That was a misreading: the figure we used counted pain only.</p>
+
+  <h3>What we concluded, and what survived</h3>
+  <p>We wrote that the map "favours deep structures first" and named the hypothalamus as the best candidate for a place where feeling is generated. The reviewer took both apart.</p>
+  <ul>
+    <li><b>The rival view predicts the same patients.</b> One well-developed theory says deep structures produce reactions that are not felt, and the outer frontal and parietal cortex is what makes them felt. Both key patients kept exactly that cortex. So their preserved feelings are what the rival expects too.</li>
+    <li><b>Our "generator" test was applied unevenly.</b> We disqualified the amygdala because feeling survives its loss. By the same standard the hypothalamus fails: the panic and the thirst come from different parts, and the thirst case looks like a broken sensor. Applied fairly, <b>no structure passes</b>. Three are untested.</li>
+    <li><b>Stimulation spreads.</b> Current at one point activates distant networks, so "stimulating here produces a feeling" does not show the feeling is made here.</li>
+    <li><b>A third reading we had not listed:</b> feeling is spread across many regions with a lot of redundancy, so no single loss removes it. That is what one patient's own doctors concluded.</li>
+  </ul>
+  <p><b>What stands.</b> The three regions most often named as the seat of feeling are not necessary for it. Theories built on those regions lose ground. Between "deep parts make it", "remaining cortex makes it felt" and "it is spread out", this evidence does not choose.</p>
+</section>
+
+<section>
+  <div class="num">ALSO THIS ROUND</div>
+  <h2>Four smaller ideas</h2>
+  <div class="scroll"><table>
+    <tr><th>Idea</th><th>Verdict after review</th></tr>
+    <tr><td><b>Feeling tracks change, not level.</b> Good and bad follow how fast a need is growing or easing.</td><td>Untested. The thirst studies we used raised the need steadily, so level and change rose together and cannot be separated. The deciding experiment (hold the need flat and see whether discomfort fades) has not been run.</td></tr>
+    <tr><td><b>Ownership gate.</b> A signal is felt only if tied to the brain's picture of its own body.</td><td>Weakened. Feeling of ownership turns feelings up or down a little. No evidence it is an on/off gate.</td></tr>
+    <tr><td><b>Slow chemistry.</b> Feeling lives in the brain's slow chemical signals.</td><td>Weakened. Blocking the best-known pleasure chemistry dulls pleasure only slightly.</td></tr>
+    <tr><td><b>No ready response.</b> Feeling marks situations with no automatic response.</td><td>Weakened. Fits dread of what is coming; does not fit the feeling itself.</td></tr>
+  </table></div>
+</section>
+
+<hr>
+
+<section>
+  <div class="num">STEPPING BACK <span class="tag ours">our synthesis, not yet reviewed</span></div>
+  <h2>The wall every question has hit</h2>
+  <p>Four rounds, four different angles: physics, evolution, animals, brain damage. Each ended in the same place.</p>
+  <p>We know about feeling only because people <b>tell us</b>. Telling needs the thinking, speaking parts of the brain. So for anything that cannot tell us (a deep brain structure on its own, a child without cortex, a bee, a machine) all we have is behaviour. And every serious theory explains the behaviour. One says "it acts distressed because it feels distress". Another says "it acts distressed with nothing felt". The behaviour is the same.</p>
+  <p>We are calling this the <b>report barrier</b>. Evidence that stays on one side of it cannot separate the theories, however much of it we collect. That is why animal markers could not draw a line (Update 2), why the lesion map could not choose (this update), and why our simulations kept proving only what we built in.</p>
+  <p>The useful move is to look for evidence that <em>crosses</em> the barrier: situations where a person who can report afterwards has, for a time, had part of the machinery switched off or cut off.</p>
+</section>
+
+<section>
+  <h2>What we actually know after four rounds</h2>
+  <p>Only items that have been attacked by a reviewer and are still standing.</p>
+  <ol>
+    <li>No new <em>pushing</em> field or force can be behind feeling. The strongest one physics allows is too weak by a factor of at least a thousand, more likely hundreds of thousands or more.</li>
+    <li>The brain's randomness is quantum at root and the brain amplifies single events. So a "chooser" has something to work with. It remains untested where it matters, and one version of it could never be tested.</li>
+    <li>In rats, the planning system does not learn that the body's needs have changed until the animal experiences the outcome again.</li>
+    <li>The standard signs of feeling in animals appear even in a worm with 302 nerve cells, so they cannot tell us which animals feel.</li>
+    <li>The insula, anterior cingulate and amygdala are not needed for reported feeling.</li>
+    <li>A much-cited quantum hint (xenon isotopes) is far weaker than usually stated.</li>
+    <li>Our simulations have not once produced evidence that survived review. They are useful for finding holes, not for supporting claims.</li>
+  </ol>
+  <p>Your hypothesis (consciousness = feeling + thought, with feeling as the older, motivating part) is still standing and still unproven. Nothing found so far contradicts it. The evidence that would support it most directly, feeling without cortex, is stuck behind the report barrier.</p>
+</section>
+
+<section>
+  <h2>Scoreboard</h2>
+  <p>Almost unchanged, on the reviewer's advice that this round's evidence does not separate the main families.</p>
+  <div class="scroll"><table>
+    <tr><th>Kind of answer</th><th>Update 3</th><th>Now</th></tr>
+    <tr><td>Feeling is what certain information-processing is like</td><td class="n">30%</td><td class="n">30%</td></tr>
+    <tr><td>Feeling depends on the specific physical stuff or structure of brains</td><td class="n">14%</td><td class="n">14%</td></tr>
+    <tr><td>Feeling is the "inside" of all matter</td><td class="n">15%</td><td class="n">15%</td></tr>
+    <tr><td>Feeling is a convincing illusion</td><td class="n">8%</td><td class="n">8%</td></tr>
+    <tr><td>Feeling does no work but is tied to brain states by law</td><td class="n">7%</td><td class="n">7%</td></tr>
+    <tr><td>Quantum: a chooser, or collapse inside nerve cells</td><td class="n">3%</td><td class="n">4%</td></tr>
+    <tr><td>Mind and matter separate, or mind basic</td><td class="n">7%</td><td class="n">7%</td></tr>
+    <tr><td>A new pushing field</td><td class="n">under 1%</td><td class="n">under 1%</td></tr>
+    <tr><td>Framed wrongly, or not yet thought of</td><td class="n">15%</td><td class="n">14%</td></tr>
+  </table></div>
+  <p class="note">Within the first row, theories centred on the insula, cingulate and amygdala are down substantially.</p>
+</section>
+
+<section>
+  <h2>Next round: crossing the report barrier</h2>
+  <p>All in people who can report afterwards.</p>
+  <ol>
+    <li><b>Cortex switched off for a few minutes.</b> Before some brain operations, doctors put one half of the cortex to sleep with a drug to see which side handles speech. What do patients say they felt during it?</li>
+    <li><b>Deep stimulation while the cortex is suppressed</b>, then ask on recovery. The difficulty is separating "did not feel it" from "does not remember it".</li>
+    <li><b>Timing.</b> In patients with electrodes both deep and at the surface, which activity comes first when a feeling is reported?</li>
+    <li><b>Disconnection.</b> Patients whose deep structures are intact but cut off from the frontal cortex.</li>
+    <li><b>Predictions first.</b> For each of these, write down what each theory predicts before looking at any results.</li>
+  </ol>
+</section>
+
+<footer>Reviewer reports and our replies: <code>reviews/</code>. Running conclusions and their status: <code>LEDGER.md</code>.</footer>
+
+</div>

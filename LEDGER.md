@@ -1,6 +1,6 @@
 # Ledger
 
-Updated 2026-10-03, after round 3 and its red-team review.
+Updated 2026-10-03, after round 4 and its red-team review.
 
 **Rule:** nothing is treated as reliable until an independent reviewer has tried to break
 it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower form) ·
@@ -27,10 +27,12 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | C15 | Thermal noise in the brain is quantum in origin, and cortex amplifies single events. | survived | Plausibility estimate; depends on interpretation of quantum mechanics. |
 | C16 | External quantum devices are not biased by intention above ~3×10⁻⁵. | survived | Mostly tested without real pleasure/pain at stake. |
 | C17 | A chooser biasing brain events by 10⁻⁸–10⁻² is untested and, if sustained, would be amplified by chaos. | new, from red team; re-run | Needs to know which events count for which outcome. |
-| C19 | A chooser aimed at future outcomes, or at facts the brain has not sensed, is closed: 420,472 precognition trials show no effect (choice shift within ~0.2%). | new; source fetched, not yet red-teamed | Maps to per-event tilt < 2×10⁻⁵ … 6×10⁻¹¹ depending on pooling. |
+| C19 | Guessing a hidden computer draw at trivial stakes is not helped by more than ~+0.15% (420,472 trials). | **narrowed** (was: "aimed choosers closed") | Pseudo-random targets, weak stake, heterogeneous arms. No per-event limit follows. A chooser aimed at real pleasure/pain is untested. |
 | C20 | A chooser using only the brain's present state cannot be told apart from ordinary biology. | new; from red team | Unscored: no observation can move it. |
 | C21 | The xenon isotope result is far weaker than cited: 7-point effect, errors 4–7, on top of another anaesthetic; headline values were extrapolated. | new; abstract fetched | Not a test of any chooser or collapse theory. |
-| C22 | Insula is not necessary for feeling (one patient). | weakened | Localises nothing. |
+| C22 | Insula, anterior cingulate and amygdala are not necessary for *reported* feeling (two patients, full text). | survived | Feeling altered in both; does not separate cortex-first from deep-first. |
+| C23 | No brain structure passes an even-handed "generates feeling" test (stimulation evokes it and lesion abolishes it). | new; from red team | Three candidates (PAG, pallidum, hypothalamus) are untested, not confirmed. |
+| C24 | The report barrier: evidence about feeling in anything that cannot report is behaviour, which all theories explain. | new; our synthesis, unreviewed | Motivates round 5. |
 | C18 | The standard animal markers detect a valence *signal*, not whether it is felt. | weakened → restated | Present from worms up; cannot draw a line. |
 
 ## Scoreboard (reset after review)
@@ -62,7 +64,12 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 | Conjecture | Round | Outcome |
 |---|---|---|
 | Feeling = valuation handed to the planner | 2 | conjecture; two-system claim withdrawn; circularity risk |
-| A field that chooses | 2–3 | future-aimed and hidden-fact-aimed closed; state-local unscored |
+| A field that chooses | 2–4 | hidden-fact-aimed limited at trivial stakes only; valence-aimed untested; state-local unscored |
+| Feeling comes from deep structures, not cortex | 4 | not separated from rivals by lesion or stimulation evidence |
+| Rate, not level | 4 | untested (confounded data) |
+| Ownership gate | 4 | weakened: modulates, no evidence of a gate |
+| Slow chemistry | 4 | weakened on opioids; needs a stated speed limit |
+| No ready response | 4 | weakened: fits dread, not the feeling itself |
 | Sentience is not one thing | 3 | undecided; decisive test never run |
 | One feeler per bottleneck | 3 | not yet testable (bottleneck undefined) |
 | Felt = above a noticing threshold | 3 | unfalsifiable as stated |
@@ -78,14 +85,14 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 5. Split-brain: does a learned aversion taught to one hemisphere transfer to the other?
 6. Xenon isotopes done properly (gases interleaved within a day, blends of the two kinds, no second anaesthetic).
 
-## Conjecture queue (round 4)
+## Conjecture queue (round 5): crossing the report barrier
 
-1. **Where is feeling necessary?** Build the lesion map: for each brain structure, does feeling persist when it is gone? And the stimulation map: where does electrical stimulation in awake people produce feeling?
-2. **Valence is a rate, not a level.** Felt good/bad tracks how fast a need is changing, not its size.
-3. **Ownership gate.** A signal is felt only if bound to a model of one's own body.
-4. **Slow chemical medium.** Feeling is the state of slow, diffuse chemical signalling, not fast electrical traffic.
-5. **No-policy signal.** Feeling marks situations with no ready-made response and fades as one is learned.
-6. **What each surviving theory says about machines**, and which observations would separate them.
+Designs in *reporting humans* that could separate "cortex makes it felt" from "deep structures make it felt":
+1. Temporarily silence cortex and ask afterwards (one-hemisphere anaesthesia during pre-surgical testing; focal seizures; cortical spreading depression).
+2. Deep stimulation while cortex is suppressed, report on recovery; memory is the confound.
+3. Timing: with deep and surface electrodes together, which activity predicts the moment a feeling is reported?
+4. Disconnection: patients in whom deep structures are intact but cut off from frontal/parietal cortex.
+5. What would each theory predict for each, in advance? Write the predictions before looking.
 
 ## Process rules (added round 2)
 
@@ -96,3 +103,4 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 - A scenario verdict may not be stronger than the verdict in the brief it cites.
 - Read the methods, not just the abstract, before computing from a paper's numbers.
 - Unfalsifiable variants are listed unscored.
+- Update pages: only reviewed claims in the short version.

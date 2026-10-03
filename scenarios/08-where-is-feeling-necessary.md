@@ -1,7 +1,7 @@
 # Scenario 8 — Where in the brain is feeling necessary?
 
 Evidence: `research/11-necessity-map.md` (verdicts here are copied from that brief, not
-strengthened). Status: **drafted; red-team outcome at the end.**
+strengthened). Status: **reviewed; read the red-team outcome at the end first.**
 
 ## Conjecture
 
@@ -88,3 +88,7 @@ will do", and the cortex that remained does not produce feeling when stimulated.
    paying a cost to avoid, trade-offs. (Partly done informally; never systematically.)
 3. During brain surgery with deep electrodes, time precisely when the feeling starts
    relative to deep and cortical activity.
+
+---
+
+> **Red-team outcome (round 4).** The verdict and the 'candidate generator' analysis are withdrawn. What stands: insula, anterior cingulate and amygdala are not necessary for reported feeling. Cortex-first vs deep-first is not separated by this evidence. See `reviews/round4-response.md`.

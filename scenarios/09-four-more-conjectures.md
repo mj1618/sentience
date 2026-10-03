@@ -1,7 +1,7 @@
 # Scenario 9 — Four more conjectures about what feeling tracks
 
 Evidence: `research/12-rate-ownership-medium-policy.md`. Verdicts copied from the brief.
-Status: **drafted; red-team outcome at the end.**
+Status: **reviewed; read the red-team outcome at the end first.**
 
 | Conjecture | Key evidence | Verdict | Deciding experiment |
 |---|---|---|---|
@@ -13,3 +13,7 @@ Status: **drafted; red-team outcome at the end.**
 **What carries forward.** Feeling has at least two components: one that follows the
 size of a bodily need and one that follows change or surprise. Any account of what
 generates feeling needs both.
+
+---
+
+> **Red-team outcome (round 4).** 'Rate, not level' is untested, not refuted (level and rate were confounded in the thirst data). The controllable-pain finding is not relevant evidence. See `reviews/round4-response.md`.
