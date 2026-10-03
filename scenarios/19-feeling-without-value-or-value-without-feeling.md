@@ -102,3 +102,32 @@ Discriminating: rows 5 and 8; rows 1, 3, 4, 9 only when requirement 2 is met or 
 
 Against K\*-ID no observation can. Against K\*-HO, separation exists only if reported feeling and the value signal ever come apart; if they never do, that favours identity, not H. The choice then rests on argument: which theory of consciousness is right (first-order versus higher-order, i.e. whether feeling is a separate state at all); whether "the feeling does the work" adds anything to "the representation does the work" (parsimony; causal exclusion); and whether H's "necessary" is empirical or a definition of feeling as accessible value. H should then be stated as an identity claim, not a rival causal hypothesis.
 
+
+## Part 2 — Independent scoring (from `reviews/round10-adjudication.md`)
+
+Every row was scored **no test** for both accounts. Requirement 1 (felt valence at floor
+by self-report) was met in no study found; requirement 2 (value signal shown intact) in
+none.
+
+## Part 3 — Summary sentences permitted by the adjudicator (verbatim)
+
+1. "Round 10 looked for cases where people report feeling nothing about an outcome and their flexible, goal-directed action was also measured; no such case was found, so the hypothesis was not tested."
+2. "Every row was scored 'no test' for both accounts, and the balance between our hypothesis and the higher-order rival did not move."
+3. "In depersonalisation, the best available study (22 patients against 15 patient controls) found unpleasant sounds rated as less unpleasant, not as neutral, and no study we found has measured flexible choice in this condition."
+4. "People change their choices at once when told a reward is now worthless, but no study we found measured whether their anticipated feelings changed as well, so this does not favour either account."
+5. "Feeling can change without action changing: in a 306-person replication, liking for a food fell after eating to fullness while about two-thirds of participants did not adjust their responding; this is compatible with both accounts."
+6. "The independent reviewer's view is that our hypothesis is at present best stated as an identity claim, that felt valence is value made accessible to the planner, and not as a causal hypothesis with evidence behind it."
+7. "The experiment that could separate the accounts, an instructed devaluation with feelings rated before the choice, in people who report feeling nothing, has not been run."
+
+## Part 4 — The adjudicator's recommendation on how to state the hypothesis
+
+- State it as "felt valence is the value representation being accessible to the planner",
+  a position in the first-order versus higher-order debate, not an empirically supported
+  causal hypothesis.
+- Do not describe rounds 9 and 10 as tests it survived.
+- Own the commitment: on identity, any system with planner-accessible value signals has
+  felt valence. If the owner rejects that because feeling is meant to be an extra
+  ingredient, the hypothesis is a causal claim about that ingredient with no evidence yet
+  distinguishing it from the higher-order rival.
+- The live empirical contrast is identity versus higher-order: can reported feeling and
+  the value signal be dissociated?

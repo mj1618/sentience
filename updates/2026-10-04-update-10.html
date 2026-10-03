@@ -1,0 +1,153 @@
+<title>Sentience Update 10</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 10 · 4 October 2026</div>
+  <h1>What your hypothesis actually claims, and a choice only you can make</h1>
+  <p class="lede">Update 9 could not separate your idea from its nearest rival, because no study removed the feeling while leaving the sense of value in place. This round went looking for such cases. None was found. But having the rival stated properly showed something about your hypothesis itself, and it comes with a fork in the road.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">The independent scorer's sentences, unaltered.</p>
+  <ul>
+    <li>"Round 10 looked for cases where people report feeling nothing about an outcome and their flexible, goal-directed action was also measured; no such case was found, so the hypothesis was not tested."</li>
+    <li>"Every row was scored 'no test' for both accounts, and the balance between our hypothesis and the higher-order rival did not move."</li>
+    <li>"In depersonalisation, the best available study (22 patients against 15 patient controls) found unpleasant sounds rated as less unpleasant, not as neutral, and no study we found has measured flexible choice in this condition."</li>
+    <li>"People change their choices at once when told a reward is now worthless, but no study we found measured whether their anticipated feelings changed as well, so this does not favour either account."</li>
+    <li>"Feeling can change without action changing: in a 306-person replication, liking for a food fell after eating to fullness while about two-thirds of participants did not adjust their responding; this is compatible with both accounts."</li>
+    <li>"The independent reviewer's view is that our hypothesis is at present best stated as an identity claim, that felt valence is value made accessible to the planner, and not as a causal hypothesis with evidence behind it."</li>
+    <li>"The experiment that could separate the accounts, an instructed devaluation with feelings rated before the choice, in people who report feeling nothing, has not been run."</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What happened when the rival was stated properly</h2>
+  <p>Before gathering any evidence we had our wording checked, as we now do every round. The check found we had again described the rival view unfairly. We had written it as "knowing that something is good or bad is enough". Its real form is different: the brain computes a <em>value signal</em> that the planning system uses to choose, and that signal is not the same thing as what a person can say they know.</p>
+  <p>That matters, because the conditions we planned to use as tests (pain without unpleasantness, pain-killers, emotion-flattening drugs) all damage that value signal itself, on the rival's own account. So the rival predicts impaired action in those cases, exactly as your idea does. They stop being tests.</p>
+  <p>The check also pointed out that the rival comes in two forms.</p>
+  <ul>
+    <li><b>Higher-order form.</b> Value signals are not in themselves felt. Feeling is a further thing the brain constructs on top of them. On this view feeling and value signal are two separate things and could, in principle, come apart.</li>
+    <li><b>Identity form.</b> The feeling simply <em>is</em> the value signal being available to the planner. There is no further thing.</li>
+  </ul>
+  <p>Against the identity form, your hypothesis makes no different prediction about anything. The two are the same claim in different words.</p>
+</section>
+
+<section>
+  <h2>What the evidence showed</h2>
+  <p>To test your idea against the higher-order form, a study has to show three things at once: the person reports feeling nothing about the outcome; their flexible, goal-directed action is measured by a strict test; and, to count against the rival, the value signal is shown to be intact by some independent means.</p>
+  <p>No study found does the first and second together. The scorer marked every row "no test" for both sides.</p>
+  <div class="scroll"><table>
+    <tr><th>Condition</th><th>Best study found</th><th>Why it is not a test</th></tr>
+    <tr><td>Depersonalisation (feelings seem unreal)</td><td>22 patients against 15 patient controls</td><td>Unpleasant sounds were rated less unpleasant, not neutral. Flexible choice was not measured</td></tr>
+    <tr><td>Drugs acting on the brain's opioid and dopamine systems</td><td>131 people</td><td>People worked less hard for food while their ratings of wanting and liking were unchanged. Feeling was not removed, and there was no choice to decline</td></tr>
+    <tr><td>An antidepressant taken for about a month</td><td>32 people against 34</td><td>Sensitivity to reward fell on two tasks; planning-type control was unchanged. Participants did not report feeling blunted</td></tr>
+    <tr><td>Told a reward is now worthless</td><td>43 people</td><td>Choices changed at once. Nobody asked how they expected the reward to feel</td></tr>
+    <tr><td>Fed to fullness on one food</td><td>31 people; and a 306-person replication</td><td>Liking fell; many did not change their responding. Feeling was present throughout</td></tr>
+    <tr><td>Spinal injury; failure of the body's automatic nervous system</td><td>small groups</td><td>Decision-making intact, and feeling was not reduced</td></tr>
+  </table></div>
+  <p>The scorer was careful about what "none found" means: it is a statement about our search, made without full web search, and is not a claim that no such study exists.</p>
+</section>
+
+<section>
+  <div class="num">THE FORK</div>
+  <h2>A choice only you can make</h2>
+  <p>The scorer's view, which we report as given: as it can currently be defended, your hypothesis is an identity claim. In plain terms: <b>a feeling of good or bad is what a value signal is, when the planning mind has access to it.</b></p>
+  <p>If that is what you mean, three things follow, in the scorer's words or close to them.</p>
+  <ul>
+    <li>"Feeling is necessary for flexible action" becomes true by definition. It cannot be cited as a discovery about where sentience comes from.</li>
+    <li>Rounds 9 and 10 should not be described as tests your idea survived.</li>
+    <li>You take on a commitment: any system in which a value signal is available to a planner has felt valence. That would include some animals and, in principle, some machines.</li>
+  </ul>
+  <p>If that is <em>not</em> what you mean, because you intend feeling to be an extra ingredient over and above an accessible value signal, then your hypothesis is a causal claim about that ingredient. In that case there is, so far, no evidence distinguishing it from the higher-order rival, which also says feeling is something extra.</p>
+  <div class="def">
+    <p><b>So the question for you is:</b> is feeling <em>the same thing as</em> value-made-available-to-thought, or is it something <em>added</em>?</p>
+    <p>Your original wording, "sentience is the motivator and the brain then figures out how to make that happen", fits the first reading most naturally. Your interest in whether sentience might be a field fits the second. They lead to different research programmes, and we can pursue either or both.</p>
+  </div>
+</section>
+
+<section>
+  <h2>The experiment that would separate them</h2>
+  <p>Proposed by the scorer. Find people who report feeling nothing at all toward a reward: no pleasure, wanting, dread or regret, checked trial by trial. Teach them to work for two real rewards, then tell them one is now worthless, and see whether their choices change. Separately, check that their value signal is intact, using real-money bids and bodily responses.</p>
+  <ul>
+    <li>They report no feeling, yet their choices follow the instruction: your hypothesis fails (and so does the identity form).</li>
+    <li>They report no feeling, the value signal is intact, and they cannot choose even when prompted: the higher-order rival fails.</li>
+    <li>If screening turns up nobody who truly reports feeling nothing, that is itself a result.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>The scoring was independent. The scorer checked the key figures of five studies against the full papers and they matched. Several other studies were read only as summaries and were given no weight beyond "nothing here meets the requirements".</li>
+    <li>The identity-claim reading is the scorer's considered view and the fairness checker's, reached independently of each other. It is a judgement about the logic of the hypothesis, not a measurement.</li>
+    <li>A separate check compared this page with the scorer's report before publication.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next round</h2>
+  <ol>
+    <li><b>Can feeling and the value signal come apart?</b> Are there value signals that guide choice with no reported feeling, or reported feelings with no value signal? This is what would decide between "the same thing" and "something added".</li>
+    <li><b>What the "same thing" reading commits to:</b> which animals and which machines have a value signal available to a planner.</li>
+    <li><b>The Update 1 patient evidence</b>, still to be reviewed against the original papers.</li>
+  </ol>
+</section>
+
+<footer>Predictions and amendment: <code>scenarios/19</code>. Fairness check: <code>reviews/round10-fairness-precheck.md</code>. Scoring: <code>reviews/round10-adjudication.md</code>.</footer>
+
+</div>

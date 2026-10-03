@@ -128,3 +128,14 @@ an accessible value representation is needed).
 **What neither does.** Neither separates "the feeling does the motivating" from "an
 accessible representation of value does it". No design we know of removes the feeling
 while leaving the accessible value in place.
+
+## 12. The experiment that could separate "feeling is needed" from "a value signal is needed"
+
+Proposed by the round 10 adjudicator. Pre-registered, two arms.
+
+- **Who.** (a) People screened for reporting no feeling at all toward the task's outcomes, trial by trial: no anticipated or experienced pleasure, wanting, dread or anticipated regret (severe numbing in depersonalisation, severe loss of pleasure), with matched patient controls. (b) Healthy volunteers.
+- **Task.** Learn to work for two real consumable rewards. One is then made worthless by instruction only. Choice is tested with no further feedback. Plus working for reward with the option to decline.
+- **Before the test.** Ratings of how each outcome is expected to feel (with the order varied, to check that asking does not create the feeling).
+- **Independent check that the value signal is intact.** Real-money bids for each outcome, and bodily anticipation responses; brain imaging of value regions if available.
+- **Readings fixed in advance.** No feeling reported, yet choice follows the instruction: the owner's hypothesis fails. No feeling reported, bids and bodily signal intact, prompted choice lost: the higher-order rival fails. In healthy volunteers whose expected feelings did not change: a shift in choice counts against the hypothesis; no shift, with the effect fully carried by the change in expected feeling, counts against the rival.
+- **If screening finds nobody who reports feeling nothing**, that is itself the result.

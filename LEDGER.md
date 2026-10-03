@@ -1,6 +1,6 @@
 # Ledger
 
-Updated 2026-10-03, after round 9.
+Updated 2026-10-03, after round 10.
 
 **Rule:** nothing is treated as reliable until an independent reviewer has tried to break
 it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower form) ·
@@ -46,6 +46,8 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | C36 | No replicated study shows people acting flexibly toward a reward they demonstrably could not perceive or feel. The owner's hypothesis was not refuted and not confirmed; it was never put at real risk. | adjudicated (round 9; adjudicator's wording) | "Unfelt" was never established: studies hid the cue; none removed the feeling. |
 | C37 | The claim that people can learn from rewards they never consciously see did not hold up under trial-by-trial awareness checks and a registered replication. | adjudicated | Strains the "automatic behaviour can run on unfelt valuation" half of the hypothesis. |
 | C38 | The evidence does not separate "felt valence is needed" from "an accessible value representation is needed". | adjudicated | The hypothesis is close to Dickinson's long-standing position. |
+| C39 | No case was found in which people report feeling nothing about an outcome and their flexible action was measured. The hypothesis was not tested in round 10; every row was "no test" for both accounts. | adjudicated (round 10) | "None found", not "none exists". |
+| C40 | Once the rival is stated correctly (the planner's value signal, not verbal knowledge), the owner's hypothesis predicts nothing the identity version of the rival does not. | adjudicator's view (round 10); fairness check agrees | See "Owner's hypothesis". |
 | C24 | "Report barrier": in our seven rounds, evidence from non-reporting systems did not separate theories. | our description of our own results; **not a principle**. Audit objections: nulls traced to mis-stated rivals, abstract-only reading and experiments not yet done; the barrier is porous (calibrate in reporting humans, extend by homology; non-verbal report). | |
 | C18 | Standard animal markers of valence are reported even in a 302-neuron worm, so they may detect a signal and not whether it is felt. | **unreviewed** (published claims not checked by a reviewer) | |
 
@@ -76,12 +78,16 @@ The percentages were not connected to any test and are removed. Families still o
 
 ## Owner's hypothesis: consciousness = sentience + thought
 
-Round 9 status, in the adjudicator's terms:
-- **Supported** only negatively: no replicated case of flexible, goal-directed human action driven by a reward the person demonstrably neither perceived nor felt. Where feeling is lost or blunted, self-initiated action is impaired; weak evidence, equally predicted by the rival K\*.
-- **Contradicted:** nothing contradicts the core claim. The permissive half (automatic behaviour runs on unfelt valuation) is strained.
-- **Untested:** the causal claim itself, that the *feeling*, as distinct from the accessible value representation that comes with it, does the motivating.
-- **Novelty:** small. Close to Dickinson's hedonic interface theory. What it adds is "necessary" and the identification of the value signal with sentience; neither has been tested.
-- One possible counterexample (Lamb 1991, five people) is untested.
+**Status after rounds 9–10 (adjudicators' findings):**
+
+- Not refuted, not confirmed, never put at real risk. Rounds 9 and 10 must not be described as tests it survived.
+- As it can currently be defended it is an **identity claim**: *felt valence is the value representation being accessible to the planner.* Stated that way, "feeling is necessary for flexible action" holds by definition and is not a finding.
+- **A fork the owner must choose between:**
+  1. **Identity.** Then any system with planner-accessible value signals has felt valence. That is a real commitment (it covers some animals and, in principle, some machines).
+  2. **Extra ingredient.** Feeling is something over and above the accessible value signal. Then the hypothesis is a causal claim about that ingredient, and no evidence yet distinguishes it from the higher-order rival (feeling as a separate construction built on unfelt value signals).
+- The live empirical contrast is identity versus higher-order: can reported feeling and the value signal be pulled apart?
+- Close to Dickinson's hedonic interface theory; Berridge already separates deliberate from cue-driven wanting.
+- One possible counterexample (Lamb 1991) is untested.
 
 ## Conjectures tested so far
 
@@ -93,7 +99,7 @@ Round 9 status, in the adjudicator's terms:
 | Rate, not level | 4 | untested (confounded data) |
 | The brain's electric field is the experience | 6 | untested by existing data; field influence on neurons moderately supported |
 | Wanting tilts external chance (lottery) | 6 | not shown; small tilt not excluded |
-| Felt valence is necessary for flexible action (owner's hypothesis) | 9 | not refuted, not confirmed, not yet put at risk; not separated from "accessible value representation" |
+| Felt valence is necessary for flexible action (owner's hypothesis) | 9–10 | not refuted, not confirmed, never put at risk; as defensible now, an identity claim (feeling = value accessible to the planner) |
 | The mystery is an illusion of a limited self-model | 7 | not testable against its rival; premise unverified |
 | Ownership gate | 4 | weakened: modulates, no evidence of a gate |
 | Slow chemistry | 4 | weakened on opioids; needs a stated speed limit |
@@ -113,11 +119,11 @@ Round 9 status, in the adjudicator's terms:
 5. Split-brain: does a learned aversion taught to one hemisphere transfer to the other?
 6. Xenon isotopes done properly (gases interleaved within a day, blends of the two kinds, no second anaesthetic).
 
-## Conjecture queue (round 10)
+## Conjecture queue (round 11)
 
-1. **Can feeling be removed while the value representation stays accessible?** Search for any manipulation or condition that does this (the dissociation the hypothesis needs): pain asymbolia and opioids in detail, "know but don't feel" patients, emotional numbing drugs, depersonalisation, with measures of flexible choice.
-2. **Full-text review of C8–C12** (still outstanding).
-3. **Dickinson's hedonic interface theory**: what it predicts beyond the owner's hypothesis, and its critics.
+1. **Identity versus higher-order**: are there value signals in the brain that guide the planner *without* any reported feeling, or reported feelings *without* a value signal? Predictions first, fairness check before evidence.
+2. **What the identity reading commits to**: which animals and which machines have planner-accessible value signals.
+3. **Full-text review of C8–C12** (still outstanding).
 
 ## Process rules (added round 2)
 
