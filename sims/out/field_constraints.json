@@ -1,0 +1,120 @@
+{
+ "mass_coupled": [
+  {
+   "range_m": 1e-09,
+   "scale": "protein",
+   "quantum_mass_eV": 197.32999999999998,
+   "thermally_excitable": false,
+   "alpha_needed_generous": 3.68800309024374e+23,
+   "alpha_needed_realistic": 3.6880030902437395e+25,
+   "alpha_allowed": 17000000000000.0,
+   "shortfall_orders_generous": 10.336342354906582,
+   "shortfall_orders_realistic": 12.336342354906582
+  },
+  {
+   "range_m": 1e-08,
+   "scale": "synaptic cleft",
+   "quantum_mass_eV": 19.733,
+   "thermally_excitable": false,
+   "alpha_needed_generous": 3.6880030902437397e+21,
+   "alpha_needed_realistic": 3.6880030902437396e+24,
+   "alpha_allowed": 17000000000000.0,
+   "shortfall_orders_generous": 8.336342354906582,
+   "shortfall_orders_realistic": 11.336342354906582
+  },
+  {
+   "range_m": 1e-07,
+   "scale": "synapse",
+   "quantum_mass_eV": 1.9733,
+   "thermally_excitable": false,
+   "alpha_needed_generous": 3.68800309024374e+19,
+   "alpha_needed_realistic": 3.68800309024374e+23,
+   "alpha_allowed": 100000000000.0,
+   "shortfall_orders_generous": 8.566791276284857,
+   "shortfall_orders_realistic": 12.566791276284857
+  },
+  {
+   "range_m": 1e-06,
+   "scale": "dendrite width",
+   "quantum_mass_eV": 0.19733,
+   "thermally_excitable": false,
+   "alpha_needed_generous": 3.68800309024374e+17,
+   "alpha_needed_realistic": 3.6880030902437397e+22,
+   "alpha_allowed": 10000000.0,
+   "shortfall_orders_generous": 10.566791276284857,
+   "shortfall_orders_realistic": 15.566791276284857
+  },
+  {
+   "range_m": 1e-05,
+   "scale": "neuron body",
+   "quantum_mass_eV": 0.019733,
+   "thermally_excitable": true,
+   "alpha_needed_generous": 3688003090243739.5,
+   "alpha_needed_realistic": 3.6880030902437397e+21,
+   "alpha_allowed": 14000.0,
+   "shortfall_orders_generous": 11.420663240606618,
+   "shortfall_orders_realistic": 17.42066324060662
+  },
+  {
+   "range_m": 0.0001,
+   "scale": "cortical column",
+   "quantum_mass_eV": 0.0019733,
+   "thermally_excitable": true,
+   "alpha_needed_generous": 36880030902437.39,
+   "alpha_needed_realistic": 3.6880030902437387e+20,
+   "alpha_allowed": 0.1,
+   "shortfall_orders_generous": 14.566791276284857,
+   "shortfall_orders_realistic": 21.566791276284857
+  },
+  {
+   "range_m": 0.001,
+   "scale": "cortical thickness",
+   "quantum_mass_eV": 0.00019733,
+   "thermally_excitable": true,
+   "alpha_needed_generous": 368800309024.37396,
+   "alpha_needed_realistic": 3.68800309024374e+19,
+   "alpha_allowed": 0.001,
+   "shortfall_orders_generous": 14.566791276284857,
+   "shortfall_orders_realistic": 22.566791276284857
+  },
+  {
+   "range_m": 0.01,
+   "scale": "brain region",
+   "quantum_mass_eV": 1.9733e-05,
+   "thermally_excitable": true,
+   "alpha_needed_generous": 3688003090.2437396,
+   "alpha_needed_realistic": 3.6880030902437396e+18,
+   "alpha_allowed": 0.0002,
+   "shortfall_orders_generous": 13.265761280620875,
+   "shortfall_orders_realistic": 22.265761280620875
+  },
+  {
+   "range_m": 0.1,
+   "scale": "whole brain",
+   "quantum_mass_eV": 1.9733e-06,
+   "thermally_excitable": true,
+   "alpha_needed_generous": 110344794.42596371,
+   "alpha_needed_realistic": 1.1034479442596374e+18,
+   "alpha_allowed": 0.001,
+   "shortfall_orders_generous": 11.042751849909052,
+   "shortfall_orders_realistic": 21.042751849909052
+  },
+  {
+   "range_m": 1.0,
+   "scale": "beyond the head",
+   "quantum_mass_eV": 1.9733e-07,
+   "thermally_excitable": true,
+   "alpha_needed_generous": 1103447944.259637,
+   "alpha_needed_realistic": 1.1034479442596371e+20,
+   "alpha_allowed": 0.0005,
+   "shortfall_orders_generous": 12.343781845573034,
+   "shortfall_orders_realistic": 23.343781845573034
+  }
+ ],
+ "electron_coupled": {
+  "g_e": 7e-16,
+  "ratio_to_coulomb": 5.343439411477538e-30,
+  "energy_on_channel_eV": 9.812143046734382e-06,
+  "in_kT": 0.0003672665760781758
+ }
+}

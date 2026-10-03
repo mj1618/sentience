@@ -1,0 +1,223 @@
+<title>Sentience Update 1</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 1 · 3 October 2026</div>
+  <h1>Where does feeling come from? What the first round ruled out.</h1>
+  <p class="lede">We read the research, ran four small evolution experiments and one physics calculation. The main result: almost every answer of the form "feeling is an extra ingredient added to the brain" is now very hard to defend. What is left is a narrower question we can keep attacking.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <ul>
+    <li>Feeling cannot be a side-effect that does nothing. It has to push on the brain, because we talk about it.</li>
+    <li>It cannot be a new kind of field or force. The strongest one physics still allows is at least a hundred million times too weak to nudge a brain cell.</li>
+    <li>So feeling is some way that ordinary matter is organised. The question becomes: which organisation?</li>
+    <li>Your idea (feeling motivates, thinking works out how) holds up well, with two adjustments described below.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>The words we are using</h2>
+  <div class="def">
+    <p><b>Sentience</b> means raw feeling: that pain hurts, that sugar tastes nice, that being hungry is unpleasant. Not thinking about the pain. Just the hurt.</p>
+    <p><b>Valence</b> is the good-or-bad side of a feeling. Pleasant is positive valence, unpleasant is negative.</p>
+    <p><b>Consciousness</b> is the bigger package people usually mean: feeling plus thoughts, a sense of self, an inner voice.</p>
+    <p><b>Your working idea:</b> consciousness = sentience + thought. Feeling is what makes a creature want things; thinking is the tool for getting them. Thinking is fairly well understood (we build machines that do it), so the mystery is the feeling.</p>
+  </div>
+  <p>How we work: collect what is known, then "game out" each possible answer. That means taking the answer seriously, asking what else would have to be true, and checking that with a simulation, a calculation, or medical evidence. Answers that lead somewhere impossible get crossed off.</p>
+</section>
+
+<hr>
+
+<section>
+  <div class="num">FINDING 1</div>
+  <h2>Two facts squeeze out most answers</h2>
+  <p><b>Fact one: we talk about feelings.</b> When you say "that hurts", your mouth moves. Mouths are moved by muscles, muscles by nerve cells. So whatever feeling is, it must be able to affect nerve cells. If it could not, nothing we have ever said about feelings would have been caused by them, and we would have no reason to believe in them at all.</p>
+  <p><b>Fact two: we know what nerve cells are made of and what pushes them around.</b> They are ordinary atoms obeying well-tested laws. There is very little room for an unknown extra push.</p>
+  <p>Put together: feeling affects nerve cells, and nothing unknown affects nerve cells. So feeling must be something already there in the brain's ordinary workings, seen from the inside.</p>
+  <p>This removes one popular idea straight away: that feeling is like steam from a train, produced by the engine but doing no work. A second experiment below removes it again from a different direction.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 2 <span class="tag ours">our calculation</span></div>
+  <h2>Feeling is not a new field</h2>
+  <p>A field is something that has a value at every point in space, like the magnetic field around a magnet. You asked whether sentience might be a field of its own. We tested the most natural version: a new field that brain matter creates and that pushes back on brain cells.</p>
+  <p>To matter, it would have to push hard enough to tip the tiny switches (called ion channels) that make a nerve cell fire. Those switches are constantly jostled by heat, so the push has to be noticeable against that jostling. We asked for only 1% of the jostling, which is generous.</p>
+  <p>Physicists have spent decades hunting for new forces at every distance from the width of a molecule to across a room, and have measured how strong one could be without having been noticed. Stars add a further limit: a new force would let them cool faster than they do. The chart shows how far short the strongest allowed force falls.</p>
+  <div class="bars" role="img" aria-label="Shortfall in powers of ten at each distance">
+    <div>one protein (1 nm)</div><div class="track"><div class="fill" style="width:64%"></div></div><div class="v">10¹⁰×</div>
+    <div>gap between cells (10 nm)</div><div class="track"><div class="fill" style="width:52%"></div></div><div class="v">10⁸×</div>
+    <div>one connection (100 nm)</div><div class="track"><div class="fill" style="width:54%"></div></div><div class="v">10⁹×</div>
+    <div>one cell (10 µm)</div><div class="track"><div class="fill" style="width:71%"></div></div><div class="v">10¹¹×</div>
+    <div>small circuit (0.1 mm)</div><div class="track"><div class="fill" style="width:91%"></div></div><div class="v">10¹⁵×</div>
+    <div>brain region (1 cm)</div><div class="track"><div class="fill" style="width:83%"></div></div><div class="v">10¹³×</div>
+    <div>whole brain (10 cm)</div><div class="track"><div class="fill" style="width:69%"></div></div><div class="v">10¹¹×</div>
+  </div>
+  <p class="note">Bar length = how many times too weak, on a scale where each step is ten times more. 10⁸× means a hundred million times too weak. The limits are rounded to the nearest power of ten.</p>
+  <p>At no distance does it come close. We also gamed out the other meanings of "sentience is a field":</p>
+  <div class="scroll"><table>
+    <tr><th>Version</th><th>What happens when you follow it through</th><th>Result</th></tr>
+    <tr><td>A new field that pushes on matter</td><td>Too weak by at least 10⁸ everywhere.</td><td><span class="tag out">out</span></td></tr>
+    <tr><td>A field the brain writes to but that never pushes back</td><td>The mathematics of fields does not allow one-way influence. And it could not make us talk about feelings.</td><td><span class="tag out">out</span></td></tr>
+    <tr><td>A universal field the brain "tunes into" like a radio</td><td>A radio needs an aerial, which is a push on matter (see row one). Also, brain injuries remove specific feelings, so the brain is supplying the content.</td><td>does no work</td></tr>
+    <tr><td>The brain's own electric field is the feeling</td><td>No new physics needed. But a hospital MRI scanner floods the head with far stronger fields and experience barely changes. The only defence is "only the part brain cells can read counts", which makes it a theory about brain cells.</td><td>survives only as a theory of organisation</td></tr>
+    <tr><td>Strange quantum effects inside brain cells</td><td>The simplest version was tested deep underground in 2021 and failed. A few intriguing lab results exist, none repeated by a second lab.</td><td>unlikely, still testable</td></tr>
+    <tr><td>Feeling is the "inside" of all matter</td><td>Adds no forces, so no physics experiment can touch it. Still has to explain why a brain feels as one thing and a rock does not.</td><td>survives; same question remains</td></tr>
+  </table></div>
+  <p><b>The pattern:</b> every version that survives does so by handing the real question back to "how is the brain organised?"</p>
+</section>
+
+<section>
+  <div class="num">FINDING 3 <span class="tag ours">our simulations</span></div>
+  <h2>Would a feeling creature beat an unfeeling robot?</h2>
+  <p>You asked whether sentience helps survival compared with an equally clever automaton. First a point of logic. If the automaton behaves identically in every situation, evolution cannot tell them apart and could never have favoured feeling. So if feeling evolved, it must change behaviour somewhere. The useful question is: which jobs need a good/bad signal?</p>
+  <p>We evolved populations of simple simulated creatures. An honest limit: these creatures have a good/bad signal that works like feeling. Nothing in a simulation can show the signal is actually felt. What the experiments show is what evolution demands of such a signal.</p>
+
+  <h3>Experiment A: feeling pays only when the world changes</h3>
+  <p>"Robots" are born with fixed rules (approach this, avoid that). "Feelers" learn from how outcomes feel, which costs time and mistakes. We varied how often the world differs from what their ancestors faced.</p>
+  <div class="scroll">
+  <svg viewBox="0 0 580 290" width="100%" style="max-width:580px" role="img" aria-label="Success of fixed-rule robots falls as the world becomes less predictable while learners stay level">
+    <line x1="50" y1="230" x2="540" y2="230" stroke="var(--line)" fill="none"/>
+    <line x1="50" y1="20" x2="50" y2="230" stroke="var(--line)" fill="none"/>
+    <line x1="50" y1="125" x2="540" y2="125" stroke="var(--line)" stroke-dasharray="2 4" fill="none"/>
+    <text x="44" y="234" text-anchor="end">0</text><text x="44" y="129" text-anchor="end">half</text><text x="44" y="24" text-anchor="end">best</text>
+    <text x="50" y="248" text-anchor="middle">0%</text><text x="246" y="248" text-anchor="middle">40%</text><text x="540" y="248" text-anchor="middle">100%</text>
+    <text x="295" y="272" text-anchor="middle">how much of the world differs from the ancestors' world</text>
+    <polyline fill="none" stroke="var(--warm)" stroke-width="2.5" points="50,21.7 74.5,32.6 99,43.9 148,65.4 246,110.3 393,173.7 540,230"/>
+    <polyline fill="none" stroke="var(--accent)" stroke-width="2.5" points="50,53.2 74.5,58.6 99,63.3 148,70 246,75.4 393,79.6 540,77.5"/>
+    <text class="lab" x="400" y="196" style="fill:var(--warm)">fixed-rule robots</text>
+    <text class="lab" x="400" y="66" style="fill:var(--accent)">feelers (learners)</text>
+  </svg></div>
+  <p>In a perfectly predictable world the robots win. Feelers take over, sharply, once roughly a third of the world is unpredictable. <b>Prediction:</b> sentience should go with how much novelty a creature meets in its lifetime, not with brain size or cleverness.</p>
+
+  <h3>Experiment J: why does what's good for you feel good?</h3>
+  <p>We let evolution set whether benefit feels good or bad. When the feeling actually drove learning, benefit ended up feeling good in <b>40 of 40</b> runs. When the feeling was present but did nothing, it was a coin toss: <b>22 of 40</b>.</p>
+  <p>Humans have dozens of separate feelings that all point the right way (pain, hunger, thirst, nausea, suffocation, sweetness…). If feeling did nothing, twenty of them lining up by luck is a one-in-a-million coincidence. So the character of a feeling is tied to the job the brain state does.</p>
+
+  <h3>Experiment B: one scale of good-and-bad beats a rulebook</h3>
+  <p>Creatures had to juggle several needs at once (food, water, and so on) and died if any ran out. We compared a rulebook ("if thirst is below X, drink; otherwise…") with a single good/bad scale on which everything is weighed, where an offer is worth more the more you need it.</p>
+  <div class="scroll"><table>
+    <tr><th>Number of needs</th><th>Rulebook: survival</th><th>Single scale: survival</th></tr>
+    <tr><td class="n">2</td><td class="n">358</td><td class="n win">380</td></tr>
+    <tr><td class="n">3</td><td class="n">320</td><td class="n win">373</td></tr>
+    <tr><td class="n">5</td><td class="n">257</td><td class="n win">370</td></tr>
+    <tr><td class="n">8</td><td class="n">232</td><td class="n win">371</td></tr>
+  </table></div>
+  <p class="note">Survival time out of a possible 400 steps.</p>
+  <p>With two needs the rulebook nearly keeps up. As needs multiply it falls apart and the single scale does not. That single scale behaves the way pleasure does in real life: food tastes better when you are hungry.</p>
+
+  <h3>Experiment C: the thinker must not be able to edit its own feelings</h3>
+  <p>We gave creatures a shortcut: produce the good feeling directly without earning it. Populations that could do this half the time nearly died out. Over 200 generations evolution shut the shortcut down, from 50% to 9% and still falling, and survival recovered sevenfold.</p>
+  <p>The consequence is the most interesting idea so far. For feeling to work as a motivator, the thinking part must receive it as a given: unchosen, impossible to switch off, impossible to see inside. That is how people describe raw feeling, and why it seems so mysterious. <b>A thinker built this way would find its feelings inexplicable whether or not they really are.</b> So our sense that feeling "must be something beyond the physical" is what we would expect either way, and is not evidence for it.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 4 <span class="tag known">from published research</span></div>
+  <h2>What real patients tell us about your idea</h2>
+  <ul>
+    <li><b>People born unable to feel pain</b> have normal intelligence and know perfectly well that fire burns. They still pile up injuries: in published cases about seven in ten have self-inflicted wounds and repeated fractures. Knowing is no substitute for hurting.</li>
+    <li><b>People who lose their inner drive</b> after damage to a deep brain area score normally on intelligence tests when someone prompts them. Left alone they do nothing and report an empty mind. The thinking machine is intact but nothing switches it on.</li>
+    <li><b>Children born with almost no cortex</b> (the wrinkled outer brain where thinking happens) still show joy, distress and preferences. This suggests feeling comes from older, deeper parts. It is disputed, because we only have their behaviour to go on.</li>
+    <li><b>A complication: wanting and liking come apart.</b> The brain's "go and get it" signal can be turned up without the thing feeling any better (addiction is the classic case). So the push to act and the feeling of pleasure are not the same part.</li>
+  </ul>
+  <p><b>Verdict on "consciousness = sentience + thought":</b> it holds up, and the first two points are exactly what it predicts. Two adjustments:</p>
+  <ol>
+    <li>Feeling looks more like the <b>teacher</b> than the engine. It sets what is worth wanting; a separate, possibly unfelt, drive does the pushing. (Our simulated creatures are built this way too.)</li>
+    <li>Something is missing from the equation. Plainly seeing a grey wall is an experience that is neither a feeling of good or bad nor a thought. Either it is very faint feeling, or there is a third ingredient.</li>
+  </ol>
+  <p>One more thing the reading turned up: the two most famous scientific theories of consciousness were tested head-to-head in 2025 and each failed one of its own key predictions. Both were tested only on vision. <b>Nobody has run that kind of test on feeling.</b> The question you care about is close to unexplored.</p>
+</section>
+
+<hr>
+
+<section>
+  <h2>Scoreboard</h2>
+  <p>Rough odds, my judgement, written down so we can see them move.</p>
+  <div class="scroll"><table>
+    <tr><th>Kind of answer</th><th>Start</th><th>Now</th><th>Why</th></tr>
+    <tr><td>Feeling is a side-effect that does nothing</td><td class="n">10%</td><td class="n">~2%</td><td>We talk about it; feelings line up with benefit</td></tr>
+    <tr><td>A new field or force</td><td class="n">10%</td><td class="n">~1%</td><td>No room in physics</td></tr>
+    <tr><td>Quantum effects in brain cells</td><td class="n">5%</td><td class="n">~3%</td><td>Simplest version failed; a few unrepeated hints</td></tr>
+    <tr><td>The brain's electric field itself</td><td class="n">5%</td><td class="n">~3%</td><td>MRI scanners don't disturb experience</td></tr>
+    <tr><td>A particular organisation of ordinary matter</td><td class="n">45%</td><td class="n win">~60%</td><td>The others lost ground</td></tr>
+    <tr><td>The "inside" of all matter</td><td class="n">25%</td><td class="n">~30%</td><td>Untouched by physics; faces the same "which organisation?" question</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li><b>Solid:</b> the physics limits (published measurements; the comparison with brain cells is our arithmetic) and the patient evidence.</li>
+    <li><b>Suggestive:</b> the simulations. They are small toy worlds. Experiments A and B repeat results others have found; C's link to why feeling seems mysterious is our own reading.</li>
+    <li><b>Not yet double-checked:</b> some research claims were taken from summaries because the original papers could not be opened. Each is marked in the <code>research/</code> files.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What comes next</h2>
+  <ol>
+    <li><b>What turns a good/bad signal into a feeling?</b> A thermostat has a signal and surely feels nothing. We will add candidate ingredients one at a time (a body with something to lose, a single scale, the wall between feeling and thinking, a model of oneself) and look for the point where behaviour changes in kind.</li>
+    <li><b>Teacher or engine?</b> "Injure" each part in simulation and see which matches the real patients.</li>
+    <li><b>Which animals?</b> Use the "novelty within a lifetime" prediction to guess where feeling should appear, and compare with experiments on crabs, bees and octopuses.</li>
+    <li><b>Is there any experience with no good-or-bad in it at all?</b></li>
+    <li><b>The one cheap physics test.</b> Design a proper repeat of the xenon experiment, the only result that, if real, would reopen the quantum door.</li>
+  </ol>
+</section>
+
+<footer>Everything behind this page is in the project folder: <code>LEDGER.md</code> (running conclusions), <code>scenarios/</code> (the reasoning), <code>sims/</code> (the code), <code>research/</code> (sources).</footer>
+
+</div>
