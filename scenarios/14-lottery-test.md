@@ -58,3 +58,26 @@ already in the New York files (Powerball, Mega Millions).
 - Chooser prediction: excess of about +0.26% again (same sign, similar size).
 - Null prediction: excess consistent with zero; combined with New York, z falls.
 - We will report the replication sample alone and the combined figure, whatever they are.
+
+## Part 3 — Replication result (Texas data)
+
+72,851 drawn balls (Lotto Texas, Cash Five, Texas Two Step; years in which a game's
+number range changed were dropped).
+
+| Sample | Balls | Excess of ≤ 31 over chance | z | Excess of ≤ 12 | z |
+|---|---|---|---|---|---|
+| New York (first) | 116,394 | +0.26% ± 0.13% | +1.97 | 0.00% ± 0.13% | 0.00 |
+| Texas (replication) | 72,851 | +0.04% ± 0.15% | +0.30 | +0.04% ± 0.17% | +0.24 |
+| Combined | 189,245 | +0.18% ± 0.10% | +1.79 | +0.02% ± 0.10% | +0.15 |
+
+**Reading (ours; to be reviewed).** The borderline New York result did not replicate.
+Combined, the excess is not statistically significant and the secondary measure is flat.
+The data are compatible with no tilt and rule out a tilt larger than about 0.4% toward
+popular numbers. A tilt of the size first seen (0.26%) is not excluded.
+
+**What this does and does not test.** It tests a chooser that acts on physical events
+outside the body and adds up across many people's wants. It does not test a chooser
+confined to events inside one brain. Whether every game used mechanical ball machines
+throughout has not been verified.
+
+Code: `sims/lottery.py`; data: `data/`.

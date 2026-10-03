@@ -81,3 +81,55 @@ if __name__ == "__main__":
         print(f"{k}: excess {p['excess']:+.5f} ± {p['se']:.5f} (z={p['z']:+.2f}) over {p['balls']} balls; "
               f"95% interval {p['excess']-1.96*p['se']:+.4f} to {p['excess']+1.96*p['se']:+.4f}")
     (ROOT / "sims" / "out" / "lottery.json").write_text(json.dumps(out, indent=1))
+
+
+# ---- Replication sample (pre-specified in scenarios/14, Part 1b): Texas Lottery ----
+# Calendar years in which a game's number range changed are dropped, so that
+# period boundaries do not need to be known to the day.
+TEXAS = [
+    ("tx_lottotexas.csv", "Lotto Texas", 6, [(1992, 1999, 50), (2001, 2002, 54), (2007, 2100, 54)]),
+    ("tx_lottotexas.csv", "Lotto Texas (5 of 44 era)", 5, [(2004, 2005, 44)]),
+    ("tx_cashfive.csv", "Cash Five", 5, [(1995, 2001, 39), (2003, 2017, 37), (2019, 2100, 35)]),
+    ("tx_texastwostep.csv", "Texas Two Step", 4, [(2001, 2100, 35)]),
+]
+
+
+def analyse_texas():
+    rows = []
+    for fname, label, k, periods in TEXAS:
+        for y0, y1, N in periods:
+            balls, draws = [], 0
+            with open(DATA / fname) as f:
+                for r in csv.reader(f):
+                    if y0 <= int(r[3]) <= y1:
+                        balls += [int(x) for x in r[4:4 + k]]
+                        draws += 1
+            n = len(balls)
+            row = {"game": label, "period": f"{y0}–{'now' if y1 == 2100 else y1}", "N": N,
+                   "draws": draws, "balls": n, "max_seen": max(balls)}
+            for cut in (31, 12):
+                p0 = cut / N
+                obs = sum(b <= cut for b in balls) / n
+                se = sqrt(p0 * (1 - p0) / n)
+                row[f"le{cut}"] = {"expected": p0, "observed": obs, "excess": obs - p0, "se": se,
+                                   "z": (obs - p0) / se}
+            rows.append(row)
+    return rows
+
+
+if __name__ == "__main__":
+    print("\nReplication: Texas")
+    tx = analyse_texas()
+    for r in tx:
+        a, b = r["le31"], r["le12"]
+        flag = "" if r["max_seen"] <= r["N"] else "  !! number above N"
+        print(f"{r['game']:26s} {r['period']:10s} N={r['N']:2d} draws={r['draws']:6d} max={r['max_seen']:2d}  "
+              f"<=31: {a['observed']:.4f} vs {a['expected']:.4f} (z={a['z']:+.2f})  "
+              f"<=12: {b['observed']:.4f} vs {b['expected']:.4f} (z={b['z']:+.2f}){flag}")
+    out["texas"] = tx
+    for name, sample in (("texas", tx), ("combined", rows + tx)):
+        for cut in (31, 12):
+            p = pooled(sample, cut)
+            out[f"{name}_le{cut}"] = p
+            print(f"{name} <= {cut}: excess {p['excess']:+.5f} ± {p['se']:.5f} (z={p['z']:+.2f}) over {p['balls']} balls")
+    (ROOT / "sims" / "out" / "lottery.json").write_text(json.dumps(out, indent=1))
