@@ -1,0 +1,39 @@
+# Scenario 18 — Is felt valence what motivates? The owner's hypothesis against named rivals
+
+Round 9. **Part 1 written and committed before evidence was gathered.** Scoring is by an
+independent adjudicator, who is also asked whether each account is stated fairly.
+
+## The accounts
+
+- **H, the owner's hypothesis (sharpened).** Feeling good or bad is what gives thought
+  something to work toward. Self-initiated, flexible, thought-guided action needs *felt*
+  valence. Automatic behaviour (reflexes, habits, urges triggered by cues) can run on
+  valuation that is not felt.
+- **W, wanting-drives (Berridge).** Motivated action is driven by a "wanting" signal that
+  need not be felt at all. Felt pleasure ("liking") is neither necessary nor sufficient
+  for motivation.
+- **K, knowing-is-enough.** Flexible action runs on what the person *knows* about value.
+  Feeling is a readout that accompanies valuation and is not needed for the action.
+
+## Part 1 — Predictions, written first
+
+| # | Situation | H predicts | W predicts | K predicts |
+|---|---|---|---|---|
+| 1 | **Rewards shown too briefly to be seen** | Can energise simple or automatic responses; cannot guide new, flexible choices | Can drive effortful, goal-directed work | No effect on planned action (no knowledge) |
+| 2 | **Learning from rewards that are never consciously seen** | Simple cue learning possible; no flexible use | Works | Fails |
+| 3 | **Working for a drug dose too small to feel** | If the work is habit-like, fine; if it is flexible and goal-directed, H is contradicted | Expected | Not expected |
+| 4 | **Pain felt as sensation without unpleasantness** (asymbolia; some drug states) | Self-protective action is lost though the person knows the danger | Protective action lost only if "wanting to avoid" is also lost | Protective action preserved (knowledge intact) |
+| 5 | **Born unable to feel pain, with normal intelligence** | Self-protection fails despite knowing | Same | Self-protection should be learnable from knowledge |
+| 6 | **Loss of pleasure versus loss of drive** (depression, Parkinson's, schizophrenia) | Go together: without felt pleasure there is no drive | Come apart: drive can be lost with pleasure intact, and the reverse | Neither should impair planned action if knowledge is intact |
+| 7 | **Wanting without liking** (addiction; brain stimulation that produces compulsive seeking without pleasure) | Should not produce flexible, planned seeking | Expected | Not expected |
+| 8 | **Frontal damage that leaves knowledge intact but blunts feeling** (ventromedial patients) | Poor real-life decisions despite knowing the right answer | No specific prediction | Decisions intact |
+| 9 | **Loss of self-activation** (awake, able, does nothing unprompted) | Feeling is flat too; when prompted from outside, performance is normal | Wanting is gone; pleasure reactions may remain | Knowledge intact, so action should be intact (contradicted if not) |
+
+**What would count.** H is in trouble if unfelt rewards are shown to guide genuinely
+flexible, goal-directed action (rows 1–3), or if drive and felt pleasure cleanly come
+apart with flexible action following drive (rows 6–7). W is in trouble if removing felt
+valence alone, with "wanting" circuitry intact, abolishes flexible action. K is in
+trouble if people who know but do not feel fail to act (rows 4, 5, 8, 9).
+
+Stated in advance: rows 5 and 9 are expected to count against K and not to separate H
+from W. The rows that separate H from W are 1–3, 6 and 7.
