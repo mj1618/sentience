@@ -1,6 +1,6 @@
 # Ledger
 
-Updated 2026-10-03, after round 4 and its red-team review.
+Updated 2026-10-03, after round 5 and its reviews.
 
 **Rule:** nothing is treated as reliable until an independent reviewer has tried to break
 it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower form) ·
@@ -32,7 +32,10 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | C21 | The xenon isotope result is far weaker than cited: 7-point effect, errors 4–7, on top of another anaesthetic; headline values were extrapolated. | new; abstract fetched | Not a test of any chooser or collapse theory. |
 | C22 | Insula, anterior cingulate and amygdala are not necessary for *reported* feeling (two patients, full text). | survived | Feeling altered in both; does not separate cortex-first from deep-first. |
 | C23 | No brain structure passes an even-handed "generates feeling" test (stimulation evokes it and lesion abolishes it). | new; from red team | Three candidates (PAG, pallidum, hypothalamus) are untested, not confirmed. |
-| C24 | The report barrier: evidence about feeling in anything that cannot report is behaviour, which all theories explain. | new; our synthesis, unreviewed | Motivates round 5. |
+| C25 | A patient without insula, cingulate, amygdala or medial frontal cortex rates pain 10/10 in real time. | survived (full text checked by adjudicator) | One patient. Removes limbic-cortex accounts only. |
+| C26 | Predictions-first, independently scored: existing evidence does not separate deep-first from cortex-makes-it-felt (≤1.5:1). The decisive observations have never been made. | adjudicated | |
+| C27 | Mass, heat output, stored electric energy and a loose event rate do not distinguish a brain from a liver, kettle or chip. | survived in this narrow form | Says nothing about coherent, band-limited or short-range sources. |
+| C24 | The report barrier: evidence about feeling in anything that cannot report is behaviour, which all theories explain. | our synthesis; consistent with round 5 outcome | |
 | C18 | The standard animal markers detect a valence *signal*, not whether it is felt. | weakened → restated | Present from worms up; cannot draw a line. |
 
 ## Scoreboard (reset after review)
@@ -85,14 +88,12 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 5. Split-brain: does a learned aversion taught to one hemisphere transfer to the other?
 6. Xenon isotopes done properly (gases interleaved within a day, blends of the two kinds, no second anaesthetic).
 
-## Conjecture queue (round 5): crossing the report barrier
+## Conjecture queue (round 6)
 
-Designs in *reporting humans* that could separate "cortex makes it felt" from "deep structures make it felt":
-1. Temporarily silence cortex and ask afterwards (one-hemisphere anaesthesia during pre-surgical testing; focal seizures; cortical spreading depression).
-2. Deep stimulation while cortex is suppressed, report on recovery; memory is the confound.
-3. Timing: with deep and surface electrodes together, which activity predicts the moment a feeling is reported?
-4. Disconnection: patients in whom deep structures are intact but cut off from frontal/parietal cortex.
-5. What would each theory predict for each, in advance? Write the predictions before looking.
+1. **Electromagnetic-field theories on their own terms** (predictions first, independent scoring). The brain's slow electric field is the one ordinary field where the brain dominates at its own location.
+2. **Illusionism stress test.** If feeling's mysteriousness comes from a limited self-model, the sense that feelings are indescribable should vary with self-monitoring ability (development, alexithymia, meditation).
+3. **Integrated-information stress test** against its failed and passed predictions.
+4. **A valence-aimed chooser**: is there any existing data with real pleasure or pain riding on a genuinely random event?
 
 ## Process rules (added round 2)
 
@@ -104,3 +105,4 @@ Designs in *reporting humans* that could separate "cortex makes it felt" from "d
 - Read the methods, not just the abstract, before computing from a paper's numbers.
 - Unfalsifiable variants are listed unscored.
 - Update pages: only reviewed claims in the short version.
+- Default method from round 5: write each account's predictions and commit them, gather evidence with a separate agent told not to score, have an independent adjudicator score. We do not write the verdict.

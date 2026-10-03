@@ -65,3 +65,17 @@ reviewed by a specialist.** Sensitivities are our arithmetic.
   logged. Pressure chamber if needed to reach full effect.
 - **Interpretation.** Not a test of any theory of mind. A clean positive would show a
   spin-sensitive step somewhere between gas and behaviour.
+
+## 6. Deep stimulation with a feeling question after every trial
+
+- **Question.** Is feeling generated in deep structures, or only made felt by cortex? (Scenario 11; proposed by the independent adjudicator.)
+- **Who.** Patients who already have electrodes in the midbrain "PAG" region (for chronic pain) or the rear hypothalamus (for cluster headache).
+- **Design.** Sham trials mixed in; current stepped up gradually; heart rate, skin response and breathing recorded; after every trial a fixed question about what was felt and how strongly, plus a continuous dial. Scalp recording alongside to time the onset.
+- **Interpretation.** Deep-first predicts a feeling whenever the body's response is driven, growing with current and locked to the deep activity. Cortex-makes-it-felt predicts trials with bodily response and no feeling, with feeling tracking frontal and parietal recruitment.
+
+## 7. Same stimulation, felt on some trials and not others
+
+- **Question.** As above.
+- **Who.** Epilepsy patients with electrodes in amygdala, insula or cingulate and also in frontal cortex.
+- **Design.** Repeat identical stimulation many times. In an existing study the same current produced a feeling in only 2 of 9 patients. Compare what spread where on felt and unfelt trials.
+- **Interpretation.** Cortex view: the difference is frontal recruitment. Deep-first: the difference is spread to hypothalamus and midbrain.

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Sentience Update 5</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 5 · 3 October 2026</div>
+  <h1>A fairer test, an honest "not yet", and what a sentience field could be made of</h1>
+  <p class="lede">This round we changed how we work, to stop overstating results. We wrote down what each rival idea predicts <em>before</em> looking at any evidence, had one assistant gather the evidence without judging it, and had a third, independent one do the scoring. The answer that came back is modest. It is also the first one we have not had to take back.</p>
+</header>
+
+<section class="short">
+  <h3>The short version (reviewed claims only)</h3>
+  <ul>
+    <li>Does feeling come from the deep, old parts of the brain, or does the outer cortex make it felt? Scored independently against predictions written in advance, the existing evidence <b>leans slightly</b> toward the deep parts, and not by enough to matter.</li>
+    <li>The reason is that the decisive observations have simply never been made. We now know which they are, and two of them could be done today with patients who already have electrodes implanted.</li>
+    <li>The strongest single piece of evidence: a man missing four brain regions usually tied to feeling rated the pain of ice water 10 out of 10, as it happened.</li>
+    <li>On your field question: our attempt to rule out "a field produced by something brains have a lot of" was mostly wrong and is withdrawn. One lead survived. The brain's own slow electric field is the one ordinary field where the brain is the dominant source at its own location.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="num">METHOD</div>
+  <h2>Why we changed how we work</h2>
+  <p>In four rounds we stated a conclusion more strongly than its evidence four times, and each time a reviewer caught it after the fact. Catching errors afterwards is not good enough, because an update had sometimes already gone out.</p>
+  <p>The new routine:</p>
+  <ol>
+    <li><b>Predictions first.</b> For each rival idea we write what it expects to find, and save that with a timestamp.</li>
+    <li><b>Neutral evidence.</b> A separate assistant collects the evidence and is told not to say who it favours.</li>
+    <li><b>Independent scoring.</b> A third assistant, with no stake, scores each prediction and also criticises whether we described each idea fairly.</li>
+    <li><b>We do not write the verdict.</b> We report the score.</li>
+  </ol>
+  <p>The scorer's first finding was about us: we had described one of the rival ideas unfairly, in a way that made it easier to knock down. That is the kind of thing we could not see ourselves.</p>
+</section>
+
+<section>
+  <div class="num">MAIN RESULT</div>
+  <h2>Deep brain or outer cortex: the score</h2>
+  <p>Update 4 ended at what we called the report barrier: we only know about feeling from people who can tell us, so evidence from anything that cannot speak does not settle much. This round looked only at situations where a person <em>can</em> report, during or afterwards, while part of the brain is missing, switched off or disconnected.</p>
+  <p>Three rival ideas:</p>
+  <ul>
+    <li><b>Deep-first.</b> Feeling is made by old, deep structures. The cortex is for thinking and talking about it.</li>
+    <li><b>Cortex makes it felt.</b> Deep structures produce bodily reactions that are not in themselves felt. A network in the outer frontal and side regions of the cortex turns them into felt experience.</li>
+    <li><b>Spread out.</b> Feeling depends on many regions with enough overlap that no single loss removes it.</li>
+  </ul>
+  <div class="scroll"><table>
+    <tr><th>Situation</th><th>What was found</th><th>Deep-first</th><th>Cortex makes it felt</th><th>Spread out</th></tr>
+    <tr><td>Large loss of the frontal lobes on both sides</td><td>Patients with partial, inner or lower frontal loss still report feelings. No patient with near-total loss of the <em>outer</em> frontal cortex has had feelings recorded</td><td>fits</td><td>not tested</td><td>fits</td></tr>
+    <tr><td>Dreaming, when the outer frontal cortex is largely off</td><td>Emotion in 74% of dream reports from that sleep stage</td><td>fits</td><td>mild strain, as we worded it</td><td>fits</td></tr>
+    <tr><td>A deep structure driven hard, person awake, no feeling reported</td><td>Stimulating the amygdala changed heart and skin responses in 9 patients; 7 felt nothing. For the two best deep candidates nobody has systematically asked</td><td>fits (it had exempted the amygdala in advance); main candidates untested</td><td>fits</td><td>mild strain</td></tr>
+    <tr><td>Timing: which comes first when a feeling starts?</td><td>No study has measured it</td><td>not tested</td><td>not tested</td><td>not tested</td></tr>
+    <tr><td>Operations that cut frontal connections</td><td>Two single cases; pain ratings unchanged or higher</td><td>fits</td><td>strain, as we worded it</td><td>fits</td></tr>
+    <tr><td>Magnetic pulses switching off part of the outer frontal cortex</td><td>Pain felt the same; the placebo effect was blocked</td><td>fits</td><td>mild strain</td><td>fits</td></tr>
+  </table></div>
+  <p><b>The scorer's judgement.</b> Nothing was confirmed and nothing was contradicted. Against the cortex view as we wrote it, the evidence leans to deep-first by perhaps 1.5 to 1. Against the cortex view as its own supporters state it, about 1.1 to 1, which is nothing. The "spread out" idea fitted everything, and the scorer rightly counted that against it: an idea that cannot fail is not being tested.</p>
+
+  <h3>The best single piece of evidence</h3>
+  <p>A patient known as Roger lost, on both sides, the insula, the anterior cingulate, the amygdala and the inner frontal cortex after a brain infection. Asked to hold his hand in ice water, he rated the pain 10 out of 10 on three of four trials while it was happening, with the grimacing, noises, pulling away and racing pulse to match. Because he rated it in the moment, the usual worry (did he feel nothing and misremember?) does not apply. The scorer checked this against the full paper.</p>
+  <p>It is one patient. It shows those four regions are not needed for pain to hurt. It says nothing about the outer frontal cortex, which he kept.</p>
+
+  <h3>The experiments that would settle it</h3>
+  <p>Both use patients who already have electrodes for medical reasons.</p>
+  <ol>
+    <li><b>Ask after every pulse.</b> Some chronic-pain and cluster-headache patients have electrodes in the two deep regions that are the best candidates. Step the current up, mix in fake trials, record the body's reactions, and ask what was felt after each one. Deep-first says: whenever the body reacts, a feeling is reported. Cortex-makes-it-felt says: there will be trials where the body reacts and nothing is felt.</li>
+    <li><b>Same pulse, felt or not.</b> In epilepsy patients with electrodes both deep and in the frontal cortex, give the identical pulse many times. On the trials where a feeling is reported, what was different: activity reaching the frontal cortex, or activity reaching the deep structures?</li>
+  </ol>
+</section>
+
+<section>
+  <div class="num">YOUR FIELD QUESTION</div>
+  <h2>If feeling is a field, what is it made from?</h2>
+  <p>Earlier rounds asked how a field could act on a brain. This round asked what would produce it. In physics a field comes from an amount of something: mass produces gravity, electric charge produces the electric field. So we asked what brains have a lot of, and who else has it.</p>
+  <div class="scroll"><table>
+    <tr><th>Compared with one brain</th><th>Mass</th><th>Heat given off</th><th>Energy stored in electric fields</th></tr>
+    <tr><td>Your liver</td><td class="n">about the same</td><td class="n">about the same</td><td class="n">somewhat less</td></tr>
+    <tr><td>A boiling kettle</td><td class="n">about the same</td><td class="n">100 times more</td><td class="n">none</td></tr>
+    <tr><td>A camera flash unit</td><td class="n">far less</td><td class="n">far less</td><td class="n">about 10 times more</td></tr>
+    <tr><td>A data centre</td><td class="n">700,000 times</td><td class="n">1.5 million times</td><td class="n">thousands of times</td></tr>
+  </table></div>
+  <p>We concluded from this that an ordinary field "is eliminated" and that only a special, collective kind of field (like the magnetism that switches on when iron cools) was left. The physics reviewer took most of that apart.</p>
+  <ul>
+    <li><b>We tried four quantities and claimed all.</b> One of the four, "signalling events", was defined so that only brains could score. Many other possibilities were never tried: sources that depend on rhythm, on things acting in step, on direction, or that only reach a short distance.</li>
+    <li><b>Our claim that a pattern cannot produce a field was simply wrong physics.</b> Magnetism is a pattern and produces a field.</li>
+    <li><b>The "collective state that switches on" idea is, for now, a metaphor.</b> The signs we listed for it mixed two incompatible kinds of switching, one of them is contradicted by brain measurements, and all of them are about whether a person responds, not whether they feel. It predicts nothing a rival would not also predict.</li>
+  </ul>
+  <p><b>What stands:</b> mass, heat output and stored electric energy do not single out brains. A field made from any of those would come mainly from livers, kettles and power stations.</p>
+  <p><b>What came out of it:</b> the reviewer pointed to the one case where the opposite is true. For slow electric fields inside living tissue, your brain is the dominant source at its own location, at least ten thousand times stronger there than your heartbeat or the mains wiring in the walls. So if feeling is an ordinary field at all, the brain's own electric field is the natural candidate. There are developed theories that say exactly this. In Update 2 we withdrew our objections to them as unfair and never replaced them with a proper test. That is next.</p>
+</section>
+
+<hr>
+
+<section>
+  <h2>Scoreboard</h2>
+  <p>No change this round except one point moved toward the electric-field idea pending its test. The scorer advised against moving anything on the deep-versus-cortex question.</p>
+  <div class="scroll"><table>
+    <tr><th>Kind of answer</th><th>Update 4</th><th>Now</th></tr>
+    <tr><td>Feeling is what certain information-processing is like</td><td class="n">30%</td><td class="n">30%</td></tr>
+    <tr><td>Feeling depends on the specific physical stuff or structure of brains (includes the electric-field idea)</td><td class="n">14%</td><td class="n">15%</td></tr>
+    <tr><td>Feeling is the "inside" of all matter</td><td class="n">15%</td><td class="n">15%</td></tr>
+    <tr><td>Feeling is a convincing illusion</td><td class="n">8%</td><td class="n">8%</td></tr>
+    <tr><td>Feeling does no work but is tied to brain states by law</td><td class="n">7%</td><td class="n">7%</td></tr>
+    <tr><td>Quantum: a chooser, or collapse inside nerve cells</td><td class="n">4%</td><td class="n">4%</td></tr>
+    <tr><td>Mind and matter separate, or mind basic</td><td class="n">7%</td><td class="n">7%</td></tr>
+    <tr><td>A new pushing field</td><td class="n">under 1%</td><td class="n">under 1%</td></tr>
+    <tr><td>Framed wrongly, or not yet thought of</td><td class="n">14%</td><td class="n">13%</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li><b>Independently scored:</b> the deep-versus-cortex table and its "slight lean" verdict. The scorer checked the two most important studies against the full papers.</li>
+    <li><b>Reviewed and cut down:</b> the field analysis. Only the narrow claim above survives.</li>
+    <li><b>Limits:</b> several older case reports in the evidence were recalled from memory, not re-read, and the scorer discounted them. Broad web searching is still unavailable in this session; reading through a medical-literature database continues to work.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next round</h2>
+  <ol>
+    <li><b>The brain's electric field as the feeling itself.</b> Predictions first, independent scoring. What does the theory say should happen when the field is disturbed without changing which cells fire, or when cells fire the same but the field differs?</li>
+    <li><b>The "illusion" idea.</b> If feelings only <em>seem</em> mysterious because the brain's picture of itself is limited, the sense that feelings cannot be put into words should vary with how well people can monitor themselves.</li>
+    <li><b>The "integrated information" theory</b> against the predictions it has passed and failed.</li>
+    <li><b>Any existing data</b> where real pleasure or pain depended on a truly random event.</li>
+  </ol>
+</section>
+
+<footer>Predictions, evidence and scoring: <code>scenarios/11</code>, <code>research/13</code>, <code>reviews/round5-adjudication.md</code>. Proposed experiments: <code>experiments/README.md</code>.</footer>
+
+</div>
+
+<p style="text-align:center;padding:0 1rem 3rem"><a href="./">All updates</a></p>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Scenario 12 — If sentience were a field, what would be its source?
 
-Code: `sims/field_sources.py`. Our own analysis. Status: **drafted; not yet reviewed.**
+Code: `sims/field_sources.py`. Our own analysis. Status: **reviewed; read the red-team outcome at the end first.**
 
 The owner's original question included: *if it is a field, what kind could it be, and
 can any kinds be eliminated?* Rounds 1–3 dealt with how a field could act on a brain.
@@ -94,3 +94,7 @@ then mains electricity dominates?). Sources defined by correlation rather than a
 Whether "pattern cannot source a local field" is actually true (order parameters are
 local). Whether the phase-transition signatures are specific to consciousness or are
 found in any drug-receptor system.
+
+---
+
+> **Red-team outcome (round 5).** All three verdicts above are withdrawn. What stands: four crude quantities do not single out brains. See `reviews/round5-response.md`.

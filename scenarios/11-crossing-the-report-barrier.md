@@ -37,3 +37,20 @@ decisive in row 3 or 4.
 
 Known weakness in advance: memory. "Did not feel it" and "does not remember feeling it"
 look the same in a later report. Rows 2 and 3 are most exposed.
+
+## Part 2 — Independent scoring (from `reviews/round5-adjudication.md`)
+
+| Row | D | C | R |
+|---|---|---|---|
+| 1 Frontal loss | consistent | no test of its core claim | consistent |
+| 2 Dreaming | consistent | mildly strained *as we worded it* | consistent |
+| 3 Deep activity, no feeling | consistent; PAG and hypothalamus untested | consistent | mildly strained |
+| 4 Timing | no test | no test | no test |
+| 5 Disconnection | consistent | strained *as we worded it* | consistent |
+| 6 One-sided cortical anaesthesia | no test | no test | no test |
+
+## Part 3 — Outcome
+
+Slight lean to D (about 1.5:1 at most) against C as we wrote it; essentially none
+against C as its proponents state it. The decisive rows are empty. Two experiments that
+would fill them are in `experiments/README.md` (items 6 and 7).
