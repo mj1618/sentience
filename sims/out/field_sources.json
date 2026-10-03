@@ -1,0 +1,101 @@
+[
+ {
+  "system": "own brain",
+  "mass vs brain": 1.0,
+  "mass at head vs brain": 1.0,
+  "dissipation (W) vs brain": 1.0,
+  "dissipation (W) at head vs brain": 1.0,
+  "E-field energy (J) vs brain": 1.0,
+  "E-field energy (J) at head vs brain": 1.0,
+  "switching events (/s) vs brain": 1.0,
+  "switching events (/s) at head vs brain": 1.0
+ },
+ {
+  "system": "own liver",
+  "mass vs brain": 1.0714285714285714,
+  "mass at head vs brain": 0.13392857142857145,
+  "dissipation (W) vs brain": 1.25,
+  "dissipation (W) at head vs brain": 0.15625,
+  "E-field energy (J) vs brain": 0.8333333333333334,
+  "E-field energy (J) at head vs brain": 0.10416666666666669,
+  "switching events (/s) vs brain": 0.0,
+  "switching events (/s) at head vs brain": 0.0
+ },
+ {
+  "system": "laptop CPU",
+  "mass vs brain": 0.03571428571428572,
+  "mass at head vs brain": 0.003571428571428572,
+  "dissipation (W) vs brain": 1.5,
+  "dissipation (W) at head vs brain": 0.15,
+  "E-field energy (J) vs brain": 0.0016666666666666668,
+  "E-field energy (J) at head vs brain": 0.0001666666666666667,
+  "switching events (/s) vs brain": 1000.0,
+  "switching events (/s) at head vs brain": 100.0
+ },
+ {
+  "system": "phone battery/caps",
+  "mass vs brain": 0.03571428571428572,
+  "mass at head vs brain": 0.005952380952380954,
+  "dissipation (W) vs brain": 0.1,
+  "dissipation (W) at head vs brain": 0.016666666666666666,
+  "E-field energy (J) vs brain": 16.666666666666668,
+  "E-field energy (J) at head vs brain": 2.7777777777777786,
+  "switching events (/s) vs brain": 10.0,
+  "switching events (/s) at head vs brain": 1.6666666666666667
+ },
+ {
+  "system": "kettle (boiling)",
+  "mass vs brain": 1.0714285714285714,
+  "mass at head vs brain": 0.026785714285714288,
+  "dissipation (W) vs brain": 100.0,
+  "dissipation (W) at head vs brain": 2.5,
+  "E-field energy (J) vs brain": 0.0,
+  "E-field energy (J) at head vs brain": 0.0,
+  "switching events (/s) vs brain": 0.0,
+  "switching events (/s) at head vs brain": 0.0
+ },
+ {
+  "system": "car engine",
+  "mass vs brain": 107.14285714285715,
+  "mass at head vs brain": 0.5357142857142858,
+  "dissipation (W) vs brain": 2500.0,
+  "dissipation (W) at head vs brain": 12.5,
+  "E-field energy (J) vs brain": 0.0,
+  "E-field energy (J) at head vs brain": 0.0,
+  "switching events (/s) vs brain": 0.0,
+  "switching events (/s) at head vs brain": 0.0
+ },
+ {
+  "system": "data centre",
+  "mass vs brain": 714285.7142857143,
+  "mass at head vs brain": 3.571428571428572,
+  "dissipation (W) vs brain": 1500000.0,
+  "dissipation (W) at head vs brain": 7.5,
+  "E-field energy (J) vs brain": 16666.666666666668,
+  "E-field energy (J) at head vs brain": 0.08333333333333334,
+  "switching events (/s) vs brain": 99999999.99999999,
+  "switching events (/s) at head vs brain": 500.0
+ },
+ {
+  "system": "Earth",
+  "mass vs brain": 4.2642857142857146e+24,
+  "mass at head vs brain": 3.3314732142857148e+16,
+  "dissipation (W) vs brain": 2350000000000.0,
+  "dissipation (W) at head vs brain": 18359.375,
+  "E-field energy (J) vs brain": 0.0,
+  "E-field energy (J) at head vs brain": 0.0,
+  "switching events (/s) vs brain": 0.0,
+  "switching events (/s) at head vs brain": 0.0
+ },
+ {
+  "system": "Sun",
+  "mass vs brain": 1.4214285714285715e+30,
+  "mass at head vs brain": 4.7380952380952384e+17,
+  "dissipation (W) vs brain": 1.9e+25,
+  "dissipation (W) at head vs brain": 6333333333333.334,
+  "E-field energy (J) vs brain": 0.0,
+  "E-field energy (J) at head vs brain": 0.0,
+  "switching events (/s) vs brain": 0.0,
+  "switching events (/s) at head vs brain": 0.0
+ }
+]
