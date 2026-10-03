@@ -81,3 +81,25 @@ confined to events inside one brain. Whether every game used mechanical ball mac
 throughout has not been verified.
 
 Code: `sims/lottery.py`; data: `data/`.
+
+## Part 4 — Review, and a third sample pre-specified before analysis
+
+Reviewer (`reviews/round6-lottery-redteam.md`) recomputed with the exact variance:
+New York +0.26% (z = +2.06), Texas +0.04% (z = +0.32), combined +0.18% ± 0.09%
+(z = +1.87). Corrections accepted: "did not replicate" is too strong, since Texas was
+too small to confirm or exclude the New York figure; the excess is uneven across games;
+and it has the wrong shape for a wanting-driven tilt (nothing for 1–12, nothing for 7,
+no rise on higher-sales days). The reviewer's own after-the-fact split found the excess
+concentrated in games with 44 or more numbers (+0.47% ± 0.18%, z = +2.71) and absent in
+smaller games. That split was not planned, so it is a lead, not evidence.
+
+**Third sample, committed before any statistic was computed:** the complete archive of
+the German national lottery "6 aus 49" (49 numbers, six main balls per draw, from 1955;
+file `data/de_lotto.json`, of which we have looked only at the first few rows to learn
+the format). Same statistic: share of main balls ≤ 31 against 31/49, exact
+(without-replacement) variance. Secondary: ≤ 12.
+
+- If the large-drum lead is real: excess near +0.47%.
+- If it was a fluke of slicing: excess consistent with zero.
+- Power is limited (we expect a standard error near 0.25%), so a result between the two
+  will be reported as undecided.
