@@ -105,3 +105,26 @@ reporting brain and cannot by themselves show whether anything is felt. Sensitiv
 - **Question.** Do ordinary people find feeling puzzling in the philosophers' sense, and does that change with introspective skill or with philosophical education? (Scenario 15.)
 - **Design.** A representative survey with careful wording, repeated in students before and after a philosophy-of-mind course and in long-term meditators.
 - **Interpretation.** If the puzzle is rare without training, part of the "hard problem" is a taught framing. If it is common and stable, it is a fact about minds that any theory must explain.
+
+## 11. Two experiments that could refute the owner's hypothesis
+
+Proposed by the round 9 adjudicator. The hypothesis: felt valence is necessary for
+flexible, self-initiated action.
+
+**(a) A dose too small to feel, with a strict test of flexible action.** Double-blind,
+pre-registered, 30 or more people. Two new options, one paired with a low active dose
+(an opioid in experienced users, or caffeine or nicotine), one with placebo. Require
+that people cannot tell drug from placebo and that their mood ratings do not differ.
+Then test whether they choose the drug option by a response that was never itself
+rewarded, and whether they work less as the effort price rises. A reliable preference
+that meets those tests refutes the hypothesis.
+
+**(b) Unseen reward, visible effort, and the option to decline.** Reward size hidden by
+masking, effort level shown openly; accept or decline each trial; awareness and mood
+checked trial by trial. If acceptance depends on reward size weighed against effort
+while awareness is at chance, the hypothesis is refuted (and so is the rival that says
+an accessible value representation is needed).
+
+**What neither does.** Neither separates "the feeling does the motivating" from "an
+accessible representation of value does it". No design we know of removes the feeling
+while leaving the accessible value in place.

@@ -82,3 +82,30 @@ Classification is done blind to the result. **H fails** on one replicated findin
 
 **What counts, amended.** H fails as stated in section 3. W fails if cue-triggered pursuit never occurs without 'liking', or if 'wanting' and 'liking' never dissociate. K\* fails if value representations are shown intact and accessible while flexible action is lost with feeling alone removed. Rows 4, 5, 8 and 9 are not to be scored against K\*, nor as support for H over K\*.
 
+
+## Part 2 — Independent scoring (from `reviews/round9-motivator-adjudication.md`)
+
+| Row | H | W | K\* |
+|---|---|---|---|
+| 1 Unseen rewards | consistent | consistent | consistent |
+| 2 Learning from unseen rewards | consistent on what it forbids; strained on what it allows | same | same |
+| 3 Unfelt drug dose | no test | consistent (weak) | consistent (weak) |
+| 4 Pain without unpleasantness | consistent (weak) | no test | consistent (weak) |
+| 5 Born without pain | consistent, mildly strained | no test | consistent |
+| 6 Pleasure vs drive | no test | consistent (moderate) | consistent |
+| 7 Wanting without liking | consistent | consistent (weak) | consistent |
+| 8 Ventromedial damage | consistent (contested) | no test | consistent |
+| 9 Loss of self-activation | consistent | consistent | consistent |
+
+Nothing reached "confirmed". H vs W: none to slight, toward W (about 1.2 : 1, inside the
+noise). H vs K\*: underdetermined (1 : 1).
+
+## Part 3 — Summary sentences permitted by the adjudicator (verbatim)
+
+1. We tested the idea that feeling good or bad is needed for flexible, self-initiated action against two established rival accounts, using rules fixed before scoring.
+2. We found no replicated study in which people acted flexibly toward a reward they demonstrably could not perceive or feel, so the idea was not refuted.
+3. It was also not confirmed: no study we found removed feeling and then applied a strict test of flexible action, so the idea was never put at real risk.
+4. The best-known experiments on unseen rewards show only that people squeeze harder or respond faster, and the claim that people can learn from unseen rewards did not hold up in a registered replication.
+5. The evidence does not separate our idea from the view that flexible action needs an accessible representation of value, whether or not it is felt; most of the experiments hid the cue rather than removing the feeling.
+6. Against Berridge's account the evidence moved slightly, if at all, in his favour, and our idea is close to a position Anthony Dickinson has held for decades.
+7. One small 1991 study, in which five people worked for a morphine dose they could not distinguish from placebo, remains an untested possible counterexample.

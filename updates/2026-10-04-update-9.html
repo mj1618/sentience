@@ -1,0 +1,148 @@
+<title>Sentience Update 9</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 9 · 4 October 2026</div>
+  <h1>Your hypothesis, tested directly: not refuted, not confirmed, not yet at risk</h1>
+  <p class="lede">After the audit in Update 8 said the project had drifted, this round went back to your working idea: that feeling is what motivates, and thought works out how to satisfy it. We set it against two established rival accounts, had the wording checked for fairness before any scoring, and had the evidence scored independently.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">These are the independent scorer's own sentences, unaltered.</p>
+  <ul>
+    <li>We tested the idea that feeling good or bad is needed for flexible, self-initiated action against two established rival accounts, using rules fixed before scoring.</li>
+    <li>We found no replicated study in which people acted flexibly toward a reward they demonstrably could not perceive or feel, so the idea was not refuted.</li>
+    <li>It was also not confirmed: no study we found removed feeling and then applied a strict test of flexible action, so the idea was never put at real risk.</li>
+    <li>The best-known experiments on unseen rewards show only that people squeeze harder or respond faster, and the claim that people can learn from unseen rewards did not hold up in a registered replication.</li>
+    <li>The evidence does not separate our idea from the view that flexible action needs an accessible representation of value, whether or not it is felt; most of the experiments hid the cue rather than removing the feeling.</li>
+    <li>Against Berridge's account the evidence moved slightly, if at all, in his favour, and our idea is close to a position Anthony Dickinson has held for decades.</li>
+    <li>One small 1991 study, in which five people worked for a morphine dose they could not distinguish from placebo, remains an untested possible counterexample.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>The three accounts</h2>
+  <p>We wrote these down first. An independent check, made without sight of the evidence, then found that we had described both rivals unfairly and that your idea, as we had worded it, could not fail. The versions below are the corrected ones that were scored.</p>
+  <ul>
+    <li><b>Your hypothesis.</b> Feeling good or bad is necessary for flexible, self-initiated action. Automatic behaviour (reflexes, habits, urges set off by a cue) can run on valuation that is not felt.</li>
+    <li><b>Berridge's account.</b> The brain has a "wanting" signal that makes cues attractive and triggers pursuit. It can operate without being felt, though it is usually felt as craving. It is separate from the reactions that underlie pleasure. He does not claim that unfelt wanting drives planned action.</li>
+    <li><b>The value-representation account.</b> Planned action runs on learned representations of how valuable things are. What matters is that the planning system can access them, not whether they are felt.</li>
+  </ul>
+  <p>To stop "flexible" being stretched after the fact, a test was fixed in advance. Behaviour counts as flexible only if it shows at least one of: it changes when the reward is made worthless, without further feedback; it changes when the action stops producing the reward; a correct choice is made the first time between new options; or effort is weighed against reward, including choosing to decline. And "unfelt" means the person can neither detect the reward above chance nor shows any change in reported mood.</p>
+</section>
+
+<section>
+  <h2>What the evidence showed, situation by situation</h2>
+  <div class="scroll"><table>
+    <tr><th>Situation</th><th>What was found</th><th>Your hypothesis</th></tr>
+    <tr><td>Rewards shown too briefly to be seen</td><td>People squeeze a handgrip harder for a larger unseen coin. It is one instructed response with no option to decline, which counts as automatic under the fixed test</td><td>fits</td></tr>
+    <tr><td>Learning from rewards never consciously seen</td><td>An early positive result did not survive when awareness was checked on every trial, nor a registered replication</td><td>fits what it forbids; strains what it allows</td></tr>
+    <tr><td>Working for a drug dose too small to feel</td><td>Five people pressed a lever 3,000 times per injection for a morphine dose they could not tell from placebo. Nobody tested whether that work was flexible</td><td>no test</td></tr>
+    <tr><td>Pain felt as sensation without unpleasantness</td><td>Six patients: protective reactions and learning to avoid were lost. Reflexes were lost as well</td><td>fits, weakly</td></tr>
+    <tr><td>Born unable to feel pain</td><td>Six people of normal intelligence, all injured, who knew what should hurt. Injuries fall after about age seven as rules are learned</td><td>fits, mildly strained</td></tr>
+    <tr><td>Loss of pleasure versus loss of drive</td><td>They come apart: in-the-moment pleasure can be intact while drive is low. But drive tracked <em>anticipated</em> pleasure, which is also felt</td><td>no test</td></tr>
+    <tr><td>Wanting without liking</td><td>In the human studies the "wanting" was something people reported feeling</td><td>fits</td></tr>
+    <tr><td>Frontal damage: knowing what to do without the feeling</td><td>Poor real-life choices with intact intelligence. The interpretation is disputed</td><td>fits, contested</td></tr>
+    <tr><td>Loss of self-activation</td><td>Thirteen patients exerted normal effort when told to, and their bodies still reacted to money, but they did not scale their effort to the money on their own</td><td>fits</td></tr>
+  </table></div>
+  <p>Every "fits" in that column is also a "fits" for at least one rival. Nothing reached "confirmed" for any account.</p>
+</section>
+
+<section>
+  <h2>What can honestly be said about your idea</h2>
+  <p>The scorer was asked to set this out under four headings.</p>
+  <ul>
+    <li><b>Supported, but only negatively.</b> There is no replicated case of flexible, goal-directed human action driven by a reward the person demonstrably neither perceived nor felt. And where feeling is lost or blunted, self-initiated action is impaired. That second point is weak evidence, and the value-representation account predicts it equally.</li>
+    <li><b>Contradicted.</b> Nothing contradicts the core claim. The second half of the idea, that automatic behaviour can run on unfelt valuation, is under some strain: with strict checks, unseen rewards produced no learning at all.</li>
+    <li><b>Untested.</b> The claim that matters most: that it is the <em>feeling</em> that does the motivating, as distinct from the accessible representation of value that comes along with it. No study pulls those two apart.</li>
+    <li><b>How new it is.</b> Not very. Anthony Dickinson's "hedonic interface" theory already holds that goal-directed action depends on the consciously experienced value of the outcome. Your idea is close to a restatement of it. What yours adds is the word "necessary", and the identification of that value signal with sentience itself. Neither addition has been tested.</li>
+  </ul>
+  <p>The scorer noted why so little here was decisive. The experiments on "unseen rewards" hide the <em>cue</em>. They do not remove the <em>feeling</em>; mood was not even measured. So they test whether a person needs to see the reward, which is a different question from whether they need to feel anything.</p>
+</section>
+
+<section>
+  <h2>Two experiments that could refute it</h2>
+  <p>Proposed by the scorer. Both are practical now.</p>
+  <ol>
+    <li><b>A dose too small to feel, with a strict test.</b> Give people two new options, one secretly paired with a low dose of a drug (for example caffeine or nicotine) and one with a dummy. Confirm they cannot tell which is which and that their mood does not differ. Then see whether they nonetheless choose the drug option by a route that was never itself rewarded, and whether they work less for it as the effort required goes up. If they do, your hypothesis is refuted.</li>
+    <li><b>Hidden reward, visible effort, freedom to say no.</b> Hide the size of the reward, show the effort openly, and let people accept or decline each time. If their decisions weigh the unseen reward against the effort, the hypothesis is refuted.</li>
+  </ol>
+  <p>Neither experiment would separate "the feeling does it" from "an accessible sense of value does it". The scorer knows of no design that removes the feeling while leaving the accessible value in place. Finding one is the next round's task.</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>The scoring was independent, and the scorer read three of the key papers in full. Several other studies were read only as summaries, including the 1991 morphine study, which is behind a paywall.</li>
+    <li>The fairness check changed the accounts before scoring. The original and corrected wording are both in the project record.</li>
+    <li>This page was checked against the scorer's report before publication.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next round</h2>
+  <ol>
+    <li><b>Can feeling be removed while the sense of value stays available?</b> Look for any condition or drug that does this, with flexible choice measured. This is the dissociation your hypothesis needs in order to be tested at all.</li>
+    <li><b>Dickinson's theory in full</b>: what it predicts beyond your idea, and what its critics say.</li>
+    <li><b>The Update 1 patient evidence</b>, which has still not been reviewed against the original papers.</li>
+  </ol>
+</section>
+
+<footer>Predictions and amendment: <code>scenarios/18</code>. Fairness check: <code>reviews/round9-fairness-precheck.md</code>. Scoring: <code>reviews/round9-motivator-adjudication.md</code>.</footer>
+
+</div>
