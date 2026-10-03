@@ -62,3 +62,29 @@ candidate that has not yet been eliminated.
 **Limits stated in advance.** Reports after waking depend on memory. All of this
 concerns experience in general (mostly seeing and dreaming); none of the markers has
 been tested specifically against *feeling good or bad*.
+
+## Part 2 — Independent scoring (from `reviews/round7-markers-adjudication.md`)
+
+| Marker | Verdict | Basis |
+|---|---|---|
+| A. Overall activity | insufficient data (leaning struck off) | only compared across sleep stages, not against reports |
+| B. Gamma rhythm | insufficient (leaning struck off) | the key anaesthesia study took no reports |
+| C. Field amplitude | **struck off** | largest in dreamless sleep |
+| D. Late frontal wave (P3b) | **struck off** | absent in awake people who experience but are not asked to respond |
+| E. Rear "hot zone" | survives so far | measured against report in 4 of 9 cases, one lab |
+| F. Pulse-echo complexity (PCI) | survives so far | 5 of 9 cases, one research group |
+| G. Deep arousal structures | insufficient (leaning struck off) | |
+| H. Front–back communication | insufficient (leaning struck off) | the ketamine study took no reports |
+
+Our advance predictions: right on C and D; wrong on parts of A and G; and two entries in
+our own "later report" column were wrong (81% of sleepwalkers report experience when
+asked; dreaming under propofol is common).
+
+## Part 3 — Outcome
+
+Two markers eliminated, two survive on partial coverage. **No marker has been tested
+against feeling good or bad.** The single relevant observation: under general
+anaesthesia with one forearm left unparalysed, 5 of 12 patients who could respond
+signalled that they were in pain, and none remembered it afterwards (Sanders 2017). So
+"nothing reported later" can mean "nothing remembered", and felt pain can be signalled
+in real time in a state normally counted as unconscious.

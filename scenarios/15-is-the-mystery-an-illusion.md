@@ -33,3 +33,23 @@ changes to the self-model. Q is in trouble if rows 1 and 4 show the sense of ine
 quality can be dialled up and down with the self-model while everything else stays put.
 If ordinary people do not have the puzzle intuition (row 6 fails), both accounts lose
 their starting point and the "mystery" may be a product of philosophical training.
+
+## Part 2 — Independent scoring (from `reviews/round7-illusionism-adjudication.md`)
+
+| Row | I | Q |
+|---|---|---|
+| 1 Monitoring skill | no test | no test |
+| 2 Errors about own experience | consistent (weakly) | consistent |
+| 3 Culture, children | no test | no test |
+| 4 Altered self-model | consistent (partly) | consistent (could not fail) |
+| 5 Machines | no test | no test |
+| 6 Do ordinary people have the intuition? | shared premise weakly strained | same |
+
+## Part 3 — Outcome
+
+No shift between the two accounts. No row could have refuted either. The adjudicator's
+main finding concerns the premise both share: it is **not established that ordinary
+people find feeling puzzling in the way philosophers do**; the thin direct evidence leans
+against "widespread". Nobody has measured whether the sense of mystery changes with
+introspective skill or with philosophical training. The question "illusion or real" is
+not directly testable; only the *source of the sense of mystery* is.

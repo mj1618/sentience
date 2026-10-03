@@ -1,6 +1,6 @@
 # Ledger
 
-Updated 2026-10-03, after round 6 and its reviews.
+Updated 2026-10-03, after round 7 and its reviews.
 
 **Rule:** nothing is treated as reliable until an independent reviewer has tried to break
 it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower form) ·
@@ -38,6 +38,11 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | C28 | The brain's own electric fields influence the timing of firing (awake monkeys) and can carry activity across a cut (one lab, in vitro). | adjudicated: moderate for influence | Says nothing on whether the field is the experience. |
 | C29 | "The field is the experience" has not been tested by any existing data; the discriminating situations are empty. | adjudicated | Identity claims predict the same reports as their rivals. |
 | C30 | Lottery balls: numbers most often bet on (≤ 31) exceed chance by +0.15% ± 0.09% over ~220,000 balls in three samples; first sample borderline, the next two flat; wrong shape for a wanting-driven tilt. | NY and Texas reviewed; German sample unreviewed | Suggestive at most, weakening. Does not test a chooser inside the brain. |
+| C31 | Two proposed markers of experience are eliminated: the size of the brain's electrical waves, and the late frontal wave seen only when people must respond. | adjudicated | |
+| C32 | Two markers survive on partial coverage: rear-cortex activity and pulse-echo complexity. | adjudicated | 4–5 of 9 cases; one group each. |
+| C33 | No marker of experience has been tested against feeling (valence). | adjudicated | The project's central question is experimentally untouched. |
+| C34 | Felt pain can be signalled in real time under general anaesthesia and not remembered (5 of 12 responders). | adjudicated (one study) | "Not reported later" ≠ "not felt". |
+| C35 | Illusion vs real inner quality: no evidence separates them; not established that ordinary people share the puzzle. | adjudicated | |
 | C24 | The report barrier: evidence about feeling in anything that cannot report is behaviour, which all theories explain. | our synthesis; consistent with round 5 outcome | |
 | C18 | The standard animal markers detect a valence *signal*, not whether it is felt. | weakened → restated | Present from worms up; cannot draw a line. |
 
@@ -75,6 +80,7 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 | Rate, not level | 4 | untested (confounded data) |
 | The brain's electric field is the experience | 6 | untested by existing data; field influence on neurons moderately supported |
 | Wanting tilts external chance (lottery) | 6 | not shown; small tilt not excluded |
+| The mystery is an illusion of a limited self-model | 7 | not testable against its rival; premise unverified |
 | Ownership gate | 4 | weakened: modulates, no evidence of a gate |
 | Slow chemistry | 4 | weakened on opioids; needs a stated speed limit |
 | No ready response | 4 | weakened: fits dread, not the feeling itself |
@@ -93,11 +99,11 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 5. Split-brain: does a learned aversion taught to one hemisphere transfer to the other?
 6. Xenon isotopes done properly (gases interleaved within a day, blends of the two kinds, no second anaesthetic).
 
-## Conjecture queue (round 7)
+## Conjecture queue (round 8)
 
-1. **Illusionism** (predictions committed; evidence being gathered).
+1. **Valence under anaesthesia and sleep**: gather everything known about real-time signals of pain or pleasure in states without later report (isolated forearm, dream emotion, sedation). Predictions first.
 2. **Integrated-information theory** against its passed and failed predictions.
-3. **What tracks report most tightly?** Since identity claims share predictions, compare candidates by how closely each follows what people report, across anaesthesia, sleep and injury.
+3. **Red-team the whole ledger**: one reviewer reads every "survived" row and tries again.
 
 ## Process rules (added round 2)
 

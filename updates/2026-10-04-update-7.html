@@ -1,0 +1,173 @@
+<title>Sentience Update 7</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 7 · 4 October 2026</div>
+  <h1>Two markers struck off, and the gap at the centre of the whole field</h1>
+  <p class="lede">This round used elimination. Scientists have proposed various brain measurements as signs that someone is having an experience. We checked each against situations where people later say what they experienced, and had the results scored independently. Two were eliminated. The more important finding is what nobody has measured.</p>
+</header>
+
+<section class="short">
+  <h3>The short version (reviewed claims only)</h3>
+  <ul>
+    <li><b>Eliminated:</b> the size of the brain's electrical waves, and a late wave over the front of the brain. Neither follows what people report experiencing.</li>
+    <li><b>Still standing, on partial evidence:</b> activity in a region at the back of the cortex, and how complex the brain's "echo" is when it is prodded with a magnetic pulse.</li>
+    <li><b>The gap:</b> not one of these measures has ever been tested against <em>feeling</em>, good or bad. They have been tested against seeing and dreaming. The thing this project is about is close to unstudied.</li>
+    <li>People under general anaesthesia have signalled, in real time, that they were in pain, and remembered nothing afterwards. So "they reported nothing later" does not mean "they felt nothing".</li>
+    <li>Whether the mystery of feeling is an "illusion" cannot be settled by evidence we could find. It is not even established that ordinary people find feeling mysterious in the way philosophers do.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="num">PART ONE</div>
+  <h2>Which brain measures follow what people report?</h2>
+  <p>Last update's lesson was that experiments are good at ruling candidates out and poor at crowning a winner. So we ran a rule-out exercise.</p>
+  <p>The trick is to use states where looking conscious and being conscious come apart: dreaming (unresponsive, but vivid experience reported on waking), dreamless sleep, different anaesthetics (one kind leaves people with vivid dreams, another usually does not), and so on. A good marker should be present whenever experience is reported and absent whenever it is not.</p>
+  <div class="scroll"><table>
+    <tr><th>Proposed marker</th><th>Verdict</th><th>Why</th></tr>
+    <tr><td>Size of the brain's electrical waves</td><td><span class="tag gone">struck off</span></td><td>Biggest in dreamless sleep, when nothing is reported</td></tr>
+    <tr><td>A late wave over the front of the brain</td><td><span class="tag gone">struck off</span></td><td>Disappears when awake people experience something but are not asked to respond. It marks responding, not experiencing</td></tr>
+    <tr><td>Activity in a region at the back of the cortex</td><td><span class="tag ok">survives so far</span></td><td>Predicts whether a sleeper woken at random will report a dream. Checked in 4 of 9 situations, by one laboratory</td></tr>
+    <tr><td>Complexity of the brain's echo to a magnetic pulse</td><td><span class="tag ok">survives so far</span></td><td>High awake, dreaming and under the dream-producing anaesthetic; low in dreamless sleep and under the other kind. Checked in 5 of 9, by one research group</td></tr>
+    <tr><td>Overall energy use; fast rhythms; deep arousal centres; front-to-back communication</td><td><span class="tag thin">not enough data</span></td><td>Each looks likely to fail, but the key studies never asked people what they experienced</td></tr>
+  </table></div>
+  <p>We had guessed in advance which would fail. We were right about the two that were struck off, wrong on some details, and wrong about two of our own "what do people report" entries: most sleepwalkers, when asked, do report experience, and dreaming under the common anaesthetic is frequent. The scorer caught both.</p>
+  <p>The first elimination matters for your field question. If feeling were simply the strength of the brain's electric field, deep dreamless sleep would be the most intensely felt state there is. Field theorists do not claim that (they say the pattern matters, not the strength), but the simplest version is now out.</p>
+
+  <h3>The gap</h3>
+  <p>The scorer was asked whether any of these measures had been tested against feeling specifically. The answer was no. Every test used seeing or dreaming. There is exactly one relevant observation, and it is striking.</p>
+  <p>During some operations, a cuff on one arm keeps the muscle-paralysing drug out, so a patient under general anaesthesia can still squeeze a hand in answer to a question. In one study, 12 patients responded this way. <b>Five of them signalled that they were in pain. None remembered anything afterwards.</b></p>
+  <p>Two things follow. First, feeling can be present in a state that every outward sign and every later report would call unconscious. Second, this technique is a way through the "report barrier" from Update 4: it lets a person tell us about a feeling in the moment, in a state where the usual brain measures can be recorded at the same time. Nobody has yet used it to ask which brain measures go with the pain. We have added that to the list of experiments.</p>
+</section>
+
+<section>
+  <div class="num">PART TWO</div>
+  <h2>Is the mystery of feeling an illusion?</h2>
+  <p>One answer on our scoreboard says: feelings do real work, but the sense that they have some extra inner quality that science cannot reach is a trick of the brain's rough picture of itself. The brain cannot see how its own states are made, so they seem simple, private and beyond words.</p>
+  <p>We wrote predictions for this and for its rival (the inner quality is real), gathered evidence, and had it scored.</p>
+  <ul>
+    <li><b>No evidence separated them.</b> In every situation with data, both sides expected what was found. In no situation could either have been refuted.</li>
+    <li>People are often wrong about their own experience. In one study almost a third failed to notice when nearly all colour was removed from the edges of what they were seeing. But there is little evidence of people being wrong about what they are <em>feeling</em> right now.</li>
+    <li>When a drug dissolves the sense of self, people rate the episode as far <em>more</em> beyond words, not less (about 75% at a high dose against 20% at a trace dose).</li>
+  </ul>
+  <p><b>The unexpected finding</b> is about the starting assumption. Both sides take for granted that people find feeling deeply puzzling. The scorer found that this has not been established for ordinary people. The few studies that ask suggest many do not share the philosophers' puzzle, and nobody has measured whether it appears with philosophical training. If the puzzle is largely taught, that would change how the whole question should be asked. A survey that could settle it is on our list.</p>
+</section>
+
+<hr>
+
+<section>
+  <h2>Seven rounds: what we know and what would move it</h2>
+  <div class="scroll"><table>
+    <tr><th>Reviewed and standing</th></tr>
+    <tr><td>No new pushing force can be behind feeling.</td></tr>
+    <tr><td>The brain's randomness is quantum at root; a "chooser" has something to act on, has no evidence for it, and in one form could never be tested.</td></tr>
+    <tr><td>The brain's own electric fields do nudge its cells. Whether the field <em>is</em> experience is untested; field strength alone is ruled out.</td></tr>
+    <tr><td>Three regions long credited with feeling (insula, anterior cingulate, amygdala) are not needed for it. One patient without them rated pain 10 out of 10.</td></tr>
+    <tr><td>Whether feeling is made deep in the brain or made felt by the outer cortex: existing evidence does not decide.</td></tr>
+    <tr><td>The usual signs of feeling in animals appear even in a 302-cell worm, so they cannot tell us who feels.</td></tr>
+    <tr><td>Feeling can occur and be signalled without being remembered.</td></tr>
+    <tr><td>No brain marker has been tested against feeling.</td></tr>
+  </table></div>
+  <p>And the experiments that would move things, all practical today (details in the project's <code>experiments</code> file):</p>
+  <ol>
+    <li>Ask about pain in real time under anaesthesia while recording the surviving markers.</li>
+    <li>Stimulate the two deep candidate structures in patients who already have electrodes, asking what is felt after every pulse.</li>
+    <li>Measure the order in which different feelings vanish as sedation deepens.</li>
+    <li>Cancel the brain's electric field over a small patch while recording the cells.</li>
+    <li>Run the rat "lever test" in bees, crabs, octopus and fish.</li>
+    <li>Survey whether ordinary people find feeling puzzling, before and after philosophical training.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Scoreboard</h2>
+  <div class="scroll"><table>
+    <tr><th>Kind of answer</th><th>Update 6</th><th>Now</th></tr>
+    <tr><td>Feeling is what certain information-processing is like</td><td class="n">30%</td><td class="n">30%</td></tr>
+    <tr><td>Feeling depends on the specific physical stuff or structure of brains</td><td class="n">15%</td><td class="n">15%</td></tr>
+    <tr><td>Feeling is the "inside" of all matter</td><td class="n">15%</td><td class="n">15%</td></tr>
+    <tr><td>Feeling is a convincing illusion</td><td class="n">8%</td><td class="n">8%</td></tr>
+    <tr><td>Feeling does no work but is tied to brain states by law</td><td class="n">7%</td><td class="n">7%</td></tr>
+    <tr><td>Quantum: a chooser, or collapse inside nerve cells</td><td class="n">4%</td><td class="n">4%</td></tr>
+    <tr><td>Mind and matter separate, or mind basic</td><td class="n">7%</td><td class="n">7%</td></tr>
+    <tr><td>A new pushing field</td><td class="n">under 1%</td><td class="n">under 1%</td></tr>
+    <tr><td>Framed wrongly, or not yet thought of</td><td class="n">13%</td><td class="n">13%</td></tr>
+  </table></div>
+  <p class="note">Unchanged. Within the first two rows, accounts that rest on the late frontal wave or on raw field strength lose ground.</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li><b>Independently scored:</b> both tables on this page. The scorers checked the main sources; one key study on ordinary people's intuitions could not be opened and is flagged in the report.</li>
+    <li><b>Thin spots:</b> the two surviving markers rest on one laboratory each. The anaesthesia pain observation is one study of 12 responders.</li>
+    <li><b>Our own synthesis</b> (the summary table above) restates reviewed items but has not itself been reviewed as a whole. That is one of next round's jobs.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next round</h2>
+  <ol>
+    <li><b>Feeling without later report.</b> Collect everything known about pain or pleasure signalled in the moment during anaesthesia, sedation and sleep. This is the most direct route to the project's actual subject.</li>
+    <li><b>The "integrated information" theory</b> against its record of predictions.</li>
+    <li><b>A fresh reviewer re-attacks every item marked as standing.</b></li>
+  </ol>
+</section>
+
+<footer>Predictions, evidence and scoring: <code>scenarios/15</code>, <code>scenarios/16</code>, <code>reviews/round7-*</code>. Proposed experiments: <code>experiments/README.md</code>.</footer>
+
+</div>

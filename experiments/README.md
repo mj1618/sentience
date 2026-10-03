@@ -86,3 +86,17 @@ reviewed by a specialist.** Sensitivities are our arithmetic.
 - **Design.** Over a patch of sensory cortex in an awake monkey or an implanted patient, measure the local field with a dense grid and apply its exact inverse, while recording individual cells and asking for a report of a faint stimulus.
 - **Interpretation.** One field theorist (Pockett) explicitly predicts that cancelling the pattern abolishes that experience. The feedback version predicts disrupted report larger than the change in firing. Neurons-only predicts a change in perception only in proportion to the change in firing, probably small.
 - **Limit.** Can shift the balance; cannot prove identity.
+
+## 9. Ask about pain during anaesthesia, in real time
+
+- **Question.** Which brain measures follow *felt pain*, as opposed to experience in general? No marker has ever been tested against feeling. (Scenario 16.)
+- **Method that already exists.** The isolated forearm technique: a cuff keeps the paralysing drug out of one arm, so an anaesthetised patient can squeeze in answer to questions. In one study 5 of 12 responders signalled pain; none recalled it.
+- **Design.** During routine surgery with this technique, ask at intervals "are you in pain?" and record at the same moments the two surviving markers (rear-cortex activity; pulse-echo complexity where feasible) and frontal activity.
+- **Interpretation.** Tells us which measures rise and fall with signalled pain, without relying on memory. It would be the first test of any marker against feeling.
+- **Ethics.** Any signal of pain is acted on immediately; this is already clinical practice where the technique is used.
+
+## 10. Does the sense of mystery depend on training?
+
+- **Question.** Do ordinary people find feeling puzzling in the philosophers' sense, and does that change with introspective skill or with philosophical education? (Scenario 15.)
+- **Design.** A representative survey with careful wording, repeated in students before and after a philosophy-of-mind course and in long-term meditators.
+- **Interpretation.** If the puzzle is rare without training, part of the "hard problem" is a taught framing. If it is common and stable, it is a fact about minds that any theory must explain.
