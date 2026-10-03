@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Sentience Update 6</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 6 · 3 October 2026</div>
+  <h1>Is feeling the brain's own electric field? And a test on 220,000 lottery balls</h1>
+  <p class="lede">Two pieces of work this round. The first followed last update's lead and gave the electric-field theory a fair hearing, scored independently. The second was our first experiment on real-world data: if wanting something can tilt chance, lottery balls should favour the numbers most people bet on.</p>
+</header>
+
+<section class="short">
+  <h3>The short version (reviewed claims only)</h3>
+  <ul>
+    <li>The brain's own electric fields are not just a by-product. They nudge when nearby cells fire, and in one laboratory activity crossed a complete cut in brain tissue with no nerve fibres to carry it.</li>
+    <li>That is a fact about how brains work. It is <b>not</b> evidence that the field <em>is</em> the feeling. No existing data test that claim at all.</li>
+    <li>Lottery draws from New York and Texas: numbers people favour came up very slightly more often than chance, by an amount that could easily be luck. The pattern does not look like what a "wanting tilts chance" effect should produce.</li>
+    <li>A general lesson is now clear: experiments can rule out candidates for what feeling is, but cannot by themselves pick the winner among candidates that predict the same reports.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="num">PART ONE</div>
+  <h2>The electric-field theory</h2>
+  <p>Every time a brain cell fires it makes a tiny electric field. Billions firing together make a field with a constantly shifting shape, which is what a scalp recording (an EEG) picks up. One family of theories says this field, or the pattern in it, is conscious experience itself. It is the natural candidate for your "is it a field?" question, because it is the one field that brains produce strongly, right where they are.</p>
+  <p>Two versions exist. In one, the field also acts back on the cells and so does real work. In the other, certain field patterns simply are experiences and need not do anything.</p>
+
+  <h3>What the scorer said about our predictions</h3>
+  <p>We wrote predictions first, as in Update 5. The independent scorer found that in three of eight cases we had described the field theory wrongly, in ways that would have made it easier to refute. Its supporters do <em>not</em> say that any outside electric field should change experience (only one with the right shape would), and they do <em>not</em> expect split-brain patients to stay unified (the field fades too quickly with distance). Those rows were struck out.</p>
+
+  <h3>What the evidence shows</h3>
+  <div class="scroll"><table>
+    <tr><th>Question</th><th>Evidence</th><th>Result</th></tr>
+    <tr><td>Do the brain's fields affect the cells?</td><td>Fields of natural strength shift the <em>timing</em> of firing in awake monkeys. Shown directly for applied fields; for the brain's own fields only in tissue slices and under anaesthesia.</td><td>Moderate support</td></tr>
+    <tr><td>Can activity cross a gap with no fibres?</td><td>In slices of one brain region, a slow wave of activity crossed a complete cut at 0.1 metres per second, and stopped when the gap was widened to 0.4 mm. One laboratory.</td><td>Yes, narrowly</td></tr>
+    <tr><td>Change the field while firing stays the same: does experience change?</td><td>Nobody has done it.</td><td>No test</td></tr>
+    <tr><td>Weak outside fields at natural strength</td><td>Studies deliver less field than assumed, and are confounded by tingling skin and flickers from the eye.</td><td>No test</td></tr>
+    <tr><td>Anaesthesia, seizures, deep sleep</td><td>Both views explain them equally well.</td><td>Cannot separate</td></tr>
+  </table></div>
+
+  <h3>The scorer's judgement</h3>
+  <p>There are two questions, and it is easy to run them together.</p>
+  <ul>
+    <li><b>Do the fields do causal work in the brain?</b> Moderately supported.</li>
+    <li><b>Is the field the experience?</b> No movement either way. The situations that could have tested it had no data.</li>
+  </ul>
+  <p>And the first barely helps the second. If fields nudge cells, the ordinary view simply adds "cells also influence each other through fields" to its wiring diagram and carries on.</p>
+  <p>The scorer also pointed out why this is so hard to test. If the field pattern does <em>not</em> act back on the brain, then nothing a person says could ever reflect a change in it, since speech is produced by cells. If it <em>does</em> act back, then any change in experience comes with a change in firing, and the rival view can claim the firing did it.</p>
+  <p><b>The best available experiment:</b> over a small patch of cortex, measure the field and apply its exact opposite to cancel it, while recording the cells and asking the person or animal to report a faint stimulus. One field theorist has said in print that cancelling the pattern should abolish that experience. This could be attempted with present technology.</p>
+</section>
+
+<section>
+  <div class="num">PART TWO · OUR FIRST REAL-DATA EXPERIMENT</div>
+  <h2>Do lottery balls favour the numbers people want?</h2>
+  <p>Earlier updates considered a "chooser": something that tilts truly random events toward outcomes that are wanted. Previous tests used trivial rewards or computer-generated randomness. Lottery draws are different: tumbling balls are physically random, real money is at stake, and millions of people want particular numbers.</p>
+  <p>People do not choose numbers evenly. Birthdays make 1 to 31 far more popular than higher numbers. So at every draw, more people are hoping for low numbers. If wanting tilts chance, low numbers should come up slightly too often.</p>
+  <p>We wrote that prediction down and saved it before downloading anything. Then we planned and saved each follow-up before looking at its data.</p>
+  <div class="scroll"><table>
+    <tr><th>Sample</th><th>Balls drawn</th><th>Numbers 1–31, compared with chance</th><th>How unusual</th></tr>
+    <tr><td>New York (five games)</td><td class="n">116,394</td><td class="n">+0.26%</td><td>Borderline: about a 1-in-25 to 1-in-50 result by luck</td></tr>
+    <tr><td>Texas (three games)</td><td class="n">72,851</td><td class="n">+0.04%</td><td>Nothing</td></tr>
+    <tr><td>Germany (1955–2026) <span class="tag ours">not yet reviewed</span></td><td class="n">30,300</td><td class="n">−0.04%</td><td>Nothing</td></tr>
+    <tr><td><b>All three</b></td><td class="n">219,545</td><td class="n">+0.15% ± 0.09%</td><td>Not significant</td></tr>
+  </table></div>
+  <p>The reviewer re-ran everything from the raw files, confirmed the numbers, and corrected how we described them. In their words, the result is "suggestive, not established". Three things count against a real effect:</p>
+  <ul>
+    <li>It was strongest in the first sample and absent in the two that followed.</li>
+    <li>It has the wrong shape. The <em>most</em> popular numbers of all (1 to 12, and 7) showed no excess whatever.</li>
+    <li>It did not grow on days when more tickets are sold.</li>
+  </ul>
+  <p>One thing keeps it from being closed: the reviewer noticed, after the fact, that the excess sat entirely in games with large number ranges. A pattern found after looking is a lead and not evidence, so we tested it on the German lottery, which has a large range. It showed nothing, though that sample is too small to rule the lead out.</p>
+  <p><b>Where this stands.</b> No tilt has been shown. A tilt smaller than about four balls in a thousand is not excluded. And this only tests a chooser acting on events out in the world; it says nothing about one acting inside a brain.</p>
+</section>
+
+<hr>
+
+<section>
+  <div class="num">STEPPING BACK <span class="tag ours">our synthesis, not yet reviewed</span></div>
+  <h2>Why "what is feeling?" keeps slipping through</h2>
+  <p>Six rounds have now ended the same way, and the electric-field scorer put a finger on why.</p>
+  <p>There are two different kinds of question. "Does X affect behaviour or reports?" can be tested. "Is X the feeling itself?" is an identity claim, and rival identity claims (it is the processing; it is the field; it is the living tissue) all predict the same reports, because whatever a person says is produced by the same cells either way.</p>
+  <p>So experiments can do one thing well: <b>eliminate</b> candidates whose presence fails to track what people report. That is how the three brain regions fell in Update 4. What experiments cannot do alone is crown a winner among the candidates that all track report equally. That last step will need an argument about which candidate explains the most with the least, and we should be honest that it is an argument and not a measurement.</p>
+  <p>This changes what is worth doing next: stop asking each theory "is it true?" and ask "which candidates follow people's reports most closely across sleep, anaesthesia and injury, and which can be struck off?"</p>
+</section>
+
+<section>
+  <h2>Scoreboard</h2>
+  <div class="scroll"><table>
+    <tr><th>Kind of answer</th><th>Update 5</th><th>Now</th></tr>
+    <tr><td>Feeling is what certain information-processing is like</td><td class="n">30%</td><td class="n">30%</td></tr>
+    <tr><td>Feeling depends on the specific physical stuff or structure of brains (includes the electric-field idea)</td><td class="n">15%</td><td class="n">15%</td></tr>
+    <tr><td>Feeling is the "inside" of all matter</td><td class="n">15%</td><td class="n">15%</td></tr>
+    <tr><td>Feeling is a convincing illusion</td><td class="n">8%</td><td class="n">8%</td></tr>
+    <tr><td>Feeling does no work but is tied to brain states by law</td><td class="n">7%</td><td class="n">7%</td></tr>
+    <tr><td>Quantum: a chooser, or collapse inside nerve cells</td><td class="n">4%</td><td class="n">4%</td></tr>
+    <tr><td>Mind and matter separate, or mind basic</td><td class="n">7%</td><td class="n">7%</td></tr>
+    <tr><td>A new pushing field</td><td class="n">under 1%</td><td class="n">under 1%</td></tr>
+    <tr><td>Framed wrongly, or not yet thought of</td><td class="n">13%</td><td class="n">13%</td></tr>
+  </table></div>
+  <p class="note">Unchanged, on the scorer's advice. The steadiness is the finding: fair tests of these ideas mostly return "not yet tested".</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li><b>Independently scored:</b> the electric-field table and its two-part verdict. The scorer checked the two key papers in full.</li>
+    <li><b>Independently re-run:</b> the New York and Texas lottery analysis. The reviewer rebuilt it from the raw files and got the same figures.</li>
+    <li><b>Not yet reviewed:</b> the German lottery sample and the "stepping back" section.</li>
+    <li><b>Not verified:</b> that every lottery game used physical ball machines throughout. We believe so.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next round</h2>
+  <ol>
+    <li><b>The "illusion" idea</b>, with predictions already written and saved: is the sense that feelings are beyond words produced by the limits of how the brain monitors itself?</li>
+    <li><b>The "integrated information" theory</b>, against the predictions it has passed and failed.</li>
+    <li><b>Which candidates track report?</b> Across sleep, anaesthesia and brain injury, which proposed markers of experience follow what people later say they felt, and which can be struck off.</li>
+  </ol>
+</section>
+
+<footer>Predictions, evidence and scoring: <code>scenarios/13</code>, <code>scenarios/14</code>, <code>reviews/round6-*</code>. Lottery code and data: <code>sims/lottery.py</code>, <code>data/</code>.</footer>
+
+</div>
+
+<p style="text-align:center;padding:0 1rem 3rem"><a href="./">All updates</a></p>
+</body>
+</html>

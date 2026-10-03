@@ -31,3 +31,37 @@ we do not later over-read them. Row 7 is the cleanest in principle and may have 
 **What would count.** F is in trouble if row 1 shows no feedback in vivo (F-loop only),
 if row 2 is cleanly null at adequate field strength, or if row 5 fails. N is in trouble
 if row 2 or 7 shows experience changing with the field while firing is held fixed.
+
+## Part 2 — Independent scoring (from `reviews/round6-em-adjudication.md`)
+
+The adjudicator first corrected our wording. Rows 2, 4 and 6 mis-stated the field
+theory: its proponents predict *no* effect from unstructured outside fields, predict
+division in split brains (the field is too local), and the cerebellum's fields do not in
+fact cancel. Row 5 bolted a claim about physiology onto the neurons-only view that it
+does not need.
+
+| # | F-loop | F-pattern | N |
+|---|---|---|---|
+| 1 Field feedback | consistent | no test | consistent |
+| 2 Weak outside field | no test | no test | consistent |
+| 3 Seizures, deep sleep | consistent | no test | consistent |
+| 4 Cerebellum | strained | no test | no test |
+| 5 Crossing a cut | confirmed (narrowly) | consistent | strained |
+| 6 Split brain | no test | no test | no test |
+| 7 Same firing, different field | no test | no test | no test |
+| 8 Anaesthesia | consistent | no test | consistent |
+
+## Part 3 — Outcome
+
+- **Do the brain's own fields do causal work?** Moderate support for influence: fields
+  of natural strength shift the timing of firing in awake monkeys, and in one lab's
+  tightly packed brain tissue activity crossed a complete cut with no fibres across it.
+  A working role in the normal waking cortex is not shown.
+- **Is the field the experience?** No shift. The rows that could have tested it had no
+  data. Evidence that fields influence neurons is absorbed by the neurons-only view as
+  one more way cells affect each other.
+- **Testability.** If the field pattern does not act back on the brain, no report could
+  ever reflect a change in it. If it does act back, any change in experience comes with
+  a change in firing, which the rival can claim. Experiments can shift credence; they
+  cannot settle identity. The sharpest available: cancel the field over a patch of
+  cortex while recording the cells (`experiments/README.md`, item 8).

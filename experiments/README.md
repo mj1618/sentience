@@ -79,3 +79,10 @@ reviewed by a specialist.** Sensitivities are our arithmetic.
 - **Who.** Epilepsy patients with electrodes in amygdala, insula or cingulate and also in frontal cortex.
 - **Design.** Repeat identical stimulation many times. In an existing study the same current produced a feeling in only 2 of 9 patients. Compare what spread where on felt and unfelt trials.
 - **Interpretation.** Cortex view: the difference is frontal recruitment. Deep-first: the difference is spread to hypothalamus and midbrain.
+
+## 8. Cancel the field, watch the cells
+
+- **Question.** Is the brain's electric field the experience, or a by-product? (Scenario 13; proposed by the independent adjudicator.)
+- **Design.** Over a patch of sensory cortex in an awake monkey or an implanted patient, measure the local field with a dense grid and apply its exact inverse, while recording individual cells and asking for a report of a faint stimulus.
+- **Interpretation.** One field theorist (Pockett) explicitly predicts that cancelling the pattern abolishes that experience. The feedback version predicts disrupted report larger than the change in firing. Neurons-only predicts a change in perception only in proportion to the change in firing, probably small.
+- **Limit.** Can shift the balance; cannot prove identity.

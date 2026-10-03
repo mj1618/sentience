@@ -1,6 +1,6 @@
 # Ledger
 
-Updated 2026-10-03, after round 5 and its reviews.
+Updated 2026-10-03, after round 6 and its reviews.
 
 **Rule:** nothing is treated as reliable until an independent reviewer has tried to break
 it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower form) ·
@@ -35,6 +35,9 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | C25 | A patient without insula, cingulate, amygdala or medial frontal cortex rates pain 10/10 in real time. | survived (full text checked by adjudicator) | One patient. Removes limbic-cortex accounts only. |
 | C26 | Predictions-first, independently scored: existing evidence does not separate deep-first from cortex-makes-it-felt (≤1.5:1). The decisive observations have never been made. | adjudicated | |
 | C27 | Mass, heat output, stored electric energy and a loose event rate do not distinguish a brain from a liver, kettle or chip. | survived in this narrow form | Says nothing about coherent, band-limited or short-range sources. |
+| C28 | The brain's own electric fields influence the timing of firing (awake monkeys) and can carry activity across a cut (one lab, in vitro). | adjudicated: moderate for influence | Says nothing on whether the field is the experience. |
+| C29 | "The field is the experience" has not been tested by any existing data; the discriminating situations are empty. | adjudicated | Identity claims predict the same reports as their rivals. |
+| C30 | Lottery balls: numbers most often bet on (≤ 31) exceed chance by +0.15% ± 0.09% over ~220,000 balls in three samples; first sample borderline, the next two flat; wrong shape for a wanting-driven tilt. | NY and Texas reviewed; German sample unreviewed | Suggestive at most, weakening. Does not test a chooser inside the brain. |
 | C24 | The report barrier: evidence about feeling in anything that cannot report is behaviour, which all theories explain. | our synthesis; consistent with round 5 outcome | |
 | C18 | The standard animal markers detect a valence *signal*, not whether it is felt. | weakened → restated | Present from worms up; cannot draw a line. |
 
@@ -70,6 +73,8 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 | A field that chooses | 2–4 | hidden-fact-aimed limited at trivial stakes only; valence-aimed untested; state-local unscored |
 | Feeling comes from deep structures, not cortex | 4 | not separated from rivals by lesion or stimulation evidence |
 | Rate, not level | 4 | untested (confounded data) |
+| The brain's electric field is the experience | 6 | untested by existing data; field influence on neurons moderately supported |
+| Wanting tilts external chance (lottery) | 6 | not shown; small tilt not excluded |
 | Ownership gate | 4 | weakened: modulates, no evidence of a gate |
 | Slow chemistry | 4 | weakened on opioids; needs a stated speed limit |
 | No ready response | 4 | weakened: fits dread, not the feeling itself |
@@ -88,12 +93,11 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 5. Split-brain: does a learned aversion taught to one hemisphere transfer to the other?
 6. Xenon isotopes done properly (gases interleaved within a day, blends of the two kinds, no second anaesthetic).
 
-## Conjecture queue (round 6)
+## Conjecture queue (round 7)
 
-1. **Electromagnetic-field theories on their own terms** (predictions first, independent scoring). The brain's slow electric field is the one ordinary field where the brain dominates at its own location.
-2. **Illusionism stress test.** If feeling's mysteriousness comes from a limited self-model, the sense that feelings are indescribable should vary with self-monitoring ability (development, alexithymia, meditation).
-3. **Integrated-information stress test** against its failed and passed predictions.
-4. **A valence-aimed chooser**: is there any existing data with real pleasure or pain riding on a genuinely random event?
+1. **Illusionism** (predictions committed; evidence being gathered).
+2. **Integrated-information theory** against its passed and failed predictions.
+3. **What tracks report most tightly?** Since identity claims share predictions, compare candidates by how closely each follows what people report, across anaesthesia, sleep and injury.
 
 ## Process rules (added round 2)
 
