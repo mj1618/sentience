@@ -95,11 +95,43 @@ def chaos(trials=3000, N=200, g=2.0, beta=1.5, delta=0.05, seed=0):
     return out
 
 
+def chaos_sustained(trials=2000, N=200, g=2.0, beta=1.5, delta=0.05, seed=0):
+    """Red-team correction (round 2): same network, but the chooser nudges at EVERY
+    step from tau steps out up to the decision, not once. Chaos then amplifies a
+    wiring-aware chooser instead of defeating it."""
+    rng = np.random.default_rng(seed)
+    J = rng.normal(0, g / sqrt(N), (N, N))
+    w = rng.normal(0, 1, N)
+    out = []
+    for tau in [0, 1, 2, 3, 5, 8]:
+        res = {"lead_steps": tau}
+        for mode in ["naive", "linear"]:
+            hits = 0
+            for tr in range(trials):
+                r = np.random.default_rng(10_000 + tr)
+                x = np.sign(r.normal(size=N))
+                for _ in range(5):
+                    x = np.where(r.random(N) < 1 / (1 + np.exp(-2 * beta * (J @ x))), 1.0, -1.0)
+                for k in range(tau, -1, -1):
+                    d = w.copy()
+                    if mode == "linear":
+                        for _ in range(k):
+                            d = J.T @ d
+                    p = 1 / (1 + np.exp(-2 * beta * (J @ x)))
+                    x = np.where(r.random(N) < np.clip(p + delta * np.sign(d), 0, 1), 1.0, -1.0)
+                hits += (w @ x) > 0
+            res[mode] = float(hits / trials)
+        out.append(res)
+        print("sustained", res)
+    return out
+
+
 if __name__ == "__main__":
     res = {"needed_bias": needed_bias(), "detection": detection_and_cost()}
     for r in res["needed_bias"]:
         print(r)
     for r in res["detection"]:
         print(r)
-    res["chaos"] = chaos()
+    res["chaos_one_shot"] = chaos()
+    res["chaos_sustained"] = chaos_sustained()
     (OUT / "chooser.json").write_text(json.dumps(res, indent=1))

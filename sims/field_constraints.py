@@ -62,12 +62,19 @@ def mass_coupled():
         e_real = e_generous * min(GATING_MOVE / lam, 1.0)
         need_gen = 0.01 * KT / e_generous     # alpha needed for a 1%-of-kT nudge
         need_real = KT / e_real               # alpha needed for a kT nudge
+        # most generous imaginable (red-team round 2): every channel event within reach
+        # is nudged the helpful way and the brain pools them all, as Scenario 4 grants a
+        # chooser. Energy shift dE biases an open/closed event by dE/4kT; pooling N events
+        # needs bias 0.24/sqrt(N). A mass-sourced force cannot be patterned like this.
+        n_pool = max(1.0, 1e15 * min(1.0, (lam / 0.07) ** 3))
+        need_pooled = (0.95 / np.sqrt(n_pool)) * KT / e_generous
         rows.append({
             "range_m": lam, "scale": SCALES[lam],
             "quantum_mass_eV": HBARC_EV_M / lam,
             "thermally_excitable": bool(HBARC_EV_M / lam < KT_EV),
             "alpha_needed_generous": need_gen, "alpha_needed_realistic": need_real,
-            "alpha_allowed": bound,
+            "alpha_allowed": bound, "alpha_needed_pooled": need_pooled,
+            "shortfall_orders_pooled": float(np.log10(need_pooled / bound)),
             "shortfall_orders_generous": float(np.log10(need_gen / bound)),
             "shortfall_orders_realistic": float(np.log10(need_real / bound)),
         })
@@ -98,7 +105,7 @@ if __name__ == "__main__":
         print(f"{r['range_m']:8.0e} {r['scale']:<18}{r['quantum_mass_eV']:11.1e}eV "
               f"{r['alpha_needed_generous']:10.1e} {r['alpha_needed_realistic']:11.1e} "
               f"{r['alpha_allowed']:8.0e} {r['shortfall_orders_generous']:10.1f} "
-              f"{r['shortfall_orders_realistic']:11.1f}")
+              f"{r['shortfall_orders_realistic']:11.1f}  pooled:{r['shortfall_orders_pooled']:5.1f}")
     ec = electron_coupled()
     print("\nelectron-coupled light scalar at stellar-cooling limit:", ec)
     (OUT / "field_constraints.json").write_text(

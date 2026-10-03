@@ -143,3 +143,7 @@ seem mysterious to the thinker are properties the motivator *must* have to work.
   driver is downstream and need not be felt.** Pain asymbolia (pain felt as sensation
   without hurting, and patients stop protecting themselves) pulls the other way and
   suggests that for pain the feeling is the driver. Unresolved; next scenario.
+
+---
+
+> **Red-team status (round 2):** parts of this file were withdrawn or weakened on review. Read `reviews/round2-response.md` before relying on anything above.

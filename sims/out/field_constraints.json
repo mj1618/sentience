@@ -8,6 +8,8 @@
    "alpha_needed_generous": 3.68800309024374e+23,
    "alpha_needed_realistic": 3.6880030902437395e+25,
    "alpha_allowed": 17000000000000.0,
+   "alpha_needed_pooled": 3.503602935731552e+25,
+   "shortfall_orders_pooled": 12.31406596019543,
    "shortfall_orders_generous": 10.336342354906582,
    "shortfall_orders_realistic": 12.336342354906582
   },
@@ -19,6 +21,8 @@
    "alpha_needed_generous": 3.6880030902437397e+21,
    "alpha_needed_realistic": 3.6880030902437396e+24,
    "alpha_allowed": 17000000000000.0,
+   "alpha_needed_pooled": 3.503602935731553e+23,
+   "shortfall_orders_pooled": 10.31406596019543,
    "shortfall_orders_generous": 8.336342354906582,
    "shortfall_orders_realistic": 11.336342354906582
   },
@@ -30,6 +34,8 @@
    "alpha_needed_generous": 3.68800309024374e+19,
    "alpha_needed_realistic": 3.68800309024374e+23,
    "alpha_allowed": 100000000000.0,
+   "alpha_needed_pooled": 3.503602935731553e+21,
+   "shortfall_orders_pooled": 10.544514881573704,
    "shortfall_orders_generous": 8.566791276284857,
    "shortfall_orders_realistic": 12.566791276284857
   },
@@ -41,6 +47,8 @@
    "alpha_needed_generous": 3.68800309024374e+17,
    "alpha_needed_realistic": 3.6880030902437397e+22,
    "alpha_allowed": 10000000.0,
+   "alpha_needed_pooled": 2.0519271676218188e+19,
+   "shortfall_orders_pooled": 12.31216194159509,
    "shortfall_orders_generous": 10.566791276284857,
    "shortfall_orders_realistic": 15.566791276284857
   },
@@ -52,6 +60,8 @@
    "alpha_needed_generous": 3688003090243739.5,
    "alpha_needed_realistic": 3.6880030902437397e+21,
    "alpha_allowed": 14000.0,
+   "alpha_needed_pooled": 6488763442463052.0,
+   "shortfall_orders_pooled": 11.666033905916851,
    "shortfall_orders_generous": 11.420663240606618,
    "shortfall_orders_realistic": 17.42066324060662
   },
@@ -63,6 +73,8 @@
    "alpha_needed_generous": 36880030902437.39,
    "alpha_needed_realistic": 3.6880030902437387e+20,
    "alpha_allowed": 0.1,
+   "alpha_needed_pooled": 2051927167621.8179,
+   "shortfall_orders_pooled": 13.31216194159509,
    "shortfall_orders_generous": 14.566791276284857,
    "shortfall_orders_realistic": 21.566791276284857
   },
@@ -74,6 +86,8 @@
    "alpha_needed_generous": 368800309024.37396,
    "alpha_needed_realistic": 3.68800309024374e+19,
    "alpha_allowed": 0.001,
+   "alpha_needed_pooled": 648876344.2463053,
+   "shortfall_orders_pooled": 11.81216194159509,
    "shortfall_orders_generous": 14.566791276284857,
    "shortfall_orders_realistic": 22.566791276284857
   },
@@ -85,6 +99,8 @@
    "alpha_needed_generous": 3688003090.2437396,
    "alpha_needed_realistic": 3.6880030902437396e+18,
    "alpha_allowed": 0.0002,
+   "alpha_needed_pooled": 205192.71676218178,
+   "shortfall_orders_pooled": 9.011131945931108,
    "shortfall_orders_generous": 13.265761280620875,
    "shortfall_orders_realistic": 22.265761280620875
   },
@@ -96,6 +112,8 @@
    "alpha_needed_generous": 110344794.42596371,
    "alpha_needed_realistic": 1.1034479442596374e+18,
    "alpha_allowed": 0.001,
+   "alpha_needed_pooled": 331.4938344126425,
+   "shortfall_orders_pooled": 5.5204754551979,
    "shortfall_orders_generous": 11.042751849909052,
    "shortfall_orders_realistic": 21.042751849909052
   },
@@ -107,6 +125,8 @@
    "alpha_needed_generous": 1103447944.259637,
    "alpha_needed_realistic": 1.1034479442596371e+20,
    "alpha_allowed": 0.0005,
+   "alpha_needed_pooled": 3314.938344126425,
+   "shortfall_orders_pooled": 6.821505450861881,
    "shortfall_orders_generous": 12.343781845573034,
    "shortfall_orders_realistic": 23.343781845573034
   }

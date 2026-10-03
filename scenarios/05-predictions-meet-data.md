@@ -61,3 +61,7 @@ finding; flagged as open.
 makes a neutral sight experienced is the same puzzle. But valence remains the best
 handle, because it is the part with a clear job, clear evolutionary logic, and clear
 lesion evidence.
+
+---
+
+> **Red-team status (round 2):** parts of this file were withdrawn or weakened on review. Read `reviews/round2-response.md` before relying on anything above.

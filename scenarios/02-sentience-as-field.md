@@ -131,3 +131,7 @@ rock not? That is, once more, a question about organisation.
    isotope experiments: swap an atom for a chemically identical one with different
    nuclear spin and see whether anaesthesia or behaviour changes. Ordinary neuroscience
    predicts no difference; any solid difference would be a crack in the wall.
+
+---
+
+> **Red-team status (round 2):** parts of this file were withdrawn or weakened on review. Read `reviews/round2-response.md` before relying on anything above.

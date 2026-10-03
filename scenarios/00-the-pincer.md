@@ -56,3 +56,7 @@ compatible with A, B and F, and it is testable by dissociation:
 - feeling without thought should exist (and seems to: `research/03`),
 - thought without feeling should exist (blindsight, possibly current AI),
 - remove the feeling and thought should lose its *drive* rather than its *ability*.
+
+---
+
+> **Red-team status (round 2):** parts of this file were withdrawn or weakened on review. Read `reviews/round2-response.md` before relying on anything above.

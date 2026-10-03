@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Sentience Update 2</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 2 · 3 October 2026</div>
+  <h1>A second look broke much of what we thought we had shown</h1>
+  <p class="lede">This round we tested three new ideas, including your suggestion of a field that chooses instead of pushes. Then, for the first time, we handed everything to independent reviewers whose only job was to break it. They broke a lot, including claims in Update 1. This page says what fell, what stood, and what is now open.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <ul>
+    <li>You were right that one pass is not enough. Of the conclusions drawn from our own simulations, most were withdrawn or narrowed after review.</li>
+    <li>Still standing: no new <em>pushing</em> field can be behind feeling, though the safety margin is thinner than we said.</li>
+    <li>Your "choosing" loophole is real and wider than we first wrote. A tilt as small as one part in a hundred million per event could steer a brain, and nobody has looked for it inside a living one.</li>
+    <li>A new idea, that feeling is the body's valuation at the point it is handed to the planning mind, is interesting but not established.</li>
+    <li>The scoreboard has been reset, with a new row for "an answer we have not thought of yet".</li>
+  </ul>
+</section>
+
+<section>
+  <h2>How we work now</h2>
+  <p>You described the method as conjecture and test, and added that no result should be trusted until someone has tried to knock it down. The loop is now four steps:</p>
+  <ol>
+    <li><b>Conjecture.</b> Propose a possible answer, even a strange one.</li>
+    <li><b>Test.</b> Work out what would follow if it were true, and check with a calculation, a simulation, or published evidence.</li>
+    <li><b>Red team.</b> A fresh reviewer who has not seen our reasoning tries to break the result: reruns the code with fairer opponents, checks the arithmetic, looks for what we missed. ("Red team" is borrowed from security testing: the people paid to attack your own defences.)</li>
+    <li><b>Record.</b> Only then does it go in the ledger, marked survived, weakened, or withdrawn.</li>
+  </ol>
+  <p>Three reviewers ran this round: one on the physics, one on the simulations and animal evidence, one on the overall logic. Where a reviewer reported new numbers we re-ran the most important ones ourselves before accepting them.</p>
+</section>
+
+<hr>
+
+<section>
+  <div class="num">CORRECTIONS</div>
+  <h2>What Update 1 got wrong</h2>
+  <div class="scroll"><table>
+    <tr><th>We said</th><th>What the review found</th><th>Now</th></tr>
+    <tr><td>Feeling cannot be a side-effect, because we talk about it.</td><td>That is an argument about evidence, not a proof, and philosophers have standard replies we did not address. It rules out only the version where feelings are attached to brain states at random.</td><td><span class="tag thin">weakened</span></td></tr>
+    <tr><td>"Good for you feels good" in 40 of 40 runs shows feeling does real work.</td><td>The experiment only showed that a gene with an effect gets selected and a gene without one drifts. And human feelings share wiring, so "twenty independent feelings" was wrong.</td><td><span class="tag gone">withdrawn</span></td></tr>
+    <tr><td>Feelers beat fixed-rule robots once the world is unpredictable.</td><td>The contest was learning against not learning. A learner with no feeling at all scores the same. It says nothing about feeling.</td><td><span class="tag gone">withdrawn</span></td></tr>
+    <tr><td>One scale of good-and-bad beats a rulebook, more so with more needs.</td><td>Our rulebook was a weak opponent. What matters is combining how needy the body is with how big the offer is. A single scale is one tidy way to do that, not the only way.</td><td><span class="tag thin">weakened</span></td></tr>
+    <tr><td>Walling feeling off from the thinker explains why feelings seem inexplicable.</td><td>We modelled whether the thinker can <em>change</em> its feelings. Seeming inexplicable is about whether it can <em>see into</em> them, which we never modelled. People also do adjust their feelings (placebo, reframing, meditation).</td><td><span class="tag gone">withdrawn</span></td></tr>
+    <tr><td>A new field is too weak by at least 100 million times.</td><td>We were stricter with the pushing field than with the choosing one. Given equal generosity the shortfall is between 300,000 and ten trillion times. A harsher reviewer estimate puts the minimum near 1,000 times. Still ruled out.</td><td><span class="tag ok">survived, thinner</span></td></tr>
+    <tr><td>A field the brain writes to but that never pushes back is impossible.</td><td>Only <em>exactly</em> zero push-back is impossible. Extremely lopsided is ordinary.</td><td><span class="tag gone">withdrawn</span></td></tr>
+    <tr><td>MRI scanners show the brain's electric field is not the feeling itself.</td><td>Fields add together without erasing each other, so a scanner does not wipe the brain's own pattern. The argument was unfair to the real theory.</td><td><span class="tag gone">withdrawn</span></td></tr>
+    <tr><td>Every surviving answer points to "how the brain is organised".</td><td>True of every answer, including the ones we threw out, and "organised" was doing three different jobs. Not a finding.</td><td><span class="tag gone">withdrawn</span></td></tr>
+    <tr><td>Feeling should go with novelty within a lifetime.</td><td>Tested against 22 kinds of animal: fruit flies, bees and a worm with 302 nerve cells all show the signs. The prediction failed.</td><td><span class="tag gone">failed</span></td></tr>
+  </table></div>
+  <p>The pattern the reviewer pointed out is worth remembering: every simulation result that carried a conclusion was either built into the setup or reversed against a stronger opponent. Simulations stay useful for finding holes in ideas. They are weak evidence <em>for</em> ideas.</p>
+</section>
+
+<section>
+  <div class="num">NEW · YOUR SUGGESTION</div>
+  <h2>A field that chooses instead of pushes</h2>
+  <p>Update 1 showed that a weak field cannot shove warm, wet brain matter around. Your notes pointed out a way past that. At the smallest scale, events are truly random: a particle can go one way or the other with equal energy. Picking one costs nothing. A field that tilted those coin-flips would not be a force. It would be a change to the rule of chance itself.</p>
+
+  <h3>Is there anything in the brain for it to choose between?</h3>
+  <p>The worry was that the brain's randomness is just heat, not true quantum chance. Published work suggests the worry is misplaced. In water at body temperature, molecules lose track of where they are, in the quantum sense, in less than one collision. The jiggling that opens and closes a nerve cell's switches is quantum chance, magnified. And the brain magnifies further: one extra nerve impulse triggers about 28 more. <span class="tag known">published</span></p>
+
+  <h3>How big a tilt would be needed?</h3>
+  <div class="scroll"><table>
+    <tr><th>What is being steered</th><th>Coin-flips involved</th><th>Tilt needed (if all are nudged the helpful way)</th></tr>
+    <tr><td>One nerve cell about to fire</td><td class="n">10,000</td><td class="n">1 in 400</td></tr>
+    <tr><td>A small circuit, a tenth of a second</td><td class="n">100 million</td><td class="n">1 in 40,000</td></tr>
+    <tr><td>The whole brain, one second</td><td class="n">a million billion</td><td class="n">1 in 100 million</td></tr>
+  </table></div>
+  <p class="note">Our calculation; arithmetic independently rechecked. These are best cases.</p>
+
+  <h3>Would the brain's chaos scramble the nudges?</h3>
+  <p>The brain is chaotic: tiny differences grow fast. We first tested a chooser that nudges once and found its influence faded to nothing within eight steps. We concluded a chooser would have to simulate the whole brain. <b>The reviewer showed that was an artefact.</b> If the chooser nudges at every step instead of once, chaos works for it:</p>
+  <div class="scroll"><table>
+    <tr><th>Steps before the decision</th><th>Nudge once</th><th>Nudge every step</th></tr>
+    <tr><td class="n">0</td><td class="n">80%</td><td class="n">80%</td></tr>
+    <tr><td class="n">1</td><td class="n">73%</td><td class="n">92%</td></tr>
+    <tr><td class="n">3</td><td class="n">66%</td><td class="n">99%</td></tr>
+    <tr><td class="n">8</td><td class="n">53%</td><td class="n win">99.8%</td></tr>
+  </table></div>
+  <p class="note">How often a chooser that knows the wiring gets the outcome it wants, with a 5% tilt. 50% means no influence. We re-ran the reviewer's version and got the same numbers.</p>
+  <p>What the chooser still needs is to know which events count toward which outcome. That is a lot to ask of a law of nature, but it is no longer "impossible in practice".</p>
+
+  <h3>What has been tested?</h3>
+  <ul>
+    <li><b>People trying to influence quantum devices:</b> hundreds of studies. Any effect is below 3 in 100,000, shrinks as studies get bigger, and the best-designed study (12,571 people) supports zero. But most had nothing really pleasant or painful at stake, and a chooser might only work on events inside the brain it belongs to.</li>
+    <li><b>Events inside living nerve tissue:</b> only checked to within 1 to 10 percent, and only in dishes or under anaesthesia.</li>
+    <li><b>Awake compared with anaesthetised:</b> never done.</li>
+  </ul>
+  <p>We also first wrote that choosing without tilting the odds would do nothing. The reviewer showed that is wrong too: a chooser could leave every single coin at exactly 50:50 and still steer, by changing which coins come up together. That would be invisible to every test done so far.</p>
+  <p><b>Where this stands.</b> Open. The window is a tilt between about 1 in 100 million and 1 in 100, inside an awake brain. Nothing points to it being real, and it would carry heavy costs (it would in principle allow faster-than-light signalling, and no proposal says how big the tilt should be). But we cannot rule it out, and no experiment proposed so far would close more than a small part of the window. Designing one that could is on next round's list.</p>
+</section>
+
+<section>
+  <div class="num">NEW CONJECTURE</div>
+  <h2>Is feeling the point where the body reports to the planner?</h2>
+  <p>Update 1 left a puzzle. Your idea says feeling is the motivator. But the brain's "go and get it" signal and its pleasure signal are separate parts. And a plain good/bad signal exists in machines that surely feel nothing.</p>
+  <p>A striking rat experiment suggested a way through. <span class="tag known">published</span></p>
+  <ul>
+    <li>Train a hungry rat to press a lever for food. Then feed it until full. Put it back: <b>it keeps pressing</b>. Its planning system has not been told the food is no longer wanted.</li>
+    <li>Let it taste the food once while full, away from the lever. Now it stops pressing. The planner needed the <em>experience</em> to update.</li>
+    <li>Yet the rat's automatic reactions update instantly. A signal for disgustingly salty water becomes attractive the moment the rat is short of salt, before it has tasted anything.</li>
+  </ul>
+  <p>So there are two systems. An automatic one always knows what the body needs. A planning one finds out only by experiencing. The conjecture: <b>feeling is the body's valuation at the moment it crosses to the planner.</b> That would make your formula more than a sum. Feeling would be how the body's needs become visible to thought at all.</p>
+  <h3>How it fared under attack</h3>
+  <ul>
+    <li>We claimed only a two-system design fits the lab findings. The reviewer built a one-system design that fits them all. <span class="tag gone">withdrawn</span></li>
+    <li>"Experience" in the rat work only means the rat touched the food. Nothing shows it had to be <em>felt</em>.</li>
+    <li>In one small study, people worked hard for a morphine dose too small for them to feel. If that was deliberate action, the conjecture is wrong.</li>
+    <li>There is a risk of circularity: we measure "felt" by what people report, and reporting is done by the planner.</li>
+  </ul>
+  <p><b>Where this stands.</b> The two-way split in how value is handled is solid. That the felt/unfelt line falls exactly there is an untested idea. It does sharpen the key question: <b>can the body value something without it being felt?</b> If no, feeling is ancient and everywhere, down to worms. If yes, feeling needs a planner and is much rarer. Which animals and machines can feel turns on this.</p>
+</section>
+
+<section>
+  <div class="num">CHECKED AGAINST DATA</div>
+  <h2>Two more things we learned</h2>
+  <p><b>The usual tests for animal feeling cannot draw a line.</b> Researchers look for signs such as paying a cost to avoid something harmful, flexible learning, and anxiety that responds to anti-anxiety drugs. Across 22 kinds of animal these turn up nearly everywhere anyone has looked, including a worm with 302 nerve cells. Either feeling is nearly universal, or these tests detect the good/bad <em>signal</em> and not whether it is felt. The one test our conjecture says would matter (the lever experiment above) has been run properly in rats and humans only.</p>
+  <p><b>Your formula may need a third part, or may not.</b> Plainly seeing a grey wall is neither a feeling of good or bad nor a thought. Some patients with deep brain damage report a mind that is "a total blank", no thoughts, no feelings, not even boredom, yet they are awake and aware. That suggests consciousness = being awake and aware + feeling + thought. The reviewer pointed out this is not forced: "neutral" might be the zero point on the feeling scale, the way zero is still a temperature. Open.</p>
+</section>
+
+<hr>
+
+<section>
+  <h2>Scoreboard, reset</h2>
+  <p>The reviewer's sharpest point about Update 1: when we crossed an option off, we handed its share to whatever was left. That is not evidence for what was left. The table is rebuilt, with options we had not listed and a row for answers nobody has thought of. These are judgement calls.</p>
+  <div class="scroll"><table>
+    <tr><th>Kind of answer</th><th>Update 1</th><th>Now</th></tr>
+    <tr><td>Feeling is what certain information-processing is like (any material would do)</td><td class="n">60%</td><td class="n">30%</td></tr>
+    <tr><td>Feeling depends on the specific physical stuff or structure of brains</td><td class="n">3%</td><td class="n">14%</td></tr>
+    <tr><td>Feeling is the "inside" of all matter</td><td class="n">30%</td><td class="n">15%</td></tr>
+    <tr><td>Feeling is a convincing illusion the brain creates about itself</td><td class="n">(in 60%)</td><td class="n">8%</td></tr>
+    <tr><td>Feeling does no work but is tied to brain states by a law of nature</td><td class="n">2%</td><td class="n">7%</td></tr>
+    <tr><td>Quantum: a chooser, or collapse inside nerve cells</td><td class="n">3%</td><td class="n">5%</td></tr>
+    <tr><td>Mind and matter are separate things that interact; or mind is basic and matter is not</td><td class="n">not listed</td><td class="n">7%</td></tr>
+    <tr><td>A new pushing field</td><td class="n">1%</td><td class="n">under 1%</td></tr>
+    <tr><td>The question is framed wrongly, or the answer is one nobody has thought of</td><td class="n">not listed</td><td class="n">13%</td></tr>
+  </table></div>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li><b>Attacked and still standing:</b> no pushing field; the rat lever finding; the brain's randomness being quantum at root; the limits on mind-over-device effects.</li>
+    <li><b>Published but not yet attacked by our reviewers:</b> the patient evidence from Update 1 (people who cannot feel pain, people who lose inner drive).</li>
+    <li><b>One disagreement left open:</b> a reviewer reported a rulebook creature matching the single-scale one. Our own attempt at the same rulebook did much worse. Unresolved.</li>
+    <li><b>Still true of everything:</b> some published claims were read from summaries, not the original papers.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next round: new conjectures</h2>
+  <p>The reviewers also proposed ideas we had not considered. Each has a test it could fail.</p>
+  <ol>
+    <li><b>Feeling is not one thing.</b> If pain, hunger, itch and pleasure switch off at different depths of anaesthesia, "where does sentience come from" is several questions.</li>
+    <li><b>There is only one valuing system, and "felt" just means "strong enough to be noticed".</b></li>
+    <li><b>Feeling is an interrupt.</b> A planner that does one thing at a time needs something that can break in. Intensity would track how urgently to switch, not how much is at stake.</li>
+    <li><b>One feeler per bottleneck.</b> Wherever all of a creature's competing wants are finally settled in one place, there is one feeler. Split-brain patients and octopus arms are the test.</li>
+    <li><b>The chooser, properly.</b> What measurement inside an awake brain could detect a chooser that keeps every coin fair?</li>
+    <li><b>Feeling is what a mind cannot describe about its own valuing.</b> A simulation in which the thinker can look at its feelings through a narrow or wide window.</li>
+    <li><b>Feeling bridges time.</b> It keeps an event "live" until its consequences arrive.</li>
+  </ol>
+</section>
+
+<footer>Reviewer reports and our replies are in <code>reviews/</code>. Running conclusions with their status are in <code>LEDGER.md</code>.</footer>
+
+</div>
+
+<p style="text-align:center;padding:0 1rem 3rem"><a href="./">All updates</a></p>
+</body>
+</html>

@@ -116,3 +116,7 @@ signalling.
 **Correction to round 1.** Scenario 2 said "new field: out". That holds for fields that
 push. The honest statement is: *pushing fields are out; a choosing rule is open but
 costly*.
+
+---
+
+> **Red-team status (round 2):** parts of this file were withdrawn or weakened on review. Read `reviews/round2-response.md` before relying on anything above.

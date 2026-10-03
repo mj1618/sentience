@@ -69,7 +69,7 @@
    "entropy_cost_watts_whole_brain": 8.5600238e-19
   }
  ],
- "chaos": [
+ "chaos_one_shot": [
   {
    "lead_steps": 0,
    "naive": 0.799,
@@ -99,6 +99,38 @@
    "lead_steps": 8,
    "naive": 0.5166666666666667,
    "linear": 0.5316666666666666
+  }
+ ],
+ "chaos_sustained": [
+  {
+   "lead_steps": 0,
+   "naive": 0.801,
+   "linear": 0.801
+  },
+  {
+   "lead_steps": 1,
+   "naive": 0.789,
+   "linear": 0.9235
+  },
+  {
+   "lead_steps": 2,
+   "naive": 0.752,
+   "linear": 0.974
+  },
+  {
+   "lead_steps": 3,
+   "naive": 0.7555,
+   "linear": 0.9885
+  },
+  {
+   "lead_steps": 5,
+   "naive": 0.75,
+   "linear": 0.997
+  },
+  {
+   "lead_steps": 8,
+   "naive": 0.7535,
+   "linear": 0.998
   }
  ]
 }
