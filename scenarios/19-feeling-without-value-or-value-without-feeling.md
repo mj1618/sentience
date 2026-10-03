@@ -50,3 +50,55 @@ A case missing any of the three does not separate the accounts and will be recor
 flexible action is intact. K\* is in trouble if a case meets all three and flexible
 action is lost. If no case meets all three, the result is "still untested" and the round
 ends by specifying the experiment that would create such a case.
+
+## Part 1b — Amendment after the independent fairness check, made before evidence was gathered
+
+The check (`reviews/round10-fairness-precheck.md`) found our K\* cells were again a
+strawman: the rival's "value representation" is the brain's value signal used by the
+planner, not what a person can say they know. On the rival view, most of rows 1–4 damage
+that signal itself, so it predicts impairment just as H does. The rival also comes in two
+forms:
+
+- **K\*-HO** (LeDoux & Brown; Rolls): feeling is a further, higher-order construction
+  built on unfelt value signals. Feeling and value signal are distinct, so H can in
+  principle be separated from it.
+- **K\*-ID**: the feeling simply *is* the value representation being accessible to the
+  planner. **H and K\*-ID are empirically equivalent.** No row is scored between them.
+
+What follows replaces Part 1 for scoring.
+
+### Amended requirements, scoring and table
+
+**Definitions.** K\* is split into K\*-HO and K\*-ID. H versus K\*-ID is declared **not empirically separable**; no row is scored between them.
+
+**Requirements.**
+
+1. **Feeling absent**: self-rated felt valence toward the outcome, anticipatory and consummatory (including craving, dread, fear of social consequences, anticipated regret), at floor. Self-report is the criterion for both sides; H may not appeal to unreported feeling.
+2. **Value signal intact** (needed only to count against K\*), shown by at least two of: (a) orbitofrontal/ventromedial activity scaling with outcome value and updating after devaluation; (b) intact anticipatory autonomic or Pavlovian responses, cue-triggered approach or transfer; (c) coherent, transitive, incentive-compatible valuations when externally prompted (bids, forced choice). Verbal statement or ranking alone does not qualify.
+3. **Flexible action** by the round 9 criteria 1–4. Prompted criterion-meeting choice counts; H may not reclassify it as not self-initiated. Real-life behaviour is secondary evidence.
+
+**Scoring.**
+- 1 + 3 intact: **H fails** (2 not needed).
+- 1 + 2 + 3 lost, with prompted performance also lost or an initiation deficit excluded: **K\*-HO fails**.
+- 1 met, 2 not shown, 3 lost: **no test**.
+
+**Corrected table.**
+
+| # | Condition | H | K\*-HO |
+|---|---|---|---|
+| 1 | Asymbolia | Lost | Lost (aversive signal damaged) unless req. 2 met; then intact |
+| 2 | Congenital insensitivity | No test | No test |
+| 3 | Opioid "not bothersome" | Reduced | Reduced (value signal reduced) unless req. 2 met |
+| 4 | Emotional blunting | Reduced use of already-learned values | Reduced in proportion to the measured value signal; intact if req. 2 met. Learning deficits not scored |
+| 5 | Depersonalisation | Lost whenever req. 1 met | Intact if req. 2 met; otherwise no test |
+| 6 | Schizophrenia | No test | No test |
+| 7 | Conflict | No test, unless the chosen option is rated at floor on all felt valence: then H fails | No prediction that can fail |
+| 8 | Instructed devaluation, anticipated affect rated before test | No choice change in those with no change in anticipated affect; effect fully mediated by affect change | Choice changes at once, including in those with no affect change |
+| 9 | Bodily feedback removed | No test unless req. 1 met; then lost | Intact if req. 2 met |
+
+Discriminating: rows 5 and 8; rows 1, 3, 4, 9 only when requirement 2 is met or action is intact.
+
+### If nothing separates them
+
+Against K\*-ID no observation can. Against K\*-HO, separation exists only if reported feeling and the value signal ever come apart; if they never do, that favours identity, not H. The choice then rests on argument: which theory of consciousness is right (first-order versus higher-order, i.e. whether feeling is a separate state at all); whether "the feeling does the work" adds anything to "the representation does the work" (parsimony; causal exclusion); and whether H's "necessary" is empirical or a definition of feeling as accessible value. H should then be stated as an identity claim, not a rival causal hypothesis.
+
