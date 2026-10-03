@@ -37,3 +37,48 @@ trouble if people who know but do not feel fail to act (rows 4, 5, 8, 9).
 
 Stated in advance: rows 5 and 9 are expected to count against K and not to separate H
 from W. The rows that separate H from W are 1–3, 6 and 7.
+
+## Part 1b — Amendment after an independent fairness check, made before any scoring
+
+The fairness check (`reviews/round9-fairness-precheck.md`, done without sight of the
+evidence) found: our **W** was not Berridge's view (his "liking" is a core reaction that
+can itself be unconscious; "wanting" can be unfelt but is usually felt as craving; he
+does not claim unfelt wanting drives planned action); our **K** was a strawman, replaced
+by **K\*** (planned action runs on learned value representations); and **H** could not
+fail as worded. The table and criterion below replace Part 1 for scoring. No row
+separates H from K\*; that is declared in advance.
+
+### Operational criterion (from the fairness check, section 3. H is not yet able to fail
+
+"Flexible, thought-guided" lets any unfelt-reward effect be reclassified as automatic afterwards. "Felt valence" is also open: if felt craving counts, row 7 cannot hurt H. Row 6's "go together" over-commits H, since necessity does not imply that apathy requires lost pleasure.
+
+**Operational criterion (fixed now).** Behaviour is *flexible/goal-directed* only if it shows at least one of:
+
+1. sensitivity to outcome devaluation, tested without feedback;
+2. sensitivity to contingency degradation;
+3. correct first-trial choice between novel options or by a never-reinforced response;
+4. effort allocated by a cost–benefit comparison (reward × cost interaction, or a choice to decline).
+
+*Automatic* means cue-triggered approach, general invigoration, response vigour scaling with cue magnitude alone, or responding acquired over repeated reinforced trials.
+
+*Unfelt* means chance-level objective detection and no change in reported affect, anticipatory or consummatory. Felt craving, urge and dread count as felt valence.
+
+Classification is done blind to the result. **H fails** on one replicated finding that is flexible and unfelt by these definitions.
+
+
+### Amended table (this is what is scored)
+
+| # | Situation | H | W (Berridge, corrected) | K\* (value-representation) |
+|---|---|---|---|---|
+| 1 | Rewards too brief to see | Invigoration only; nothing meeting criteria 1–4 | Cue-triggered invigoration and effort; no claim of criterion-meeting action | Effect only if value reaches planner; planning needs access, so as H |
+| 2 | Learning from unseen rewards | Cue–response learning; no criterion-meeting use | Pavlovian/incentive learning; no cognitive goal formed | Model-free learning yes; model-based use no |
+| 3 | Working for unfelt drug dose | Acceptable if repetition-acquired; refuted if criteria 1–4 met | Expected: unfelt 'wanting' sustains instrumental responding | Possible via model-free value; not via planning |
+| 4 | Pain without unpleasantness | Self-initiated protection lost despite knowing | No stated position | Lost, because the aversive value signal is lost |
+| 5 | Congenital insensitivity to pain | Fails despite knowing | No stated position | Impaired (no teaching signal); partial rule-following |
+| 6 | Pleasure loss vs drive loss | Loss of all felt valence abolishes self-initiated flexible action; apathy with intact consummatory pleasure is allowed | Dissociable: 'wanting' reduced with 'liking' intact is typical; reverse possible | Impaired whenever value representation or its use is impaired |
+| 7 | Wanting without liking | Seeking is felt (craving) or cue-bound; refuted by criterion-meeting seeking with no felt valence | Expected: compulsive, cue-triggered pursuit of what is neither liked nor cognitively wanted | Model-free or Pavlovian override of planning |
+| 8 | Ventromedial damage | Poor real-life choices despite knowledge | No stated position | Poor choices: the value comparator is damaged |
+| 9 | Loss of self-activation | Feeling flat; prompted performance normal | 'Wanting' absent; hedonic reactions may be spared | Value not translated into action; prompted performance normal |
+
+**What counts, amended.** H fails as stated in section 3. W fails if cue-triggered pursuit never occurs without 'liking', or if 'wanting' and 'liking' never dissociate. K\* fails if value representations are shown intact and accessible while flexible action is lost with feeling alone removed. Rows 4, 5, 8 and 9 are not to be scored against K\*, nor as support for H over K\*.
+
