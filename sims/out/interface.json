@@ -1,0 +1,156 @@
+{
+ "battery": {
+  "direct": {
+   "1a state shift alone leaves lever-pressing unchanged": {
+    "value": 0.0,
+    "match": false
+   },
+   "1b one taste in the new state then cuts pressing": {
+    "value": 0.0,
+    "match": true
+   },
+   "2 hated salt cue becomes wanted at once when salt-starved": {
+    "value": 1.5,
+    "match": true
+   },
+   "3 dopamine loss: no approach, pleasure reaction intact": {
+    "value": 0.0,
+    "match": true
+   },
+   "4 sensitisation: wanting up, liking unchanged": {
+    "value": 3.0,
+    "match": true
+   },
+   "5 hidden mood nudge changes consumption, not reported feeling": {
+    "value": 0.5000000000000002,
+    "match": false
+   },
+   "6 lost self-activation: no spontaneous action, normal when prompted, automatic reactions intact": {
+    "value": 0.0,
+    "match": true
+   }
+  },
+  "cached": {
+   "1a state shift alone leaves lever-pressing unchanged": {
+    "value": 1.0,
+    "match": true
+   },
+   "1b one taste in the new state then cuts pressing": {
+    "value": 1.0,
+    "match": false
+   },
+   "2 hated salt cue becomes wanted at once when salt-starved": {
+    "value": -1.5,
+    "match": false
+   },
+   "3 dopamine loss: no approach, pleasure reaction intact": {
+    "value": 0.0,
+    "match": true
+   },
+   "4 sensitisation: wanting up, liking unchanged": {
+    "value": 3.0,
+    "match": true
+   },
+   "5 hidden mood nudge changes consumption, not reported feeling": {
+    "value": 0.5000000000000002,
+    "match": false
+   },
+   "6 lost self-activation: no spontaneous action, normal when prompted, automatic reactions intact": {
+    "value": 0.0,
+    "match": true
+   }
+  },
+  "interface": {
+   "1a state shift alone leaves lever-pressing unchanged": {
+    "value": 1.0,
+    "match": true
+   },
+   "1b one taste in the new state then cuts pressing": {
+    "value": 0.0,
+    "match": true
+   },
+   "2 hated salt cue becomes wanted at once when salt-starved": {
+    "value": 1.5,
+    "match": true
+   },
+   "3 dopamine loss: no approach, pleasure reaction intact": {
+    "value": 0.0,
+    "match": true
+   },
+   "4 sensitisation: wanting up, liking unchanged": {
+    "value": 3.0,
+    "match": true
+   },
+   "5 hidden mood nudge changes consumption, not reported feeling": {
+    "value": 0.5000000000000002,
+    "match": true
+   },
+   "6 lost self-activation: no spontaneous action, normal when prompted, automatic reactions intact": {
+    "value": 0.0,
+    "match": true
+   }
+  },
+  "readout": {
+   "1a state shift alone leaves lever-pressing unchanged": {
+    "value": 0.0,
+    "match": false
+   },
+   "1b one taste in the new state then cuts pressing": {
+    "value": 0.0,
+    "match": true
+   },
+   "2 hated salt cue becomes wanted at once when salt-starved": {
+    "value": 1.5,
+    "match": true
+   },
+   "3 dopamine loss: no approach, pleasure reaction intact": {
+    "value": 0.0,
+    "match": true
+   },
+   "4 sensitisation: wanting up, liking unchanged": {
+    "value": 3.0,
+    "match": true
+   },
+   "5 hidden mood nudge changes consumption, not reported feeling": {
+    "value": 0.5000000000000002,
+    "match": true
+   },
+   "6 lost self-activation: no spontaneous action, normal when prompted, automatic reactions intact": {
+    "value": 0.0,
+    "match": true
+   }
+  }
+ },
+ "speed": [
+  {
+   "routes_per_outcome": 1,
+   "cached": 0.8167717565826933,
+   "interface": 0.8190470122867427,
+   "readout": 1.0
+  },
+  {
+   "routes_per_outcome": 2,
+   "cached": 0.800389039473469,
+   "interface": 0.8190470122867427,
+   "readout": 1.0
+  },
+  {
+   "routes_per_outcome": 5,
+   "cached": 0.77339267214365,
+   "interface": 0.8190470122867427,
+   "readout": 1.0
+  },
+  {
+   "routes_per_outcome": 10,
+   "cached": 0.7460244750672286,
+   "interface": 0.8190470122867427,
+   "readout": 1.0
+  },
+  {
+   "routes_per_outcome": 20,
+   "cached": 0.7150420501014257,
+   "interface": 0.8190470122867427,
+   "readout": 1.0
+  }
+ ]
+}

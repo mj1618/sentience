@@ -8,10 +8,12 @@ satisfy it. If so, the hard question is sentience alone.
 ## Method
 
 1. **Compile** what is known → `research/` (every claim tagged verified / recalled).
-2. **Game it out** → `scenarios/` (argument + simulation or calculation) to find
+2. **Conjecture and test**: propose an answer, then stress-test it → `scenarios/` (argument + simulation or calculation) to find
    constraints that make theories more or less likely.
-3. **Record** what moved → `LEDGER.md` (constraints, credences, open questions).
-4. **Report** in plain language → `updates/` (HTML pages, no background assumed).
+3. **Red-team**: a fresh reviewer tries to break each conclusion → `reviews/`. Nothing is
+   treated as reliable until it has survived this.
+4. **Record** what moved → `LEDGER.md` (constraints, credences, open questions).
+5. **Report** in plain language → `updates/` (HTML pages, no background assumed).
 
 ## Layout
 
@@ -19,7 +21,7 @@ satisfy it. If so, the hard question is sentience alone.
 |---|---|
 | `LEDGER.md` | Running list of constraints, theory scores, next scenarios |
 | `research/` | Literature briefs with sources |
-| `scenarios/` | One file per gamed-out question |
+| `scenarios/` | One file per stress test |
 | `sims/` | Code; results in `sims/out/` |
 | `updates/` | Plain-language progress pages |
 

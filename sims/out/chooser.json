@@ -1,0 +1,104 @@
+{
+ "needed_bias": [
+  {
+   "system": "one neuron near threshold",
+   "events": 10000.0,
+   "fraction_targeted": 1.0,
+   "bias_for_75_percent": 0.0023829498525986654
+  },
+  {
+   "system": "one neuron near threshold",
+   "events": 10000.0,
+   "fraction_targeted": 0.001,
+   "bias_for_75_percent": 0.5
+  },
+  {
+   "system": "small circuit, 100 ms",
+   "events": 100000000.0,
+   "fraction_targeted": 1.0,
+   "bias_for_75_percent": 2.382949852598665e-05
+  },
+  {
+   "system": "small circuit, 100 ms",
+   "events": 100000000.0,
+   "fraction_targeted": 0.001,
+   "bias_for_75_percent": 0.023829498525986648
+  },
+  {
+   "system": "whole-brain decision, 1 s",
+   "events": 1000000000000000.0,
+   "fraction_targeted": 1.0,
+   "bias_for_75_percent": 7.535549084174292e-09
+  },
+  {
+   "system": "whole-brain decision, 1 s",
+   "events": 1000000000000000.0,
+   "fraction_targeted": 0.001,
+   "bias_for_75_percent": 7.535549084174291e-06
+  }
+ ],
+ "detection": [
+  {
+   "bias": 0.01,
+   "events_to_detect_5sigma": 62500.0,
+   "bits_per_event": 0.0002885390081777927,
+   "entropy_cost_watts_whole_brain": 8.5600238e-07
+  },
+  {
+   "bias": 0.001,
+   "events_to_detect_5sigma": 6250000.0,
+   "bits_per_event": 2.8853900817779268e-06,
+   "entropy_cost_watts_whole_brain": 8.5600238e-09
+  },
+  {
+   "bias": 0.0001,
+   "events_to_detect_5sigma": 625000000.0,
+   "bits_per_event": 2.885390081777927e-08,
+   "entropy_cost_watts_whole_brain": 8.5600238e-11
+  },
+  {
+   "bias": 1e-06,
+   "events_to_detect_5sigma": 6250000000000.0,
+   "bits_per_event": 2.885390081777927e-12,
+   "entropy_cost_watts_whole_brain": 8.5600238e-15
+  },
+  {
+   "bias": 1e-08,
+   "events_to_detect_5sigma": 6.25e+16,
+   "bits_per_event": 2.885390081777927e-16,
+   "entropy_cost_watts_whole_brain": 8.5600238e-19
+  }
+ ],
+ "chaos": [
+  {
+   "lead_steps": 0,
+   "naive": 0.799,
+   "linear": 0.799
+  },
+  {
+   "lead_steps": 1,
+   "naive": 0.48733333333333334,
+   "linear": 0.73
+  },
+  {
+   "lead_steps": 2,
+   "naive": 0.45066666666666666,
+   "linear": 0.698
+  },
+  {
+   "lead_steps": 3,
+   "naive": 0.514,
+   "linear": 0.656
+  },
+  {
+   "lead_steps": 5,
+   "naive": 0.49133333333333334,
+   "linear": 0.5886666666666667
+  },
+  {
+   "lead_steps": 8,
+   "naive": 0.5166666666666667,
+   "linear": 0.5316666666666666
+  }
+ ]
+}
