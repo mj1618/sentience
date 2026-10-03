@@ -1,5 +1,7 @@
 # Scenario 5 — Two of our predictions meet the data
 
+> **Superseded in part.** Claims in this file were withdrawn or weakened on review (rounds 2–8). Read `reviews/round2-response.md` and `LEDGER.md` first; do not rely on the verdicts below.
+
 Sources: `research/05-neutral-experience.md`, `research/06-comparative-data.md`.
 
 ## 5a. "Feeling tracks novelty within a lifetime" (from Scenario 1A)
@@ -61,7 +63,3 @@ finding; flagged as open.
 makes a neutral sight experienced is the same puzzle. But valence remains the best
 handle, because it is the part with a clear job, clear evolutionary logic, and clear
 lesion evidence.
-
----
-
-> **Red-team status (round 2):** parts of this file were withdrawn or weakened on review. Read `reviews/round2-response.md` before relying on anything above.

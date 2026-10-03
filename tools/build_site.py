@@ -49,7 +49,9 @@ def main():
         h1 = re.search(r"<h1>(.*?)</h1>", body, re.S)
         eyebrow = re.search(r'class="eyebrow">(.*?)<', body, re.S)
         lede = re.search(r'class="lede">(.*?)</p>', body, re.S)
-        items.append((f.name, eyebrow.group(1) if eyebrow else f.stem,
+        corrected = "Correction notice" in body
+        items.append((f.name, (eyebrow.group(1) if eyebrow else f.stem)
+                      + (" · later corrected, see notice on page" if corrected else ""),
                       h1.group(1) if h1 else f.stem,
                       re.sub(r"<.*?>", "", lede.group(1)) if lede else ""))
     lis = "\n".join(
@@ -58,9 +60,10 @@ def main():
     (OUT / "index.html").write_text(
         HEAD + INDEX_STYLE + "</head>\n<body>\n<div class=\"wrap\">\n"
         "<h1>Where does feeling come from?</h1>\n"
-        "<p>An ongoing investigation into sentience: reading the research, then testing each possible "
-        "answer with simulations and calculations to see which survive. Each update is written to be "
-        "read with no background.</p>\n"
+        "<p>An ongoing investigation into sentience: propose an answer, work out what it predicts, "
+        "check that against published evidence, and have independent reviewers try to break the result. "
+        "Earlier updates contain claims that were later withdrawn; each such page carries a notice. "
+        "Each update is written to be read with no background.</p>\n"
         f"<ol>\n{lis}\n</ol>\n</div>\n</body>\n</html>\n")
     print(f"built {len(items)} update(s) into {OUT}")
 

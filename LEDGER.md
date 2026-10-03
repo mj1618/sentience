@@ -1,6 +1,6 @@
 # Ledger
 
-Updated 2026-10-03, after round 7 and its reviews.
+Updated 2026-10-03, after round 8 audit.
 
 **Rule:** nothing is treated as reliable until an independent reviewer has tried to break
 it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower form) ·
@@ -11,7 +11,7 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | # | Claim | Status | Note |
 |---|---|---|---|
 | C1 | Whatever sentience is must explain why we talk about it. | weakened | A premise about evidence, not a proof. Does not by itself eliminate "feeling does nothing" (acquaintance and common-cause replies stand). |
-| C2 | No new *pushing* field can influence neurons at any reach from 1 nm to 1 m. | survived, thinner | Shortfall 10⁵·⁵–10¹³ under the most generous pooling we think defensible; ~10³ under the reviewer's. Below 10 nm it rests on stellar cooling, which some models evade. |
+| C2 | No known candidate for a new *pushing* field is strong enough to influence neurons (1 nm to 1 m). | survived, thinner, model-dependent | Shortfall 10⁵·⁵–10¹³ under the most generous pooling we think defensible; ~10³ under the reviewer's. Below 10 nm it rests on stellar cooling, which some models evade. |
 | C3 | A one-way field is impossible in field theory. | **withdrawn** | Only exactly zero back-action is forbidden. |
 | C4 | The sign and strength of a feeling are tied to the brain state it goes with, not free-floating. | weakened | "Tied to brain state", not "to functional role". The 2⁻ⁿ figure is withdrawn. |
 | C5 | Feeling tracks novelty within a lifetime. | **failed** | Short-lived flies, bees, worms show the markers. The sim was learning vs no learning, not feeling vs none. |
@@ -24,49 +24,56 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | C12 | Tested theories addressed vision only; none addresses valence. | unreviewed (published) | |
 | C13 | EM-field identity collapses into function. | **withdrawn** | MRI and split-brain arguments were unfair to the actual theories. |
 | C14 | A rat's planning system does not know the body's new needs until the outcome is experienced in the new state. | survived (reading checked at abstract level) | Rival explanation not excluded: values stored per body state. |
-| C15 | Thermal noise in the brain is quantum in origin, and cortex amplifies single events. | survived | Plausibility estimate; depends on interpretation of quantum mechanics. |
-| C16 | External quantum devices are not biased by intention above ~3×10⁻⁵. | survived | Mostly tested without real pleasure/pain at stake. |
+| C15 | On some interpretations of quantum mechanics, thermal noise in the brain is quantum in origin (arithmetic checked). That cortex amplifies single events is published but **unreviewed**. | partly reviewed | Plausibility estimate; depends on interpretation of quantum mechanics. |
+| C16 | External quantum devices are not biased by intention above ~3×10⁻⁵. | **unreviewed number** | Mostly tested without real pleasure/pain at stake. |
 | C17 | A chooser biasing brain events by 10⁻⁸–10⁻² is untested and, if sustained, would be amplified by chaos. | new, from red team; re-run | Needs to know which events count for which outcome. |
 | C19 | Guessing a hidden computer draw at trivial stakes is not helped by more than ~+0.15% (420,472 trials). | **narrowed** (was: "aimed choosers closed") | Pseudo-random targets, weak stake, heterogeneous arms. No per-event limit follows. A chooser aimed at real pleasure/pain is untested. |
 | C20 | A chooser using only the brain's present state cannot be told apart from ordinary biology. | new; from red team | Unscored: no observation can move it. |
 | C21 | The xenon isotope result is far weaker than cited: 7-point effect, errors 4–7, on top of another anaesthetic; headline values were extrapolated. | new; abstract fetched | Not a test of any chooser or collapse theory. |
-| C22 | Insula, anterior cingulate and amygdala are not necessary for *reported* feeling (two patients, full text). | survived | Feeling altered in both; does not separate cortex-first from deep-first. |
+| C22 | Insula, anterior cingulate and amygdala are not necessary for *reported* feeling (two patients, full text; feeling altered in both; decades of possible rewiring). | survived | Feeling altered in both; does not separate cortex-first from deep-first. |
 | C23 | No brain structure passes an even-handed "generates feeling" test (stimulation evokes it and lesion abolishes it). | new; from red team | Three candidates (PAG, pallidum, hypothalamus) are untested, not confirmed. |
 | C25 | A patient without insula, cingulate, amygdala or medial frontal cortex rates pain 10/10 in real time. | survived (full text checked by adjudicator) | One patient. Removes limbic-cortex accounts only. |
 | C26 | Predictions-first, independently scored: existing evidence does not separate deep-first from cortex-makes-it-felt (≤1.5:1). The decisive observations have never been made. | adjudicated | |
 | C27 | Mass, heat output, stored electric energy and a loose event rate do not distinguish a brain from a liver, kettle or chip. | survived in this narrow form | Says nothing about coherent, band-limited or short-range sources. |
-| C28 | The brain's own electric fields influence the timing of firing (awake monkeys) and can carry activity across a cut (one lab, in vitro). | adjudicated: moderate for influence | Says nothing on whether the field is the experience. |
-| C29 | "The field is the experience" has not been tested by any existing data; the discriminating situations are empty. | adjudicated | Identity claims predict the same reports as their rivals. |
-| C30 | Lottery balls: numbers most often bet on (≤ 31) exceed chance by +0.15% ± 0.09% over ~220,000 balls in three samples; first sample borderline, the next two flat; wrong shape for a wanting-driven tilt. | NY and Texas reviewed; German sample unreviewed | Suggestive at most, weakening. Does not test a chooser inside the brain. |
+| C28 | *Applied* fields of natural size shift the timing of firing in awake monkeys. Feedback from the brain's *own* field is shown only in slices and under anaesthesia. Activity can cross a cut by field (one lab, in vitro). | adjudicated: moderate for influence; own-field role in the intact brain not confirmed | Says nothing on whether the field is the experience. |
+| C29 | "The field is the experience" has not been tested by the data gathered. | adjudicated | The pattern version is close to untestable; the feedback version is weakly testable; one proponent explicitly predicts that cancelling the field abolishes the experience. |
+| C30 | Lottery balls (New York + Texas, reviewed): numbers ≤ 31 exceed chance by +0.18% ± 0.09% (z = +1.87, one-sided p = 0.03): suggestive, not established. Texas alone shows nothing but was too small to confirm or exclude New York. The excess is absent for 1–12 and for 7, does not rise on higher-sales days, and is uneven across games. | reviewed (reviewer's wording) | A German sample (−0.04% ± 0.26%) is unreviewed. Not a test of anything inside a brain. |
 | C31 | Two proposed markers of experience are eliminated: the size of the brain's electrical waves, and the late frontal wave seen only when people must respond. | adjudicated | |
 | C32 | Two markers survive on partial coverage: rear-cortex activity and pulse-echo complexity. | adjudicated | 4–5 of 9 cases; one group each. |
-| C33 | No marker of experience has been tested against feeling (valence). | adjudicated | The project's central question is experimentally untouched. |
-| C34 | Felt pain can be signalled in real time under general anaesthesia and not remembered (5 of 12 responders). | adjudicated (one study) | "Not reported later" ≠ "not felt". |
+| C33 | None of the eight markers we examined was tested against presence versus absence of felt valence *in the evidence we gathered* (gathered without web search). | adjudicated, narrow | A pain-imaging literature exists that we have not reviewed; a 2025 preprint applies one marker to heat pain. |
+| C34 | Shortly after intubation under general anaesthesia, some patients answered by hand squeeze; 5 of 12 such responders indicated pain; none recalled it. Responders were more lightly anaesthetised by monitor and bodily signs. | adjudicated (one study, abstract) | Being unremembered is not the same as being unfelt. |
 | C35 | Illusion vs real inner quality: no evidence separates them; not established that ordinary people share the puzzle. | adjudicated | |
-| C24 | The report barrier: evidence about feeling in anything that cannot report is behaviour, which all theories explain. | our synthesis; consistent with round 5 outcome | |
-| C18 | The standard animal markers detect a valence *signal*, not whether it is felt. | weakened → restated | Present from worms up; cannot draw a line. |
+| C24 | "Report barrier": in our seven rounds, evidence from non-reporting systems did not separate theories. | our description of our own results; **not a principle**. Audit objections: nulls traced to mis-stated rivals, abstract-only reading and experiments not yet done; the barrier is porous (calibrate in reporting humans, extend by homology; non-verbal report). | |
+| C18 | Standard animal markers of valence are reported even in a 302-neuron worm, so they may detect a signal and not whether it is felt. | **unreviewed** (published claims not checked by a reviewer) | |
 
-## Scoreboard (reset after review)
+## Families of answer (numbers dropped after the round 8 audit)
 
-Round 1's movements were mostly one option's loss being handed to another. Reset with a
-row for what we have not thought of.
+The percentages were not connected to any test and are removed. Families still on the table:
 
-| Family | R1 | Now | Comment |
-|---|---|---|---|
-| Functional organisation (incl. affect-first, workspace, higher-order) | 60 | 30 | Was absorbing others' losses without positive evidence |
-| Substrate / causal-structure (integrated information, biological naturalism, EM pattern) | 3 | 14 | Wrongly folded into "organisation"; EM arguments withdrawn |
-| Inner-nature monism / panpsychism | 30 | 15 | Faces the same report problem as epiphenomenalism |
-| Illusionism | (in 60) | 8 | |
-| Lawful epiphenomenalism / laws without force | 2 | 7 | Our eliminations hit only the law-free version |
-| Quantum: chooser or collapse | 3 | 3 | Round 3: aimed choosers closed by precognition replications; xenon hint much weaker; state-local version unscored |
-| Interactionism / strong emergence | — | 3 | Not previously listed |
-| Idealism / neutral monism | — | 4 | Not previously listed |
-| New pushing field | 1 | <1 | |
-| Mis-framed, or not yet conceived | — | 15 | |
+- Feeling is what certain information-processing is like (includes workspace, higher-order, affect-first-as-function).
+- Feeling depends on the specific physical stuff or structure of brains (includes integrated information, living-tissue views, the electric-field theories).
+- Feeling is the "inside" of all matter.
+- Feeling is an illusion produced by the brain's self-model.
+- Feeling does no work but is tied to brain states by law.
+- Quantum: a chooser, or collapse in nerve cells.
+- Mind and matter separate, or mind basic.
+- A new pushing field (no known candidate strong enough).
+- Framed wrongly, or not yet conceived.
+
+**What actual tests moved, within families:**
+
+| Moved | Direction | Source |
+|---|---|---|
+| Accounts centring feeling on insula, anterior cingulate, amygdala | down substantially | two patients, full text (round 4–5) |
+| Accounts whose signature is the late frontal wave (P3b) | down | no-report studies (round 7) |
+| "Experience = size of the brain's electrical waves" | out | dreamless sleep (round 7) |
+| A new pushing force | no known candidate strong enough | round 1–2 |
+| Deep-first vs cortex-makes-it-felt | about 1.1–1.5 : 1 toward deep-first | round 5 |
+| Everything else | not moved by any test we ran | |
 
 ## Owner's hypothesis: consciousness = sentience + thought
 
-Viable; not yet distinguished from Panksepp/Damasio/Solms/Dickinson. Open issues:
+Viable; not yet distinguished from Panksepp/Damasio/Solms/Dickinson. **The rows that bear on it most (C8–C12) are still unreviewed after eight rounds**; round 9 targets them. Open issues:
 wanting vs liking (teacher or driver); whether neutral awareness is a third ingredient,
 the arousal axis of feeling, or a zero point of valence; whether unfelt valuation exists.
 
@@ -99,11 +106,10 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 5. Split-brain: does a learned aversion taught to one hemisphere transfer to the other?
 6. Xenon isotopes done properly (gases interleaved within a day, blends of the two kinds, no second anaesthetic).
 
-## Conjecture queue (round 8)
+## Conjecture queue (round 9): back to the owner's question
 
-1. **Valence under anaesthesia and sleep**: gather everything known about real-time signals of pain or pleasure in states without later report (isolated forearm, dream emotion, sedation). Predictions first.
-2. **Integrated-information theory** against its passed and failed predictions.
-3. **Red-team the whole ledger**: one reviewer reads every "survived" row and tries again.
+1. **Felt versus unfelt valuation in reporting humans**, predictions first, the owner's hypothesis stated against named rivals: subliminal reward and effort, affective blindsight, pain asymbolia and opioid dissociation, apathy versus anhedonia, akinetic mutism.
+2. **Full-text review of C8–C12.**
 
 ## Process rules (added round 2)
 
@@ -115,4 +121,5 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 - Read the methods, not just the abstract, before computing from a paper's numbers.
 - Unfalsifiable variants are listed unscored.
 - Update pages: only reviewed claims in the short version.
+- From round 8: every update page is checked by an independent auditor against the reviews *before* publishing; summary lines quote reviewers' wording.
 - Default method from round 5: write each account's predictions and commit them, gather evidence with a separate agent told not to score, have an independent adjudicator score. We do not write the verdict.

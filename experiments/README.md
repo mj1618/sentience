@@ -2,7 +2,8 @@
 
 Sketches of real-world experiments that came out of the investigation. Each is a
 starting point for someone with a lab, not a finished protocol. **None has been
-reviewed by a specialist.** Sensitivities are our arithmetic.
+reviewed by a specialist.** Items 3 and 4 concern behaviour or events outside a
+reporting brain and cannot by themselves show whether anything is felt. Sensitivities are our arithmetic.
 
 ## 1. Which feelings go first?
 
@@ -52,9 +53,12 @@ reviewed by a specialist.** Sensitivities are our arithmetic.
   while full and test again.
 - **Species.** Honeybee, shore crab, octopus, zebrafish, with a rat arm as positive
   control.
-- **Interpretation.** Rat-like pattern (no drop until re-tasting): the two-system
-  arrangement is old and widespread. Immediate drop: the animal's action system reads
-  body state directly. No drop even after re-tasting: habit only.
+- **Interpretation.** Rat-like pattern (no drop until re-tasting): the animal's action
+  values update only through experienced outcomes, as in rats. (Whether that reflects
+  two systems or one store keyed by body state is not settled.) Immediate drop: action
+  values read body state directly. No drop even after re-tasting: habit only.
+- **Limit.** Behaviour in animals that cannot report; by itself it cannot show whether
+  anything is felt.
 
 ## 5. Xenon isotopes, done properly
 

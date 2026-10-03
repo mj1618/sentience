@@ -1,5 +1,7 @@
 # Scenario 3 — Engine, teacher, or interface?
 
+> **Superseded in part.** Claims in this file were withdrawn or weakened on review (rounds 2–8). Read `reviews/round2-response.md` and `LEDGER.md` first; do not rely on the verdicts below.
+
 Code: `sims/interface.py`, `sims/imagination.py`. Evidence: `research/04-hedonic-interface.md`.
 
 ## Conjecture
@@ -99,7 +101,3 @@ being *told* your body no longer wants something works the same way is untested.
   reward dose too small to feel; (ii) devaluation tests in bees, crabs, octopus, fish.
 - **Refined hypothesis:** thought does not just serve feeling. Feeling is how the
   body's needs become visible to thought at all, and thought can ask for a pale preview.
-
----
-
-> **Red-team status (round 2):** parts of this file were withdrawn or weakened on review. Read `reviews/round2-response.md` before relying on anything above.

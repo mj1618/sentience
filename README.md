@@ -23,12 +23,15 @@ satisfy it. If so, the hard question is sentience alone.
 | `research/` | Literature briefs with sources |
 | `scenarios/` | One file per stress test |
 | `sims/` | Code; results in `sims/out/` |
-| `updates/` | Plain-language progress pages |
+| `reviews/` | Red-team reports, independent adjudications, and our responses |
+| `experiments/` | Sketches of real-world experiments that would move the question |
+| `updates/` | Plain-language progress pages (source); `docs/` is the built site |
 
-Run: `.venv/bin/python sims/valence_evolution.py` and `.venv/bin/python sims/field_constraints.py`.
+Current method (from round 5): write each rival account's predictions and commit them; a separate agent gathers evidence without scoring; an independent adjudicator scores; an auditor checks each update page against the reviews before it is published.
 
-## Standing caveat
+## Standing caveats
 
-Simulations here model what a feeling-like signal *does*. None can show that anything is
-felt. Their use is to pin down what sentience would have to be like, and to rule out
-stories that don't fit.
+- No simulation in this repo has survived review as evidence. They are kept as worked
+  attempts and are useful for finding holes in ideas, not for supporting them.
+- Summaries have repeatedly been stronger than the reviews behind them. When a summary
+  and a file in `reviews/` disagree, the review is right.

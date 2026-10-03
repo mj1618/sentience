@@ -1,5 +1,7 @@
 # Scenario 4 — A field that chooses instead of pushes
 
+> **Superseded in part.** Claims in this file were withdrawn or weakened on review (rounds 2–8). Read `reviews/round2-response.md` and `LEDGER.md` first; do not rely on the verdicts below.
+
 Code: `sims/chooser.py`. Evidence: `research/07-quantum-outcome-bias.md`.
 Prompted by the owner's notes: Scenario 2 showed a weak field cannot *push* warm matter.
 But when a quantum event can go two ways at equal energy, picking one costs no energy.
@@ -116,7 +118,3 @@ signalling.
 **Correction to round 1.** Scenario 2 said "new field: out". That holds for fields that
 push. The honest statement is: *pushing fields are out; a choosing rule is open but
 costly*.
-
----
-
-> **Red-team status (round 2):** parts of this file were withdrawn or weakened on review. Read `reviews/round2-response.md` before relying on anything above.

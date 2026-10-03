@@ -1,5 +1,7 @@
 # Scenario 1 — Does sentience beat an equally clever automaton?
 
+> **Superseded in part.** Claims in this file were withdrawn or weakened on review (rounds 2–8). Read `reviews/round2-response.md` and `LEDGER.md` first; do not rely on the verdicts below.
+
 Code: `sims/valence_evolution.py`. Raw results: `sims/out/valence_evolution.json`.
 
 **What these simulations can and cannot show.** They model an internal good/bad signal
@@ -143,7 +145,3 @@ seem mysterious to the thinker are properties the motivator *must* have to work.
   driver is downstream and need not be felt.** Pain asymbolia (pain felt as sensation
   without hurting, and patients stop protecting themselves) pulls the other way and
   suggests that for pain the feeling is the driver. Unresolved; next scenario.
-
----
-
-> **Red-team status (round 2):** parts of this file were withdrawn or weakened on review. Read `reviews/round2-response.md` before relying on anything above.
