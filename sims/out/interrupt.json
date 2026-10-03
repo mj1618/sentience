@@ -1,0 +1,122 @@
+[
+ {
+  "chunk": 2,
+  "mean_stake": 3.0,
+  "full": 1.0,
+  "value": 0.93,
+  "urgency": 0.934,
+  "value/slack": 0.984,
+  "value+slack": 0.99,
+  "never": 0.914
+ },
+ {
+  "chunk": 2,
+  "mean_stake": 6.0,
+  "full": 1.0,
+  "value": 0.95,
+  "urgency": 0.981,
+  "value/slack": 0.988,
+  "value+slack": 0.995,
+  "never": 0.91
+ },
+ {
+  "chunk": 2,
+  "mean_stake": 15.0,
+  "full": 1.0,
+  "value": 0.974,
+  "urgency": 0.996,
+  "value/slack": 0.992,
+  "value+slack": 0.998,
+  "never": 0.908
+ },
+ {
+  "chunk": 5,
+  "mean_stake": 3.0,
+  "full": 1.0,
+  "value": 0.867,
+  "urgency": 0.86,
+  "value/slack": 0.927,
+  "value+slack": 0.932,
+  "never": 0.86
+ },
+ {
+  "chunk": 5,
+  "mean_stake": 6.0,
+  "full": 1.0,
+  "value": 0.874,
+  "urgency": 0.892,
+  "value/slack": 0.947,
+  "value+slack": 0.954,
+  "never": 0.84
+ },
+ {
+  "chunk": 5,
+  "mean_stake": 15.0,
+  "full": 1.0,
+  "value": 0.919,
+  "urgency": 0.964,
+  "value/slack": 0.965,
+  "value+slack": 0.978,
+  "never": 0.824
+ },
+ {
+  "chunk": 10,
+  "mean_stake": 3.0,
+  "full": 1.0,
+  "value": 0.803,
+  "urgency": 0.797,
+  "value/slack": 0.826,
+  "value+slack": 0.842,
+  "never": 0.797
+ },
+ {
+  "chunk": 10,
+  "mean_stake": 6.0,
+  "full": 1.0,
+  "value": 0.787,
+  "urgency": 0.745,
+  "value/slack": 0.852,
+  "value+slack": 0.863,
+  "never": 0.745
+ },
+ {
+  "chunk": 10,
+  "mean_stake": 15.0,
+  "full": 1.0,
+  "value": 0.85,
+  "urgency": 0.859,
+  "value/slack": 0.904,
+  "value+slack": 0.916,
+  "never": 0.697
+ },
+ {
+  "chunk": 20,
+  "mean_stake": 3.0,
+  "full": 1.0,
+  "value": 0.698,
+  "urgency": 0.69,
+  "value/slack": 0.696,
+  "value+slack": 0.706,
+  "never": 0.69
+ },
+ {
+  "chunk": 20,
+  "mean_stake": 6.0,
+  "full": 1.0,
+  "value": 0.652,
+  "urgency": 0.58,
+  "value/slack": 0.624,
+  "value+slack": 0.674,
+  "never": 0.58
+ },
+ {
+  "chunk": 20,
+  "mean_stake": 15.0,
+  "full": 1.0,
+  "value": 0.757,
+  "urgency": 0.538,
+  "value/slack": 0.753,
+  "value+slack": 0.761,
+  "never": 0.471
+ }
+]
