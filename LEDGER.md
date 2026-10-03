@@ -41,7 +41,7 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | C31 | Two proposed markers of experience are eliminated: the size of the brain's electrical waves, and the late frontal wave seen only when people must respond. | adjudicated | |
 | C32 | Two markers survive on partial coverage: rear-cortex activity and pulse-echo complexity. | adjudicated | 4–5 of 9 cases; one group each. |
 | C33 | None of the eight markers we examined was tested against presence versus absence of felt valence *in the evidence we gathered* (gathered without web search). | adjudicated, narrow | A pain-imaging literature exists that we have not reviewed; a 2025 preprint applies one marker to heat pain. |
-| C34 | Shortly after intubation under general anaesthesia, some patients answered by hand squeeze; 5 of 12 such responders indicated pain; none recalled it. Responders were more lightly anaesthetised by monitor and bodily signs. | adjudicated (one study, abstract) | Being unremembered is not the same as being unfelt. |
+| C34 | In two multicentre studies about 5% and 11% of patients squeezed a hand to spoken prompts shortly after intubation under general anaesthesia, and almost none remembered it. Roughly half of responders also squeezed when asked if they were in pain, but many squeezed to nonsense statements too, so this does not establish how many felt pain. | adjudicated (round 8; adjudicator's wording) | Tests were before surgery; no brain recordings at the moments pain was signalled. |
 | C35 | Illusion vs real inner quality: no evidence separates them; not established that ordinary people share the puzzle. | adjudicated | |
 | C24 | "Report barrier": in our seven rounds, evidence from non-reporting systems did not separate theories. | our description of our own results; **not a principle**. Audit objections: nulls traced to mis-stated rivals, abstract-only reading and experiments not yet done; the barrier is porous (calibrate in reporting humans, extend by homology; non-verbal report). | |
 | C18 | Standard animal markers of valence are reported even in a 302-neuron worm, so they may detect a signal and not whether it is felt. | **unreviewed** (published claims not checked by a reviewer) | |
@@ -121,5 +121,6 @@ the arousal axis of feeling, or a zero point of valence; whether unfelt valuatio
 - Read the methods, not just the abstract, before computing from a paper's numbers.
 - Unfalsifiable variants are listed unscored.
 - Update pages: only reviewed claims in the short version.
+- From round 9: an independent fairness pre-check of each account's wording happens *before* evidence is scored (rivals were mis-stated in rounds 5, 6, 7 and 8).
 - From round 8: every update page is checked by an independent auditor against the reviews *before* publishing; summary lines quote reviewers' wording.
 - Default method from round 5: write each account's predictions and commit them, gather evidence with a separate agent told not to score, have an independent adjudicator score. We do not write the verdict.

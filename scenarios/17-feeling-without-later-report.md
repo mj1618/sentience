@@ -36,3 +36,25 @@ establish how often "nothing reported later" hides something signalled at the ti
 **What would count.** D is in trouble if pain is signalled only at moments of awake-like
 cortical activity and tracks the sleep-inducing dose. C is in trouble if pain is
 signalled with cortical measures in the unconscious range and tracks pain-killer dose.
+
+## Part 2 — Independent scoring (from `reviews/round8-realtime-adjudication.md`)
+
+| Row | D | C |
+|---|---|---|
+| 1 Forearm responders and cortex | consistent (weak) | no test once fairly stated |
+| 2 Pain-killer vs sleep-inducing dose | consistent (weak) | consistent (weak) |
+| 3 Sedation with amnesia | confirmed (shared) | confirmed (shared) |
+| 4 Bodily signs under deep anaesthesia | no test | no test |
+| 5 Dream emotion | no test | consistent (very weak) |
+| 6 Disorders of consciousness | no test | no test |
+
+Overall shift: none (about 1:1). We again mis-stated C, testing it through a frontal
+recording its proponents would not accept.
+
+## Part 3 — Summary sentences permitted by the adjudicator (verbatim)
+
+1. "In two multicentre studies, about 5% and 11% of patients squeezed a hand to spoken prompts shortly after the breathing tube was placed under general anaesthesia, and almost none remembered it afterwards."
+2. "Roughly half of those who responded also squeezed when asked if they were in pain, but many squeezed to nonsense statements too, so this does not establish how many actually felt pain."
+3. "These tests were done before surgery began, and no study has recorded brain activity at the moments pain was signalled or related those signals to pain-killer dose."
+4. "The evidence therefore did not separate the deep-first account from the cortical account; an independent adjudicator scored the overall shift as none."
+5. "The cortical account was again tested through a frontal EEG proxy its proponents would not accept, so the apparent difficulties for it in this round should not be counted against it."

@@ -1,0 +1,156 @@
+<title>Sentience Update 8</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 8 · 4 October 2026</div>
+  <h1>An audit of everything so far: what we overstated, and a change of direction</h1>
+  <p class="lede">This round we asked a fresh reviewer to go back over every claim the project currently treats as standing, and to check whether our public summaries matched the reviews behind them. They mostly did not. This update reports what was wrong, what has been changed, and where the work goes next.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">Every line here is taken from a reviewer's or adjudicator's report. This page was itself checked against those reports before publication.</p>
+  <ul>
+    <li>Of the eight items Update 7 listed as "reviewed and standing", one matched its review, six were stated more strongly than the review, and one had never been reviewed.</li>
+    <li>The percentage scoreboard was, in the auditor's word, decoration. Its numbers were not connected to any test. It has been removed.</li>
+    <li>The striking observation in Update 7, patients signalling pain under anaesthesia, is weaker than we reported: many of those patients also squeezed to nonsense statements, so it does not establish how many actually felt pain.</li>
+    <li>The auditor judged that the project had drifted from your question, and that the evidence bearing most directly on your hypothesis has not been reviewed in eight rounds. The next round goes back to it.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="num">THE AUDIT</div>
+  <h2>What we said, and what the reviews actually support</h2>
+  <div class="scroll"><table>
+    <tr><th>Update 7 said</th><th>What the review behind it supports</th></tr>
+    <tr><td>"No new pushing force can be behind feeling."</td><td>No known candidate is strong enough. At the very smallest distances this rests on evidence from stars that some models get around.</td></tr>
+    <tr><td>"The brain's randomness is quantum at root."</td><td>True on some readings of quantum physics. Only the arithmetic was checked. The companion claim, that the brain amplifies single events, was never reviewed.</td></tr>
+    <tr><td>"The brain's own electric fields do nudge its cells."</td><td>Fields <em>applied from outside</em> at natural strength shift the timing of cells in awake monkeys. For the brain's own field this has been shown only in tissue slices and under anaesthesia.</td></tr>
+    <tr><td>"Three regions are not needed for feeling."</td><td>Not needed for <em>reported</em> feeling, in two patients, in both of whom feeling was altered, after decades in which the brain could have rewired.</td></tr>
+    <tr><td>"The usual signs of feeling in animals appear even in a 302-cell worm."</td><td>Never checked by any reviewer of ours. Removed from the list.</td></tr>
+    <tr><td>"Feeling can occur and be signalled without being remembered."</td><td>See the next section.</td></tr>
+    <tr><td>"No brain marker has ever been tested against feeling."</td><td>None of the eight markers we looked at, in the evidence we gathered, which was gathered without full web search. A body of pain-imaging research exists that we have not reviewed.</td></tr>
+    <tr><td>Deep brain versus outer cortex: evidence does not decide.</td><td>Matches its review.</td></tr>
+  </table></div>
+  <p>Update 7 has been corrected in place and carries a notice. Updates 4 and 6 carry new notices too (below). The first page of the site now marks every update that was later corrected.</p>
+</section>
+
+<section>
+  <div class="num">THIS ROUND'S NEW WORK</div>
+  <h2>Pain under anaesthesia: a closer look</h2>
+  <p>We followed up the anaesthesia observation with predictions written in advance and independent scoring. The scorer supplied the sentences we are allowed to use, and here they are unaltered.</p>
+  <ul>
+    <li>"In two multicentre studies, about 5% and 11% of patients squeezed a hand to spoken prompts shortly after the breathing tube was placed under general anaesthesia, and almost none remembered it afterwards."</li>
+    <li>"Roughly half of those who responded also squeezed when asked if they were in pain, but many squeezed to nonsense statements too, so this does not establish how many actually felt pain."</li>
+    <li>"These tests were done before surgery began, and no study has recorded brain activity at the moments pain was signalled or related those signals to pain-killer dose."</li>
+    <li>"The evidence therefore did not separate the deep-first account from the cortical account; an independent adjudicator scored the overall shift as none."</li>
+    <li>"The cortical account was again tested through a frontal EEG proxy its proponents would not accept, so the apparent difficulties for it in this round should not be counted against it."</li>
+  </ul>
+  <p>The last sentence describes a mistake we have now made in four rounds running: describing a rival idea in a form its own supporters would reject. From the next round an independent check of the wording happens before any evidence is scored.</p>
+</section>
+
+<section>
+  <div class="num">TWO IDEAS OF OURS, DOWNGRADED</div>
+  <h2>The "report barrier" and "experiments cannot pick a winner"</h2>
+  <p>In Updates 4 and 6 we offered two general lessons: that evidence from anything unable to report cannot separate the theories, and that rival claims about what feeling <em>is</em> all predict the same reports. We labelled both as our own unreviewed thinking. The auditor has now reviewed them and judged both to be over-generalisations.</p>
+  <ul>
+    <li>Our "nothing decided" results had duller explanations: we had mis-stated the rival ideas, we were often reading summaries and not full papers, and the decisive experiments have simply not been done yet. That is a practical gap, not a wall.</li>
+    <li>Theories do differ on which brain conditions go along with a report. That is exactly how one marker was struck off in Update 7.</li>
+    <li>Other identity questions in science (what heat is, what a gene is) were settled by intervening and then choosing the best explanation.</li>
+  </ul>
+  <p>The auditor's verdict: fair as a description of our first seven rounds, overreach as a claim about the question, and in practice an excuse.</p>
+</section>
+
+<section>
+  <div class="num">WHAT REPLACES THE SCOREBOARD</div>
+  <h2>What our tests have actually moved</h2>
+  <div class="scroll"><table>
+    <tr><th>Idea</th><th>Movement</th><th>From</th></tr>
+    <tr><td>Feeling is centred on the insula, anterior cingulate or amygdala</td><td>Down substantially</td><td>Two patients; papers read in full</td></tr>
+    <tr><td>Experience shows up as a late wave over the front of the brain</td><td>Down</td><td>Studies where people experience without having to respond</td></tr>
+    <tr><td>Experience is the size of the brain's electrical waves</td><td>Out</td><td>Dreamless sleep has the largest waves</td></tr>
+    <tr><td>Feeling is a new pushing force</td><td>No known candidate strong enough</td><td>Physics limits</td></tr>
+    <tr><td>Deep brain makes feeling, versus outer cortex makes it felt</td><td>Between 1.1 and 1.5 to 1 toward the deep brain; effectively undecided</td><td>Independent scoring</td></tr>
+    <tr><td>Every other family of answer</td><td>Not moved by any test we ran</td><td></td></tr>
+  </table></div>
+</section>
+
+<section>
+  <div class="num">THE AUDITOR'S JUDGEMENT OF THE PROJECT</div>
+  <h2>Most and least valuable so far</h2>
+  <p><b>Most valuable:</b> the method of writing predictions first and having them scored independently, together with the public record of corrections; two concrete experiments proposed by the scorers; and the narrow debunkings that held (the three brain regions; the much-cited xenon and precognition evidence being far weaker than usually claimed).</p>
+  <p><b>Least valuable:</b> the scoreboard; the simulations, every one of which was withdrawn; and the "chooser" and lottery thread, which took a great deal of effort on an unlikely option and ended in a test that says nothing about brains.</p>
+  <p><b>Drift.</b> Your question was where feeling comes from, with the working idea that feeling is the motivator and thought works out how to satisfy it. Rounds 2 to 7 went to fields, choosers, lottery balls and markers of seeing and dreaming. The published findings that bear most directly on your idea (people who cannot feel pain, people who lose their inner drive, the difference between wanting and liking) were listed in Update 1 and have never been put through review.</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>This page reports reviewers' findings and quotes their wording. It was checked against their reports by a separate auditor before being published.</li>
+    <li>The audit itself checked two sources directly; the rest of its work was comparing our summaries with our own reviews.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next round: back to your hypothesis</h2>
+  <p>Already under way, with the predictions written and saved before any evidence was gathered, and the wording being checked for fairness first.</p>
+  <p><b>Is felt good-and-bad what motivates?</b> Your idea is set against two named rivals: that an unfelt "wanting" signal does the motivating, and that simply knowing what is valuable is enough. Nine situations are tested, among them: rewards shown too briefly to be seen, people working for a drug dose too small to feel, pain felt without unpleasantness, people born unable to feel pain, loss of pleasure versus loss of drive, and patients who know what they should do but have lost the feeling that goes with it.</p>
+</section>
+
+<footer>The audit: <code>reviews/round8-ledger-audit.md</code>. This round's scoring: <code>reviews/round8-realtime-adjudication.md</code>. Running conclusions: <code>LEDGER.md</code>.</footer>
+
+</div>

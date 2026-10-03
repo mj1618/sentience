@@ -97,6 +97,7 @@ reporting brain and cannot by themselves show whether anything is felt. Sensitiv
 - **Method that already exists.** The isolated forearm technique: a cuff keeps the paralysing drug out of one arm, so an anaesthetised patient can squeeze in answer to questions. In one study 5 of 12 responders signalled pain; none recalled it.
 - **Design.** During routine surgery with this technique, ask at intervals "are you in pain?" and record at the same moments the two surviving markers (rear-cortex activity; pulse-echo complexity where feasible) and frontal activity.
 - **Interpretation.** Tells us which measures rise and fall with signalled pain, without relying on memory. It would be the first test of any marker against feeling.
+- **Controls needed (from the round 8 adjudication).** In existing studies many patients also squeezed to nonsense statements, the pain question allowed only "yes", and the assessor was not blinded. A usable version needs yes/no answers by different squeezes, nonsense and catch questions, a blinded assessor, testing during surgery and not only after intubation, and a later check of whether the signal itself is remembered.
 - **Ethics.** Any signal of pain is acted on immediately; this is already clinical practice where the technique is used.
 
 ## 10. Does the sense of mystery depend on training?
