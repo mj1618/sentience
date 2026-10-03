@@ -1,0 +1,162 @@
+<title>Sentience Update 11</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 11 · 4 October 2026</div>
+  <h1>The edge of what the evidence can decide</h1>
+  <p class="lede">Round 11 tested the one remaining contrast: is a feeling the same thing as a value signal the planning mind can use, or a further layer built on top of it? No existing study tests it. The independent scorer was then asked to step back over the last three rounds and say plainly where things stand. This update reports that answer, a correction to Update 1, and two things we need from you.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">The independent scorer's sentences, unaltered.</p>
+  <ul>
+    <li>"Round 11 asked whether a feeling of good or bad simply is a value signal being available for planning, or a further, higher-order representation of it; we found no study that measured both in the same people while one of them was changed, so the question was not tested."</li>
+    <li>"All three rows were scored 'no test' for both accounts, and the balance between them did not move."</li>
+    <li>"We found no case of a value signal being broadly available for planning while people rated their feeling at zero, no case of rated feeling falling while that availability stayed the same, and no case of prefrontal disruption leaving both unchanged; 'none found' does not mean 'none exists'."</li>
+    <li>"The brain-stimulation effect such a test would rely on is itself uncertain: a replication attempt with 53 analysed participants did not reproduce the original drop in people's insight into their own perception, and that null result has in turn been criticised as underpowered."</li>
+    <li>"The nearest thing to a test, a study of 27 people given stimulation to the left prefrontal cortex, found self-rated mood unchanged; it stimulated one side only and measured neither rated feeling about a stimulus nor value-guided planning, so it counts for neither account."</li>
+    <li>"Our hypothesis, in the only form we can defend, says the same thing as one existing higher-order theory (Rolls's) and differs from the other (LeDoux and Brown's, and Lau's) only in what people would report feeling."</li>
+    <li>"Evidence of this kind can at most show which brain process accompanies reported feeling; it cannot show why any process is felt at all, and we have not found where sentience comes from."</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What round 11 did</h2>
+  <p>Update 10 ended with a fork: feeling is either the same thing as a value signal available to the planner, or something added. Round 11 tested the first reading against the best-developed version of the second.</p>
+  <ul>
+    <li><b>Identity.</b> A feeling of good or bad is a value signal being available to the planning system.</li>
+    <li><b>Higher-order.</b> Value signals are not in themselves felt. A feeling exists only when the brain forms a further representation of the state, in a network that includes the front and sides of the cortex.</li>
+  </ul>
+  <p>The fairness check, done before any evidence was gathered, changed three things. It found that "higher-order" covers two different theories, and that one of them (Edmund Rolls's) says emotional states are felt because they are available to the planning system, which is the identity claim in other words. It found that no supporter of the other version (Joseph LeDoux, Richard Brown, Hakwan Lau) claims that elaborate planning can run on unfelt value; they claim that for defensive reactions, habits and at most simple one-step choices. And it found that our identity claim was circular as written, and made it testable by fixing in advance what "available to the planner" means: the same value has to be shown driving at least two different strict uses, one of them a first-try inference or a multi-step choice.</p>
+  <p>It also stated a limit. Every outcome that could separate the two is a difference in what people <em>report</em> feeling. There is no way to tell them apart that does not rely on self-report.</p>
+  <p>Then the evidence. No study found measures both things, the availability of a value and the rated feeling, in the same people while one of them is changed. Every row was "no test".</p>
+</section>
+
+<section>
+  <h2>Where three rounds leave your hypothesis</h2>
+  <p>The scorer was asked to step back. What follows is their assessment, closely paraphrased, with their own words in quotation marks.</p>
+  <ol>
+    <li>Your hypothesis survives only as an identity claim.</li>
+    <li>That claim is Rolls's theory in other words.</li>
+    <li>It differs from the LeDoux, Brown and Lau theory only in what people would report feeling, read by a convention both sides have to accept.</li>
+    <li>"No row in three rounds amounted to a test. What has been learned is where the hypothesis sits in an existing debate, not where sentience comes from."</li>
+  </ol>
+  <p><b>Is there anything left that an experiment could decide?</b> One thing, which the scorer called narrow and conditional: holding fixed that a value is in broad use for planning, can a person's rated feeling be moved? The proposed experiment establishes that broad use with real-money bids, a first-try inference and brain recording, then tries two ways of shifting the feeling: hypnotic suggestion to reduce unpleasantness, and magnetic stimulation of the prefrontal cortex on both sides. If rated feeling falls while the value's availability stays the same, the identity reading fails. If the stimulation demonstrably works and neither changes, the LeDoux, Brown and Lau reading fails.</p>
+  <p>The scorer listed the limits of even that experiment. It cannot touch Rolls's version. Its result can only be read if self-report is taken as the measure of feeling. And it "would decide which <em>function</em> accompanies reported feeling, not why that function is felt". Their conclusion: "On the owner's question in its strong form, the project has reached the edge of what evidence decides."</p>
+
+  <h3>What the choice then rests on</h3>
+  <p>The scorer named the arguments that bear on it once evidence runs out.</p>
+  <ul>
+    <li><b>Definition or discovery.</b> If "felt" just means "available to the planner", the identity claim is true by definition and explains nothing.</li>
+    <li><b>Feelings with nothing underneath.</b> The higher-order view implies a feeling could exist with no underlying state at all. Whether that makes sense is the standard objection to it.</li>
+    <li><b>Ownership.</b> Whether a state can be felt without being represented as one's own.</li>
+    <li><b>Simplicity.</b> The identity view posits one state fewer.</li>
+    <li><b>Scope.</b> The identity view attributes feeling to any system with a value available to a planner: many animals, possibly machines. The higher-order view restricts it. Without report, evidence cannot settle which is right.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="num">CORRECTION TO UPDATE 1</div>
+  <h2>The patient evidence, checked against the original papers at last</h2>
+  <p>The Update 8 audit noted that the patient findings from Update 1 had never been checked. A reviewer has now done so. One was wrong and others were overstated.</p>
+  <div class="scroll"><table>
+    <tr><th>Update 1 said</th><th>What the sources support</th></tr>
+    <tr><td>People born unable to feel pain have normal intelligence, and about seven in ten have self-inflicted wounds and repeated fractures</td><td><b>Wrong.</b> Those figures come from a related condition in 41 patients, 63% of whom had developmental delay. The evidence for normal intelligence is six children: all bit their lips or tongue in infancy, most had fractures nobody noticed at the time, and one died after a jump</td></tr>
+    <tr><td>People who lose inner drive score normally on intelligence tests when prompted</td><td>Roughly right, slightly overstated. A series of eight patients; intelligence generally normal with mild difficulties in planning-type tasks; emotion flattened as well; not all reported an empty mind</td></tr>
+    <tr><td>The brain's "wanting" signal and its pleasure signal are separate</td><td>The mechanisms are separable, shown causally in rats. In humans the evidence is two small studies. And the researcher's "liking" is a bodily reaction that may itself not be felt, so this is not shown to be a split between drive and felt pleasure</td></tr>
+    <tr><td>Pain can be felt without its unpleasantness</td><td>Unpleasantness can change while intensity stays the same (a hypnosis study; six patients with damage to one region). Evidence from pain-killing drugs is mixed</td></tr>
+  </table></div>
+  <p>Update 1 now carries a notice saying so.</p>
+</section>
+
+<section>
+  <h2>Eleven rounds: what is solid</h2>
+  <p class="note">Each item below restates a row of the project ledger whose wording was corrected to match its review in the Update 8 audit or the round 11 source check.</p>
+  <ul>
+    <li>No known candidate for a new pushing force is strong enough to be behind feeling.</li>
+    <li>The insula, anterior cingulate and amygdala are not needed for <em>reported</em> feeling, in two patients, in both of whom feeling was altered.</li>
+    <li>A late wave over the front of the brain marks responding, not experiencing. The size of the brain's electrical waves does not follow what people report.</li>
+    <li>Whether feeling is made deep in the brain or made felt by the cortex: undecided on existing evidence.</li>
+    <li>The claim that people can learn from rewards they never consciously see did not hold up.</li>
+    <li>Your hypothesis has not been refuted or confirmed and has never been put at real risk; in the form that can be defended it is an identity claim.</li>
+    <li>Several widely cited findings are weaker than usually stated: the xenon isotope study, the precognition experiments, and the pain-without-intelligence figures above.</li>
+  </ul>
+  <p>And what the work produced besides: a method that stopped us overstating (predictions first, fairness check, independent scoring, a line-by-line check before publishing), and thirteen specified experiments that would move the question.</p>
+</section>
+
+<section>
+  <div class="num">WHAT WE NEED FROM YOU</div>
+  <h2>Two decisions</h2>
+  <div class="def">
+    <p><b>1. Which do you mean?</b> Is feeling <em>the same thing as</em> a value signal the planning mind can use, or <em>something added</em> to it? On the first, the question "where does sentience come from" becomes "how did planners come to read the body's valuations", and the work shifts to which animals and machines qualify. On the second, we need a statement of what the added thing is supposed to do that an accessible value signal does not, since without that no test is possible.</p>
+    <p><b>2. Searching.</b> Since round 3 this session has had no web search, only one medical-literature database. Every "none found" in the last eight updates carries that limit. Raising the allowance would let us check whether the studies we could not find exist.</p>
+  </div>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>The scoring was independent. The scorer checked five studies against the full papers; all quoted statistics matched, and one statement in our evidence file was corrected (a replication's null result is weaker than we had said).</li>
+    <li>"The edge of what evidence decides" is the scorer's judgement after three rounds. It is a judgement, and it is about desk research on existing studies; the proposed experiments have not been run.</li>
+    <li>The patient-evidence check read some sources in full and others only as summaries; the list is in the report.</li>
+  </ul>
+</section>
+
+<footer>Scoring: <code>reviews/round11-adjudication.md</code>. Fairness check: <code>reviews/round11-fairness-precheck.md</code>. Source check: <code>reviews/round11-ledger-source-check.md</code>. Project state: <code>LEDGER.md</code>.</footer>
+
+</div>

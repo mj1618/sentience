@@ -78,3 +78,19 @@ What follows replaces Part 1 for scoring.
 
 If F and A never come apart, HO-L is strained; against HO-R nothing observable decides. The choice then rests on argument: whether a state can be felt without being represented as one's own; whether empty higher-order states are coherent; parsimony; and whether "feeling" in ID is a discovery or a stipulation.
 
+
+## Part 2 — Independent scoring (from `reviews/round11-adjudication.md`)
+
+All three rows were scored **no test** for both accounts. No study found measures
+availability (A) and rated feeling (F) in the same people under a manipulation of
+either. Overall shift: none (1:1).
+
+## Part 3 — Summary sentences permitted by the adjudicator (verbatim)
+
+1. "Round 11 asked whether a feeling of good or bad simply is a value signal being available for planning, or a further, higher-order representation of it; we found no study that measured both in the same people while one of them was changed, so the question was not tested."
+2. "All three rows were scored 'no test' for both accounts, and the balance between them did not move."
+3. "We found no case of a value signal being broadly available for planning while people rated their feeling at zero, no case of rated feeling falling while that availability stayed the same, and no case of prefrontal disruption leaving both unchanged; 'none found' does not mean 'none exists'."
+4. "The brain-stimulation effect such a test would rely on is itself uncertain: a replication attempt with 53 analysed participants did not reproduce the original drop in people's insight into their own perception, and that null result has in turn been criticised as underpowered."
+5. "The nearest thing to a test, a study of 27 people given stimulation to the left prefrontal cortex, found self-rated mood unchanged; it stimulated one side only and measured neither rated feeling about a stimulus nor value-guided planning, so it counts for neither account."
+6. "Our hypothesis, in the only form we can defend, says the same thing as one existing higher-order theory (Rolls's) and differs from the other (LeDoux and Brown's, and Lau's) only in what people would report feeling."
+7. "Evidence of this kind can at most show which brain process accompanies reported feeling; it cannot show why any process is felt at all, and we have not found where sentience comes from."

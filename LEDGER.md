@@ -1,6 +1,6 @@
 # Ledger
 
-Updated 2026-10-03, after round 10.
+Updated 2026-10-03, after round 11.
 
 **Rule:** nothing is treated as reliable until an independent reviewer has tried to break
 it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower form) ·
@@ -48,6 +48,9 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | C38 | The evidence does not separate "felt valence is needed" from "an accessible value representation is needed". | adjudicated | The hypothesis is close to Dickinson's long-standing position. |
 | C39 | No case was found in which people report feeling nothing about an outcome and their flexible action was measured. The hypothesis was not tested in round 10; every row was "no test" for both accounts. | adjudicated (round 10) | "None found", not "none exists". |
 | C40 | Once the rival is stated correctly (the planner's value signal, not verbal knowledge), the owner's hypothesis predicts nothing the identity version of the rival does not. | adjudicator's view (round 10); fairness check agrees | See "Owner's hypothesis". |
+| C41 | No study found measures the availability of a value for planning and rated feeling in the same people while one is changed. Identity versus higher-order (LeDoux–Brown/Lau) was not tested; shift none. | adjudicated (round 11) | The brain-stimulation effect such a test would rely on did not replicate (53 analysed), and that null is itself weak. |
+| C42 | The owner's hypothesis, in the only form found defensible, says the same thing as Rolls's theory and differs from LeDoux–Brown/Lau only in predicted self-reports. | adjudicated (round 11) | |
+| C43 | Evidence of this kind can at most show which brain process accompanies reported feeling; it cannot show why any process is felt. | adjudicator's statement (round 11) | "On the owner's question in its strong form, the project has reached the edge of what evidence decides." |
 | C24 | "Report barrier": in our seven rounds, evidence from non-reporting systems did not separate theories. | our description of our own results; **not a principle**. Audit objections: nulls traced to mis-stated rivals, abstract-only reading and experiments not yet done; the barrier is porous (calibrate in reporting humans, extend by homology; non-verbal report). | |
 | C18 | A 302-neuron worm shows a hunger-dependent trade-off between threat and food; flies show an anxiety-like state that responds to an anti-anxiety drug; bees show a pessimism-like bias. Play-like behaviour is reported in flies and bees only. The claim of trace conditioning in the worm had no source and is withdrawn. | source-checked (round 11); three papers read in full | These may detect a valence signal and not whether it is felt. |
 
@@ -119,11 +122,24 @@ The percentages were not connected to any test and are removed. Families still o
 5. Split-brain: does a learned aversion taught to one hemisphere transfer to the other?
 6. Xenon isotopes done properly (gases interleaved within a day, blends of the two kinds, no second anaesthetic).
 
-## Conjecture queue (round 11)
+## Where the project stands (after round 11)
 
-1. **Identity versus higher-order**: are there value signals in the brain that guide the planner *without* any reported feeling, or reported feelings *without* a value signal? Predictions first, fairness check before evidence.
-2. **What the identity reading commits to**: which animals and which machines have planner-accessible value signals.
-3. **Full-text review of C8–C12** (still outstanding).
+Three independent adjudicators (rounds 9, 10, 11) reached the same place: the owner's
+hypothesis is defensible as an identity claim; that claim coincides with one existing
+theory and differs from another only in predicted self-reports; no existing study tests
+it; one narrow experiment could (experiments 12 and 13). Beyond that the choice rests on
+argument: whether "felt" is a stipulation or a discovery; whether a feeling can exist
+with nothing underneath it; ownership; parsimony; and scope (which animals and machines
+would count).
+
+**Waiting on the owner:** (1) identity or extra ingredient? (2) whether to raise the
+session's web-search allowance, which has constrained every round since round 3.
+
+## Possible next rounds (not started)
+
+1. What the identity reading commits to: which animals and machines have a value available for planning, by the fixed definition.
+2. The philosophical arguments listed above, each stated with its strongest objection.
+3. Integrated-information theory against its record.
 
 ## Process rules (added round 2)
 

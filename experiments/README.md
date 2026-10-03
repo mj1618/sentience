@@ -139,3 +139,13 @@ Proposed by the round 10 adjudicator. Pre-registered, two arms.
 - **Independent check that the value signal is intact.** Real-money bids for each outcome, and bodily anticipation responses; brain imaging of value regions if available.
 - **Readings fixed in advance.** No feeling reported, yet choice follows the instruction: the owner's hypothesis fails. No feeling reported, bids and bodily signal intact, prompted choice lost: the higher-order rival fails. In healthy volunteers whose expected feelings did not change: a shift in choice counts against the hypothesis; no shift, with the effect fully carried by the change in expected feeling, counts against the rival.
 - **If screening finds nobody who reports feeling nothing**, that is itself the result.
+
+## 13. Can rated feeling be moved while a value stays fully available for planning?
+
+Proposed by the round 11 adjudicator as the one narrow empirical question left on the
+owner's hypothesis.
+
+- **Design.** Within each person, pre-registered. Show that one value is in broad use: real-money bids, a first-try inference or two-step choice that depends on the same value, and a brain-activity decoder for that value. Take trial-by-trial ratings of how good or bad the outcome is expected to feel and does feel.
+- **Two manipulations.** (1) Hypnotic suggestion to reduce unpleasantness (cheap; run first). (2) Magnetic stimulation of the outer prefrontal cortex on both sides against a control site, with a check in the same session that it lowered people's insight into their own perception.
+- **Readings fixed in advance.** Rated feeling falls while the value's availability is unchanged: the identity reading fails. Stimulation verified, and both feeling and availability unchanged: the LeDoux–Brown/Lau reading fails. Both move: no test.
+- **Limits.** Cannot touch Rolls's version. Depends on taking self-report as the criterion. Would show which function accompanies reported feeling, not why that function is felt.
