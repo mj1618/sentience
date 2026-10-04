@@ -59,3 +59,14 @@ or not; rated pleasantness), agreement between raters 0.93.
 One laboratory, 18 people. Ratings are given after waking and after telling the dream.
 Frontal measures in REM sleep are contaminated by eye movements. A relation would show
 that a measure goes with reported feeling, not that it is the feeling.
+
+## Review outcome — sentences permitted by the independent reviewer (verbatim)
+
+1. "In 111 awakenings from dreaming sleep in 16 people, none of seven EEG measures taken from the last minute before waking was reliably related to how strongly or how pleasantly people said they had felt in the dream; the largest correlation was 0.17 (eye-movement activity with pleasantness, p = 0.06), which did not meet our pre-set threshold."
+2. "This test could only be expected to find strong relations: it had an 80% chance of detecting a within-person correlation of about 0.38 at our threshold, and the 95% intervals leave room for correlations of up to about 0.4 in either direction."
+3. "So the result argues against a strong link between these seven measures and reported feeling; it does not show there is no link."
+4. "Our 'intensity' score was mostly positive feeling (three quarters of the total), 31 of 113 reports contained no negative feeling at all, and the score rose with the length of the dream report (within-person correlation 0.50), so it is not a clean measure of how strongly someone felt."
+5. "With our methods we did not recover the original authors' link between frontal alpha asymmetry and dream anger (correlation −0.09, p = 0.36), and none of our pre-specified measures was clearly related to any feature of the dream report in these data, which makes the null result less informative."
+6. "People were woken during bursts of eye movement and rated their feelings after waking and after telling the dream, in one laboratory; the finding applies to these measures and this set-up, not to brain activity in general."
+
+Full review: `reviews/round13-study3-redteam.md`.

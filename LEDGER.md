@@ -1,6 +1,6 @@
 # Ledger
 
-Updated 2026-10-03, after round 12.
+Updated 2026-10-03, after round 13 (first original studies).
 
 **Rule:** nothing is treated as reliable until an independent reviewer has tried to break
 it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower form) ·
@@ -56,6 +56,11 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | C46 | Five people with severe amnesia rated sadness and happiness as strongly as controls or more: against "feeling requires imagining one's future". Research on perceptual rhythms does not support one fixed frame rate for experience. | adjudicated (round 12) | Small sample. |
 | C47 | Our own sleep-EEG test (19 subjects): REM was not more time-irreversible than deep sleep in any subject, but the single-channel measure is at chance in sleep and does not separate in-bed wake from deep sleep. Uninformative. | red-teamed (round 12; reviewer reproduced the numbers) | |
 | C48 | Whether the real passage of time is needed for feeling cannot be settled by any evidence we know of. | adjudicator's statement | |
+| C49 | Study 1 (pre-registered, three laboratories, 585 awakenings, 61 people): no EEG measure before waking was reliably linked to reported experience in non-REM sleep; inconclusive by our rules (differences above ~0.35 SD unlikely; 0.2 not excluded). Development-set effects did not replicate. | reproduced and red-teamed (round 13) | One dataset's window was wrong; corrected post hoc, same outcome. |
+| C50 | In the open "Multiple awakenings" dataset the recordings run a median 16–18 s past the awakening. | found by reviewer; reproduced | Affects anyone taking "the last 20 s" of those files. |
+| C51 | Study 2: who was woken predicts the report modestly (0.65 vs chance ~0.47); person ≈15% of variation, stage/time ≈2%, our brain measures <2%; about four-fifths unexplained. | red-teamed (round 13); two of our own numbers were artefacts | A person effect does not show forgetting. |
+| C52 | Study 3 (pre-registered; 111 dream awakenings, 16 people, self-rated emotion): none of seven EEG measures was reliably related to how strongly or pleasantly people felt; only correlations above ~0.4 are ruled out. | reproduced and red-teamed | Positive controls weak; intensity score not clean. |
+| C53 | Study 4 (pre-registered): measures of the awakening itself did not predict the report; weak test, two measures void. | reproduced and red-teamed | |
 | C24 | "Report barrier": in our seven rounds, evidence from non-reporting systems did not separate theories. | our description of our own results; **not a principle**. Audit objections: nulls traced to mis-stated rivals, abstract-only reading and experiments not yet done; the barrier is porous (calibrate in reporting humans, extend by homology; non-verbal report). | |
 | C18 | A 302-neuron worm shows a hunger-dependent trade-off between threat and food; flies show an anxiety-like state that responds to an anti-anxiety drug; bees show a pessimism-like bias. Play-like behaviour is reported in flies and bees only. The claim of trace conditioning in the worm had no source and is withdrawn. | source-checked (round 11); three papers read in full | These may detect a valence signal and not whether it is felt. |
 
@@ -128,24 +133,18 @@ The percentages were not connected to any test and are removed. Families still o
 5. Split-brain: does a learned aversion taught to one hemisphere transfer to the other?
 6. Xenon isotopes done properly (gases interleaved within a day, blends of the two kinds, no second anaesthetic).
 
-## Where the project stands (after round 12)
+## Where the project stands (after round 13)
 
-Three independent adjudicators (rounds 9, 10, 11) reached the same place: the owner's
-hypothesis is defensible as an identity claim; that claim coincides with one existing
-theory and differs from another only in predicted self-reports; no existing study tests
-it; one narrow experiment could (experiments 12 and 13). Beyond that the choice rests on
-argument: whether "felt" is a stipulation or a discovery; whether a feeling can exist
-with nothing underneath it; ownership; parsimony; and scope (which animals and machines
-would count).
+Rounds 1–12 were desk research: the owner's hypothesis is defensible as an identity
+claim; no existing study tests it; "time itself" is untested. Round 13 began original
+work on open data: four pre-registered studies, all null or inconclusive, each reproduced
+by an independent reviewer. Still waiting on the owner: identity or extra ingredient?
 
-**Waiting on the owner:** (1) identity or extra ingredient? (2) whether to raise the
-session's web-search allowance, which has constrained every round since round 3.
+## Next (round 14)
 
-## Possible next rounds (not started)
-
-1. What the identity reading commits to: which animals and machines have a value available for planning, by the fixed definition.
-2. The philosophical arguments listed above, each stated with its strongest objection.
-3. Integrated-information theory against its record.
+1. **A better-powered, correctly windowed test.** Fix the awakening-window rule for every dataset from muscle activity, add the remaining multi-awakening datasets, and state in advance the smallest effect worth caring about.
+2. **Report criterion.** Datasets with graded reports (dream complexity; perception versus thought; duration of experience): is the report a threshold on something continuous?
+3. **Tell the DREAM maintainers** about the file-end problem (draft in `notes/`).
 
 ## Process rules (added round 2)
 

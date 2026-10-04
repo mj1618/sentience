@@ -196,3 +196,15 @@ the other recordings at this point, but no outcome had been examined.
 In the "Multiple awakenings" recordings the O1 channel is labelled "01" (zero, one). The
 parser now reads it as O1. The archive's checksum matched the published one. No outcome
 had been examined at this point.
+
+## Review outcome — sentences permitted by the independent reviewer (verbatim)
+
+1. "None of our eight pre-registered tests found a reliable link between an EEG measure and reported experience in non-REM sleep: the smallest p-value was 0.10 against a threshold of 0.006."
+2. "Only three of the five confirmation datasets had enough participants (585 awakenings from 61 people), fewer than the four our plan required, so by our own rules this is not a confirmatory result in either direction."
+3. "The result is inconclusive, not evidence of no effect: assuming one common effect, differences larger than about 0.35 standard deviations are unlikely, but a difference of 0.2 cannot be ruled out for any measure, and across laboratories the uncertainty is far wider."
+4. "The two effects seen in our development data (complexity +0.53, fronto-posterior lag asymmetry +0.53) did not replicate: the confirmation estimates were +0.05 and +0.09, with upper limits near +0.24 and +0.28."
+5. "After the result, a reviewer found that in one of the three datasets the recordings continue past the awakening — chin-muscle activity rises about ten-fold, typically 16 to 18 seconds before the end of the file, in three-quarters of recordings — so our window there mostly captured waking, which also explains why 34% of its recordings failed our amplitude check."
+6. "Correcting that window after the fact, relaxing the amplitude rule, or removing that dataset did not change the outcome: no test in any re-analysis had a p-value below 0.08."
+7. "In the original 'posterior hot zone' recordings, slow-wave power at the back of the head was slightly lower before reports of experience, as published, but the difference was small (about a third of a standard deviation; p = 0.07 with five sites and 0.03 with 23, uncorrected) and would not have met our threshold."
+
+Full review: `reviews/round13-study1-redteam.md`.

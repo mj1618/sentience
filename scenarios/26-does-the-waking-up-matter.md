@@ -59,3 +59,13 @@ H1 larger `emg_jump`; H2 smaller `emg_rise`; H3 lower `delta_after`; H4 more neg
 - Brain measures after waking are badly contaminated by movement; many windows will fail
   the amplitude check, and the share that pass will be reported.
 - The answer here is a bare yes/no.
+
+## Review outcome — sentences permitted by the independent reviewer (verbatim)
+
+1. "In the one open dataset whose recordings continue past the awakening (19 people, 455 awakenings), none of our four pre-registered measures of how a sleeper wakes was related to whether experience was reported; the smallest p-value was 0.11 against a threshold of 0.0125."
+2. "This test was weak: our onset rule found an awakening in only 270 of 455 recordings, leaving 166 non-REM awakenings for the muscle measures, enough to detect only a large difference (about 0.64 standard deviations) with 80% power."
+3. "A reviewer found that 422 of the 455 recordings do show a rise in chin-muscle activity near the end, so most of the 185 exclusions were awakenings our rule missed, not awakenings that did not happen; and when the rule was loosened after the fact, the largest effect we saw (+0.31) shrank or reversed sign."
+4. "The two brain-wave measures failed their own sanity check: slow-wave power did not clearly fall after the detected awakening (average change −0.04 log units, not distinguishable from zero), because movement contaminates the signal, so those two tests tell us nothing either way."
+5. "The dataset does not record when the question was asked or whether the answer was spoken, so a rise in chin-muscle activity may reflect speaking as much as waking; the arousal account is neither supported nor contradicted by this study."
+
+Full review: `reviews/round13-study4-redteam.md`.
