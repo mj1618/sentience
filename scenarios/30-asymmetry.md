@@ -87,3 +87,62 @@ emotion. The adjudicator decides whether the evidence allows a count.
 
 "There was a feeling but the person did not notice it" would make A unfalsifiable. It is
 not available to A in this round: an unnoticed feeling is not counted as feeling.
+
+## Amendment after the fairness pre-check (before any evidence was gathered)
+
+An independent checker found nine problems with the wording above. All accepted; where
+this section and the text above differ, this section governs.
+
+**Accounts, corrected**
+
+- **A. Feeling-first** (cf. Panksepp, Solms, Damasio, Denton, Merker; Seth's interoceptive
+  view is adjacent).
+  - A3 becomes: "Where feeling is globally blunted (emotional numbing, medication blunting,
+    severe flat affect), people describe perception or the sense of reality itself as
+    thinned. Depersonalisation is excluded from the count as circular; anhedonia and pain
+    asymbolia are reported separately and not scored."
+- **B, renamed Access-first.** Access is not thought.
+  - B1: "No-feeling experiences are permitted and expected to be unremarkable (neutral
+    perceiving, abstract thinking)."
+  - B2: "Feeling without thought (as defined) is reportable and unremarkable; no frequency
+    predicted."
+  - B4: "Feeling persists when thought is minimal, provided access remains; if access is
+    lost, all reportable experience goes, not feeling specifically."
+- **C** is a method more than a theory. C3: "No commitment." Frequencies vary greatly
+  between people; descriptive experience sampling's "feelings" means experienced emotion,
+  narrower than the definition here.
+- **D.** D1: "Some core-affect value always exists but may be neutral or unattended; under
+  the noticed-only rule, D predicts more no-feeling reports than A." D3: "Not committed
+  (Russell); Barrett's version leans as A." A and D are not cleanly separated this round.
+- **E. Perception-first** (recurrent processing, Block's overflow, integrated information;
+  Metzinger's minimal experience): experience needs neither feeling nor access. 1 as B;
+  3 as B; pure awareness is possible.
+- **Illusionism caveat:** all the evidence is reports, so results bear on what people
+  judge is present.
+
+**Predictions 2 and 4 do not separate A from B, C, D or E. The test rests on 1 and 3.**
+Prediction 4 is unscored, except that reports of contentless "pure awareness" with neither
+feeling nor thought (sleep onset, meditation) count against A.
+
+**Definitions, corrected**
+
+- A feeling counts only if present at the sampled moment before the probe. An answer of
+  "neutral" counts as no feeling. Results are reported twice: narrow (valence/emotion) and
+  broad (adding bodily feelings and urges).
+- The same rule applies to thought: unnoticed thought is not thought. Thought includes
+  unsymbolised (wordless, imageless) thinking.
+- A fail on prediction 1 refutes only the noticed-feeling version of A.
+
+**Thresholds, made symmetric**
+
+Under 5% no-feeling moments counts for A and against B, C, E; over 20% counts against A
+and for B, C, E. For prediction 2, "common" means over 20% of moments, "rare" under 5%.
+
+**Coding rule for prediction 3:** "I feel nothing" or "everything is flat" alone counts as
+a normal world minus emotion; "thinned" requires an altered percept, presence or reality.
+
+**Consequence for the owner.** The "asymmetry" as first pitched (feeling without thought
+is fine, thought without feeling is not) is weaker than claimed: every account allows
+feeling without thought. What actually separates the owner's view is (1) whether
+experience ever comes with no feeling, and (3) whether blunting feeling thins experience
+itself.
