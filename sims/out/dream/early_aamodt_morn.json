@@ -1,0 +1,558 @@
+{
+"rows": [
+{
+"file": "00_0001.edf",
+"subject": "0",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.063895250130956,
+"delta_late": -10.575423746590625
+},
+{
+"file": "01_0104.edf",
+"subject": "1",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.335084525486003,
+"delta_late": -10.423278511288787
+},
+{
+"file": "02_0201.edf",
+"subject": "2",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.484016264022568,
+"delta_late": -10.515645356069264
+},
+{
+"file": "02_0202.edf",
+"subject": "2",
+"experience": "2",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.591498331107939,
+"delta_late": -10.28546167626411
+},
+{
+"file": "02_0203.edf",
+"subject": "2",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.595004841926881,
+"delta_late": -10.669469496827768
+},
+{
+"file": "02_0204.edf",
+"subject": "2",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.484723851827258,
+"delta_late": -10.251005755783547
+},
+{
+"file": "02_0205.edf",
+"subject": "2",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.354275263232417,
+"delta_late": -10.773697187534664
+},
+{
+"file": "02_0206.edf",
+"subject": "2",
+"experience": "2",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.897292605785609,
+"delta_late": -10.636260313131356
+},
+{
+"file": "02_0207.edf",
+"subject": "2",
+"experience": "2",
+"stage": "3",
+"onset": 31,
+"delta_early": -10.53976668353226,
+"delta_late": -10.54473157087767
+},
+{
+"file": "02_0208.edf",
+"subject": "2",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.302235734610282,
+"delta_late": -10.13497413728845
+},
+{
+"file": "02_0209.edf",
+"subject": "2",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.387904274799691,
+"delta_late": -10.41152811671045
+},
+{
+"file": "02_0211.edf",
+"subject": "2",
+"experience": "2",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.324296217759708,
+"delta_late": -10.397216186554312
+},
+{
+"file": "03_0302.edf",
+"subject": "3",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.725261921151303,
+"delta_late": -10.797210503627701
+},
+{
+"file": "03_0303.edf",
+"subject": "3",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.753926502036787,
+"delta_late": -10.961295469595594
+},
+{
+"file": "03_0304.edf",
+"subject": "3",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.850030260201205,
+"delta_late": -10.912478326713813
+},
+{
+"file": "03_0305.edf",
+"subject": "3",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.848984692723562,
+"delta_late": -10.74328719869306
+},
+{
+"file": "04_0401.edf",
+"subject": "4",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.472214328016971,
+"delta_late": -10.501070593170967
+},
+{
+"file": "04_0402.edf",
+"subject": "4",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.264303985818913,
+"delta_late": -10.459236892789086
+},
+{
+"file": "04_0404.edf",
+"subject": "4",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.386486819792108,
+"delta_late": -10.356790226860983
+},
+{
+"file": "04_0405.edf",
+"subject": "4",
+"experience": "0",
+"stage": "2",
+"onset": 39,
+"delta_early": -10.65014074923369,
+"delta_late": -10.301419595858295
+},
+{
+"file": "04_0406.edf",
+"subject": "4",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.44674593330307,
+"delta_late": -10.48385875156999
+},
+{
+"file": "05_0501.edf",
+"subject": "5",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.037100109008005,
+"delta_late": -11.294217230265543
+},
+{
+"file": "05_0502.edf",
+"subject": "5",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.598063221950765,
+"delta_late": -10.715772439621967
+},
+{
+"file": "05_0505.edf",
+"subject": "5",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.892326855245631,
+"delta_late": -10.829923930258754
+},
+{
+"file": "05_0506.edf",
+"subject": "5",
+"experience": "2",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.474115752141246,
+"delta_late": -10.441437267347267
+},
+{
+"file": "06_0601.edf",
+"subject": "6",
+"experience": "2",
+"stage": "2",
+"onset": 7,
+"delta_early": -10.43672313363663,
+"delta_late": -10.629691403164909
+},
+{
+"file": "06_0604.edf",
+"subject": "6",
+"experience": "2",
+"stage": "2",
+"onset": 22,
+"delta_early": -11.239374949991793,
+"delta_late": -10.854588214810242
+},
+{
+"file": "06_0605.edf",
+"subject": "6",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.927143849204823,
+"delta_late": -10.750800282557112
+},
+{
+"file": "06_0606.edf",
+"subject": "6",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.254060107450126,
+"delta_late": -11.026440784802084
+},
+{
+"file": "07_0701.edf",
+"subject": "7",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.750543654534374,
+"delta_late": -10.808086820548748
+},
+{
+"file": "07_0702.edf",
+"subject": "7",
+"experience": "2",
+"stage": "2",
+"onset": 19,
+"delta_early": -10.865898652393673,
+"delta_late": -10.524751276114577
+},
+{
+"file": "07_0703.edf",
+"subject": "7",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.752197498770357,
+"delta_late": -10.51775246746469
+},
+{
+"file": "07_0704.edf",
+"subject": "7",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.664042470923428,
+"delta_late": -10.721377481019225
+},
+{
+"file": "07_0705.edf",
+"subject": "7",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.806208253478367,
+"delta_late": -10.486984813575614
+},
+{
+"file": "07_0706.edf",
+"subject": "7",
+"experience": "2",
+"stage": "2",
+"onset": 37,
+"delta_early": -11.154918834958089,
+"delta_late": -10.607419876803615
+},
+{
+"file": "08_0803.edf",
+"subject": "8",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.993557478161193,
+"delta_late": -11.260174710364616
+},
+{
+"file": "08_0804.edf",
+"subject": "8",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.405990302981529,
+"delta_late": -10.88104709834576
+},
+{
+"file": "09_0902.edf",
+"subject": "9",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.584984690444461,
+"delta_late": -10.432752076927214
+},
+{
+"file": "09_0905.edf",
+"subject": "9",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.708110152663805,
+"delta_late": -10.660066170311824
+},
+{
+"file": "10_1001.edf",
+"subject": "10",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.022284670726835,
+"delta_late": -11.008092705978829
+},
+{
+"file": "10_1002.edf",
+"subject": "10",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.771138530577726,
+"delta_late": -11.00224347616585
+},
+{
+"file": "10_1003.edf",
+"subject": "10",
+"experience": "2",
+"stage": "2",
+"onset": 22,
+"delta_early": -10.978511746517665,
+"delta_late": -11.108488506664607
+},
+{
+"file": "10_1004.edf",
+"subject": "10",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.102202055271233,
+"delta_late": -10.766276179808154
+},
+{
+"file": "11_1101.edf",
+"subject": "11",
+"experience": "2",
+"stage": "3",
+"onset": 5,
+"delta_early": -10.493772351237887,
+"delta_late": -10.444570306421301
+},
+{
+"file": "11_1102.edf",
+"subject": "11",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.07485607476671,
+"delta_late": -10.811979004403026
+},
+{
+"file": "11_1104.edf",
+"subject": "11",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.926295782212469,
+"delta_late": -10.806437445216211
+},
+{
+"file": "11_1106.edf",
+"subject": "11",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.623612942518537,
+"delta_late": -10.673537963493725
+},
+{
+"file": "12_1201.edf",
+"subject": "12",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.85686511102732,
+"delta_late": -10.985381624161382
+},
+{
+"file": "12_1202.edf",
+"subject": "12",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.725090447530345,
+"delta_late": -10.720800526640476
+},
+{
+"file": "12_1203.edf",
+"subject": "12",
+"experience": "2",
+"stage": "2",
+"onset": 5,
+"delta_early": -10.782383777958911,
+"delta_late": -10.561133992174428
+},
+{
+"file": "12_1205.edf",
+"subject": "12",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.713930441267767,
+"delta_late": -10.805646041510682
+},
+{
+"file": "12_1206.edf",
+"subject": "12",
+"experience": "2",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.662100133561577,
+"delta_late": -10.343919664070405
+},
+{
+"file": "12_1207.edf",
+"subject": "12",
+"experience": "2",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.310346436782677,
+"delta_late": -10.01609931818448
+},
+{
+"file": "12_1208.edf",
+"subject": "12",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.585940241615527,
+"delta_late": -10.683794368274112
+},
+{
+"file": "14_1403.edf",
+"subject": "14",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.233872591791652,
+"delta_late": -11.195665381049942
+},
+{
+"file": "14_1405.edf",
+"subject": "14",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.206191508239852,
+"delta_late": -11.023408683508785
+},
+{
+"file": "14_1406.edf",
+"subject": "14",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.86284961636233,
+"delta_late": -10.887216870504384
+},
+{
+"file": "15_1502.edf",
+"subject": "15",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.836782187695118,
+"delta_late": -10.655489023686247
+},
+{
+"file": "16_1601.edf",
+"subject": "16",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.295589315377494,
+"delta_late": -10.962224102554138
+},
+{
+"file": "16_1603.edf",
+"subject": "16",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.393383329330279,
+"delta_late": -10.97854947097278
+},
+{
+"file": "16_1604.edf",
+"subject": "16",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.04374587705166,
+"delta_late": -10.76577198551921
+}
+],
+"excluded": [],
+"onset_notes": {
+"no rise": 52,
+"located": 9
+}
+}

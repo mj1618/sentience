@@ -54,3 +54,22 @@ The largest dataset has a bare yes/no answer and its awakening has to be estimat
 "no experience" reports in the Aamodt sets. If the Kumral data cannot be included, that
 will be said. The reviewer's estimate suggests modest power: this could fail to confirm a
 real effect.
+
+## Interim record (2026-10-04, before the Kumral archive was opened)
+
+Run once, as written above, on the three datasets already on disk
+(`sims/dream_early.py`; 452 N2/N3 awakenings; 29 subject-by-stage cells with both kinds
+of report):
+
+| | pooled effect | 95% range | p | Multiple awakenings | Aamodt evening | Aamodt morning |
+|---|---|---|---|---|---|---|
+| `delta_early` (34–14 s before) | −0.26 | −0.52 to −0.00 | 0.046 | −0.23 (19 cells) | −0.87 (6) | −0.17 (4) |
+| last 20 s (comparison only) | −0.01 | −0.26 to +0.24 | 0.95 | +0.07 | −0.27 | −1.11 |
+
+Awakening located by the muscle rule in 257 of 277 Multiple-awakenings recordings, and in
+15 of 175 Aamodt recordings (the rest use the end of the file, as the plan says).
+
+**This is not yet the registered result.** The plan includes the Kumral data if it
+verifies; it is still downloading and has not been opened. The registered test is the
+pooled one including Kumral, run once with this same code. The three-dataset figure is
+recorded here so that it cannot quietly be preferred later if the two differ.
