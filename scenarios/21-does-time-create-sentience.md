@@ -62,3 +62,55 @@ experience or feeling in a way that organisation alone does not explain.
 **Stated in advance.** Rows 1–3 and 9 concern experience in general; only rows 4–8 bear
 on feeling specifically. A marker that tracks consciousness level (row 3) may still be a
 marker of something else (arousal, activity), as with the markers examined in round 7.
+
+## Part 1b — Amendment after the independent fairness check, made before evidence was gathered
+
+The check (`reviews/round12-fairness-precheck.md`) found that our rival "N" could absorb
+any result, and that we had mixed two different questions:
+
+- **Which organisation?** Is a particular *temporal organisation* (sustained activity,
+  anticipation, retention across a window, discrete updating) necessary for feeling?
+  A yes or a no is equally compatible with "feeling depends on organisation", so each
+  such claim is scored against its own rival, not against N.
+- **Time itself?** Does a property of *physical time* matter beyond organisation?
+
+The rival is therefore fixed as **N\***: feeling depends only on causal organisation,
+including order and relative timing. It would be unchanged if the whole system and its
+inputs were uniformly slowed or sped up, or built so as to dissipate energy differently.
+N\* fails only if absolute duration, absolute rate, the physical irreversibility of the
+substrate, or objective passage makes a difference with organisation held fixed.
+
+The check also found several of our conjectures were not what their proponents hold
+(nobody claims irreversibility *constitutes* experience or scales with feeling; the
+"model of the future" in the relevant theory is not the ability to imagine one's future;
+nobody holds that felt timelessness removes feeling), and added a seventh, **T7**: that
+feeling requires real passage of time, "objective becoming" (Bergson, Whitehead,
+Smolin). T7 is philosophical; no existing evidence bears on it and it is left unscored.
+
+What follows replaces Part 1 for scoring.
+
+### Amended conjectures, table and scoring rules
+
+**Conjectures.** T1\* a feeling requires neural activity sustained beyond a floor that intensity cannot buy off. T2\* (marker) irreversibility of large-scale brain dynamics tracks presence of experience across states; T2c (constituent; authors' own) it tracks experience when activity level is controlled, and scales with felt intensity. T3\* feeling requires a system that predicts its own future bodily states; T3e (authors' own) it requires episodic future thinking. T4\* feeling requires retention across a window (strong form: requires felt passage). T5\* experience updates in discrete steps. T6\* feeling changes or is lost under uniform rate change. T7 unscored.
+
+| # | Test, with criterion fixed now | Conjecture fails if | Rival fails if |
+|---|---|---|---|
+| 1 | Detection/felt-intensity reports vs duration and intensity of *cortical* activity (direct stimulation, masking, TMS) | Reciprocity holds down to the shortest durations tested: more intensity always compensates | A floor exists (≥2 independent paradigms) where no tested intensity yields report |
+| 3 | Irreversibility in (a) REM dreaming and ketamine at doses with later-reported experience; (b) generalised seizures, and unresponsive states with normal metabolic/activity level; arousal and signal power controlled | Low in (a) or high in (b) | High in (a) and low in (b) across ≥2 datasets — refutes "mere arousal marker", not N\* |
+| 4 | Self-rated valence intensity vs irreversibility, activity-matched | No relation, or equal rise with neutral effort | Relation survives matching |
+| 5 | Self-rated valence and autonomic response in hippocampal amnesia: tests T3e only | Ratings in normal range | Ratings flat |
+| 6 | T3\*: feeling with interoceptive/homeostatic prediction disrupted (pure autonomic failure, high spinal injury, insular lesions) | Self-rated valence normal | Reduced in step with deficit |
+| 7 | Reports of timelessness with concurrent or immediate self-rated valence | Valence rated intense — refutes strong T4 only | Valence uniformly flat |
+| 9 | Periodicity in perception | No single rate across tasks and modalities | One rate, tied to one rhythm — Q-org only |
+| 10 | Self-rated feeling under mild hypothermia, fever, rate-altering drugs, where cognition is intact | Feeling reported unchanged in kind across the range | Feeling lost while task performance and relative timing are preserved |
+
+**Scoring rules.**
+1. Rows 1, 5, 6, 9 are scored against their own rival, and never count for or against N\*.
+2. Only rows 3–4 (T2c) and 10 can count against N\*, and only with organisation or activity matched.
+3. Rows 2 and 8 are dropped as discriminators.
+4. Feeling means self-rated valence; level-of-consciousness measures count for rows 1, 3, 9 only.
+5. A row 3 result is reported as marker, not cause; states are classed (a)/(b) blind to the result.
+6. Loss of feeling under cooling or anaesthesia is uninformative for row 10.
+
+**Cannot be decided by evidence:** T7; T4\* in its implicit (Husserlian) form; and N\* versus T6\* for rate changes beyond what a living brain tolerates.
+
