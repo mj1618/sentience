@@ -151,12 +151,22 @@ signature specific to experience or to a place on the head. All open DREAM datas
 disk are now used; no fresh confirmation set remains.
 Still waiting on the owner: identity or extra ingredient?
 
-## Next (round 15)
+## Round 15 (desk): is there experience without feeling? (`scenarios/30`)
 
-1. **Is anything left once sleep depth is accounted for?** Pre-register depth measures (e.g. spindle rate, slow-wave density, stage, time in stage) and ask whether the sub-16 Hz difference survives them. Cannot be a fresh-data test.
-2. **Fast activity (above 16 Hz):** datasets disagree; check against how each laboratory scheduled awakenings.
-3. **Report criterion** (graded reports), carried over.
-4. **Tell the DREAM maintainers** about the file-end problem (draft in `notes/`; not sent — owner's call).
+Adjudicated (`reviews/round15-adjudication.md`): prediction 1, narrow (emotion): undecided,
+strong lean against feeling-first (neutral beeper sampling, one lab: no emotion in 71–92%
+of moments); broad (any feeling): undecided, moderate lean against, unmeasured. Prediction
+3 (blunting thins experience): no count possible, weak lean against. Pure awareness:
+neither for nor against. "Feeling-first is still standing, but gained no support."
+Correction: the claim "nobody has tested this head-on" was false for the narrow question
+(Heavey & Hurlburt 2008). The "asymmetry" framing was withdrawn at the fairness check:
+feeling-without-thought separates no accounts.
+
+## Next (round 16)
+
+1. **What can value do without feeling?** Unfelt (subliminal/unnoticed) value: habits versus planning. Turns the owner's fork into an empirical question.
+2. Write up the beeper study (broad-feeling probe) as a proposal.
+3. Tell the DREAM maintainers about the file-end problem (draft in `notes/`; not sent — owner's call).
 
 ## Process rules (added round 2)
 
