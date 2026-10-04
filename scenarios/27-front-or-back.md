@@ -69,3 +69,31 @@ Scalp position is a poor guide to where in the brain a signal comes from. Fast a
 at the scalp is contaminated by muscle, more so at the front and edges. The estimation
 sets come from three laboratories with different equipment. "No experience" may include
 forgetting.
+
+## Part 2 — Estimation result (three laboratories; 522 awakenings; 64 people with both kinds of report)
+
+| Measure | Combined effect (95% interval) | p | Tononi / Zhang / Noreika |
+|---|---|---|---|
+| `front_delta` | −0.18 (−0.38 to +0.02) | 0.08 | −0.17 / −0.51 / −0.05 |
+| `post_delta` | −0.17 (−0.37 to +0.03) | 0.10 | −0.23 / −0.39 / +0.01 |
+| `grad_delta` (back minus front) | +0.04 (−0.17 to +0.25) | 0.71 | −0.16 / +0.34 / +0.21 |
+| `front_hf` | +0.18 (−0.03 to +0.39) | 0.10 | +0.23 / +0.16 / +0.09 |
+| `post_hf` | +0.16 (−0.05 to +0.37) | 0.13 | +0.31 / +0.10 / −0.04 |
+| `grad_hf` | −0.14 (−0.35 to +0.06) | 0.18 | −0.03 / −0.48 / −0.15 |
+
+Effects are in within-person standard-deviation units; intervals from the permutation
+null. Nothing is individually significant. Reading, to be reviewed: slow-wave power tends
+to be lower and fast activity higher before reports of experience, by about the same
+small amount at the front and at the back; there is no sign that the difference is
+specific to the back of the head.
+
+## Amendment 1 — predictions for the untouched confirmation set, committed before it was opened
+
+From the table above, two directional predictions for the Kumral data:
+
+1. `post_delta` is lower before reports of experience.
+2. `front_delta` is lower before reports of experience.
+
+Each is supported at one-sided p < 0.025 in that dataset alone, provided at least 8
+people there contribute both kinds of report. The download (46 GB) was about 2% complete
+at this commit and the archive had not been opened.
