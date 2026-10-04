@@ -97,3 +97,14 @@ From the table above, two directional predictions for the Kumral data:
 Each is supported at one-sided p < 0.025 in that dataset alone, provided at least 8
 people there contribute both kinds of report. The download (46 GB) was about 2% complete
 at this commit and the archive had not been opened.
+
+## Review outcome — sentences permitted by the independent reviewer (verbatim)
+
+1. "Using every scalp channel in three sleep datasets (522 awakenings; 64 people who gave both kinds of report), slow-wave power before reports of experience was lower by about 0.18 within-person standard deviations at the front and 0.17 at the back; neither difference was statistically significant (p = 0.08 and 0.10), and none of our six measures would survive correction for multiple testing."
+2. "Front and back slow-wave power rose and fell together almost perfectly from one awakening to the next (correlations of 0.90 to 0.97), so these are better read as one whole-scalp measure than as two separate findings."
+3. "The back-minus-front difference was +0.04 (95% interval −0.17 to +0.25): we found no evidence that the reduction is larger at the back, but the three laboratories pointed in different directions (−0.16, +0.34, +0.21)."
+4. "In the original high-density dataset the difference leaned towards the back (−0.16, 95% interval −0.44 to +0.12), which is compatible both with no front–back difference and with a modest posterior one."
+5. "This is a test at the scalp, not of the 'posterior hot zone' claim itself, which concerns sources inside the brain; in a simulation of our method only about a third to two-thirds of a back-only change showed up in the back-minus-front measure."
+6. "The planned confirmation set has only about 42 NREM awakenings from 19 people; by our estimate it has roughly a one-in-ten chance of detecting an effect of the size seen here, so a null result there will not count against it."
+
+Full review: `reviews/round14-study5-redteam.md`. The reviewer also found, after the fact, that the same contrast in an earlier window (34 to 14 seconds before waking) was larger (about −0.29 at both front and back; p near 0.007, uncorrected). That is a lead, not a finding; Study 6 (`scenarios/28`) tests it on data not used here.
