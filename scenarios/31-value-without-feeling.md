@@ -66,3 +66,59 @@ under adequate awareness tests; there are reports of drug self-administration an
 changed consumption without reported feeling; people with blunted emotion after frontal
 damage are said to plan poorly in real life while reasoning normally on tests. The author
 expects the evidence to be mostly about cue awareness (a), and thin on feeling (b).
+
+## Amendment after the fairness pre-check (before any evidence was gathered)
+
+Eight problems found; all accepted. Where this section and the text above differ, this
+section governs.
+
+**Accounts**
+
+- **I. Identity.**
+  1. Unfelt value can drive simple control.
+  2. When options and outcomes are fully visible and reportable, value that is not felt
+     (sense b) cannot drive planning.
+  3. Value-guided planning degrades in proportion to the reduction in reported feeling
+     about the options.
+  4. Planner-accessible value and feeling never come apart.
+- **X. Extra ingredient, needed as motivator.** 1 as I. 2 as I. 3 as I.
+  4. They can come apart: people who know the values of visible options but do not feel
+     them fail to act on them (know-but-don't-care).
+- **N. Not needed** (cognition-first, higher-order and two-system views: LeDoux, Rolls).
+  Illusionism is not filed here: it denies only phenomenal properties and is compatible
+  with I.
+  1. Unfelt value can drive simple control.
+  2. Visible, reportable value can drive planning whether or not it is felt. Value carried
+     by an unseen cue is not expected to drive planning (no access); such failures are
+     predicted by N too and score for nobody.
+  3. No proportionality between reported feeling and planning once information and
+     working memory are matched.
+  4. They can come apart, and action stays intact.
+- **A. Affect without feeling** (Berridge, Winkielman; covert somatic markers in Damasio):
+  unfelt affective reactions motivate, and conscious feeling is optional. Predicts 1 yes;
+  behaviour can change without a change in reported feeling; planning needs access, not
+  feeling.
+
+**Evidence that can separate the accounts:** (i) visible options with feeling reduced
+(anhedonia, alexithymia, vmPFC or amygdala damage, pain asymbolia, opioid blockade);
+(ii) behaviour changing without a change in reported feeling (low-dose drug
+self-administration, "unconscious liking"); (iii) feeling shifted with value information
+held constant (incidental or misattributed affect). Masked-cue studies bear only on
+prediction 1.
+
+**Definitions**
+
+- **Planning** is shown by at least one of: sensitivity to outcome devaluation or
+  contingency degradation tested in extinction; a model-based signature on a two-step
+  task; correct choice on untrained combinations (inference, preconditioning).
+  New-response learning alone does not qualify.
+- **Simple control** also includes Pavlovian-instrumental transfer and conditioned
+  reinforcement.
+
+**No-rescue rule, as in round 15.** Feeling is measured by immediate, sensitive, graded
+report. Unnoticed feeling is not feeling, so I cannot appeal to it. Symmetrically, N
+cannot dismiss a reported feeling as confabulation, and I cannot define any planner-used
+value as felt.
+
+**What would count, made symmetric.** Positive results that rest on post-hoc selection of
+"unaware" participants do not count as "can".
