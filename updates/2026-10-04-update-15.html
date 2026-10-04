@@ -1,0 +1,166 @@
+<title>Sentience Update 15</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 15 · 4 October 2026</div>
+  <h1>Is there experience with no feeling in it? The best evidence leans against the feeling-first idea, without settling it</h1>
+  <p class="lede">We left the sleep recordings and went back to what is distinctive about your hypothesis: that feeling is the base of all experience and thought is added on top. If so, there should be no experience without some feeling in it. This round asked whether that is true, using other people's published studies. Predictions for five rival views were written down first, checked for fairness by an independent agent, and scored by an independent adjudicator. The result is not what the hypothesis hoped for, and one thing we told you beforehand was wrong.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">Each line is the independent adjudicator's sentence, unaltered.</p>
+  <ul>
+    <li>"When people are beeped at random and asked what was in their experience, they report an emotion in about one moment in four or fewer."</li>
+    <li>"All of that evidence comes from one research group and has not been independently repeated."</li>
+    <li>"That method counts emotions, not every kind of feeling, so it leans against the feeling-first idea without settling it."</li>
+    <li>"Nobody has yet asked, moment by moment and neutrally, whether any feeling at all was present."</li>
+    <li>"We were wrong to say this had never been tested; researchers have argued over it since at least 2008."</li>
+    <li>"The feeling-first idea is still standing, but it gained no support this round."</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What was tested, and a correction to how we pitched it</h2>
+  <p>We pitched this to you as an "asymmetry": feeling without thought should be possible, thought without feeling should not. The fairness check, done before any evidence was gathered, pointed out that the first half separates nothing, because every rival view also allows feeling without thought. What separates the feeling-first idea from its rivals is two questions:</p>
+  <ol>
+    <li><b>Does experience ever come with no feeling at all?</b> We fixed the pass marks in advance: if fewer than 5% of sampled moments have no feeling, that counts for the feeling-first idea; more than 20% counts against it.</li>
+    <li><b>When feeling is dulled across the board, does experience itself thin out?</b> The feeling-first idea says the world should seem less real or less present, not merely "normal but without emotion".</li>
+  </ol>
+  <p>We also fixed two rules in advance. "Feeling" means any felt pleasantness or unpleasantness, emotion, mood, bodily feeling with a good or bad tone (pain, comfort, hunger), or urge. And "there was a feeling but the person did not notice it" is not allowed as a rescue, because it would make the idea impossible to test. So a failure here would count only against the version of the idea in which feeling is always <em>noticed</em>.</p>
+</section>
+
+<section>
+  <div class="num">QUESTION 1</div>
+  <h2>Experience with no feeling</h2>
+  <p>The answer depends almost entirely on how people are asked.</p>
+  <table>
+    <tr><th>How people were asked</th><th>Moments or reports with no feeling</th></tr>
+    <tr><td>A beeper goes off at random; the person is asked, openly, what was in their experience at that moment (five samples, 76 people, about 1,570 moments, all from one research group)</td><td>71% to 92%</td></tr>
+    <tr><td>A list of 18 emotions in daily life, with a "none" option (65,721 reports)</td><td>10%</td></tr>
+    <tr><td>Dreams, rated by the dreamer on a list of 20 emotions</td><td>0% to 2.5%</td></tr>
+    <tr><td>The same dream reports, judged by outsiders from the text</td><td>52% to 71%</td></tr>
+  </table>
+  <p class="note">Figures as compiled by the evidence gatherer from the published papers; some were read only in summary. "Feeling" in every row means emotion, the narrow sense.</p>
+  <ul>
+    <li>"When people are beeped at random and asked what was in their experience, they report an emotion in about one moment in four or fewer."</li>
+    <li>"All of that evidence comes from one research group and has not been independently repeated."</li>
+    <li>"That method counts emotions, not every kind of feeling, so it leans against the feeling-first idea without settling it."</li>
+    <li>"Nobody has yet asked, moment by moment and neutrally, whether any feeling at all was present."</li>
+  </ul>
+  <p>The adjudicator's scoring, by the rule set in advance: for feeling in the narrow sense of emotion, undecided with a strong lean against the feeling-first idea; for feeling in the broad sense, undecided with a moderate lean against, because nobody has measured it. Lists of emotions invite people to tick something, so the low figures from lists are weak evidence; and even the daily-life list's 10% is above the 5% the feeling-first idea needed.</p>
+  <p>The same people whose beeped moments showed emotion 12% to 18% of the time estimated, on a questionnaire, that they have feelings 71% to 79% of the time. People's general belief about how much they feel and what they report at a given moment are far apart.</p>
+</section>
+
+<section>
+  <div class="num">QUESTION 2</div>
+  <h2>When feeling is dulled, does the world thin out?</h2>
+  <ul>
+    <li>"Most quoted people on emotion-dulling medication describe a flat world, not an unreal one, but nobody has counted this properly."</li>
+  </ul>
+  <p>The main source is an interview study of people whose emotions were dulled by antidepressants. About 3 of 33 quoted participants described the world itself as changed ("looking at the world through a sheet of glass"); most described flatness only. The quotes were chosen by the study's authors from people who had come forward about emotional side-effects, and nobody asked them systematically whether the world seemed unreal. The adjudicator's scoring: no count possible; a weak lean against the feeling-first idea.</p>
+</section>
+
+<section>
+  <div class="num">A SIDE QUESTION</div>
+  <h2>"Pure awareness" in meditation</h2>
+  <p>Some meditators describe awareness with no content at all. If such a state had neither thought nor feeling, it would count against the feeling-first idea.</p>
+  <ul>
+    <li>"Meditators describing "pure awareness" nearly always also report peace, though the questions invited that answer."</li>
+  </ul>
+  <p>The adjudicator's scoring: nothing here counts against the feeling-first idea, and nothing counts for it. One detail matters for Question 1. In a survey of 1,403 meditators, a third answered "Did you have emotions?" with essentially no, while rating peace near the maximum (the evidence gatherer's own tabulation of the public data, not the authors'). So "no emotion" is not the same answer as "no feeling": a question about emotions can miss a calm, pleasant tone. That is why the 71% to 92% figure cannot simply be carried over to feeling in the broad sense.</p>
+</section>
+
+<section>
+  <h2>What we got wrong</h2>
+  <ul>
+    <li>"We were wrong to say this had never been tested; researchers have argued over it since at least 2008."</li>
+  </ul>
+  <p>Before this round we told you nobody had tested this head-on. For feeling in the sense of emotion that was false: the beeper studies were set explicitly against the claim that people are "always experiencing some type of mood", and the argument goes back to the 1890s. It is true only for the broad sense of feeling and for the dulled-feeling question.</p>
+</section>
+
+<section>
+  <h2>Where this leaves your hypothesis</h2>
+  <ul>
+    <li>"The feeling-first idea is still standing, but it gained no support this round."</li>
+  </ul>
+  <p>In the adjudicator's words, the idea "took the round's only strong hit": by the best available method, noticed emotion is absent from most moments. It survives only if "feeling" is read broadly, to include faint pleasantness, bodily feelings and urges, and that version has not been tested by anyone.</p>
+  <p>This sharpens the choice we have been asking you about since Update 10. If sentience means <em>emotion that is noticed</em>, the evidence leans against it being the base of experience. If it means something broader and fainter, a constant background of mattering, the idea is untested, and it now depends on a claim that people often cannot report on it in an open question.</p>
+  <p>The adjudicator described the study that would settle the broad version: about 100 people beeped at random six times a day for five days, asked first the open question and then, neutrally, about any pleasantness or unpleasantness however slight, any bodily feeling, and any urge, with control questions to catch people who say yes to everything; run by two laboratories independent of the original group. More than 20% of moments with "none" on all three would count against the feeling-first idea; under 5% would count for it. We cannot run that from a desk. It is the first thing in this project that looks like a real, decisive experiment someone could do.</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>This round is desk research on other people's studies. We ran no data ourselves, apart from the gatherer's tabulation of one public survey, which nobody has checked.</li>
+    <li>The evidence gatherers could not read every paper in full; each source in the briefs is marked with how much was read.</li>
+    <li>The beeper evidence is from one research group. Its authors themselves say the method shows no feeling was directly noticed, and that a faint feeling cannot be ruled out.</li>
+    <li>All of this is about what people report. A view that says reports of experience are unreliable would read every number here differently.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next</h2>
+  <ol>
+    <li><b>Round 16: what can value do without feeling?</b> There are experiments in which rewards or threats are shown too briefly to be noticed. If unfelt value can still steer simple habits but not planning, that fits "feeling is value made available to thought". If unfelt value can steer planning, feeling is not needed as the motivator. This turns the open question to you into a question for the evidence.</li>
+    <li><b>Write up the decisive beeper study</b> as a proposal a laboratory could run.</li>
+  </ol>
+</section>
+
+<footer>Plan and predictions: <code>scenarios/30</code>. Evidence: <code>research/22</code>, <code>research/23</code>. Scoring: <code>reviews/round15-adjudication.md</code>.</footer>
+
+</div>
