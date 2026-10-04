@@ -108,3 +108,10 @@ at this commit and the archive had not been opened.
 6. "The planned confirmation set has only about 42 NREM awakenings from 19 people; by our estimate it has roughly a one-in-ten chance of detecting an effect of the size seen here, so a null result there will not count against it."
 
 Full review: `reviews/round14-study5-redteam.md`. The reviewer also found, after the fact, that the same contrast in an earlier window (34 to 14 seconds before waking) was larger (about −0.29 at both front and back; p near 0.007, uncorrected). That is a lead, not a finding; Study 6 (`scenarios/28`) tests it on data not used here.
+
+## Confirmation attempt on Kumral (2026-10-04)
+
+Amendment 1 required at least 8 people with both kinds of report. Kumral has 6. **The
+confirmation could not be run as registered.** For description only: `front_delta` −0.29
+(one-sided p 0.28), `post_delta` −0.40 (one-sided p 0.22), 49 awakenings, 7 cells — the
+predicted direction, far too few data to count.

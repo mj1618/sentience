@@ -103,3 +103,32 @@ Two accounts, written before looking:
 Also reported for Kumral, because the reviewer showed the awakening-location rule matters:
 `delta_early` with the file end used for every recording. Kumral's own eligibility under
 the Study 1 rule (at least 8 subjects with both kinds of report) will be stated.
+
+## Registered result (2026-10-04, Kumral archive verified by checksum and included)
+
+Kumral: 66 recordings, 19 people; 51 N2/N3 awakenings with a yes/no-experience answer, 50
+usable; no muscle channel, so the end of the file is the awakening; only 6 people have
+both kinds of report (7 subject-by-stage cells).
+
+| | pooled effect | ± 1.96 null SD | p | Multiple awakenings | Aamodt eve | Aamodt morn | Kumral |
+|---|---|---|---|---|---|---|---|
+| `delta_early` (registered test) | −0.27 | −0.51 to −0.02 | 0.029 | −0.23 (19 cells) | −0.87 (6) | −0.17 (4) | −0.33 (7) |
+| last 20 s (comparison only) | −0.04 | −0.28 to +0.21 | 0.78 | +0.07 | −0.27 | −1.11 | −0.33 |
+
+502 awakenings, 36 cells. By the rule written before the data were used, the prediction
+is **supported** (negative, two-sided p < 0.05). The interim review's cautions still
+apply to the three larger datasets and are not removed by this.
+
+Amendment 1 secondaries, Kumral alone (7 cells; S3 used awakening order, no clock time
+given):
+
+| measure | effect | p |
+|---|---|---|
+| `delta_early` | −0.33 | 0.50 |
+| S1 `rel_delta` | −0.28 | 0.55 |
+| S2 `broad` | −0.35 | 0.55 |
+| S3 time-adjusted | −0.40 | 0.43 |
+| file end for all (identical here) | −0.33 | 0.50 |
+
+With seven cells none of these can tell the two accounts apart. Neither account's
+prediction is confirmed or contradicted by Kumral.

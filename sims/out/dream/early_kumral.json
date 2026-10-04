@@ -1,0 +1,463 @@
+{
+"rows": [
+{
+"file": "Sub-001_task_sleep-awak003.edf",
+"subject": "Sub-001",
+"experience": "2",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.456310911481083,
+"delta_late": -10.25689401693252
+},
+{
+"file": "Sub-002_task_sleep-awak001.edf",
+"subject": "Sub-002",
+"experience": "0",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.47573048190213,
+"delta_late": -10.11842376039481
+},
+{
+"file": "Sub-002_task_sleep-awak003.edf",
+"subject": "Sub-002",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.190349463671586,
+"delta_late": -10.852106448667284
+},
+{
+"file": "Sub-003_task_sleep-awak001.edf",
+"subject": "Sub-003",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.62353212306796,
+"delta_late": -10.65848007950736
+},
+{
+"file": "Sub-003_task_sleep-awak003.edf",
+"subject": "Sub-003",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.02148762382194,
+"delta_late": -11.034657497514617
+},
+{
+"file": "Sub-004_task_sleep-awak001.edf",
+"subject": "Sub-004",
+"experience": "0",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.340674954069081,
+"delta_late": -10.65217577731029
+},
+{
+"file": "Sub-004_task_sleep-awak003.edf",
+"subject": "Sub-004",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.07078693590426,
+"delta_late": -11.196974120796147
+},
+{
+"file": "Sub-005_task_sleep-awak001.edf",
+"subject": "Sub-005",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.841671573317578,
+"delta_late": -10.644385695304274
+},
+{
+"file": "Sub-005_task_sleep-awak002.edf",
+"subject": "Sub-005",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.793510730659412,
+"delta_late": -10.779660131791424
+},
+{
+"file": "Sub-005_task_sleep-awak003.edf",
+"subject": "Sub-005",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.086575879440302,
+"delta_late": -11.260463030025349
+},
+{
+"file": "Sub-006_task_sleep-awak001.edf",
+"subject": "Sub-006",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.21722455796723,
+"delta_late": -10.5454219401572
+},
+{
+"file": "Sub-006_task_sleep-awak002.edf",
+"subject": "Sub-006",
+"experience": "0",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.03325755596519,
+"delta_late": -9.956761224417617
+},
+{
+"file": "Sub-006_task_sleep-awak003.edf",
+"subject": "Sub-006",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.613825849636392,
+"delta_late": -10.475882915183803
+},
+{
+"file": "Sub-006_task_sleep-awak004.edf",
+"subject": "Sub-006",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.652860547259616,
+"delta_late": -10.312328144693506
+},
+{
+"file": "Sub-007_task_sleep-awak001.edf",
+"subject": "Sub-007",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.060295560606576,
+"delta_late": -11.024341039170563
+},
+{
+"file": "Sub-008_task_sleep-awak002.edf",
+"subject": "Sub-008",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.8163201274905,
+"delta_late": null
+},
+{
+"file": "Sub-008_task_sleep-awak003.edf",
+"subject": "Sub-008",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.206277097293702,
+"delta_late": -11.08538494845541
+},
+{
+"file": "Sub-008_task_sleep-awak004.edf",
+"subject": "Sub-008",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.341250007354136,
+"delta_late": -10.401458016036663
+},
+{
+"file": "Sub-009_task_sleep-awak001.edf",
+"subject": "Sub-009",
+"experience": "2",
+"stage": "3",
+"onset": 0,
+"delta_early": -9.916354421367942,
+"delta_late": -10.11012023087841
+},
+{
+"file": "Sub-009_task_sleep-awak003.edf",
+"subject": "Sub-009",
+"experience": "2",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.16285976614761,
+"delta_late": -10.04079958834277
+},
+{
+"file": "Sub-010_task_sleep-awak003.edf",
+"subject": "Sub-010",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.110277176389564,
+"delta_late": -11.150922827214737
+},
+{
+"file": "Sub-010_task_sleep-awak004.edf",
+"subject": "Sub-010",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.058404695462173,
+"delta_late": -10.366570005270546
+},
+{
+"file": "Sub-011_task_sleep-awak001.edf",
+"subject": "Sub-011",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.68822111137459,
+"delta_late": -10.804402127244762
+},
+{
+"file": "Sub-011_task_sleep-awak002.edf",
+"subject": "Sub-011",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.673424294251387,
+"delta_late": -10.930722640714498
+},
+{
+"file": "Sub-011_task_sleep-awak003.edf",
+"subject": "Sub-011",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.793120898982185,
+"delta_late": -10.758986256565393
+},
+{
+"file": "Sub-011_task_sleep-awak004.edf",
+"subject": "Sub-011",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.040836648734153,
+"delta_late": -11.046287798747915
+},
+{
+"file": "Sub-012_task_sleep-awak001.edf",
+"subject": "Sub-012",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.923762665116008,
+"delta_late": -10.975796616734053
+},
+{
+"file": "Sub-012_task_sleep-awak002.edf",
+"subject": "Sub-012",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.781402514876381,
+"delta_late": -10.71593194803946
+},
+{
+"file": "Sub-012_task_sleep-awak004.edf",
+"subject": "Sub-012",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.05470176923693,
+"delta_late": -11.29326190126911
+},
+{
+"file": "Sub-013_task_sleep-awak001.edf",
+"subject": "Sub-013",
+"experience": "0",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.184796578162297,
+"delta_late": -10.304136243564406
+},
+{
+"file": "Sub-013_task_sleep-awak002.edf",
+"subject": "Sub-013",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.509243263948916,
+"delta_late": -10.78002985801983
+},
+{
+"file": "Sub-014_task_sleep-awak001.edf",
+"subject": "Sub-014",
+"experience": "0",
+"stage": "3",
+"onset": 0,
+"delta_early": -9.768585699770037,
+"delta_late": -9.874410158173978
+},
+{
+"file": "Sub-014_task_sleep-awak002.edf",
+"subject": "Sub-014",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.910839214481506,
+"delta_late": -10.717421561852541
+},
+{
+"file": "Sub-014_task_sleep-awak003.edf",
+"subject": "Sub-014",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.34243753302681,
+"delta_late": -10.59953005388707
+},
+{
+"file": "Sub-014_task_sleep-awak004.edf",
+"subject": "Sub-014",
+"experience": "2",
+"stage": "3",
+"onset": 0,
+"delta_early": -10.439006827362444,
+"delta_late": -10.468365720607025
+},
+{
+"file": "Sub-015_task_sleep-awak001.edf",
+"subject": "Sub-015",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.737072697409081,
+"delta_late": -10.747643758085168
+},
+{
+"file": "Sub-015_task_sleep-awak002.edf",
+"subject": "Sub-015",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.226949827632817,
+"delta_late": -11.332406015434922
+},
+{
+"file": "Sub-015_task_sleep-awak003.edf",
+"subject": "Sub-015",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.574109898522632,
+"delta_late": -11.083295482984882
+},
+{
+"file": "Sub-016_task_sleep-awak001.edf",
+"subject": "Sub-016",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.12641305074062,
+"delta_late": -10.356572936516672
+},
+{
+"file": "Sub-016_task_sleep-awak002.edf",
+"subject": "Sub-016",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.024337381420054,
+"delta_late": -10.890552264393953
+},
+{
+"file": "Sub-016_task_sleep-awak004.edf",
+"subject": "Sub-016",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.915831951120298,
+"delta_late": -10.855004845757069
+},
+{
+"file": "Sub-016_task_sleep-awak005.edf",
+"subject": "Sub-016",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.550359207800271,
+"delta_late": -10.707250951684648
+},
+{
+"file": "Sub-017_task_sleep-awak001.edf",
+"subject": "Sub-017",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.453704519456231,
+"delta_late": -10.781960262255215
+},
+{
+"file": "Sub-017_task_sleep-awak003.edf",
+"subject": "Sub-017",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.442887088238384,
+"delta_late": -10.415914403294806
+},
+{
+"file": "Sub-017_task_sleep-awak004.edf",
+"subject": "Sub-017",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.972439799710214,
+"delta_late": -10.757036902382083
+},
+{
+"file": "Sub-018_task_sleep-awak001.edf",
+"subject": "Sub-018",
+"experience": "2",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.261593830807316,
+"delta_late": -11.13770668233748
+},
+{
+"file": "Sub-018_task_sleep-awak003.edf",
+"subject": "Sub-018",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.352548244350315,
+"delta_late": -11.278425231071584
+},
+{
+"file": "Sub-019_task_sleep-awak001.edf",
+"subject": "Sub-019",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.281025816765508,
+"delta_late": -10.984228928679956
+},
+{
+"file": "Sub-019_task_sleep-awak002.edf",
+"subject": "Sub-019",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -11.15629028963491,
+"delta_late": -10.800498722893584
+},
+{
+"file": "Sub-019_task_sleep-awak003.edf",
+"subject": "Sub-019",
+"experience": "0",
+"stage": "2",
+"onset": 0,
+"delta_early": -10.8100039929916,
+"delta_late": -10.7267526873837
+}
+],
+"excluded": [
+[
+"Sub-005_task_sleep-awak004.edf",
+"more than 30% of channels bad"
+]
+],
+"onset_notes": {
+"no EMG channel": 51
+}
+}
