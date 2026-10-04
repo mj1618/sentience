@@ -1,0 +1,151 @@
+<title>Sentience Update 18</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 18 · 4 October 2026</div>
+  <h1>What is conscious feeling for? No job has been shown to need it, and none shows it idle</h1>
+  <p class="lede">Your very first question was whether sentience helps survival over an equally clever automaton. This round asked it directly: which abilities are found only with conscious experience, and does anything need <em>feeling</em> in particular? As before, predictions for each view were written first and corrected by a fairness check; two evidence gatherers collected published studies without scoring them; a separate adjudicator scored (all separate AI agents, given the written plan and the evidence, not our conclusions). This is desk research, and most papers were read only in summary.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">Each line is the independent adjudicator's sentence, unaltered.</p>
+  <ul>
+    <li>"We found no evidence of a job that requires feeling rather than an unfelt value signal, and none that feeling does nothing."</li>
+    <li>"Whether feeling helps survival beyond what an equally clever unfeeling system could manage remains unanswered."</li>
+    <li>"A worm with 302 nerve cells weighs food against danger and shifts the balance as it gets hungrier."</li>
+    <li>"So weighing unlike needs cannot, by itself, be taken as a sign of feeling."</li>
+    <li>"No study has yet tested trade-offs in people whose feeling is reduced while the body's signal is intact."</li>
+    <li>"Several headline claims of sophisticated unconscious thinking have not held up when repeated."</li>
+    <li>"The best current candidate for what awareness adds is judging how reliable your own perception is; this rests on very few cases."</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Two words, and one trap</h2>
+  <p><b>Awareness</b> here means being able to report experiencing something, such as seeing a picture. <b>Feeling</b> means felt pleasantness or unpleasantness. Most theories of what consciousness is for are about awareness. The feeling-first view makes a claim about feeling: that it exists to weigh unlike needs (pain against hunger, effort against reward) on a single scale, a "common currency". The two were scored separately.</p>
+  <p>The trap, written into the plan before any evidence: if an ability fails whenever someone is unaware of a thing, that shows the ability and awareness go together. It does not show awareness does the work, because a thing you are unaware of may just be too faintly registered to support anything demanding. We counted something as evidence of a <em>job</em> only where performance was matched and awareness alone differed, or something similar.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 1 · FEELING</div>
+  <h2>Weighing needs does not need a brain like ours</h2>
+  <ul>
+    <li>"A worm with 302 nerve cells weighs food against danger and shifts the balance as it gets hungrier."</li>
+    <li>"So weighing unlike needs cannot, by itself, be taken as a sign of feeling."</li>
+    <li>"The evidence that bees and hermit crabs make such trade-offs is disputed or fragile."</li>
+  </ul>
+  <p>The worm study is a single one and has not been repeated, so by our rules it gives a lean, not a verdict. The adjudicator scored the feeling-first view's prediction here (that creatures making flexible trade-offs also show other signs of feeling, and simple ones do not) as undecided, leaning contradicted. In its words, "a common currency can exist with no evidence of feeling". It added that how mammals do it has not been shown, and the feeling-first view may not rescue itself by crediting the worm with feeling without some independent sign.</p>
+  <p>The human evidence that pleasure works as a common currency comes from one researcher's laboratory, with 3 to 12 people per study, and nobody else has repeated the key result. Scored: a lean at most.</p>
+  <p>Trade-off studies in bees and hermit crabs are widely cited as signs that those animals feel. A re-analysis says the bee result depends on a single bee, which its authors dispute; the hermit crab result was borderline.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 2 · FEELING</div>
+  <h2>The cases that look like proof are not</h2>
+  <ul>
+    <li>"People who cannot feel thirst or pain are in real danger, but they have lost the body's signal as well as the feeling."</li>
+    <li>"No study has yet tested trade-offs in people whose feeling is reduced while the body's signal is intact."</li>
+  </ul>
+  <p>People who do not feel thirst drink too little even when told to drink by the clock, and are often admitted to hospital for it. People born unable to feel pain keep injuring themselves despite knowing what is dangerous. It is tempting to say: so feeling is essential. But in both conditions the underlying signal is missing too, so they cannot show whether it is the signal or its being felt that protects people. What they do show, in the adjudicator's words, is that losing the signal is dangerous and that knowledge compensates only partly.</p>
+  <p>From Update 16: where what people say they want and what they choose come apart, the brain's value signal follows the choice.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 3 · AWARENESS</div>
+  <h2>The unconscious mind does less than claimed, but that is not yet a job for awareness</h2>
+  <ul>
+    <li>"Several headline claims of sophisticated unconscious thinking have not held up when repeated."</li>
+    <li>"The best current candidate for what awareness adds is judging how reliable your own perception is; this rests on very few cases."</li>
+  </ul>
+  <p>Claims that people can do arithmetic on numbers they never consciously saw, read unseen sentences, or combine unseen things in new ways have mostly failed when repeated. Holding unseen information in mind was found in a 19-laboratory study of 531 people, but only as a small effect. That fits "the unseen thing was too faint" as easily as any job done by awareness, which is the trap above.</p>
+  <p>Where performance was matched: two studies raised people's confidence while keeping accuracy the same and found no gain in self-control or in holding things in mind. A patient with blindsight (who responds correctly to things he says he cannot see) still could not judge his own accuracy, bet on his answers sensibly, or deliberately avoid a response, even with accuracy matched to his seeing side. That is one contested patient. The adjudicator scored the view that awareness is the mind's monitoring of itself as undecided, leaning supported.</p>
+</section>
+
+<section>
+  <h2>Where your original question stands</h2>
+  <ul>
+    <li>"We found no evidence of a job that requires feeling rather than an unfelt value signal, and none that feeling does nothing."</li>
+    <li>"Whether feeling helps survival beyond what an equally clever unfeeling system could manage remains unanswered."</li>
+  </ul>
+  <p>In the adjudicator's words: "need signals plainly aid survival; whether their being felt adds anything is untested."</p>
+  <p>Three rounds have now looked at your hypothesis from three sides. Update 15: noticed emotion is absent from most sampled moments, on one group's evidence. Update 16: feeling can be normal while action fails to follow. This round: no job found that needs feeling. None of the three settles anything, and each rests on few studies. But they point the same way, towards feeling as a gauge that reports value, and away from feeling as the thing that does the driving. Nothing shows that feeling is idle either, and nothing shows that planning or trading off works without it; those tests have not been run.</p>
+  <p>The adjudicator described the test that would speak to it directly: at least 100 people, at different levels of hunger, choosing between enduring cold pain and getting food, with the unpleasantness of the pain reduced (by hypnosis or a drug) while its intensity and their awareness of the options are checked to be unchanged. If the rate at which people trade pain for food follows the unpleasantness, that favours the feeling-first view. If it follows the intensity and the hunger regardless, that favours feeling as a gauge.</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>This is desk research. The adjudicator worked only from the two evidence briefs and re-checked no paper. Most sources were read in summary only.</li>
+    <li>One gatherer reported that web search worked poorly this round, so "has not been repeated" means its searches found no repeat.</li>
+    <li>The worm study, the blindsight case and the pleasure-as-currency studies are each single or single-laboratory results.</li>
+    <li>Two things in the plan were not covered by any evidence and are unscored: explaining one's state to others, and the strong claim that there is no experience at all without feeling.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next</h2>
+  <ol>
+    <li><b>A stock-take.</b> Eighteen updates in, a single page on what has been eliminated, what is still standing, and the handful of experiments that would decide the rest.</li>
+    <li><b>The xenon paper</b> from Update 17: read it in full.</li>
+    <li>Still open with you: what you mean by "sentience" (noticed emotion, or something broader and fainter), and whether "a gauge that may be needed but does not do the driving" is a version of your idea you would accept or reject.</li>
+  </ol>
+</section>
+
+<footer>Plan and predictions: <code>scenarios/33</code>. Evidence: <code>research/28</code>, <code>research/29</code>. Scoring: <code>reviews/round18-adjudication.md</code>.</footer>
+
+</div>
