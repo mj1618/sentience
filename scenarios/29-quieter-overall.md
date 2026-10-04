@@ -63,3 +63,14 @@ By the rule fixed in advance the primary prediction is **supported**. Awaiting i
 reproduction and red-team; not to be relied on before that.
 (The pooling script is inline in the session; outputs in `sims/out/dream/sec_*.json`,
 `study7_broad.json`.)
+
+## Review outcome (2026-10-04)
+
+Reproduced from raw recordings by an independent reviewer; full report and permitted
+sentences in `reviews/round14-study7-redteam.md`. Main corrections: the measure is
+dominated by 4–8 Hz and is not "all speeds" (equal weighting per frequency: −0.06, p 0.60);
+band by band, power below ~16 Hz is lower before experience reports and power above is
+not; no awakening was located in Tononi or Noreika (no channel labelled EMG) but the files
+do end at the awakening; part of the difference in Zhang and Noreika tracks how awakenings
+were scheduled; Tononi is the dataset from which a similar finding was already published.
+`clock()` misread AM/PM times (did not affect the registered result; fixed afterwards).

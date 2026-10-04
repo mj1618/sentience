@@ -55,8 +55,9 @@ def bands(path, onset):
 def clock(t):
     """Hours on a scale that does not wrap at midnight (noon = 12, 1 am = 25)."""
     try:
-        h, m = str(t).strip().split(":")[:2]
-        v = int(h) + int(m) / 60
+        t = str(t).strip().upper()
+        h, m = t.split(":")[:2]
+        v = int(h) % 12 + (12 if "PM" in t else 0) + int(m[:2]) / 60 if ("AM" in t or "PM" in t) else int(h) + int(m[:2]) / 60
         return v + 24 if v < 12 else v
     except (ValueError, AttributeError):
         return np.nan
