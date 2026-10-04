@@ -59,8 +59,10 @@ def site_of(label):
 
 def channel_map(ch_names):
     labels = {c.upper().strip(): c for c in ch_names}
-    if "E36" in labels and "E224" in labels:                 # EGI high-density net
-        return {s: labels[e] for s, e in EGI256.items() if e in labels}
+    # EGI high-density net: channels labelled 'E36' or 'Chan 36' (found by header inspection, Amendment 2)
+    egi = {re.sub(r"^(E|CHAN\s*)(\d+)$", r"E\2", k): v for k, v in labels.items()}
+    if len(ch_names) >= 250 and "E36" in egi and "E224" in egi:
+        return {s: egi[e] for s, e in EGI256.items() if e in egi}
     out = {}
     for ch in ch_names:
         s = site_of(ch)

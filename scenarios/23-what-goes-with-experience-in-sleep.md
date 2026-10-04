@@ -173,3 +173,12 @@ analysis.
 102 awakenings, 16 subjects with both kinds: `post_delta` −0.39, `post_hf` −0.11, `lz`
 +0.53, `lz_adj` +0.50, `irr` +0.15, `irr_adj` +0.16, `fp_lag` +0.53, `fp_lag_adj` +0.55;
 none individually significant by permutation (smallest p ≈ 0.08).
+
+## Amendment 2 — channel-label parsing only, after header inspection, before any confirmation features or outcomes were computed
+
+Header inspection (permitted under Amendment 1) showed that the high-density recordings
+label their channels "Chan 36" and not "E36". The parser now accepts both. No other
+change. The remaining confirmation headers (Noreika, Aamodt evening and morning) parse
+with the frozen rules. The largest archives needed a different unzip tool; the "Multiple
+awakenings" archive was still downloading at this commit and will be checked for
+integrity before use.
