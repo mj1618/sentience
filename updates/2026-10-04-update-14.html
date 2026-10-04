@@ -1,0 +1,160 @@
+<title>Sentience Update 14</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 14 · 4 October 2026</div>
+  <h1>One prediction, written down first, passed its test — and then turned out to mean something different from what we expected</h1>
+  <p class="lede">Last time, four studies of people woken from sleep found no reliable brain signature of experience. This round followed up the one well-known published claim in the area, that slow brain waves at the back of the head go with <em>not</em> experiencing anything. Two studies: one asked whether the difference really is at the back; the other took a lead a reviewer stumbled on and tested it once, on recordings that played no part in finding it. That test passed, narrowly. The checks made afterwards are the more interesting part.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">Each line is an independent reviewer's sentence, unaltered.</p>
+  <ul>
+    <li>"We wrote down one prediction in advance and tested it once on four sets of sleep recordings that had not been used to find it: 502 awakenings."</li>
+    <li>"Brain-wave power in the slow range, measured roughly half a minute before waking, was lower before people reported an experience than before they reported none; by the rule fixed in advance, the prediction counts as supported (effect −0.27, p about 0.03)."</li>
+    <li>"The result is modest and fragile: no single dataset shows it alone, most of the weight comes from one dataset, and removing either of two datasets pushes it past the conventional threshold."</li>
+    <li>"Checks made afterwards show the difference is not specific to slow waves: power was lower at all frequencies, more so at faster ones, and the slow-wave difference disappears once overall power is accounted for."</li>
+    <li>"So the result fits 'lighter overall sleep goes with reported experience' better than 'slow waves switch experience off'; this reading is after the fact."</li>
+    <li>"The back-minus-front difference was +0.04 (95% interval −0.17 to +0.25): we found no evidence that the reduction is larger at the back, but the three laboratories pointed in different directions (−0.16, +0.34, +0.21)."</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Words used on this page</h2>
+  <p><b>Slow waves</b> are the large, slow ripples (one to four a second) that dominate deep sleep. <b>Power</b> is how strong the activity is at a given speed. An <b>effect of −0.27</b> means: comparing each person only with themselves, in the same stage of sleep, the measure was about a quarter of that person's usual spread lower before "I was experiencing something" than before "nothing". That is small. <b>p</b> is how often shuffling the answers at random would give a difference at least this big; below 0.05 is the conventional pass mark, and it is a low bar.</p>
+</section>
+
+<section>
+  <div class="num">STUDY 5</div>
+  <h2>Is the difference at the back of the head?</h2>
+  <p>A well-known 2017 study reported that when slow waves are weaker over a "hot zone" at the back of the brain, sleepers woken moments later report having been experiencing something. If that is right, the place matters, which would be a real clue about where experience comes from. Study 1 had used only eleven recording sites. Here we used every site on the scalp, in three datasets including the original one, and asked: is the difference bigger at the back than at the front?</p>
+  <ul>
+    <li>"Using every scalp channel in three sleep datasets (522 awakenings; 64 people who gave both kinds of report), slow-wave power before reports of experience was lower by about 0.18 within-person standard deviations at the front and 0.17 at the back; neither difference was statistically significant (p = 0.08 and 0.10), and none of our six measures would survive correction for multiple testing."</li>
+    <li>"Front and back slow-wave power rose and fell together almost perfectly from one awakening to the next (correlations of 0.90 to 0.97), so these are better read as one whole-scalp measure than as two separate findings."</li>
+    <li>"The back-minus-front difference was +0.04 (95% interval −0.17 to +0.25): we found no evidence that the reduction is larger at the back, but the three laboratories pointed in different directions (−0.16, +0.34, +0.21)."</li>
+    <li>"In the original high-density dataset the difference leaned towards the back (−0.16, 95% interval −0.44 to +0.12), which is compatible both with no front–back difference and with a modest posterior one."</li>
+    <li>"This is a test at the scalp, not of the 'posterior hot zone' claim itself, which concerns sources inside the brain; in a simulation of our method only about a third to two-thirds of a back-only change showed up in the back-minus-front measure."</li>
+    <li>"A planned confirmation of the front-versus-back study could not be run: only 6 people gave both kinds of report, and 8 were required."</li>
+  </ul>
+  <p>In plain terms: at the scalp, we could not see that the back of the head is special. That does not refute the published claim, which is about sources inside the brain that scalp recordings blur together.</p>
+</section>
+
+<section>
+  <div class="num">STUDY 6</div>
+  <h2>The lead: look half a minute earlier</h2>
+  <p>While attacking Study 5, the reviewer tried a different time window and found the slow-wave difference looked larger 34 to 14 seconds before waking than in the last 20 seconds. Something found by trying several things is a lead, not a finding. So we wrote down one measure, one prediction and one pass mark, committed them, and only then ran the measure on four datasets that had played no part in finding the lead. The fourth was still downloading when the plan was fixed and was not opened until its checksum verified.</p>
+  <ul>
+    <li>"We wrote down one prediction in advance and tested it once on four sets of sleep recordings that had not been used to find it: 502 awakenings."</li>
+    <li>"Brain-wave power in the slow range, measured roughly half a minute before waking, was lower before people reported an experience than before they reported none; by the rule fixed in advance, the prediction counts as supported (effect −0.27, p about 0.03)."</li>
+    <li>"The result is modest and fragile: no single dataset shows it alone, most of the weight comes from one dataset, and removing either of two datasets pushes it past the conventional threshold."</li>
+    <li>"In the fourth dataset the recordings stop up to a minute before waking, so its timing is imprecise; it is too small to matter either way."</li>
+  </ul>
+  <p>This is the first prediction in the project's own studies to pass a test set in advance. It passed narrowly. Of the 502 awakenings, only 319 come from a person-and-sleep-stage combination with both kinds of answer, and only those can contribute.</p>
+</section>
+
+<section>
+  <h2>What the result seems to mean</h2>
+  <p>We expected, if the test passed, to be able to say "slow waves go with the absence of experience". Two independent reviewers then checked whether the difference was really about slow waves. These checks were made after the result, so they are weaker evidence than the test itself.</p>
+  <ul>
+    <li>"Checks made afterwards show the difference is not specific to slow waves: power was lower at all frequencies, more so at faster ones, and the slow-wave difference disappears once overall power is accounted for."</li>
+    <li>"Time of night explains only part of it, about a quarter."</li>
+    <li>"So the result fits 'lighter overall sleep goes with reported experience' better than 'slow waves switch experience off'; this reading is after the fact."</li>
+  </ul>
+  <table>
+    <tr><th>Measured 34–14 s before waking, four datasets</th><th>Effect</th><th>p</th></tr>
+    <tr><td>Slow-wave power (the registered test)</td><td>−0.27</td><td>about 0.03</td></tr>
+    <tr><td>Power at all faster speeds (4–40 a second)</td><td>−0.41</td><td>0.001</td></tr>
+    <tr><td>Slow-wave power relative to the rest</td><td>−0.09</td><td>0.47</td></tr>
+    <tr><td>Slow-wave power, overall power taken out</td><td>+0.04</td><td>0.74</td></tr>
+    <tr><td>Overall power, slow-wave power taken out</td><td>−0.36</td><td>0.008</td></tr>
+    <tr><td>Slow-wave power, time of night taken out</td><td>−0.20</td><td>0.11</td></tr>
+  </table>
+  <p class="note">Every row but the first was computed after the result by a reviewer and has not itself been tested on fresh data.</p>
+  <p>Before opening the fourth dataset we had written down what each of the two readings predicted there. It turned out to have only seven usable person-and-stage combinations, and could not tell them apart.</p>
+  <p>One more caution from the first review: the test's verdict depended on how the moment of waking was located in two of the datasets. With the fourth dataset added, that particular dependence went away (p 0.038 the other way), but it shows how close to the line this is.</p>
+</section>
+
+<section>
+  <h2>Why this matters for the big question</h2>
+  <p>Our working picture is that feeling comes first and thought serves it. A sharp, local brain signature of "experience on / experience off" would have been a foothold for asking what that signature does. What we have instead, so far, is a weak, whole-brain difference: a sleeper whose brain activity is quieter overall, at every speed, half a minute before being woken is a little more likely to say they were experiencing something. That is a description of sleep depth more than of experience, and it explains very little: in Update 13, about four-fifths of the variation in reports was explained by nothing we measured.</p>
+  <p>The honest position: in open scalp recordings, with roughly 500 to 600 awakenings per test, we have not found anything that separates experience from its absence better than "how deeply asleep".</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>Study 6's headline number was reproduced twice by independent reviewers with their own code, starting from the raw recordings. Their after-the-fact numbers (the table above, apart from its first row) were each computed by one reviewer and not checked by anyone else.</li>
+    <li>The plan, an interim result on three datasets (−0.26, p about 0.045), an amendment and the final result are in the project history in that order. The interim result was recorded before the fourth dataset was opened so that it could not quietly be preferred. Timestamps cannot prove nobody peeked.</li>
+    <li>The way Study 6 pooled its datasets followed its own plan but differs from Studies 1 and 5, which required at least eight people with both kinds of answer per dataset. Under that older rule only one dataset qualifies, and it alone gives −0.23, p 0.10.</li>
+    <li>In the largest dataset the answer was a bare yes or no, and the moment of waking had to be estimated from muscle activity. In the fourth dataset "no experience" includes "can't remember".</li>
+    <li>A p of about 0.03 on a single test is weak evidence by itself.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next</h2>
+  <ol>
+    <li><b>Test the new reading properly.</b> "Lower power at all speeds goes with reported experience" was found after the fact. The three datasets from Study 5 have not been used for that measure in that window; one prediction, written first, run once.</li>
+    <li><b>Ask what the whole-state difference is.</b> If it is simply lighter sleep, standard measures of sleep depth should carry the same information and nothing should be left over.</li>
+    <li><b>The open question to you from Update 10</b> still stands: is feeling the same thing as a value signal available to thought, or something added?</li>
+  </ol>
+</section>
+
+<footer>Plans and results: <code>scenarios/27</code>, <code>scenarios/28</code>. Reviews: <code>reviews/round14-*</code>. Code: <code>sims/dream_topo.py</code>, <code>sims/dream_early.py</code>, <code>sims/dream_early_secondary.py</code>. Data: the DREAM database (Monash University), CC BY 4.0, not stored in the repository.</footer>
+
+</div>
