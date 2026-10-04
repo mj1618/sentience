@@ -88,3 +88,71 @@ be undecided.
 Q may not appeal to effects too small to measure. P may not rename any unexplained effect
 "a different phenomenon" without independent grounds. N and B may not both claim a result
 that only shows "the brain changed".
+
+## Amendment after the fairness pre-check (before any evidence was gathered)
+
+Ten problems found; all accepted. Where this section and the text above differ, this
+section governs.
+
+**Scoring.** The accounts are not mutually exclusive: they sit at different levels. Score
+per prediction, not per account. Report the molecular level (L-classical, L-modern, P, Q,
+M, S) and the systems level (N, B, T, D) separately. "Several partly right" is an allowed
+verdict; an account earns credit only from predictions its rivals do not share. Ketamine
+and xenon differ in mechanism profile; "anaesthesia" may not be one state.
+
+**Molecular level**
+
+- **L-classical.** Anaesthetics act on bulk lipid alone; no protein is involved.
+  1. Potency tracks oil solubility with no exceptions. 2. Mirror-image molecules are
+  equally potent. 3. Works on any membrane. 4. Spin irrelevant.
+- **L-modern (membrane-mediated).** The drug's first site is the membrane (lipid rafts,
+  lateral pressure); proteins are downstream effectors. 1. Solubility correlation holds
+  broadly; exceptions allowed where chiral lipids or effectors intervene. 2. Mirror-image
+  differences allowed but small. 3. As L-classical. 4. Spin irrelevant. 7. Disrupting the
+  membrane step (e.g. deleting the lipid-sensing enzyme) reduces sensitivity without
+  altering the channel's drug-binding site; mutating a channel's binding site does not
+  abolish the drug's effect on that channel.
+- **P**, as above, plus 7. Single amino-acid changes in a target protein abolish
+  sensitivity to specific agents in live animals.
+- **Q.** 1. As L on solubility (binding is in non-polar pockets). Distinctively:
+  anaesthetics bind tubulin at clinical concentrations and alter microtubule-level
+  oscillations/dynamics, and this is required for the effect, not incidental.
+  2. Compatible with stereoselectivity; not committed.
+  4a. Microtubule stabilisers or destabilisers shift anaesthetic sensitivity (core
+  Orch-OR prediction). 4b. Nuclear spin alters potency (supportive of quantum accounts
+  generally; its failure does not refute Orch-OR).
+- **M. Mitochondrial** (complex I; hypersensitivity in complex-I mutants).
+- **S. Presynaptic** (transmitter-release machinery).
+
+Cross-kingdom action (3) is predicted by L, Q and P alike and separates them only if the
+target in the non-neural organism is identified. Organisms with membranes or microtubules
+that are insensitive would count against L and Q.
+
+**Systems level.** Mainstream holds that both arousal and cortical mechanisms contribute;
+the test is which is sufficient and which necessary.
+
+- **N.** 5. A network measure separates reported experience (dreaming, connected
+  consciousness on isolated-forearm testing, ketamine) from no-report, at matched
+  unresponsiveness. 6. Restoring arousal without restoring cortico-thalamic integration
+  does not restore experience; cortex/thalamus-restricted delivery can abolish it.
+- **B.** 5. With brainstem arousal engaged, experience is absent regardless of cortical
+  complexity; cortical measures index content and connectedness only. 6. Microdelivery to
+  a brainstem site produces the full state at doses ineffective elsewhere; lesioning that
+  site markedly raises the systemic dose required; arousal-nucleus stimulation restores it
+  with drug present.
+- **T. Thalamic switch.** **D. Layer-5 dendritic decoupling** (a concrete form of N with a
+  distinct site). Integrated-information views fall under N.5.
+
+Animal results on prediction 6 score for responsiveness only unless paired with a marker
+validated against human report.
+
+**No-rescue rules, made symmetric**
+
+- L-modern may not absorb every protein finding as "downstream" without naming the
+  membrane step.
+- L and Q may not count cross-kingdom action as support without target identification.
+- B may not count loss of righting reflex as loss of experience.
+- N may not switch measure between agents or redefine integration post hoc.
+- Q may not retreat to an unspecified quantum property if 4a and 4b fail.
+- The "single unreplicated study" cap applies to all accounts equally, including the
+  microinjection and ketamine-complexity results.
