@@ -1,0 +1,179 @@
+<title>Sentience Update 13</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 13 · 4 October 2026</div>
+  <h1>Our own studies on open sleep recordings: four tests, four nulls, each reproduced</h1>
+  <p class="lede">You asked us to take our own direction and try to find something new. Reading other people's papers had reached its limit, so this round we did original work: four studies on open recordings of people woken from sleep and asked what they had been experiencing. Each was written down in advance, run once, and then rebuilt from the raw files by an independent reviewer. None found what it was looking for. This page says exactly what that does and does not show.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">Each line is an independent reviewer's sentence, unaltered.</p>
+  <ul>
+    <li>"None of our eight pre-registered tests found a reliable link between an EEG measure and reported experience in non-REM sleep: the smallest p-value was 0.10 against a threshold of 0.006."</li>
+    <li>"The result is inconclusive, not evidence of no effect: assuming one common effect, differences larger than about 0.35 standard deviations are unlikely, but a difference of 0.2 cannot be ruled out for any measure, and across laboratories the uncertainty is far wider."</li>
+    <li>"In a check we added afterwards, the person accounted for about 15% of the variation in reports, sleep stage and time of night about 2%, and our five brain measures under 2% more; about four-fifths was explained by nothing we measured."</li>
+    <li>"In 111 awakenings from dreaming sleep in 16 people, none of seven EEG measures taken from the last minute before waking was reliably related to how strongly or how pleasantly people said they had felt in the dream; the largest correlation was 0.17 (eye-movement activity with pleasantness, p = 0.06), which did not meet our pre-set threshold."</li>
+    <li>"So the result argues against a strong link between these seven measures and reported feeling; it does not show there is no link."</li>
+    <li>"In the one open dataset whose recordings continue past the awakening (19 people, 455 awakenings), none of our four pre-registered measures of how a sleeper wakes was related to whether experience was reported; the smallest p-value was 0.11 against a threshold of 0.0125."</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Why sleep, and what the data are</h2>
+  <p>Wake someone from the same stage of sleep on different occasions and sometimes they say they were experiencing something, sometimes nothing. The brain is in the same overall state both times, and the person answers within seconds. It is the cleanest comparison there is between experience present and experience absent.</p>
+  <p>A public database pools such recordings from many laboratories: about 2,600 awakenings, each with the brain-wave recording (EEG) from before the awakening and the person's answer. The database's own authors had found that standard measures predict the answer only weakly. They had not tested measures of how brain regions relate to one another, had not compared theory-based measures across laboratories, and had not looked at feeling.</p>
+  <p>How we worked: build the analysis on one dataset; write down the measures, the tests and the pass mark; have a reviewer attack that plan <em>before</em> opening the remaining data; fix what the reviewer found; then run it once. Afterwards a different reviewer rebuilt each result from the raw recordings.</p>
+</section>
+
+<section>
+  <div class="num">STUDY 1</div>
+  <h2>Does any brain measure go with reported experience?</h2>
+  <p>Five measures taken from the seconds before waking, each tied to a theory: slow-wave power at the back of the head (a published finding); fast activity there; how complex the signal is; how "one-way in time" the activity is (the idea from Update 12, never before tested against dream reports); and a timing relation between front and back of the head that looked promising in our development data.</p>
+  <p>The plan review, done before the main data were opened, found that the two new measures were not ready: one was pure noise at the length we had chosen, and the other did not mean what its name said. Both were repaired or renamed, and the statistics were replaced with a stricter test. All of that is on record with timestamps.</p>
+  <ul>
+    <li>"None of our eight pre-registered tests found a reliable link between an EEG measure and reported experience in non-REM sleep: the smallest p-value was 0.10 against a threshold of 0.006."</li>
+    <li>"Only three of the five confirmation datasets had enough participants (585 awakenings from 61 people), fewer than the four our plan required, so by our own rules this is not a confirmatory result in either direction."</li>
+    <li>"The result is inconclusive, not evidence of no effect: assuming one common effect, differences larger than about 0.35 standard deviations are unlikely, but a difference of 0.2 cannot be ruled out for any measure, and across laboratories the uncertainty is far wider."</li>
+    <li>"The two effects seen in our development data (complexity +0.53, fronto-posterior lag asymmetry +0.53) did not replicate: the confirmation estimates were +0.05 and +0.09, with upper limits near +0.24 and +0.28."</li>
+    <li>"After the result, a reviewer found that in one of the three datasets the recordings continue past the awakening — chin-muscle activity rises about ten-fold, typically 16 to 18 seconds before the end of the file, in three-quarters of recordings — so our window there mostly captured waking, which also explains why 34% of its recordings failed our amplitude check."</li>
+    <li>"Correcting that window after the fact, relaxing the amplitude rule, or removing that dataset did not change the outcome: no test in any re-analysis had a p-value below 0.08."</li>
+    <li>"In the original 'posterior hot zone' recordings, slow-wave power at the back of the head was slightly lower before reports of experience, as published, but the difference was small (about a third of a standard deviation; p = 0.07 with five sites and 0.03 with 23, uncorrected) and would not have met our threshold."</li>
+  </ul>
+  <p>In plain terms: the effects that looked good in the dataset we built the analysis on vanished in fresh data. That is the single most useful thing the careful method did for us. Had we stopped at the first dataset we would have reported a discovery.</p>
+</section>
+
+<section>
+  <div class="num">STUDY 2</div>
+  <h2>Is the answer more about the person than about the moment?</h2>
+  <p>If brain activity in the last seconds does not predict the answer, what does? One possibility is the person: some people rarely report dreams.</p>
+  <ul>
+    <li>"Across eight sleep datasets (1,136 awakenings), how often a person reported experience on their other awakenings predicted their report on a given awakening modestly: a score of 0.65, where chance on this scoring is about 0.47 and perfect is 1."</li>
+    <li>"The effect was uneven: absent (0.46) in the one dataset whose participants had been selected for giving both kinds of report, and largest (0.88) in two datasets where only 24 'no experience' reports came from 6 of 24 and 5 of 16 participants."</li>
+    <li>"In a check we added afterwards, the person accounted for about 15% of the variation in reports, sleep stage and time of night about 2%, and our five brain measures under 2% more; about four-fifths was explained by nothing we measured."</li>
+    <li>"Our five brain measures did not predict the report: the across-people score of 0.43 is what the method returns when the brain data are scrambled (0.42), and the very low values of 0.14 and 0.11 are an artefact of that method, not a reversed signal."</li>
+    <li>"Within a person the measures scored 0.55 overall, but 0.50 once we set aside the dataset used to build them and the one with a known recording-window problem."</li>
+    <li>"A stable difference between people does not tell us whether 'no experience' reports reflect forgetting or a real absence; it is equally expected from differences in how people judge what counts as an experience, and it does not show that the state of the brain in the moment is irrelevant."</li>
+  </ul>
+  <p>Two of the numbers we first produced here were artefacts of our method, and the reviewer caught them; they are described in the fourth sentence. We had also framed the study as "the moment or the person", and the reviewer pointed out that this is a false choice. What stands is the breakdown in the third sentence: most of what decides whether someone reports experience was captured by nothing we measured.</p>
+</section>
+
+<section>
+  <div class="num">STUDY 3 · THE ONE ABOUT FEELING</div>
+  <h2>Does any brain measure track how strongly, or how pleasantly, a dreamer felt?</h2>
+  <p>Update 7 noted that, in the evidence we had gathered, no proposed marker of experience had been tested against feeling. One open dataset allows it: people woken from dreaming sleep rated twenty emotions they had just felt in the dream, from "not at all" to "extremely". We tested seven measures against the amount of feeling and against its pleasantness, comparing each person only with themselves.</p>
+  <ul>
+    <li>"In 111 awakenings from dreaming sleep in 16 people, none of seven EEG measures taken from the last minute before waking was reliably related to how strongly or how pleasantly people said they had felt in the dream; the largest correlation was 0.17 (eye-movement activity with pleasantness, p = 0.06), which did not meet our pre-set threshold."</li>
+    <li>"This test could only be expected to find strong relations: it had an 80% chance of detecting a within-person correlation of about 0.38 at our threshold, and the 95% intervals leave room for correlations of up to about 0.4 in either direction."</li>
+    <li>"So the result argues against a strong link between these seven measures and reported feeling; it does not show there is no link."</li>
+    <li>"Our 'intensity' score was mostly positive feeling (three quarters of the total), 31 of 113 reports contained no negative feeling at all, and the score rose with the length of the dream report (within-person correlation 0.50), so it is not a clean measure of how strongly someone felt."</li>
+    <li>"With our methods we did not recover the original authors' link between frontal alpha asymmetry and dream anger (correlation −0.09, p = 0.36), and none of our pre-specified measures was clearly related to any feature of the dream report in these data, which makes the null result less informative."</li>
+    <li>"People were woken during bursts of eye movement and rated their feelings after waking and after telling the dream, in one laboratory; the finding applies to these measures and this set-up, not to brain activity in general."</li>
+  </ul>
+</section>
+
+<section>
+  <div class="num">STUDY 4</div>
+  <h2>Does the way a sleeper wakes up decide what gets reported?</h2>
+  <p>An old idea says a dream is only reported if the sleeper wakes fully and fast enough to store it before it fades. If so, "no experience" would often mean "forgot". The reviewer of Study 1 had found that one dataset's recordings run on past the awakening. A flaw there, an opening here: the awakening itself is on the record.</p>
+  <ul>
+    <li>"In the one open dataset whose recordings continue past the awakening (19 people, 455 awakenings), none of our four pre-registered measures of how a sleeper wakes was related to whether experience was reported; the smallest p-value was 0.11 against a threshold of 0.0125."</li>
+    <li>"This test was weak: our onset rule found an awakening in only 270 of 455 recordings, leaving 166 non-REM awakenings for the muscle measures, enough to detect only a large difference (about 0.64 standard deviations) with 80% power."</li>
+    <li>"A reviewer found that 422 of the 455 recordings do show a rise in chin-muscle activity near the end, so most of the 185 exclusions were awakenings our rule missed, not awakenings that did not happen; and when the rule was loosened after the fact, the largest effect we saw (+0.31) shrank or reversed sign."</li>
+    <li>"The two brain-wave measures failed their own sanity check: slow-wave power did not clearly fall after the detected awakening (average change −0.04 log units, not distinguishable from zero), because movement contaminates the signal, so those two tests tell us nothing either way."</li>
+    <li>"The dataset does not record when the question was asked or whether the answer was spoken, so a rise in chin-muscle activity may reflect speaking as much as waking; the arousal account is neither supported nor contradicted by this study."</li>
+  </ul>
+</section>
+
+<section>
+  <h2>What this adds up to</h2>
+  <p class="note">Our own summary. It restates the reviewers' sentences above and adds nothing stronger.</p>
+  <ul>
+    <li>With ordinary scalp recordings, in data from several laboratories, we could not find a reliable brain signature of whether a sleeper is experiencing anything, nor of how they feel. Large effects are unlikely. Small ones remain possible.</li>
+    <li>A well-known published signature (less slow-wave activity at the back of the head) appears in its original recordings at about a third of a standard deviation. That is small, and in our test it did not carry over clearly to the other laboratories.</li>
+    <li>About four-fifths of what decides whether someone reports experience was explained by nothing measured: not the person, not the sleep stage or time of night, not the brain measures.</li>
+    <li>None of this shows that brain activity is unrelated to experience or feeling. It shows that these measures, at this resolution, in these datasets, do not capture it.</li>
+  </ul>
+  <p>Is this "something new"? Modestly. As far as we know nobody had run pre-registered tests of these measures across laboratories, tested the "arrow of time" measure against dream reports, or tested any of them against rated feeling. The results are negative, and negative results from careful tests are worth having: they say where not to look, and how small the effects are that the field has been building on.</p>
+
+  <h3>A practical finding for other researchers</h3>
+  <p>The reviewer discovered that in one widely available dataset the recordings continue for a median of 16 to 18 seconds after the sleeper has woken. Anyone taking "the last 20 seconds before awakening" from those files is mostly analysing a person who is awake and moving. We have drafted a note to the database's maintainers; it is in the project under <code>notes/</code> and has not been sent. Whether to send it is your call.</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>Every number in the reviewers' sentences was reproduced by the reviewer from the raw recordings or the stored measures, using their own code.</li>
+    <li>Plans, amendments and results are in the project history with timestamps. A reviewer checked that the amendments made after downloading the main data changed only how channel names are read. They also noted that timestamps cannot prove nobody peeked.</li>
+    <li>These are tests of particular measures on scalp recordings. They say nothing about measures we did not try or about recordings from inside the brain.</li>
+    <li>The ratings of written dream reports used as a back-up in Study 3 were not needed, since nothing reached the stage of needing a repeat.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next</h2>
+  <ol>
+    <li><b>A stronger version of Study 1.</b> Locate the awakening in every recording from muscle activity, add the remaining datasets with repeated awakenings, and say in advance how small an effect is still worth caring about.</li>
+    <li><b>Graded reports.</b> Some datasets record how rich the experience was, whether it was more like perceiving or like thinking, and how long it had lasted. Is "experience or none" a cut-off placed on something continuous?</li>
+    <li><b>The open question to you from Update 10</b> still stands: is feeling the same thing as a value signal available to thought, or something added?</li>
+  </ol>
+</section>
+
+<footer>Plans and results: <code>scenarios/23</code> to <code>scenarios/26</code>. Reviews: <code>reviews/round13-*</code>. Code: <code>sims/dream_*.py</code>. Data: the DREAM database (Monash University), CC BY 4.0, not stored in the repository.</footer>
+
+</div>
