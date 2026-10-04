@@ -162,11 +162,24 @@ Correction: the claim "nobody has tested this head-on" was false for the narrow 
 (Heavey & Hurlburt 2008). The "asymmetry" framing was withdrawn at the fairness check:
 feeling-without-thought separates no accounts.
 
-## Next (round 16)
+## Round 16 (desk): what can value do without feeling? (`scenarios/31`)
 
-1. **What can value do without feeling?** Unfelt (subliminal/unnoticed) value: habits versus planning. Turns the owner's fork into an empirical question.
-2. Write up the beeper study (broad-feeling probe) as a proposal.
-3. Tell the DREAM maintainers about the file-end problem (draft in `notes/`; not sent — owner's call).
+Adjudicated (`reviews/round16-adjudication.md`). Prediction 1 (unfelt value drives simple
+control): undecided for all; masked-cue learning did not survive stricter awareness tests.
+Prediction 3 (planning proportional to feeling): lean against identity and extra-ingredient,
+lean for not-needed (trait questionnaires only). Prediction 4: identity "lean
+contradicted" — feeling updated normally while choice did not follow (Howard 2020 the one
+full planning test; Reber 2017, Korb 2020 weaker). Overall: "leans modestly toward feeling
+being a readout of value, with a separate link from value to action". Owner's hypothesis
+"must give up sufficiency; may retain necessity (untested) and causal influence". No study
+combines a planning test, graded feeling about its options, and a reduced-feeling group.
+
+## Next (round 17)
+
+1. Write the two missing experiments as runnable proposals (broad-feeling beeper study; devaluation + graded feeling + reduced-feeling arm).
+2. Restate the strongest surviving version of the owner's hypothesis and what it predicts that rivals do not.
+3. Owner's call: does "feeling may be needed (untested), is not enough by itself, separate link to action" still capture "sentience is the motivator"?
+4. DREAM maintainers note (draft in `notes/`; not sent — owner's call).
 
 ## Process rules (added round 2)
 
