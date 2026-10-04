@@ -73,3 +73,33 @@ Awakening located by the muscle rule in 257 of 277 Multiple-awakenings recording
 verifies; it is still downloading and has not been opened. The registered test is the
 pooled one including Kumral, run once with this same code. The three-dataset figure is
 recorded here so that it cannot quietly be preferred later if the two differ.
+
+## Review of the interim result (2026-10-04)
+
+Reproduced independently (`reviews/round14-study6-interim-redteam.md`). Borderline and
+fragile; after-the-fact checks suggest the difference is in all frequency bands, not slow
+waves in particular, and shrinks once time of night is accounted for.
+
+## Amendment 1 (2026-10-04, before the Kumral archive is opened)
+
+The registered primary test is unchanged. Three secondary analyses are added, to be run
+on the Kumral data alone (the only recordings not yet seen), same window, same
+within-cell statistics, each two-sided:
+
+- **S1 `rel_delta`:** log 1–4 Hz power minus log 4–40 Hz power.
+- **S2 `broad`:** log 4–40 Hz power.
+- **S3:** `delta_early` after removing, within cell, its straight-line relation to clock
+  time of awakening (or awakening order if no clock time is given; skipped and said so if
+  neither exists).
+
+Two accounts, written before looking:
+
+- *Slow-wave account* (local slow waves switch experience off): `rel_delta` lower with
+  experience; `delta_early` survives S3 with at least half its unadjusted size.
+- *Whole-state / time-of-night account* (experience reports are simply commoner in
+  lighter, later sleep): `broad` lower with experience, `rel_delta` near zero, and
+  `delta_early` loses more than half its size in S3.
+
+Also reported for Kumral, because the reviewer showed the awakening-location rule matters:
+`delta_early` with the file end used for every recording. Kumral's own eligibility under
+the Study 1 rule (at least 8 subjects with both kinds of report) will be stated.
