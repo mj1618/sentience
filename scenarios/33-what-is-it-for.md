@@ -86,3 +86,62 @@ value not established even for simple behaviour. The author expects the list of 
 done without experience to be shorter than textbooks say, expects that to be explainable
 by weak processing as easily as by any function of experience, and expects direct
 evidence on f (trade-offs) to be thin.
+
+## Amendment after the fairness pre-check (before any evidence was gathered)
+
+Thirteen problems found; all accepted. Where this section and the text above differ, this
+section governs.
+
+**Two words kept apart.** "Awareness" = reportable experience of a content. "Feeling" =
+felt pleasantness or unpleasantness. G, U, A, S, H concern awareness; C and P concern
+feeling. Each result is tagged by which was manipulated; neither substitutes for the other.
+
+**Accounts, corrected**
+
+- **E. No function of its own:** experience adds nothing beyond its neural basis. Predicts
+  nothing about which abilities travel with awareness; not scoreable (likewise integrated
+  information theory).
+- **N. Weak processing** (the real null). N.1 Every ability lost without awareness returns
+  when unconscious signal strength or performance is matched.
+- **G.** G.2 No separate claim about feeling; affect is conscious when broadcast like any
+  content. a, f, g need experience only via maintenance/broadcast.
+- **U.** U.1 Species with the full cluster (novel compound stimuli, second-order, trace,
+  value revaluation) show other marks of experience; species lacking it do not. U.2 Within
+  humans, awareness-dependence of these forms is supportive, not required.
+- **C-narrow** (Cabanac): C.1, C.2 as written; C.3 stands. **C-strong** (Solms): no
+  experience without affect; b–e on truly affect-free material is not conscious; C.3 is
+  denied. For C.2, signs of feeling must be defined independently of trade-off behaviour.
+- **A.** A.2 f requires experience when the options are competing skeletal-muscle plans;
+  cross-sensory integration (d) does not.
+- **S.** Awareness is the brain's simplified model of its own attention, used to control
+  attention and to model others'. S.1 Without awareness, attention is still captured but
+  endogenous control is less stable. S.2 g goes with experience.
+- **H. Higher-order** (Lau, Cleeremans): experience is the system's monitoring of its own
+  first-order states. H.1 i dissociates from first-order performance; b–e are possible
+  without awareness.
+- **P. Interoceptive regulation** (Seth): feeling serves bodily regulation. P.1 Feeling
+  tracks interoceptive prediction, not trade-offs as such.
+
+**C vs A:** is f lost with blunted affect but intact awareness of the options (C), or with
+unawareness of the action tendencies whatever the affect (A)?
+
+**Abilities, corrected and extended**
+
+- f. Choice between options serving different needs, where the exchange rate shifts
+  flexibly with the level of each need and is not a fixed, trained priority.
+- i. Confidence/metacognition, error detection. j. Initiating intentional action.
+  k. Durable episodic memory. l. Flexible response to novel situations.
+
+**Evidence of function, as opposed to co-occurrence:** (i) awareness differs with
+performance/signal matched; (ii) double dissociations (blindsight); (iii) causal
+intervention (magnetic stimulation, lesion, anaesthetic dose) removing awareness and the
+ability while matched first-order performance remains; (iv) comparative co-variation
+under independent markers. Everything else is labelled co-occurrence only.
+
+**No-rescue rules, symmetric.** No account may, after results, (a) redefine its ability,
+(b) reclassify a preserved ability as "really unconscious" or a lost one as "weak
+processing" unless N.1 was tested, or (c) invoke undetected residual awareness or feeling
+without an independent measure. Specifically: C may not posit "unfelt feeling"; G may not
+relabel survivors "not really flexible"; U may not prune the cluster; A may not relabel
+conflicts as skeletomotor; S and H may not treat report as the criterion and the ability
+at once.
