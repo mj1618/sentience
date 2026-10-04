@@ -182,3 +182,11 @@ change. The remaining confirmation headers (Noreika, Aamodt evening and morning)
 with the frozen rules. The largest archives needed a different unzip tool; the "Multiple
 awakenings" archive was still downloading at this commit and will be checked for
 integrity before use.
+
+## Amendment 3 — channel-label parsing only, before any outcome analysis
+
+31 high-density recordings (four subjects) label channels with bare numbers ("36") and
+have some bad channels already removed (215–256 channels). The parser now accepts bare
+numbers for recordings with at least 200 channels. A site whose channel was removed is
+simply unavailable; the eight-site minimum still applies. Features had been extracted for
+the other recordings at this point, but no outcome had been examined.

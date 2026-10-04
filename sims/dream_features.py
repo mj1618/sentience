@@ -59,9 +59,10 @@ def site_of(label):
 
 def channel_map(ch_names):
     labels = {c.upper().strip(): c for c in ch_names}
-    # EGI high-density net: channels labelled 'E36' or 'Chan 36' (found by header inspection, Amendment 2)
-    egi = {re.sub(r"^(E|CHAN\s*)(\d+)$", r"E\2", k): v for k, v in labels.items()}
-    if len(ch_names) >= 250 and "E36" in egi and "E224" in egi:
+    # EGI high-density net: channels labelled 'E36', 'Chan 36' or bare '36' (header inspection,
+    # Amendments 2 and 3); some recordings have bad channels already removed.
+    egi = {re.sub(r"^(E|CHAN\s*)?(\d+)$", r"E\2", k): v for k, v in labels.items()}
+    if len(ch_names) >= 200 and "E36" in egi and "E224" in egi:
         return {s: egi[e] for s, e in EGI256.items() if e in egi}
     out = {}
     for ch in ch_names:
