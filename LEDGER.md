@@ -188,11 +188,25 @@ stabiliser studies disagree — "open, not supported". Brainstem (MPTA): real le
 responsiveness, one lab, nothing on experience. Missing studies: independent blinded
 xenon-isotope replication; within-drug awakening study with ≥100 no-experience reports.
 
-## Next (round 18)
+## Round 18 (desk): what is conscious feeling for? (`scenarios/33`)
 
-1. **What is feeling for?** Which abilities are found only when something is consciously felt.
-2. Read the Li 2018 xenon paper in full (purity verification, blinding).
-3. Owner's calls still open: meaning of "sentience" (noticed emotion vs broader); whether "needed, not sufficient" captures the hypothesis; DREAM maintainers note (not sent).
+Adjudicated (`reviews/round18-adjudication.md`). "No evidence shows a job needing feeling
+rather than an unfelt value signal; none shows feeling idle." Common-currency prediction
+C.2: undecided, lean contradicted (C. elegans makes graded need-dependent trade-offs;
+single study). C.1 has no direct test; adipsia and pain insensitivity remove signal and
+feeling together. Cabanac: one lab, n 3–12. Bee/hermit-crab trade-off markers disputed or
+fragile. Awareness: headline unconscious-cognition claims failed replication
+(co-occurrence only); best candidate for what awareness adds is self-monitoring
+(higher-order view: undecided, lean supported; one contested blindsight patient). Owner's
+original question (does sentience help survival over an equally clever automaton):
+unanswered. Missing studies: trade-off with unpleasantness reduced and signal intact;
+multi-lab matched-signal awareness study.
+
+## Next (round 19)
+
+1. **Stock-take page:** what has been eliminated, what stands, and the handful of experiments that would decide the rest (broad-feeling beeper study; devaluation with reduced feeling; pain-unpleasantness trade-off; xenon isotope replication; within-drug awakening study; matched-signal awareness).
+2. Read Li 2018 (xenon) in full.
+3. Owner's calls still open: meaning of "sentience"; accept or reject "gauge that may be needed, can influence action, is not enough by itself"; DREAM maintainers note (not sent).
 
 ## Process rules (added round 2)
 
