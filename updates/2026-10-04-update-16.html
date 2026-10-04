@@ -1,0 +1,179 @@
+<title>Sentience Update 16</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 16 · 4 October 2026</div>
+  <h1>What can value do without feeling? The evidence found something else: feeling without action</h1>
+  <p class="lede">Your hypothesis says feeling is the motivator and thought works out how to serve it. This round asked what happens when something's value (how good or bad it is for you) is processed without being felt, using other people's published studies. Predictions for four views were written down first and corrected by a fairness check; two evidence gatherers collected studies without scoring them; a separate adjudicator scored (all are separate AI agents given the written plan and the evidence, not our conclusions). The clearest pattern was not the one we went looking for.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">Each line is the independent adjudicator's sentence, unaltered.</p>
+  <ul>
+    <li>"It is not yet established that value a person does not feel can drive even simple behaviour."</li>
+    <li>"In a few studies people reported wanting a food less, yet kept choosing it."</li>
+    <li>"In those studies the feeling was normal and the action did not follow it."</li>
+    <li>"This suggests that feeling by itself is not enough to produce action."</li>
+    <li>"It does not show that feeling is unnecessary."</li>
+    <li>"No study has yet tested planning in people whose feeling about the options is measurably reduced."</li>
+    <li>"The evidence leans modestly toward feeling being a readout of value, with a separate link from value to action."</li>
+  </ul>
+</section>
+
+<section>
+  <h2>The views, and what each predicted</h2>
+  <p>Since Update 10 we have been asking you: is feeling <em>the same thing as</em> a value signal that thought can use, or something <em>added</em> to it? This round put both versions against two rivals.</p>
+  <table>
+    <tr><th>View</th><th>In one line</th></tr>
+    <tr><td><b>Identity</b></td><td>Feeling just is value made available to the part of the mind that plans. The two never come apart.</td></tr>
+    <tr><td><b>Extra ingredient</b></td><td>Feeling is something added to value, and it is what moves us. Someone who knows the values but does not feel them fails to act.</td></tr>
+    <tr><td><b>Not needed</b></td><td>Value does the work. Someone who sees the options can plan with them whether or not they feel anything.</td></tr>
+    <tr><td><b>Affect without feeling</b></td><td>Reactions of liking and wanting can happen and motivate without being consciously felt.</td></tr>
+  </table>
+  <p>The fairness check, done before any evidence, changed the design. Experiments with rewards shown too briefly to see cannot separate these views when it comes to planning: every view agrees a planner cannot use information it never received. What can separate them is people who see the options clearly but feel differently about them. "Planning" was pinned down in advance to mean specific tests, such as whether someone stops choosing a food once they have eaten their fill of it.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 1</div>
+  <h2>Unfelt value does less than the textbooks say</h2>
+  <ul>
+    <li>"It is not yet established that value a person does not feel can drive even simple behaviour."</li>
+    <li>"The best-known finding of learning from invisible rewards did not hold up under a stricter awareness test."</li>
+  </ul>
+  <p>All four views had predicted that unfelt value can at least drive simple behaviour such as habits. The evidence for even that is shaky. A review of 41 studies of learning to fear something unseen found "no convincing evidence". Many positive results come from sorting people into "unaware" after the fact, which is known to produce false effects. The adjudicator scored this prediction undecided for every view, and noted that the "affect without feeling" view has most to lose. These verdicts rest partly on summaries of papers, not full texts.</p>
+  <p>Where the measure was reported feeling instead of whether a cue was visible, the best study gave 131 people drugs that block dopamine or opioid signals: their effort to get food fell slightly while their ratings of wanting and liking did not change. It is one study with a small effect.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 2</div>
+  <h2>Feeling present, action not following</h2>
+  <p>We went looking for people who feel less and asked whether they plan worse. What turned up was the reverse case.</p>
+  <ul>
+    <li>"In a few studies people reported wanting a food less, yet kept choosing it."</li>
+    <li>"In those studies the feeling was normal and the action did not follow it."</li>
+    <li>"This suggests that feeling by itself is not enough to produce action."</li>
+    <li>"It does not show that feeling is unnecessary."</li>
+  </ul>
+  <p>The studies: brief magnetic stimulation of a frontal brain network in 28 people (compared with 28 others) left the drop in a food's pleasantness after eating intact, while choices failed to adjust. Six patients with damage to the same region reported the normal drop in desire for a food they had eaten their fill of, and kept working for it. The adjudicator counted only the first as a full test of planning as we had defined it, and only in its first block of trials; the others are weaker or were read only in summary.</p>
+  <p>What this did to each view, in the adjudicator's scoring:</p>
+  <ul>
+    <li><b>Identity:</b> "lean contradicted" on its claim that feeling and planner-usable value never come apart. Feeling updated; the choice did not use it.</li>
+    <li><b>Extra ingredient:</b> split. Its own signature case, knowing but not feeling and so not acting, has thin support.</li>
+    <li><b>Not needed:</b> neither contradicted nor confirmed.</li>
+    <li><b>Feeling as <em>the</em> motivator:</b> "strained", because normal feeling was not sufficient for action. Whether feeling is necessary was not touched.</li>
+  </ul>
+  <ul>
+    <li>"One patient who reports no fear says snakes are dangerous yet approaches them; this is a single case."</li>
+  </ul>
+  <p>That patient is the nearest thing to support for the "extra ingredient" view: she knows the danger, does not feel it, and does not act on it. One person is not a test.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 3</div>
+  <h2>The study that would answer the question has not been done</h2>
+  <ul>
+    <li>"No study has yet tested planning in people whose feeling about the options is measurably reduced."</li>
+  </ul>
+  <p>Every study found has at most two of the three things needed: a proper planning test, a graded report of feeling about that test's options, and a group in whom that feeling is reduced. Large studies do show that planning scores are unrelated to questionnaires about depression or apathy (1,413 people in one), but those are general questionnaires, not feeling about the options in front of the person, so the adjudicator did not count them as "feeling reduced, planning intact".</p>
+  <p>The adjudicator sketched the missing study: over 100 people per group; let them eat one food to fullness; test whether their choices shift on combinations they were never trained on; record how pleasant and how wanted each food is at every step; and in one group give a drug intended to dull pleasure. It added a caution: it is not certain that drug lowers pleasure ratings, so a pilot would be needed first. Each view predicts a different pattern:</p>
+  <table>
+    <tr><th>View</th><th>Predicts</th></tr>
+    <tr><td>Identity</td><td>knowledge of the values and feeling fall together, and planning falls in step</td></tr>
+    <tr><td>Extra ingredient</td><td>knowledge intact, feeling flat, choices fail to shift</td></tr>
+    <tr><td>Not needed</td><td>knowledge intact, feeling flat, choices shift normally</td></tr>
+    <tr><td>Affect without feeling</td><td>choices follow bodily signs of liking and effort, not the ratings</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>Where this leaves your hypothesis</h2>
+  <ul>
+    <li>"The evidence leans modestly toward feeling being a readout of value, with a separate link from value to action."</li>
+  </ul>
+  <p>In the adjudicator's words, your hypothesis "must give up sufficiency; it may retain necessity (untested) and causal influence". In plain terms:</p>
+  <ul>
+    <li><b>Give up:</b> that feeling by itself moves the system. Feeling can be fully present and behaviour still not follow, so something else connects value to action, and that connection can break separately.</li>
+    <li><b>May keep, untested:</b> that feeling is needed for action. Nothing found this round shows planning working without it.</li>
+    <li><b>May keep, with some support:</b> that feeling influences action. A combined analysis of 91 studies found that making people feel worse raised risky, reward-seeking behaviour by a small amount (read in summary only).</li>
+  </ul>
+  <p>Put with Update 15, where the best evidence leaned against noticed emotion being present in most moments, two rounds aimed directly at your hypothesis have both leaned against its strongest form, and neither has settled it. Both rest on few studies. What has changed is that there are now two concrete experiments, each described in enough detail to run, that would.</p>
+  <p>On the question we keep putting to you: the "identity" answer took the harder knock this round, a lean and not a refutation.</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>This is desk research. The adjudicator worked only from the two evidence briefs and re-checked no paper. Several key verdicts rest on papers read only in summary; each source in the briefs is marked with how much was read.</li>
+    <li>The central pattern, feeling present and action not following, rests on one study that fully meets our definition of planning, plus weaker ones.</li>
+    <li>"Feeling" throughout means what people report when asked. We ruled out in advance both "the feeling was there but unnoticed" and "the reported feeling was not real".</li>
+    <li>An alternative reading we cannot exclude: in the brain-stimulation and brain-damage studies, what broke may be the planner's access to the value, not the link to action. The adjudicator's "lean contradicted" for the identity view already assumes that the identity view may not simply define felt value as planner-usable.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next</h2>
+  <ol>
+    <li><b>Write the two missing experiments up as proposals</b> a laboratory could run: the random-beep study of feeling from Update 15 and the eat-to-fullness study above.</li>
+    <li><b>Restate the hypothesis.</b> After two rounds, what is the strongest version still standing, and what would it predict that the rivals do not?</li>
+    <li><b>Your call:</b> does "feeling is needed, not sufficient, and there is a separate link to action" still capture what you meant by "sentience is the motivator"?</li>
+  </ol>
+</section>
+
+<footer>Plan and predictions: <code>scenarios/31</code>. Evidence: <code>research/24</code>, <code>research/25</code>. Scoring: <code>reviews/round16-adjudication.md</code>.</footer>
+
+</div>
