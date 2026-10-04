@@ -1,0 +1,158 @@
+<title>Sentience Update 17</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 17 · 4 October 2026</div>
+  <h1>What switches experience off? We know much more about what switches off responding and remembering</h1>
+  <p class="lede">You asked for something broader and more fundamental. Anaesthetics are the one tool that reliably turns something off, and they are chemically unrelated to one another, so what they share should be a clue to where experience comes from. It is also the one place your field and quantum questions touch data. As before: predictions for each view were written first and corrected by a fairness check; two evidence gatherers collected published studies without scoring them; a separate adjudicator scored (all separate AI agents, given the written plan and the evidence, not our conclusions). This is desk research, and many figures below were taken from summaries of papers and have not been checked against the originals.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">Each line is the independent adjudicator's sentence, unaltered.</p>
+  <ul>
+    <li>"Anaesthetics reliably stop people responding and remembering; whether they stop experience is much less certain."</li>
+    <li>"In volunteer studies at light doses, most people woken from unresponsiveness reported having experienced something, usually dreams."</li>
+    <li>"No brain measurement has yet been shown to tell reliably whether an unresponsive person is experiencing anything."</li>
+    <li>"The old idea that anaesthetics work simply by dissolving in the fat of cell membranes has been refuted."</li>
+    <li>"For some injected anaesthetics a specific protein target is known; for anaesthetic gases, what they share is unknown."</li>
+    <li>"One mouse study found that xenon atoms with nuclear spin were weaker anaesthetics; it has not been repeated in eight years."</li>
+    <li>"A small brainstem area in rats strongly affects responsiveness to some anaesthetics; this comes from one laboratory and says nothing about experience."</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Three things an anaesthetic can remove</h2>
+  <p>We fixed one rule before looking at anything. An anaesthetic can remove <b>responding</b> (the person does not move or answer), <b>remembering</b> (they recall nothing afterwards), and <b>experience</b> (there was nothing it was like for them). These are different. Almost every animal study measures only the first, usually whether a rat turned onto its back rights itself. Evidence about responding is not evidence about experience unless something connects the two.</p>
+  <p>That rule turned out to decide the round.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 1</div>
+  <h2>It is not clear that anaesthesia switches experience off</h2>
+  <ul>
+    <li>"Anaesthetics reliably stop people responding and remembering; whether they stop experience is much less certain."</li>
+    <li>"In volunteer studies at light doses, most people woken from unresponsiveness reported having experienced something, usually dreams."</li>
+    <li>"In two large studies, roughly one in twenty to one in ten surgical patients followed a command while apparently anaesthetised, and almost none remembered it."</li>
+    <li>"No brain measurement has yet been shown to tell reliably whether an unresponsive person is experiencing anything."</li>
+  </ul>
+  <p>The second sentence is about volunteers held unresponsive at a steady, light dose and then woken; the doses used in surgery are deeper and have not been tested this way. The third comes from studies in which one forearm is kept free of the paralysing drug so the patient can squeeze a hand if asked.</p>
+  <p>On brain measurements: a much-cited measure of how complex the brain's response to a magnetic pulse is does differ between drugs in the way people's later reports differ, but that rests on one group of fewer than twenty volunteers. The one test within a single drug, comparing people who then reported experience with people who did not, found no difference, with very few people in the second group. The adjudicator's wording: the published work establishes "much about what removes responsiveness and memory, and almost nothing about what removes experience". One reason is built in: when someone wakes and says "nothing", there is no way yet to tell nothing-happened from forgot-it.</p>
+  <p>This does not mean patients are aware during surgery. It means the question "what do anaesthetics have in common that switches experience off?" starts from an assumption that has not been shown.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 2</div>
+  <h2>At the level of molecules: no single shared target</h2>
+  <ul>
+    <li>"The old idea that anaesthetics work simply by dissolving in the fat of cell membranes has been refuted."</li>
+    <li>"For some injected anaesthetics a specific protein target is known; for anaesthetic gases, what they share is unknown."</li>
+  </ul>
+  <p>The old idea fails because some chemicals that dissolve in fat just as well do not anaesthetise at all, and because mirror-image versions of the same molecule, which dissolve identically, can differ about tenfold in strength. For two common injected drugs, changing a single building block of one protein in mice abolishes their ability to stop movement. For the inhaled gases the same change shifts sensitivity only a little, and for xenon no such test exists. A newer version of the membrane idea rests on one study that has been criticised and not repeated. The adjudicator's summary: the best-supported answer is that there is no single common molecular target. All of this concerns responding, not experience.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 3 · YOUR QUANTUM QUESTION</div>
+  <h2>Two leads, neither confirmed, neither refuted</h2>
+  <ul>
+    <li>"One mouse study found that xenon atoms with nuclear spin were weaker anaesthetics; it has not been repeated in eight years."</li>
+    <li>"Studies of drugs that act on microtubules disagree about direction."</li>
+  </ul>
+  <p><b>Xenon.</b> Xenon comes in several forms that are chemically identical and differ only in the nucleus; two of them have a property called nuclear spin. Ordinary chemistry says that should make no difference to an anaesthetic. A 2018 study of 80 mice reported that the two forms with spin were noticeably weaker. If true, it would be hard to explain without something quantum being involved. The evidence gatherer found no repeat, no failed repeat and no published criticism since, and could read only the summary of the paper. Scored: undecided, with a weak lean towards the quantum view.</p>
+  <p><b>Microtubules.</b> These are tiny tubes inside nerve cells that one quantum theory of consciousness says anaesthetics act on. A 2024 study of 8 rats found that a drug which stiffens microtubules made the rats slower to go under. A 2025 study in mice by another group found the opposite: animals given a stiffening drug went under more easily, and so did animals given a drug that loosens microtubules. Cancer patients on microtubule-stiffening drugs needed about the same amount of anaesthetic gas. Scored: undecided, no lean.</p>
+  <p>The adjudicator's overall wording for quantum and field accounts: "two unrefuted, unconfirmed leads, neither about experience. Open, not supported." It also described the experiment that would settle the xenon claim: an independent laboratory, both sexes, verified pure forms of xenon, coded gas cylinders so nobody knows which is which, and the plan registered in advance. A difference of a fifth or more would favour quantum accounts; a tight null result would remove their best piece of evidence. This connects to Update 6 and 8, where we found no known force strong enough to push neurons around but could not exclude subtler effects: this is the one experiment in reach that could.</p>
+</section>
+
+<section>
+  <div class="num">FINDING 4 · YOUR FEELING-FIRST VIEW</div>
+  <h2>A switch deep in the brain, or a breakdown across the cortex?</h2>
+  <ul>
+    <li>"A small brainstem area in rats strongly affects responsiveness to some anaesthetics; this comes from one laboratory and says nothing about experience."</li>
+  </ul>
+  <p>The feeling-first view places the source of experience deep in the brainstem, so it predicts that the off-switch is there. In rats, a tiny dose placed in one small brainstem area produces the anaesthetised state, and damaging that area means more drug is needed, for some drugs and not others. The positive results come from one laboratory, and an independent pilot largely failed. Unresponsive animals can also be roused, with the drug still present, by stimulating several different places, including the front of the cortex.</p>
+  <p>The rival view, that the common end-point is a breakdown of long-range communication across the cortex, did no better: scored undecided, with a lean against any single whole-brain measure. In the adjudicator's words on the brainstem view: "a real brainstem lever on responsiveness for some drugs; nothing ties it to experience".</p>
+</section>
+
+<section>
+  <h2>What this round adds up to</h2>
+  <p>We asked what switches experience off and found that the field can mostly say what switches off responding and remembering. That is a real finding, and an uncomfortable one for anyone (including us, in the plan for this round) who treats anaesthesia as the clean case of experience being absent.</p>
+  <p>For your two interests: the quantum idea has one striking, unrepeated result that a single well-run experiment could confirm or remove. The feeling-first, brainstem idea has a real lever on responsiveness and nothing yet linking it to experience.</p>
+  <p>The adjudicator named a second missing study: wake people from surgical-depth anaesthesia under two different drugs, collect at least 100 "nothing" reports, and test in advance-registered fashion whether any brain measure separates them from "something" reports, while also rousing people at a constant dose. A measure that separates them well would favour the cortex-wide view; experience returning with arousal while the measure stays low would favour the brainstem view.</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>This is desk research. The adjudicator worked only from the two evidence briefs and re-checked no paper.</li>
+    <li>Many figures were taken from summaries, or extracted from papers by a summarising tool, and have not been checked against the originals. The xenon paper was read in summary only. Treat every number on this page as unchecked.</li>
+    <li>The dream-report studies used light doses in volunteers. They do not show what happens at surgical depth.</li>
+    <li>Reports on waking cannot distinguish "no experience" from "experience, forgotten".</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Next</h2>
+  <ol>
+    <li><b>Round 18: what is feeling for?</b> Which abilities are found only when something is consciously felt? This is the mirror of Update 16.</li>
+    <li><b>The xenon paper.</b> Get the full text and check how the forms of xenon were verified and whether the scoring was blind, since so much rests on it.</li>
+    <li>Still open with you: what you mean by "sentience" (noticed emotion, or something broader and fainter), and whether "feeling may be needed, is not enough by itself" still captures your idea.</li>
+  </ol>
+</section>
+
+<footer>Plan and predictions: <code>scenarios/32</code>. Evidence: <code>research/26</code>, <code>research/27</code>. Scoring: <code>reviews/round17-adjudication.md</code>.</footer>
+
+</div>
