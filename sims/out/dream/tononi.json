@@ -2026,6 +2026,81 @@
 "fp_lag_orig": 0.08232995721140901
 },
 {
+"file": "s23_ep01.edf",
+"subject": "23",
+"experience": "2",
+"stage": "2",
+"time": "1:46:00",
+"artifacts": "",
+"post_delta": -11.244000013289057,
+"post_hf": -13.1749351145991,
+"lz": 0.5417097436623072,
+"n_sites": 10,
+"irr": -0.001442017820566374,
+"fp_lag": -0.011959388347501876,
+"fp_lag_orig": -0.020136266151884324
+},
+{
+"file": "s23_ep02.edf",
+"subject": "23",
+"experience": "0",
+"stage": "2",
+"time": "2:24:00",
+"artifacts": "",
+"post_delta": -11.015836527885233,
+"post_hf": -13.294378576836413,
+"lz": 0.4813979300966656,
+"n_sites": 10,
+"irr": 0.003784507523469314,
+"fp_lag": -0.016785129574731144,
+"fp_lag_orig": -0.021245717832498828
+},
+{
+"file": "s23_ep03.edf",
+"subject": "23",
+"experience": "2",
+"stage": "2",
+"time": "3:06:00",
+"artifacts": "",
+"post_delta": -11.640709650578415,
+"post_hf": -13.271826367013386,
+"lz": 0.6946824344333432,
+"n_sites": 10,
+"irr": 0.0010892311290792013,
+"fp_lag": 0.02321261858537886,
+"fp_lag_orig": 0.08294821608509113
+},
+{
+"file": "s23_ep04.edf",
+"subject": "23",
+"experience": "2",
+"stage": "2",
+"time": "4:51:00",
+"artifacts": "",
+"post_delta": -11.772488222223263,
+"post_hf": -13.226405034717478,
+"lz": 0.6853615177913804,
+"n_sites": 10,
+"irr": -0.00039738980577625843,
+"fp_lag": 0.007536932740279195,
+"fp_lag_orig": 0.005955394258444093
+},
+{
+"file": "s23_ep05.edf",
+"subject": "23",
+"experience": "0",
+"stage": "2",
+"time": "5:18:00",
+"artifacts": "",
+"post_delta": -11.226354946085653,
+"post_hf": -13.208994849598534,
+"lz": 0.6151804983695431,
+"n_sites": 10,
+"irr": 0.0011185924669629857,
+"fp_lag": -0.01949402260403708,
+"fp_lag_orig": -0.10122093120793418
+},
+{
 "file": "s24_ep01.edf",
 "subject": "24",
 "experience": "0",
@@ -3599,6 +3674,396 @@
 "irr": 0.0036203845684408494,
 "fp_lag": -0.0018513505409265066,
 "fp_lag_orig": -0.05651450474236433
+},
+{
+"file": "s37_ep01.edf",
+"subject": "37",
+"experience": "2",
+"stage": "2",
+"time": "23:27:00",
+"artifacts": "",
+"post_delta": -10.845055385994312,
+"post_hf": -13.521092059045667,
+"lz": 0.4538616273374031,
+"n_sites": 9,
+"irr": -0.009252535430671834,
+"fp_lag": -0.0017573634539290728,
+"fp_lag_orig": 0.03827916891897132
+},
+{
+"file": "s37_ep02.edf",
+"subject": "37",
+"experience": "0",
+"stage": "2",
+"time": "23:48:00",
+"artifacts": "",
+"post_delta": -11.175461960572486,
+"post_hf": -13.383042418233362,
+"lz": 0.5287944866159273,
+"n_sites": 9,
+"irr": 0.0015291044359580601,
+"fp_lag": 0.004744915091395213,
+"fp_lag_orig": 0.028842769647090705
+},
+{
+"file": "s37_ep03.edf",
+"subject": "37",
+"experience": "2",
+"stage": "2",
+"time": "0:19:00",
+"artifacts": "",
+"post_delta": -11.121656206708908,
+"post_hf": -13.173309782354925,
+"lz": 0.6189576018453712,
+"n_sites": 9,
+"irr": 0.0008810269095503765,
+"fp_lag": -0.018872130860095315,
+"fp_lag_orig": -0.06501594832069126
+},
+{
+"file": "s37_ep04.edf",
+"subject": "37",
+"experience": "1",
+"stage": "2",
+"time": "0:41:00",
+"artifacts": "",
+"post_delta": -11.150386254729522,
+"post_hf": -13.44177918084721,
+"lz": 0.5062537078085663,
+"n_sites": 9,
+"irr": 0.001668687750522602,
+"fp_lag": -0.005942045672135891,
+"fp_lag_orig": -0.030050663571559905
+},
+{
+"file": "s37_ep05.edf",
+"subject": "37",
+"experience": "2",
+"stage": "2",
+"time": "1:11:00",
+"artifacts": "",
+"post_delta": -10.781663674393304,
+"post_hf": -13.386060695786549,
+"lz": 0.48858661090549965,
+"n_sites": 9,
+"irr": -0.000519612681945922,
+"fp_lag": -0.0018497099837961513,
+"fp_lag_orig": 0.042616676661869385
+},
+{
+"file": "s37_ep06.edf",
+"subject": "37",
+"experience": "1",
+"stage": "2",
+"time": "2:26:00",
+"artifacts": "",
+"post_delta": -11.117328048605732,
+"post_hf": -13.315017998201807,
+"lz": 0.5994628742281941,
+"n_sites": 9,
+"irr": 0.0023548586812416916,
+"fp_lag": -0.005792207963302505,
+"fp_lag_orig": -0.039082244903483936
+},
+{
+"file": "s37_ep07.edf",
+"subject": "37",
+"experience": "2",
+"stage": "2",
+"time": "2:55:00",
+"artifacts": "",
+"post_delta": -11.169543152510684,
+"post_hf": -13.331825348909273,
+"lz": 0.5702207828024286,
+"n_sites": 9,
+"irr": 0.004442947421786127,
+"fp_lag": -0.0094700441851307,
+"fp_lag_orig": -0.04010131635542312
+},
+{
+"file": "s37_ep08.edf",
+"subject": "37",
+"experience": "2",
+"stage": "2",
+"time": "3:27:00",
+"artifacts": "",
+"post_delta": -11.443073793981572,
+"post_hf": -12.979709939542223,
+"lz": 0.6932812508858586,
+"n_sites": 9,
+"irr": 0.0006296328213307991,
+"fp_lag": 0.004902461344986397,
+"fp_lag_orig": 0.029440123269246544
+},
+{
+"file": "s38_ep01.edf",
+"subject": "38",
+"experience": "2",
+"stage": "2",
+"time": "1:00:00",
+"artifacts": "",
+"post_delta": -11.17679205414712,
+"post_hf": -13.650399541329511,
+"lz": 0.5389682975911416,
+"n_sites": 10,
+"irr": -0.0012497644349620223,
+"fp_lag": -0.00962587661007766,
+"fp_lag_orig": 0.061318351051269905
+},
+{
+"file": "s38_ep02.edf",
+"subject": "38",
+"experience": "2",
+"stage": "2",
+"time": "1:38:00",
+"artifacts": "",
+"post_delta": -11.476224086368347,
+"post_hf": -13.478063194639637,
+"lz": 0.6404018022242659,
+"n_sites": 10,
+"irr": 0.0023310759217156263,
+"fp_lag": 0.03515063407313128,
+"fp_lag_orig": 0.09071331433135367
+},
+{
+"file": "s38_ep03.edf",
+"subject": "38",
+"experience": "0",
+"stage": "2",
+"time": "2:41:00",
+"artifacts": "",
+"post_delta": -11.618164498163809,
+"post_hf": -13.573235566124854,
+"lz": 0.6272428610826714,
+"n_sites": 10,
+"irr": 0.0003365237110540484,
+"fp_lag": -0.011652100636555184,
+"fp_lag_orig": -0.005267957900951707
+},
+{
+"file": "s38_ep04.edf",
+"subject": "38",
+"experience": "2",
+"stage": "2",
+"time": "3:15:00",
+"artifacts": "",
+"post_delta": -11.466824349568281,
+"post_hf": -13.721836419176338,
+"lz": 0.5861211700151885,
+"n_sites": 10,
+"irr": -0.00036607481112449757,
+"fp_lag": 0.01742123453471077,
+"fp_lag_orig": 0.06334539963139792
+},
+{
+"file": "s38_ep05.edf",
+"subject": "38",
+"experience": "2",
+"stage": "2",
+"time": "3:42:00",
+"artifacts": "",
+"post_delta": -11.63573499705054,
+"post_hf": -13.665861523747356,
+"lz": 0.6129873415126106,
+"n_sites": 10,
+"irr": 0.002655343668255951,
+"fp_lag": 0.02757362731526294,
+"fp_lag_orig": 0.03234330131565315
+},
+{
+"file": "s38_ep06.edf",
+"subject": "38",
+"experience": "2",
+"stage": "2",
+"time": "5:08:00",
+"artifacts": "",
+"post_delta": -11.62267176514853,
+"post_hf": -13.725127847682078,
+"lz": 0.6113424738699113,
+"n_sites": 10,
+"irr": 0.0012575042908337388,
+"fp_lag": 0.0009483548591516996,
+"fp_lag_orig": -0.002111616664811337
+},
+{
+"file": "s39_ep01.edf",
+"subject": "39",
+"experience": "1",
+"stage": "2",
+"time": "0:26:00",
+"artifacts": "",
+"post_delta": -10.848538783147273,
+"post_hf": -13.597140514288816,
+"lz": 0.47457477543065363,
+"n_sites": 9,
+"irr": -0.000359184689712686,
+"fp_lag": -0.01219805988271346,
+"fp_lag_orig": 0.0501218222628578
+},
+{
+"file": "s39_ep02.edf",
+"subject": "39",
+"experience": "1",
+"stage": "2",
+"time": "0:46:00",
+"artifacts": "",
+"post_delta": -11.695137757749627,
+"post_hf": -13.208125010106249,
+"lz": 0.723132552549661,
+"n_sites": 9,
+"irr": 0.0009676853753966075,
+"fp_lag": -0.0033913553973032376,
+"fp_lag_orig": 0.06824653177773575
+},
+{
+"file": "s39_ep03.edf",
+"subject": "39",
+"experience": "1",
+"stage": "2",
+"time": "1:36:00",
+"artifacts": "",
+"post_delta": -10.977338215855319,
+"post_hf": -13.62705230500815,
+"lz": 0.4599537297177709,
+"n_sites": 9,
+"irr": 0.00015230567696626222,
+"fp_lag": -0.00016250584570121074,
+"fp_lag_orig": -0.006791601751304092
+},
+{
+"file": "s39_ep04.edf",
+"subject": "39",
+"experience": "2",
+"stage": "2",
+"time": "2:02:00",
+"artifacts": "",
+"post_delta": -11.390653514787228,
+"post_hf": -13.44672023943382,
+"lz": 0.588497089943532,
+"n_sites": 9,
+"irr": -7.148639939071914e-06,
+"fp_lag": -0.0015711605924133194,
+"fp_lag_orig": 0.09908370600134973
+},
+{
+"file": "s39_ep05.edf",
+"subject": "39",
+"experience": "2",
+"stage": "2",
+"time": "2:19:00",
+"artifacts": "",
+"post_delta": -11.428035853163014,
+"post_hf": -13.401274825599137,
+"lz": 0.6329694373202172,
+"n_sites": 9,
+"irr": -7.233769495578344e-05,
+"fp_lag": 0.006379951184564049,
+"fp_lag_orig": 0.14024882051890217
+},
+{
+"file": "s39_ep06.edf",
+"subject": "39",
+"experience": "0",
+"stage": "2",
+"time": "2:30:00",
+"artifacts": "",
+"post_delta": -11.078987010075275,
+"post_hf": -13.588101996143497,
+"lz": 0.4666550423361755,
+"n_sites": 9,
+"irr": -0.0011473192627573419,
+"fp_lag": -0.0010572467530842362,
+"fp_lag_orig": 0.1040357917460049
+},
+{
+"file": "s39_ep07.edf",
+"subject": "39",
+"experience": "1",
+"stage": "2",
+"time": "3:00:00",
+"artifacts": "",
+"post_delta": -11.003648692698189,
+"post_hf": -13.688643979532339,
+"lz": 0.45568925805151334,
+"n_sites": 9,
+"irr": 0.010722358774714159,
+"fp_lag": -0.032620543979785054,
+"fp_lag_orig": 0.0601184903714064
+},
+{
+"file": "s39_ep08.edf",
+"subject": "39",
+"experience": "0",
+"stage": "2",
+"time": "2:30:00",
+"artifacts": "",
+"post_delta": -11.509131095754153,
+"post_hf": -13.417191236730094,
+"lz": 0.6207852325594815,
+"n_sites": 9,
+"irr": -0.00019893038213707003,
+"fp_lag": 0.01252906626709289,
+"fp_lag_orig": 0.179952858595367
+},
+{
+"file": "s39_ep09.edf",
+"subject": "39",
+"experience": "2",
+"stage": "2",
+"time": "3:16:00",
+"artifacts": "",
+"post_delta": -11.633727663968125,
+"post_hf": -13.484625129210164,
+"lz": 0.6567286366036518,
+"n_sites": 9,
+"irr": -0.0026889125546814404,
+"fp_lag": 0.0021370002894119853,
+"fp_lag_orig": -0.10632595677757146
+},
+{
+"file": "s39_ep10.edf",
+"subject": "39",
+"experience": "2",
+"stage": "2",
+"time": "3:30:00",
+"artifacts": "",
+"post_delta": -11.524313591726683,
+"post_hf": -13.498557499234858,
+"lz": 0.593979982085863,
+"n_sites": 9,
+"irr": 0.004366689619489788,
+"fp_lag": 0.0005269601027467671,
+"fp_lag_orig": 0.04175313009352383
+},
+{
+"file": "s39_ep11.edf",
+"subject": "39",
+"experience": "0",
+"stage": "2",
+"time": "2:30:00",
+"artifacts": "",
+"post_delta": -11.656919431221851,
+"post_hf": -13.44780568456512,
+"lz": 0.6524641649373941,
+"n_sites": 9,
+"irr": 0.0010755159631977045,
+"fp_lag": 0.012319775278418765,
+"fp_lag_orig": 0.024769565782275738
+},
+{
+"file": "s39_ep12.edf",
+"subject": "39",
+"experience": "0",
+"stage": "2",
+"time": "4:08:00",
+"artifacts": "",
+"post_delta": -11.37079868229778,
+"post_hf": -13.45768380764385,
+"lz": 0.6000720844662308,
+"n_sites": 9,
+"irr": 0.00441510068428096,
+"fp_lag": 0.014177882510212686,
+"fp_lag_orig": 0.0031367749960493053
 }
 ],
 "excluded": [
@@ -3651,26 +4116,6 @@
 "amplitude above 500 microvolts"
 ],
 [
-"s23_ep01.edf",
-"only 0 usable sites"
-],
-[
-"s23_ep02.edf",
-"only 0 usable sites"
-],
-[
-"s23_ep03.edf",
-"only 0 usable sites"
-],
-[
-"s23_ep04.edf",
-"only 0 usable sites"
-],
-[
-"s23_ep05.edf",
-"only 0 usable sites"
-],
-[
 "s26_ep05.edf",
 "amplitude above 500 microvolts"
 ],
@@ -3685,110 +4130,6 @@
 [
 "s35_ep07.edf",
 "amplitude above 500 microvolts"
-],
-[
-"s37_ep01.edf",
-"only 1 usable sites"
-],
-[
-"s37_ep02.edf",
-"only 1 usable sites"
-],
-[
-"s37_ep03.edf",
-"only 1 usable sites"
-],
-[
-"s37_ep04.edf",
-"only 1 usable sites"
-],
-[
-"s37_ep05.edf",
-"only 1 usable sites"
-],
-[
-"s37_ep06.edf",
-"only 1 usable sites"
-],
-[
-"s37_ep07.edf",
-"only 1 usable sites"
-],
-[
-"s37_ep08.edf",
-"only 1 usable sites"
-],
-[
-"s38_ep01.edf",
-"only 0 usable sites"
-],
-[
-"s38_ep02.edf",
-"only 0 usable sites"
-],
-[
-"s38_ep03.edf",
-"only 0 usable sites"
-],
-[
-"s38_ep04.edf",
-"only 0 usable sites"
-],
-[
-"s38_ep05.edf",
-"only 0 usable sites"
-],
-[
-"s38_ep06.edf",
-"only 0 usable sites"
-],
-[
-"s39_ep01.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep02.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep03.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep04.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep05.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep06.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep07.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep08.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep09.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep10.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep11.edf",
-"only 1 usable sites"
-],
-[
-"s39_ep12.edf",
-"only 1 usable sites"
 ]
 ],
 "n_records": 287

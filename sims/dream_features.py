@@ -43,6 +43,8 @@ def site_of(label):
     """Map a channel label to a 10-20 site, or None. Rejects bipolar derivations
     whose second electrode is not a reference."""
     c = label.upper().strip()
+    if c == "01":                                    # 'O1' mistyped with a zero in one dataset (Amendment 4)
+        c = "O1"
     c = re.sub(r"^EEG[\s\-_:]*", "", c).strip(" .")
     parts = [p for p in re.split(r"[\s\-_:/]+", c) if p]
     if not parts:

@@ -190,3 +190,9 @@ have some bad channels already removed (215–256 channels). The parser now acce
 numbers for recordings with at least 200 channels. A site whose channel was removed is
 simply unavailable; the eight-site minimum still applies. Features had been extracted for
 the other recordings at this point, but no outcome had been examined.
+
+## Amendment 4 — channel-label parsing only, before any outcome analysis
+
+In the "Multiple awakenings" recordings the O1 channel is labelled "01" (zero, one). The
+parser now reads it as O1. The archive's checksum matched the published one. No outcome
+had been examined at this point.
