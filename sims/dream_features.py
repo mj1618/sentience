@@ -1,13 +1,16 @@
 """Study 1: which brain-activity measures go with reported experience in sleep?
 
-Computes five theory-derived features from the last 20 s of EEG before each
-awakening in DREAM-format datasets (EDF files + Records.csv). The feature
-definitions here are FROZEN by the pre-registration in
-scenarios/23-what-goes-with-experience-in-sleep.md; do not change them
-without a dated amendment there.
+Version 2, after the independent methods review (reviews/round13-study1-methods-review.md)
+and BEFORE any confirmation dataset was opened. Definitions are frozen by
+scenarios/23-what-goes-with-experience-in-sleep.md (Amendment 1).
+
+Per awakening, from the EEG before waking:
+  post_delta, post_hf, lz        from the window -22 s .. -2 s
+  irr, fp_lag, fp_lag_orig       from the window -52 s .. -2 s (files long enough only)
 """
 import csv
 import json
+import re
 import sys
 import warnings
 from pathlib import Path
@@ -19,50 +22,88 @@ from scipy import signal
 warnings.filterwarnings("ignore")
 mne.set_log_level("ERROR")
 
-FS = 100                     # analysis sampling rate (Hz)
-WIN = 20                     # seconds before awakening
+FS = 100
 SITES = ["F3", "FZ", "F4", "C3", "CZ", "C4", "P3", "PZ", "P4", "O1", "O2"]
 FRONT = ["F3", "FZ", "F4"]
 POST = ["P3", "PZ", "P4", "O1", "O2"]
-LAGS = [2, 5, 10]            # samples at 100 Hz = 20, 50, 100 ms
+LAGS = [2, 5, 10]            # 20, 50, 100 ms
 MIN_SITES = 8
+SKIP_END = 2                 # seconds dropped before the awakening
+SHORT = 20                   # power / complexity window (s)
+LONG = 50                    # lag-measure window (s), five 10 s segments
+MAX_P2P = 500e-6             # volts; windows with any site above this are excluded
+OK_REFS = {"", "REF", "A1", "A2", "M1", "M2", "LE", "AVG", "AV", "CZ", "VREF", "COM", "CLE", "AR"}
+
+# Published 10-20 equivalents for the EGI HydroCel 256/257 net (Cz is the recording reference).
+EGI256 = {"F3": "E36", "FZ": "E21", "F4": "E224", "C3": "E59", "C4": "E183",
+          "P3": "E87", "PZ": "E101", "P4": "E153", "O1": "E116", "O2": "E150"}
 
 
-def norm_name(ch):
-    c = ch.upper().replace("EEG", "").strip()
-    for sep in ("-", ":", " "):
-        c = c.split(sep)[0] if c.split(sep)[0] else c
-    return c.strip()
+def site_of(label):
+    """Map a channel label to a 10-20 site, or None. Rejects bipolar derivations
+    whose second electrode is not a reference."""
+    c = label.upper().strip()
+    c = re.sub(r"^EEG[\s\-_:]*", "", c).strip(" .")
+    parts = [p for p in re.split(r"[\s\-_:/]+", c) if p]
+    if not parts:
+        return None
+    first = parts[0]
+    m = re.fullmatch(r"(F3|FZ|F4|C3|CZ|C4|P3|PZ|P4|O1|O2)(A1|A2|M1|M2)?", first)
+    if not m:
+        return None
+    second = parts[1] if len(parts) > 1 else ""
+    if second not in OK_REFS:
+        return None
+    return m.group(1)
 
 
-def load_window(path):
-    """Return (data [n_sites x n_samples], site names) for the last WIN s, or None."""
+def channel_map(ch_names):
+    labels = {c.upper().strip(): c for c in ch_names}
+    if "E36" in labels and "E224" in labels:                 # EGI high-density net
+        return {s: labels[e] for s, e in EGI256.items() if e in labels}
+    out = {}
+    for ch in ch_names:
+        s = site_of(ch)
+        if s and s not in out:
+            out[s] = ch
+    return out
+
+
+def load(path):
+    """Return (x [sites x samples] at FS, original reference; site list) covering the
+    end of the file with trailing padding removed, or (None, reason)."""
     raw = mne.io.read_raw_edf(path, preload=False)
-    names = {}
-    for ch in raw.ch_names:
-        n = norm_name(ch)
-        if n in SITES and n not in names:
-            names[n] = ch
-    if len(names) < MIN_SITES or not any(s in names for s in FRONT) or not any(s in names for s in POST):
-        return None
+    cmap = channel_map(raw.ch_names)
+    sites = [s for s in SITES if s in cmap]
+    if len(sites) < MIN_SITES:
+        return None, f"only {len(sites)} usable sites"
     sf = raw.info["sfreq"]
-    n_need = int(round((WIN + 2) * sf))            # 2 s pad for filter edges
-    if raw.n_times < n_need:
-        return None
-    sites = [s for s in SITES if s in names]
-    x = raw.get_data(picks=[names[s] for s in sites], start=raw.n_times - n_need)
-    x = x - x.mean(axis=1, keepdims=True)
-    keep = np.ptp(x, axis=1) > 0                   # drop flat channels (e.g. the recording reference)
+    n_take = int(min(raw.n_times, round(150 * sf)))
+    x = raw.get_data(picks=[cmap[s] for s in sites], start=raw.n_times - n_take)
+    # trim trailing constant samples (padding)
+    moving = np.any(np.diff(x, axis=1) != 0, axis=0)
+    if not moving.any():
+        return None, "flat recording"
+    x = x[:, : np.max(np.nonzero(moving)[0]) + 2]
+    keep = np.ptp(x, axis=1) > 0
     x = x[keep]; sites = [s for s, k in zip(sites, keep) if k]
     if len(sites) < MIN_SITES or not any(s in FRONT for s in sites) or not any(s in POST for s in sites):
-        return None
-    # zero-phase band-pass 0.5-40 Hz, then resample to FS
+        return None, "too few usable sites after dropping flat channels"
+    if x.shape[1] < (SHORT + SKIP_END + 4) * sf:
+        return None, "recording too short"
+    x = x - x.mean(axis=1, keepdims=True)
     sos = signal.butter(4, [0.5, 40], btype="band", fs=sf, output="sos")
-    x = signal.sosfiltfilt(sos, x, axis=1)
-    x = signal.resample_poly(x, FS, int(round(sf)), axis=1) if int(round(sf)) != FS else x
-    x = x[:, -WIN * FS:]
-    x = x - x.mean(axis=0, keepdims=True)          # average reference over the selected sites
-    return x, sites
+    x = signal.sosfiltfilt(sos, x, axis=1)                   # zero-phase, whole chunk
+    isf = int(round(sf))
+    if isf != FS:
+        x = signal.resample_poly(x, FS, isf, axis=1)
+    return (x, sites), None
+
+
+def window(x, seconds):
+    end = x.shape[1] - SKIP_END * FS
+    start = end - seconds * FS
+    return None if start < 2 * FS else x[:, start:end]      # keep 2 s of filter margin
 
 
 def band_power(x, lo, hi):
@@ -72,7 +113,6 @@ def band_power(x, lo, hi):
 
 
 def lz_complexity(b):
-    """Lempel-Ziv (1976) phrase count of a binary sequence."""
     s = "".join("1" if v else "0" for v in b)
     i, c, n = 0, 0, len(s)
     while i < n:
@@ -85,79 +125,117 @@ def lz_complexity(b):
 
 
 def lz_norm(x):
-    out = []
     n = x.shape[1]
-    for ch in x:
-        b = ch > np.median(ch)
-        out.append(lz_complexity(b) * np.log2(n) / n)
-    return float(np.mean(out))
+    return float(np.mean([lz_complexity(ch > np.median(ch)) * np.log2(n) / n for ch in x]))
 
 
 def lag_asym(a, b, lag):
-    """corr(a_t, b_{t+lag}) - corr(b_t, a_{t+lag}); positive = a leads b."""
-    def c(u, v):
-        u = u[:-lag]; v = v[lag:]
-        return np.corrcoef(u, v)[0, 1]
-    return c(a, b) - c(b, a)
+    """corr(a_t, b_{t+lag}) - corr(b_t, a_{t+lag})."""
+    return np.corrcoef(a[:-lag], b[lag:])[0, 1] - np.corrcoef(b[:-lag], a[lag:])[0, 1]
 
 
-def irreversibility_cv(x):
-    """Cross-validated squared lag-asymmetry over channel pairs: product of the
-    asymmetry estimated on the first and second half of the window, averaged over
-    pairs and lags. Unbiased around zero for a time-reversible process."""
-    h = x.shape[1] // 2
-    x1, x2 = x[:, :h], x[:, h:]
-    acc = []
-    for i in range(x.shape[0]):
-        for j in range(i + 1, x.shape[0]):
-            for lag in LAGS:
-                acc.append(lag_asym(x1[i], x1[j], lag) * lag_asym(x2[i], x2[j], lag))
-    return float(np.mean(acc))
+def irr(x):
+    """Cross-validated irreversibility over five 10 s segments: the pairwise lag
+    asymmetry averaged over odd segments times that averaged over even segments,
+    mean over site pairs and lags. Centred on zero for a time-reversible process."""
+    seg = [x[:, i:i + 10 * FS] for i in range(0, x.shape[1] - 10 * FS + 1, 10 * FS)]
+
+    def a(group):
+        return np.array([np.mean([lag_asym(s[i], s[j], lag) for s in group])
+                         for i in range(x.shape[0]) for j in range(i + 1, x.shape[0]) for lag in LAGS])
+    return float(np.mean(a(seg[0::2]) * a(seg[1::2])))
 
 
-def front_leads(x, sites):
+def fp_lag(x, sites):
+    """Fronto-posterior lag asymmetry. Its sign depends on the reference and is not
+    interpreted as a direction of flow."""
     f = x[[k for k, s in enumerate(sites) if s in FRONT]].mean(axis=0)
     p = x[[k for k, s in enumerate(sites) if s in POST]].mean(axis=0)
     return float(np.mean([lag_asym(f, p, lag) for lag in LAGS]))
 
 
 def features(path):
-    w = load_window(path)
-    if w is None:
-        return None
-    x, sites = w
+    got, why = load(path)
+    if got is None:
+        return None, why
+    x, sites = got
+    short = window(x, SHORT)
+    if short is None:
+        return None, "recording too short"
+    if np.ptp(short, axis=1).max() > MAX_P2P:
+        return None, "amplitude above 500 microvolts"
+    avg = short - short.mean(axis=0, keepdims=True)
     post = [k for k, s in enumerate(sites) if s in POST]
-    return {
-        "post_delta": float(band_power(x[post], 1, 4).mean()),
-        "post_hf": float(band_power(x[post], 20, 40).mean()),
-        "lz": lz_norm(x),
-        "irr_cv": irreversibility_cv(x),
-        "front_leads": front_leads(x, sites),
-        "n_sites": len(sites),
-    }
+    out = {"post_delta": float(band_power(avg[post], 1, 4).mean()),
+           "post_hf": float(band_power(avg[post], 20, 30).mean()),
+           "lz": lz_norm(avg), "n_sites": len(sites),
+           "irr": None, "fp_lag": None, "fp_lag_orig": None}
+    long_ = window(x, LONG)
+    if long_ is not None and np.ptp(long_, axis=1).max() <= MAX_P2P:
+        lavg = long_ - long_.mean(axis=0, keepdims=True)
+        out["irr"] = irr(lavg)
+        out["fp_lag"] = fp_lag(lavg, sites)
+        out["fp_lag_orig"] = fp_lag(long_, sites)
+    return out, None
+
+
+def find_records(root):
+    cands = sorted(root.rglob("Records.csv"), key=lambda p: len(p.parts))
+    if not cands:
+        raise SystemExit(f"no Records.csv under {root}")
+    return cands[0]
+
+
+def build_index(root):
+    """Map normalised relative path (no extension) and basename to EDF files.
+    Aborts on ambiguous basenames only when a record needs them."""
+    edfs = [p for p in root.rglob("*") if p.suffix.lower() == ".edf"]
+    by_rel, by_base = {}, {}
+    for p in edfs:
+        rel = str(p.relative_to(root).with_suffix("")).lower().replace("\\", "/")
+        by_rel[rel] = p
+        by_base.setdefault(p.stem.lower(), []).append(p)
+    return by_rel, by_base
+
+
+def resolve(name, by_rel, by_base):
+    key = re.sub(r"\.edf$", "", name.strip().lower().replace("\\", "/"))
+    hits = [p for rel, p in by_rel.items() if rel == key or rel.endswith("/" + key)]
+    if len(hits) == 1:
+        return hits[0]
+    if len(hits) > 1:
+        raise SystemExit(f"ambiguous record filename {name!r}: {hits[:3]}")
+    base = by_base.get(key.split("/")[-1], [])
+    if len(base) == 1:
+        return base[0]
+    if len(base) > 1:
+        raise SystemExit(f"ambiguous basename {name!r}: {base[:3]}")
+    return None
 
 
 def run(dataset_dir, out_json):
-    """dataset_dir must contain Records.csv; EDFs are found by filename anywhere below."""
     root = Path(dataset_dir)
-    rec = list(csv.DictReader(open(next(root.rglob("Records.csv")), newline="", encoding="utf-8-sig")))
-    index = {p.name: p for p in root.rglob("*.edf")}
-    rows = []
+    rec = list(csv.DictReader(open(find_records(root), newline="", encoding="utf-8-sig")))
+    by_rel, by_base = build_index(root)
+    rows, log = [], []
     for r in rec:
-        p = index.get(Path(r["Filename"]).name)
+        p = resolve(r["Filename"], by_rel, by_base)
         if p is None:
-            continue
+            log.append((r["Filename"], "file not found")); continue
         try:
-            f = features(p)
+            f, why = features(p)
         except Exception as e:                       # noqa: BLE001
-            print("skip", r["Filename"], e, file=sys.stderr)
-            f = None
+            f, why = None, f"error: {e}"
         if f is None:
-            continue
-        rows.append({"file": r["Filename"], "subject": r["Subject ID"], "experience": r["Experience"],
-                     "stage": r["Last sleep stage"], **f})
-    Path(out_json).write_text(json.dumps(rows, indent=0))
-    print(f"{dataset_dir}: {len(rows)} of {len(rec)} awakenings processed")
+            log.append((r["Filename"], why)); continue
+        rows.append({"file": r["Filename"], "subject": r["Subject ID"], "experience": str(r["Experience"]).strip(),
+                     "stage": str(r["Last sleep stage"]).strip(), "time": r.get("Time of awakening", ""),
+                     "artifacts": r.get("Proportion artifacts", ""), **f})
+    Path(out_json).write_text(json.dumps({"rows": rows, "excluded": log, "n_records": len(rec)}, indent=0))
+    reasons = {}
+    for _, w in log:
+        reasons[w] = reasons.get(w, 0) + 1
+    print(f"{dataset_dir}: {len(rows)} of {len(rec)} records processed; excluded: {reasons}")
     return rows
 
 

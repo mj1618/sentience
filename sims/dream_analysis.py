@@ -1,12 +1,11 @@
-"""Study 1 analysis: within-subject contrast, experience vs no experience, NREM.
+"""Study 1 analysis, version 2 (after the methods review, before unblinding).
 
-For each dataset: awakenings from N2/N3 with Experience ('2') or No experience
-('0'). Each feature is z-scored within the dataset. For every subject with at
-least one awakening of each kind, d_s = mean(experience) - mean(no experience);
-the dataset effect is the weighted mean of d_s (weights n_E*n_NE/(n_E+n_NE)),
-with a subject-bootstrap standard error. Datasets are combined by
-inverse-variance random-effects meta-analysis (DerSimonian-Laird).
-FROZEN by scenarios/23-what-goes-with-experience-in-sleep.md.
+Contrast: experience ('2') vs no experience ('0') in N2 and N3, computed WITHIN
+subject x stage cells and combined. Features are converted to normal scores
+within dataset. Effects are in units of the pooled within-cell, within-label SD.
+Primary test: permutation of labels within cells (statistic = cell-weight
+weighted mean of dataset effects). Generalisation: Hartung-Knapp interval.
+FROZEN by scenarios/23-what-goes-with-experience-in-sleep.md, Amendment 1.
 """
 import json
 import sys
@@ -14,97 +13,192 @@ from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
+from scipy import stats
 
-FEATURES = ["post_delta", "post_hf", "lz", "irr_cv", "front_leads"]
+BASE = ["post_delta", "post_hf", "lz", "irr", "fp_lag"]
+TESTS = ["post_delta", "post_hf", "lz", "lz_adj", "irr", "irr_adj", "fp_lag", "fp_lag_adj"]
 NREM = {"2", "3"}
+MIN_SUBJECTS = 8
+N_PERM = 10000
 
 
-def dataset_effects(rows, stages=NREM, n_boot=4000, seed=0, adjust_for=None):
-    rows = [r for r in rows if r["stage"] in stages and r["experience"] in ("0", "2")]
-    out = {"n_awakenings": len(rows), "n_experience": sum(r["experience"] == "2" for r in rows)}
-    by = defaultdict(list)
-    for r in rows:
-        by[r["subject"]].append(r)
-    subs = [s for s, v in by.items() if {x["experience"] for x in v} == {"0", "2"}]
-    out["n_subjects_both"] = len(subs)
-    rng = np.random.default_rng(seed)
-    for f in FEATURES:
-        v = np.array([r[f] for r in rows], float)
-        mu, sd = np.nanmean(v), np.nanstd(v)
-        z = {id(r): (r[f] - mu) / sd for r in rows}
-        if adjust_for:                                # residualise on another feature (within dataset)
-            a = np.array([r[adjust_for] for r in rows], float)
-            b = np.polyfit(a, v, 1)
-            res = v - np.polyval(b, a)
-            z = {id(r): (x - res.mean()) / res.std() for r, x in zip(rows, res)}
-        d, w = [], []
-        for s in subs:
-            e = [z[id(r)] for r in by[s] if r["experience"] == "2"]
-            n = [z[id(r)] for r in by[s] if r["experience"] == "0"]
-            d.append(np.mean(e) - np.mean(n)); w.append(len(e) * len(n) / (len(e) + len(n)))
-        d, w = np.array(d), np.array(w)
-        if len(d) < 5:
-            # too few subjects with both kinds: between-subject standardised difference (secondary)
-            e = np.array([z[id(r)] for r in rows if r["experience"] == "2"])
-            n = np.array([z[id(r)] for r in rows if r["experience"] == "0"])
-            if len(e) < 5 or len(n) < 5:
-                out[f] = None
-                continue
-            sp = np.sqrt(((len(e) - 1) * e.var(ddof=1) + (len(n) - 1) * n.var(ddof=1)) / (len(e) + len(n) - 2))
-            g = (e.mean() - n.mean()) / sp
-            se = np.sqrt((len(e) + len(n)) / (len(e) * len(n)) + g * g / (2 * (len(e) + len(n))))
-            out[f] = {"effect": float(g), "se": float(se), "frac_subjects_positive": None, "between": True}
-            continue
-        est = float(np.sum(w * d) / np.sum(w))
-        idx = rng.integers(0, len(d), (n_boot, len(d)))
-        boot = np.sum(w[idx] * d[idx], axis=1) / np.sum(w[idx], axis=1)
-        out[f] = {"effect": est, "se": float(boot.std()), "frac_subjects_positive": float(np.mean(d > 0))}
+def normal_scores(v):
+    v = np.asarray(v, float)
+    out = np.full(len(v), np.nan)
+    ok = ~np.isnan(v)
+    r = stats.rankdata(v[ok])
+    out[ok] = stats.norm.ppf((r - 0.5) / ok.sum())
     return out
 
 
-def meta(effects):
-    """Random-effects (DerSimonian-Laird). effects: list of (est, se)."""
-    y = np.array([e for e, _ in effects]); v = np.array([s ** 2 for _, s in effects])
+def residual(y, xs):
+    ok = ~np.isnan(y) & np.all([~np.isnan(x) for x in xs], axis=0)
+    out = np.full(len(y), np.nan)
+    a = np.column_stack([np.ones(ok.sum())] + [x[ok] for x in xs])
+    out[ok] = y[ok] - a @ np.linalg.lstsq(a, y[ok], rcond=None)[0]
+    return out
+
+
+def prepare(rows, stages=NREM, labels=("0", "2")):
+    rows = [r for r in rows if r["stage"] in stages and r["experience"] in labels]
+    f = {k: normal_scores([np.nan if r.get(k) is None else r[k] for r in rows]) for k in BASE}
+    f["lz_adj"] = residual(f["lz"], [f["post_delta"], f["post_hf"]])
+    f["irr_adj"] = residual(f["irr"], [f["post_delta"]])
+    f["fp_lag_adj"] = residual(f["fp_lag"], [f["post_delta"]])
+    y = np.array([r["experience"] == labels[1] for r in rows])
+    cell = np.array([f"{r['subject']}|{r['stage']}" for r in rows])
+    subj = np.array([r["subject"] for r in rows])
+    return rows, f, y, cell, subj
+
+
+def effect(v, y, cell):
+    """Weighted mean of within-cell differences, scaled by pooled within-cell,
+    within-label SD. Returns (effect, total weight, cells used, subjects used)."""
+    num = den = 0.0
+    ss = dof = 0.0
+    used = 0
+    for c in np.unique(cell):
+        m = (cell == c) & ~np.isnan(v)
+        e, n = v[m & y], v[m & ~y]
+        if len(e) == 0 or len(n) == 0:
+            continue
+        w = len(e) * len(n) / (len(e) + len(n))
+        num += w * (e.mean() - n.mean()); den += w; used += 1
+        ss += ((e - e.mean()) ** 2).sum() + ((n - n.mean()) ** 2).sum(); dof += len(e) + len(n) - 2
+    if den == 0 or dof <= 0:
+        return np.nan, 0.0, 0
+    return num / den / np.sqrt(ss / dof), den, used
+
+
+def permute_within(y, cell, rng):
+    yp = y.copy()
+    for c in np.unique(cell):
+        m = np.nonzero(cell == c)[0]
+        yp[m] = y[rng.permutation(m)]
+    return yp
+
+
+def hartung_knapp(est, se):
+    y, v = np.asarray(est), np.asarray(se) ** 2
+    k = len(y)
     w = 1 / v
     fixed = np.sum(w * y) / np.sum(w)
     q = np.sum(w * (y - fixed) ** 2)
-    k = len(y)
-    tau2 = max(0.0, (q - (k - 1)) / (np.sum(w) - np.sum(w ** 2) / np.sum(w))) if k > 1 else 0.0
+    tau2 = max(0.0, (q - (k - 1)) / (np.sum(w) - np.sum(w ** 2) / np.sum(w)))
     wr = 1 / (v + tau2)
-    est = np.sum(wr * y) / np.sum(wr); se = np.sqrt(1 / np.sum(wr))
-    return {"effect": float(est), "se": float(se), "z": float(est / se), "k": int(k),
-            "tau2": float(tau2), "Q": float(q)}
+    mu = np.sum(wr * y) / np.sum(wr)
+    var = max(np.sum(wr * (y - mu) ** 2) / ((k - 1) * np.sum(wr)), 1 / np.sum(wr))   # truncated HK
+    half = stats.t.ppf(0.975, k - 1) * np.sqrt(var)
+    return float(mu), float(mu - half), float(mu + half), float(tau2)
 
 
-def main(paths, adjust_for=None):
-    res = {}
-    for p in paths:
-        rows = json.loads(Path(p).read_text())
-        res[Path(p).stem] = dataset_effects(rows, adjust_for=adjust_for)
-    for name, r in res.items():
-        print(f"\n{name}: {r['n_awakenings']} NREM awakenings ({r['n_experience']} with experience), "
-              f"{r['n_subjects_both']} subjects with both kinds")
-        for f in FEATURES:
-            if r[f]:
-                e = r[f]
-                kind = "between-subject" if e.get("between") else f"{e['frac_subjects_positive']:.0%} of subjects positive"
-                print(f"   {f:12s} {e['effect']:+.3f} ± {e['se']:.3f}  (z={e['effect']/e['se']:+.2f}; {kind})")
-    if len(res) > 1:
-        print("\nMeta-analysis across datasets (random effects)")
-        res["_meta"] = {}
-        for f in FEATURES:
-            for label, keep in (("within-subject datasets (primary)", lambda e: not e.get("between")),
-                                ("all datasets (secondary)", lambda e: True)):
-                eff = [(r[f]["effect"], r[f]["se"]) for k_, r in res.items()
-                       if k_ != "_meta" and r.get(f) and keep(r[f])]
-                if len(eff) >= 2:
-                    m = meta(eff); res["_meta"][f + " | " + label] = m
-                    print(f"   {f:12s} {m['effect']:+.3f} ± {m['se']:.3f}  z={m['z']:+.2f}  k={m['k']}  "
-                          f"tau2={m['tau2']:.3f}  [{label}]")
-    return res
+def analyse(datasets, stages=NREM, labels=("0", "2"), seed=0, n_perm=N_PERM, verbose=True):
+    rng = np.random.default_rng(seed)
+    prep = {}
+    for name, rows in datasets.items():
+        rows_, f, y, cell, subj = prepare(rows, stages, labels)
+        n_sub = len({s for s, c in zip(subj, cell)
+                     if y[cell == c].any() and (~y[cell == c]).any()})
+        prep[name] = (f, y, cell, n_sub, len(rows_), int(y.sum()))
+    out = {"datasets": {}, "combined": {}}
+    eligible = [n for n, p in prep.items() if p[3] >= MIN_SUBJECTS]
+    for name, (f, y, cell, n_sub, n_aw, n_exp) in prep.items():
+        out["datasets"][name] = {"awakenings": n_aw, "with_experience": n_exp, "subjects_with_both": n_sub,
+                                 "in_primary": name in eligible}
+    for t in TESTS:
+        obs, wts, ses = {}, {}, {}
+        for name in eligible:
+            f, y, cell, *_ = prep[name]
+            e, w, _ = effect(f[t], y, cell)
+            if np.isnan(e):
+                continue
+            obs[name], wts[name] = e, w
+            boot = []
+            cells = np.unique(cell)
+            subs = np.array([c.split("|")[0] for c in cells])
+            us = np.unique(subs)
+            for _ in range(500):                        # subject bootstrap for the interval only
+                pick = rng.choice(us, len(us))
+                idx = np.concatenate([np.nonzero(np.isin(cell, cells[subs == s]))[0] for s in pick])
+                # relabel cells so a resampled subject counts as distinct
+                tag = np.concatenate([[f"{k}:{c}" for c in cell[np.isin(cell, cells[subs == s])]]
+                                      for k, s in enumerate(pick)])
+                b, _, _ = effect(f[t][idx], y[idx], tag)
+                if not np.isnan(b):
+                    boot.append(b)
+            ses[name] = float(np.std(boot)) if boot else np.nan
+        if not obs:
+            continue
+        names = list(obs)
+        w = np.array([wts[n] for n in names]); e = np.array([obs[n] for n in names])
+        stat = float(np.sum(w * e) / np.sum(w))
+        null = np.empty(n_perm)
+        for i in range(n_perm):
+            es = []
+            for n in names:
+                f, y, cell, *_ = prep[n]
+                es.append(effect(f[t], permute_within(y, cell, rng), cell)[0])
+            null[i] = np.sum(w * np.array(es)) / np.sum(w)
+        p = float((np.sum(np.abs(null) >= abs(stat)) + 1) / (n_perm + 1))
+        res = {"combined_effect": stat, "p_perm": p, "k": len(names),
+               "per_dataset": {n: {"effect": float(obs[n]), "se_boot": ses[n]} for n in names},
+               "same_sign_share": float(np.mean(np.sign(e) == np.sign(stat)))}
+        if len(names) >= 3:
+            mu, lo, hi, tau2 = hartung_knapp(e, [ses[n] for n in names])
+            res.update({"hk_mean": mu, "hk_lo": lo, "hk_hi": hi, "tau2": tau2})
+        out["combined"][t] = res
+        if verbose:
+            per = "  ".join(f"{n}:{obs[n]:+.2f}" for n in names)
+            hk = f"  HK [{res.get('hk_lo', float('nan')):+.2f}, {res.get('hk_hi', float('nan')):+.2f}]" if len(names) >= 3 else ""
+            print(f"{t:11s} combined {stat:+.3f}  p={p:.4f}  k={len(names)}{hk}   {per}")
+    return out
+
+
+def positive_control(datasets):
+    """Within-subject difference between lighter states (wake '0', N1 '1', REM '5') and
+    deep sleep ('3'), or N2 if a dataset has no N3: does each feature move at all?"""
+    out = {}
+    for name, rows in datasets.items():
+        f = {k: normal_scores([np.nan if r.get(k) is None else r[k] for r in rows]) for k in BASE}
+        st = np.array([r["stage"] for r in rows]); su = np.array([r["subject"] for r in rows])
+        deep = "3" if (st == "3").sum() >= 10 else "2"
+        res = {}
+        for k in BASE:
+            d = []
+            for s in np.unique(su):
+                a = f[k][(su == s) & np.isin(st, ["0", "1", "5"])]
+                b = f[k][(su == s) & (st == deep)]
+                a, b = a[~np.isnan(a)], b[~np.isnan(b)]
+                if len(a) and len(b):
+                    d.append(a.mean() - b.mean())
+            if len(d) >= 5:
+                d = np.array(d)
+                res[k] = {"dz": float(d.mean() / d.std(ddof=1)), "n": len(d)}
+        out[name] = {"reference_stage": deep, **res}
+    return out
+
+
+def load(paths):
+    return {Path(p).stem: json.loads(Path(p).read_text())["rows"] for p in paths}
 
 
 if __name__ == "__main__":
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    adj = next((a.split("=")[1] for a in sys.argv[1:] if a.startswith("--adjust=")), None)
-    out = main(args, adjust_for=adj)
+    paths = [a for a in sys.argv[1:] if not a.startswith("--")]
+    data = load(paths)
+    n_perm = 2000 if "--quick" in sys.argv else N_PERM
+    print("NREM, experience vs no experience")
+    res = {"nrem": analyse(data, n_perm=n_perm)}
+    for n, d in res["nrem"]["datasets"].items():
+        print("  ", n, d)
+    if "--all" in sys.argv:
+        print("\nREM, experience vs no experience")
+        res["rem"] = analyse(data, stages={"5"}, n_perm=n_perm)
+        print("\nNREM, experience without recall vs no experience")
+        res["white"] = analyse(data, labels=("0", "1"), n_perm=n_perm)
+        res["positive_control"] = positive_control(data)
+        print("\nPositive control (lighter states minus deep sleep, within subject, dz)")
+        for n, d in res["positive_control"].items():
+            print("  ", n, {k: (round(v["dz"], 2) if isinstance(v, dict) else v) for k, v in d.items()})
+    out = next((a.split("=")[1] for a in sys.argv[1:] if a.startswith("--out=")), None)
+    if out:
+        Path(out).write_text(json.dumps(res, indent=1))

@@ -97,3 +97,79 @@ Young adults (between-subject, 33 awakenings): nothing distinguishable from zero
    recorded here as a dated amendment, still before opening the confirmation data.
 3. Then the confirmation run; then independent reproduction and red-teaming; then a
    pre-publication check of the update.
+
+---
+
+## Amendment 1 — after the independent methods review, before any confirmation data were opened
+
+The review (`reviews/round13-study1-methods-review.md`) worked only on the development
+data and found that the plan above was not ready. Changes, all made and committed before
+unblinding:
+
+**Measures**
+
+- `irr_cv` (20 s) had no test–retest reliability in non-dreaming sleep (−0.06). Replaced
+  by `irr`: the same idea over a 50 s window (−52 s to −2 s) in five 10 s segments, odd
+  segments against even. Test–retest reliability in development data: 0.69. Recordings
+  too short for a 50 s window do not contribute to this measure.
+- `front_leads` does not measure direction of flow: under the average reference its sign
+  flips for a wave travelling front to back. Renamed `fp_lag` (fronto-posterior lag
+  asymmetry), computed over the 50 s window, **with no directional interpretation**. Its
+  reliability is low (0.30), so a null result would be uninformative. H5 is a
+  replication of a sign only.
+- `post_hf` band narrowed to 20–30 Hz (some recordings are filtered at 30–35 Hz).
+- All measures: the last 2 s before waking are dropped (they can contain waking and
+  padding); trailing flat padding is trimmed; the whole end-section is filtered before
+  windowing; windows with any site above 500 microvolts peak-to-peak are excluded.
+- Channel labels are parsed strictly; two-electrode derivations between scalp sites are
+  rejected; high-density (EGI 256) recordings use the published 10–20 equivalents (F3 =
+  E36, Fz = E21, F4 = E224, C3 = E59, C4 = E183, P3 = E87, Pz = E101, P4 = E153, O1 =
+  E116, O2 = E150). Records are matched to files by path, with an exclusion log.
+- **Adjusted versions, co-primary:** `lz_adj` (complexity after removing its relation to
+  both power measures; raw complexity is about three-quarters explained by them),
+  `irr_adj` and `fp_lag_adj` (after removing the relation to slow-wave power, since both
+  lag measures respond to travelling slow waves).
+
+**Analysis**
+
+- Features are converted to normal scores within dataset. The contrast is computed
+  **within subject and within sleep stage** (N2 and N3 separately) and combined, because
+  stage is related to both the features and the chance of reporting experience.
+- Effects are in units of the pooled within-cell standard deviation.
+- **Primary test:** permutation of the experience labels within subject-and-stage cells
+  (10,000 permutations), statistic = weighted mean of dataset effects. The earlier
+  random-effects z-test was shown to give too many false positives with five datasets.
+- A dataset enters the primary analysis only with at least 8 subjects contributing both
+  kinds of awakening. At least 4 such datasets are required for a confirmatory claim.
+- Generalisation across laboratories is described by a Hartung–Knapp interval.
+
+**Decision rules (replace those above)**
+
+Eight tests: `post_delta`, `post_hf`, `lz`, `lz_adj`, `irr`, `irr_adj`, `fp_lag`,
+`fp_lag_adj`.
+
+- **Supported:** predicted sign, permutation p < 0.006 (0.05 divided by 8), and at least
+  three-quarters of datasets sharing the sign.
+- **Contradicted:** p < 0.006 in the opposite direction.
+- **Inconclusive:** neither, and the Hartung–Knapp interval includes an effect of ±0.2.
+- **Not supported:** neither, and the interval lies within ±0.2.
+- The design can reliably detect effects of about 0.35 standard deviations or more.
+- **Positive control:** each feature's within-subject difference between lighter states
+  (waking, N1, REM) and deep sleep is reported for the confirmation sets. A feature that
+  does not move between those states (|dz| < 0.5) has its null result labelled
+  uninformative. Development data: `post_delta` −1.29, `lz` +1.08, `irr` +0.61,
+  `post_hf` +0.40, `fp_lag` +0.26.
+
+**Recommended by the reviewer and not done** (stated so it is not mistaken for done):
+time-of-night as a covariate; muscle-channel power as a covariate; a fixed identical site
+set per dataset.
+
+**Permitted before the confirmation run:** reading the *headers* of confirmation
+recordings (channel labels, sampling rate, duration) and their record tables' column
+names, to confirm the parser handles them. No signal values and no outcome-by-feature
+analysis.
+
+**Development-set results under the amended pipeline (exploratory):** Zhang & Wamsley,
+102 awakenings, 16 subjects with both kinds: `post_delta` −0.39, `post_hf` −0.11, `lz`
++0.53, `lz_adj` +0.50, `irr` +0.15, `irr_adj` +0.16, `fp_lag` +0.53, `fp_lag_adj` +0.55;
+none individually significant by permutation (smallest p ≈ 0.08).
