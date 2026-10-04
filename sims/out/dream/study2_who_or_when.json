@@ -1,0 +1,118 @@
+{
+ "table": {
+  "Zhang & Wamsley 2019": {
+   "awakenings": 110,
+   "subjects": 27,
+   "experience_rate": 0.6272727272727273,
+   "auc_person": 0.6640211640211641,
+   "n_person": 96,
+   "auc_stage": 0.5415341109932839,
+   "icc": 0.23831668121956126
+  },
+  "LODE": {
+   "awakenings": 109,
+   "subjects": 27,
+   "experience_rate": 0.6055045871559633,
+   "auc_person": 0.7558558558558559,
+   "n_person": 97,
+   "auc_stage": 0.5232558139534884,
+   "icc": 0.3406592453871468
+  },
+  "Multiple awakenings": {
+   "awakenings": 277,
+   "subjects": 19,
+   "experience_rate": 0.6714801444043321,
+   "auc_person": 0.5881188703769349,
+   "n_person": 277,
+   "auc_stage": 0.5087734845799362,
+   "icc": 0.0896384389942097
+  },
+  "Tononi Serial Awakenings": {
+   "awakenings": 231,
+   "subjects": 39,
+   "experience_rate": 0.5367965367965368,
+   "auc_person": 0.46042337781868387,
+   "n_person": 229,
+   "auc_stage": null,
+   "icc": -0.037517466386406996
+  },
+  "DATA1": {
+   "awakenings": 182,
+   "subjects": 10,
+   "experience_rate": 0.38461538461538464,
+   "auc_person": 0.6232142857142857,
+   "n_person": 182,
+   "auc_stage": 0.5598214285714286,
+   "icc": 0.132224298421628
+  },
+  "Aamodt_evening_sleep": {
+   "awakenings": 115,
+   "subjects": 24,
+   "experience_rate": 0.8782608695652174,
+   "auc_person": 0.877327935222672,
+   "n_person": 108,
+   "auc_stage": 0.4893917963224894,
+   "icc": 0.3653554594686991
+  },
+  "Aamodt_morning_sleep": {
+   "awakenings": 61,
+   "subjects": 16,
+   "experience_rate": 0.8360655737704918,
+   "auc_person": 0.8790123456790123,
+   "n_person": 54,
+   "auc_stage": 0.4215686274509804,
+   "icc": 0.46917450365726227
+  },
+  "Kumral et al., 2023": {
+   "awakenings": 51,
+   "subjects": 19,
+   "experience_rate": 0.5490196078431373,
+   "auc_person": 0.8366013071895425,
+   "n_person": 35,
+   "auc_stage": 0.5372670807453416,
+   "icc": 0.30838280005791224
+  }
+ },
+ "features": {
+  "zhang": {
+   "awakenings": 97,
+   "auc_brain": 0.49019607843137253,
+   "auc_person_same_rows": 0.6393762183235867,
+   "auc_brain_within_person": 0.7215189873417721,
+   "n_within": 75
+  },
+  "tononi": {
+   "awakenings": 218,
+   "auc_brain": 0.5542372881355933,
+   "auc_person_same_rows": 0.45325309611023895,
+   "auc_brain_within_person": 0.5641891891891891,
+   "n_within": 214
+  },
+  "multi": {
+   "awakenings": 187,
+   "auc_brain": 0.5855386260358193,
+   "auc_person_same_rows": 0.6685748922413793,
+   "auc_brain_within_person": 0.5894039735099338,
+   "n_within": 175
+  },
+  "noreika": {
+   "awakenings": 168,
+   "auc_brain": 0.3472740851381628,
+   "auc_person_same_rows": 0.6135922330097088,
+   "auc_brain_within_person": 0.41924398625429554,
+   "n_within": 147
+  },
+  "aamodt_eve": {
+   "awakenings": 111,
+   "auc_brain": 0.14138438880706922,
+   "auc_person_same_rows": 0.8726495726495727,
+   "auc_brain_within_person": 0.475,
+   "n_within": 31
+  },
+  "aamodt_morn": {
+   "awakenings": 59,
+   "auc_brain": 0.10612244897959183,
+   "auc_person_same_rows": 0.8785529715762274
+  }
+ }
+}
