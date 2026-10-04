@@ -47,3 +47,19 @@ The same datasets produced the slow-wave lead, and slow-wave and faster power ar
 correlated, so this is less independent than fresh data would be. Against that, the one
 fast-activity result already seen in these datasets points the other way. No fresh open
 dataset remains.
+
+## Result (2026-10-04, run once)
+
+515 N2/N3 awakenings (Tononi 231, Zhang 102, Noreika 182); 69 subject-by-stage cells with
+both kinds of report; people with both: 39, 16, 9.
+
+| measure | pooled effect | ± 1.96 null SD | p | Study 1/5 rule | Tononi | Zhang | Noreika |
+|---|---|---|---|---|---|---|---|
+| `broad` (primary) | −0.38 | −0.58 to −0.18 | 0.0003 | −0.38, p 0.0003 | −0.46 | −0.52 | −0.20 |
+| `rel_delta` | −0.12 | −0.32 to +0.08 | 0.24 | −0.13, p 0.22 | −0.11 | −0.54 | +0.03 |
+| `delta_early` (check) | −0.27 | −0.47 to −0.07 | 0.008 | −0.28, p 0.007 | −0.26 | −0.72 | −0.10 |
+
+By the rule fixed in advance the primary prediction is **supported**. Awaiting independent
+reproduction and red-team; not to be relied on before that.
+(The pooling script is inline in the session; outputs in `sims/out/dream/sec_*.json`,
+`study7_broad.json`.)
