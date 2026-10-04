@@ -174,12 +174,25 @@ being a readout of value, with a separate link from value to action". Owner's hy
 "must give up sufficiency; may retain necessity (untested) and causal influence". No study
 combines a planning test, graded feeling about its options, and a reduced-feeling group.
 
-## Next (round 17)
+## Round 17 (desk): what switches experience off? (`scenarios/32`)
 
-1. Write the two missing experiments as runnable proposals (broad-feeling beeper study; devaluation + graded feeling + reduced-feeling arm).
-2. Restate the strongest surviving version of the owner's hypothesis and what it predicts that rivals do not.
-3. Owner's call: does "feeling may be needed (untested), is not enough by itself, separate link to action" still capture "sentience is the motivator"?
-4. DREAM maintainers note (draft in `notes/`; not sent — owner's call).
+Adjudicated (`reviews/round17-adjudication.md`); figures unchecked against originals.
+Headline: the sources establish much about what removes responsiveness and memory, almost
+nothing about what removes experience (most volunteers woken from light-dose
+unresponsiveness report experience; no marker separates experience from none at matched
+unresponsiveness). Molecular: classical lipid theory refuted; no single common target;
+protein targets known for some injected agents only; modern membrane account lean
+contradicted; mitochondrial and presynaptic lean supported. Quantum: xenon isotope effect
+(Li 2018) undecided, weak lean for, unreplicated (and see C21 caveats); microtubule
+stabiliser studies disagree — "open, not supported". Brainstem (MPTA): real lever on
+responsiveness, one lab, nothing on experience. Missing studies: independent blinded
+xenon-isotope replication; within-drug awakening study with ≥100 no-experience reports.
+
+## Next (round 18)
+
+1. **What is feeling for?** Which abilities are found only when something is consciously felt.
+2. Read the Li 2018 xenon paper in full (purity verification, blinding).
+3. Owner's calls still open: meaning of "sentience" (noticed emotion vs broader); whether "needed, not sufficient" captures the hypothesis; DREAM maintainers note (not sent).
 
 ## Process rules (added round 2)
 
