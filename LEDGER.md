@@ -133,18 +133,30 @@ The percentages were not connected to any test and are removed. Families still o
 5. Split-brain: does a learned aversion taught to one hemisphere transfer to the other?
 6. Xenon isotopes done properly (gases interleaved within a day, blends of the two kinds, no second anaesthetic).
 
-## Where the project stands (after round 13)
+## Where the project stands (after round 14)
 
 Rounds 1–12 were desk research: the owner's hypothesis is defensible as an identity
-claim; no existing study tests it; "time itself" is untested. Round 13 began original
-work on open data: four pre-registered studies, all null or inconclusive, each reproduced
-by an independent reviewer. Still waiting on the owner: identity or extra ingredient?
+claim; no existing study tests it; "time itself" is untested. Round 13: four
+pre-registered studies on open sleep recordings, all null or inconclusive. Round 14:
 
-## Next (round 14)
+| Study | Pre-registered prediction | Result | Reviewed status |
+|---|---|---|---|
+| 5 (`scenarios/27`) | slow-wave difference larger at the back of the head | back-minus-front +0.04 (−0.17 to +0.25) | no front–back difference seen at scalp; not a test of the source-level "hot zone" claim; confirmation not runnable (Kumral: 6 people, 8 needed) |
+| 6 (`scenarios/28`) | whole-scalp 1–4 Hz power 34–14 s before waking lower before experience reports | −0.27, p about 0.03, 502 awakenings, 4 datasets | supported by the literal rule; fragile; not slow-wave specific (post hoc) |
+| 7 (`scenarios/29`) | 4–40 Hz power, same window, lower before experience reports | −0.38, p about 0.0003, 515 awakenings, 3 datasets (not fully fresh) | reproduced from raw; measure is mostly 4–8 Hz; effect is below ~16 Hz, not above; Tononi (already published) carries it; partly protocol-driven in Zhang and Noreika |
 
-1. **A better-powered, correctly windowed test.** Fix the awakening-window rule for every dataset from muscle activity, add the remaining multi-awakening datasets, and state in advance the smallest effect worth caring about.
-2. **Report criterion.** Datasets with graded reports (dream complexity; perception versus thought; duration of experience): is the report a threshold on something continuous?
-3. **Tell the DREAM maintainers** about the file-end problem (draft in `notes/`).
+Reviewed reading (post hoc, untested as such): less activity below about 16 Hz before
+reports of experience, resembling lighter sleep within a stage; an association, not a
+signature specific to experience or to a place on the head. All open DREAM datasets on
+disk are now used; no fresh confirmation set remains.
+Still waiting on the owner: identity or extra ingredient?
+
+## Next (round 15)
+
+1. **Is anything left once sleep depth is accounted for?** Pre-register depth measures (e.g. spindle rate, slow-wave density, stage, time in stage) and ask whether the sub-16 Hz difference survives them. Cannot be a fresh-data test.
+2. **Fast activity (above 16 Hz):** datasets disagree; check against how each laboratory scheduled awakenings.
+3. **Report criterion** (graded reports), carried over.
+4. **Tell the DREAM maintainers** about the file-end problem (draft in `notes/`; not sent — owner's call).
 
 ## Process rules (added round 2)
 

@@ -29,3 +29,35 @@ Checked `updates/2026-10-04-update-14.html` against the round-14 reviews, scenar
 11. **"Two independent reviewers then checked ... These checks were made after the result"**. The first reviewer's checks preceded the registered result (three datasets). Replace "after the result" with "after seeing results".
 
 12. **Jargon undefined:** dataset, awakening, "95% interval", "within-person standard deviations", "correction for multiple testing", "high-density", "posterior", "committed", "checksum", "registered". Add to "Words used"; replace "until its checksum verified" with "until the download was verified complete".
+
+## Second check (after Study 7 was added)
+
+**Passes.** All 31 quoted `<li>` sentences string-match permitted sentences (script-checked). All 12 band-table figures match the Study 7 review. No "broadband", "replicated", "contradicts", or seven-dataset p. First-check fixes: 11 present or moot (text since rewritten); fix 8 partial (caveat added, paper still not linked).
+
+## Problems
+
+1. **Headline:** "passed their tests — and what they show looks like lighter sleep, not a signature of experience". Hides that one pass was narrow and the other not on fresh data; "not a signature" is settled only by the untested depth question. Replace: "Two predictions, written down first, passed their tests, one narrowly and one on recordings that were not fully fresh — and what they show may simply be lighter sleep".
+
+2. **Short version, bullets 4 and 7–8 contradict** ("lower at all frequencies, more so at faster ones" vs "above 16 Hz was not"). Insert before bullet 6, unquoted: "The next four lines come from a later study, which corrected 'at all frequencies' in the line above."
+
+3. **Study 6 table row "Power at all faster speeds (4–40 a second)"**: the name Study 7 says is wrong. Replace: "Overall 4–40 power (mostly 4–8; see Study 7)".
+
+4. **"describes the four Study 6 datasets"**: too strong; above 16 Hz two of those four lean positive. Replace: "describes the four Study 6 datasets pooled, two of which lean the other way above 16 Hz".
+
+5. **"we have now found one difference that passes tests set in advance"**: the two tests were of different measures; "below 16 Hz" is a post hoc description never itself tested. Replace: "two measures have now passed tests set in advance (slow-wave power, narrowly; 4–40 Hz power, clearly but not on fresh recordings). The description covering both, less activity below about 16 Hz, was reached afterwards and is untested; it looks like".
+
+6. **"That is what lighter sleep looks like, though..."**: asserted as fact; it is the reviewer's inference, within one scored stage. Replace: "That resembles lighter sleep within the same sleep stage (the reviewer's reading); we have not measured sleep depth directly."
+
+7. **Dropped cautions.** Add after the Study 7 quotes: "Taken alone, only the already-published dataset is clearly significant (−0.46, p 0.001; the others −0.52, p 0.05 and −0.20, p 0.26), and it carries the result; without it the effect is −0.33, p 0.033. One of the others mixes awakenings seconds after sleep onset with awakenings after ten minutes of sleep. In the third the difference is between nights; within a night it leans the other way (+0.11)."
+
+8. **"Our slow and medium-speed result agrees with it"**: review says only the low-frequency direction agrees. Replace: "The direction of our slow-activity result agrees with it".
+
+9. **"though the three test datasets lean that way"**: reads as "each of three"; review says the pooled test set, not significant. Replace: "though the test datasets pooled lean that way, not significantly".
+
+10. **Band-table note**: add "The two positive figures are indistinguishable from zero (p 0.79 and 0.20)."
+
+11. **"did nothing in two of the three datasets ... so the result stands"**: omits the third. Add: "In the third it fired on about a quarter of recordings at implausible times; using the end of the recording for everyone gives the same −0.38."
+
+12. **Jargon:** "Hz" appears in the short version before it is explained; "artefact" and "reference" never are. Add to "Words used": "<b>Hz</b> means ripples per second. An <b>artefact</b> is a signal from something other than the brain, such as muscle. The <b>reference</b> is the baseline each recording site is compared with."
+
+13. **Next list** omits scenario 29's "No fresh open dataset remains". Add to item 1: "No unused open dataset remains, so this cannot be a fresh-data test."
