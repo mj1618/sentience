@@ -149,3 +149,11 @@ owner's hypothesis.
 - **Two manipulations.** (1) Hypnotic suggestion to reduce unpleasantness (cheap; run first). (2) Magnetic stimulation of the outer prefrontal cortex on both sides against a control site, with a check in the same session that it lowered people's insight into their own perception.
 - **Readings fixed in advance.** Rated feeling falls while the value's availability is unchanged: the identity reading fails. Stimulation verified, and both feeling and availability unchanged: the LeDoux–Brown/Lau reading fails. Both move: no test.
 - **Limits.** Cannot touch Rolls's version. Depends on taking self-report as the criterion. Would show which function accompanies reported feeling, not why that function is felt.
+
+## 14. Does the "arrow of time" in brain activity go with experience?
+
+Proposed by the round 12 adjudicator. Fix in advance one many-channel measure of time-irreversibility, with the signal's power matched across conditions, and apply it to: existing sleep recordings in which people were woken and asked whether they had been experiencing anything (within dreaming sleep and within non-dreaming sleep); the open recordings of waking, sleep, ketamine, propofol and xenon; and recordings of generalised absence seizures. The conjecture predicts high values wherever experience is reported and low values in seizures; a mere activity marker predicts the opposite in seizures.
+
+## 15. Does it go with feeling, and does absolute speed matter?
+
+Proposed by the round 12 adjudicator. Within each person, record brain activity while they rate how strongly they feel, trial by trial, against a neutral condition matched for effort and responding. Second arm: the same ratings while core body temperature is shifted by about one degree in each direction, with thinking shown to be intact. This is the only direct test we know of for whether the absolute rate of brain processes matters to feeling.

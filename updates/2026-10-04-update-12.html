@@ -1,0 +1,156 @@
+<title>Sentience Update 12</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column, lab-notebook feel; findings are numbered because they build on each other. */
+:root{
+  --bg:#f5f8f7; --panel:#e9efed; --fg:#14211e; --muted:#51635e; --line:#c9d5d1;
+  --accent:#0b6e63; --warm:#a85a12; --bad:#a2372f;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Atkinson Hyperlegible","Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1514; --panel:#18211f; --fg:#e2ebe8; --muted:#9bb0aa; --line:#2c3a37;
+  --accent:#5fd0bf; --warm:#e3a45c; --bad:#ef8a80; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.62}
+.wrap{max-width:44rem;margin:0 auto;padding-inline:1.25rem;padding-block:2.5rem 4rem;display:flex;flex-direction:column;gap:2.75rem}
+header{display:flex;flex-direction:column;gap:.75rem}
+.eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,2.9rem);line-height:1.08;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:700;font-size:1.55rem;line-height:1.2;margin:0;text-wrap:balance}
+h3{font-family:var(--display);font-weight:500;font-size:1.15rem;margin:0}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.lede{font-size:1.2rem;line-height:1.5}
+.num{font-family:var(--mono);color:var(--accent);font-size:.85rem;letter-spacing:.06em}
+.short{border-left:3px solid var(--accent);padding-left:1rem;display:flex;flex-direction:column;gap:.5rem}
+.short li{margin-bottom:.35rem}
+ul,ol{margin:0;padding-left:1.25rem}
+li{margin-bottom:.4rem}
+.def{background:var(--panel);padding:1rem 1.1rem;border-radius:6px;display:flex;flex-direction:column;gap:.6rem}
+.def b{color:var(--accent)}
+.note{color:var(--muted);font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-weight:500;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+td.n{font-family:var(--mono);white-space:nowrap}
+.win{color:var(--accent);font-weight:700}
+.bars{display:grid;grid-template-columns:max-content 1fr max-content;gap:.4rem .75rem;align-items:center;font-size:.92rem}
+.bars .track{background:var(--panel);height:.9rem;border-radius:2px;min-width:0}
+.bars .fill{background:var(--accent);height:100%;border-radius:2px}
+.bars .v{font-family:var(--mono);font-size:.85rem}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .lab{fill:var(--fg);font-size:12px}
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;padding:.1rem .45rem;border:1px solid currentColor;border-radius:3px;white-space:nowrap}
+.tag.gone{color:var(--bad)} .tag.thin{color:var(--warm)} .tag.ok{color:var(--accent)}
+.tag.ours{color:var(--warm)} .tag.known{color:var(--accent)} .tag.out{color:var(--bad)}
+hr{border:0;border-top:1px solid var(--line);margin:0;width:100%}
+footer{color:var(--muted);font-size:.9rem}
+code{font-family:var(--mono);font-size:.88em}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Update 12 · 4 October 2026</div>
+  <h1>Does time create sentience? What can and cannot be said</h1>
+  <p class="lede">You asked us to investigate whether time creates feeling or has a part in creating it. We wrote down seven versions of the idea, had the wording checked for fairness, gathered the published evidence, had it scored independently, and ran one test of our own on public sleep recordings.</p>
+</header>
+
+<section class="short">
+  <h3>The short version</h3>
+  <p class="note">The independent scorer's sentences, unaltered.</p>
+  <ul>
+    <li>"Every process takes time, so saying that feeling needs time is true of everything and tells us nothing by itself."</li>
+    <li>"We found no study that tests whether time itself (absolute speed, absolute duration, or physical irreversibility) matters for feeling when a system's organisation is held fixed; that question is untested, not answered."</li>
+    <li>"Brain activity is more one-directional in time during waking than in deep sleep, propofol anaesthesia and unresponsive patients, but the same measure is lower while people watch a film than while they rest, and rises with how often people press buttons, so it has not been shown to track experience."</li>
+    <li>"The decisive cases are missing or conflicting: for ketamine, three analyses of one monkey dataset disagree, and we found no adequate data for dreaming sleep or generalised seizures."</li>
+    <li>"In one study of five people with severe amnesia, self-rated sadness and happiness were as strong as in controls or stronger, which counts against the idea that feeling requires imagining one's own future; the sample is small."</li>
+    <li>"Research on rhythms in perception does not support a single fixed frame rate for experience."</li>
+    <li>"We found no study relating the time-asymmetry of brain activity to how strongly people rate their feelings."</li>
+    <li>"Whether the real passage of time is needed for feeling cannot be settled by any evidence we know of."</li>
+  </ul>
+</section>
+
+<section>
+  <h2>The trouble with the question, and how we made it testable</h2>
+  <p>Everything that happens takes time: a thought, digestion, a waterfall. So "feeling needs time" is true of everything and says nothing about feeling in particular. For the idea to mean something, time has to do more than be the setting.</p>
+  <p>We wrote six ways it might. The fairness check, done before any evidence was gathered, found that we had mixed two different questions.</p>
+  <ul>
+    <li><b>Which arrangement in time?</b> Does feeling need a particular temporal <em>arrangement</em> of brain activity: activity that is sustained, that anticipates, that holds the last moment while taking in the next, or that updates in steps? Whatever the answer, it would be a fact about how the brain is organised. It would not make time itself special.</li>
+    <li><b>Time itself?</b> Does some property of <em>physical time</em> matter over and above the arrangement? For example: would the very same organisation, run ten times slower, feel differently or not at all?</li>
+  </ul>
+  <p>The check also found that several of our versions were not what the scientists concerned actually claim, and it added a seventh that we had missed: that feeling needs the real passing of time, the idea that the present is genuinely coming into being and is not just one point on a fixed map of past and future. That one is a philosophical position. No existing evidence bears on it, and it was left unscored.</p>
+</section>
+
+<section>
+  <h2>The seven versions and how they scored</h2>
+  <div class="scroll"><table>
+    <tr><th>Version</th><th>What the evidence showed</th><th>Score</th></tr>
+    <tr><td><b>A feeling needs a minimum duration</b> of brain activity that no amount of strength can replace</td><td>Weaker stimulation has to last longer to be felt, and stronger stimulation can be shorter. No hard minimum has been found. The key study was read only as a summary</td><td>strained, weakly</td></tr>
+    <tr><td><b>A feeling needs a direction of time:</b> brain activity that runs differently forwards than backwards</td><td>Such one-directionality is higher in waking than in deep sleep, under one common anaesthetic, and in unresponsive patients. But it is lower when people watch a film than when they rest, and it rises with button-pressing. The cases that would decide it (dreaming, another anaesthetic that leaves experience intact, seizures) are missing or conflicting</td><td>strained as a marker; untested as a cause</td></tr>
+    <tr><td><b>A feeling needs the ability to imagine one's own future</b></td><td>Five people with severe amnesia rated sadness and happiness as strongly as others or more</td><td>contradicted (small sample)</td></tr>
+    <tr><td><b>A feeling needs the brain to predict the body's own future state</b></td><td>People whose bodily feedback is cut off or disrupted rate their emotions in the normal range. Whether this tests the theory in the sense its authors mean is doubtful</td><td>strained</td></tr>
+    <tr><td><b>A feeling needs the sense of time passing</b></td><td>In one study of 50 people, losing the sense of time went with improved mood, rated afterwards</td><td>strained</td></tr>
+    <tr><td><b>Experience comes in frames at one fixed rate</b></td><td>Perception shows several rhythms that differ by task and sense, with failures to repeat some findings</td><td>contradicted</td></tr>
+    <tr><td><b>Absolute speed matters:</b> the same organisation run slower or faster would feel different</td><td>Body temperature changes how fast time seems to pass. No study measured feeling</td><td>no test</td></tr>
+    <tr><td><b>Feeling needs the real passing of time</b></td><td>Philosophical; no evidence bears on it</td><td>unscored</td></tr>
+  </table></div>
+  <p>The scorer's overall answer, under five headings:</p>
+  <ul>
+    <li><b>Trivially true:</b> feeling, like every process, takes time.</li>
+    <li><b>Supported:</b> perception is assembled over short windows of tens to hundreds of thousandths of a second; brain activity is more one-directional in time in waking than in deep sleep, under one anaesthetic and in unresponsive patients (a link with other explanations available); feeling persists in a small group who cannot form new memories.</li>
+    <li><b>Contradicted, on modest data:</b> that feeling needs the ability to imagine one's future; that experience runs at one fixed frame rate.</li>
+    <li><b>Untested:</b> whether absolute speed, absolute duration or physical irreversibility matter when organisation is held fixed; whether one-directionality goes with feeling; whether it goes with experience in dreaming and in seizures.</li>
+    <li><b>Not decidable by evidence:</b> whether the real passage of time is needed; and what would happen at speeds no living brain can tolerate.</li>
+  </ul>
+  <p>On "time itself", the scorer's judgement was that nothing has moved. The opposing view, that only organisation matters, was not tested either: in the scorer's words it "stands by default, not by evidence".</p>
+</section>
+
+<section>
+  <div class="num">OUR OWN TEST</div>
+  <h2>Is brain activity more "one-way in time" in dreaming sleep?</h2>
+  <p>The second version above had an obvious missing case: dreaming sleep. A dreamer is as unresponsive as someone in deep sleep, yet on waking usually reports vivid experience. If one-directionality goes with experience, dreaming sleep should look like waking. We found no published study that had looked. So we wrote down a test, saved it, then downloaded public whole-night recordings from 20 healthy adults and ran it.</p>
+  <p>An independent reviewer then rebuilt the analysis from the raw files with their own code, got the same numbers, and showed that the test cannot tell us what we hoped. These are the reviewer's sentences, unaltered.</p>
+  <ul>
+    <li>"On our pre-registered single-channel measure, dreaming (REM) sleep was not more time-irreversible than deep sleep in any of 19 subjects, and this direction survived a correction for estimator bias (0 of 19 on a pooled estimate; 3 of 19 on a per-epoch surrogate-normalised score)."</li>
+    <li>"However, the measure is close to chance during sleep: about 7% of REM epochs, 9% of deep-sleep epochs and 6% of light-sleep epochs exceeded all 20 of their own time-reversible surrogates, where about 5% is expected by chance."</li>
+    <li>"The high value we first reported for waking came from daytime recording: roughly 98% of wake epochs lay outside the sleep period, and wake during the night scored the same as REM (0.00070 vs 0.00072) and exceeded deep sleep in only 3 of 16 subjects."</li>
+    <li>"Because the measure does not separate being awake in bed from deep sleep, we regard this test as uninformative about the conjecture, although the rule we fixed in advance labels the outcome 'strained'; the small excess in deep sleep is consistent with the asymmetric shape of slow waves and possibly the recorder's filter."</li>
+    <li>"Nobody was woken and asked what they were experiencing, so this was a comparison of sleep stages, not of experience."</li>
+  </ul>
+  <p>In plain terms: the simple one-channel measure we chose turned out to be too blunt. Our first reading, that dreaming sleep "looks nothing like waking", was wrong and is withdrawn; it came from comparing night-time sleep with daytime recordings full of blinks and muscle activity. The published claims use many channels and the relations between brain regions, which these recordings do not have.</p>
+</section>
+
+<section>
+  <h2>Experiments that would move it</h2>
+  <p>Proposed by the scorer.</p>
+  <ol>
+    <li><b>The missing cases.</b> Fix one many-channel measure in advance and apply it to existing sleep recordings in which people were woken and asked whether they had been experiencing anything, to the open recordings of several anaesthetics, and to recordings of generalised seizures.</li>
+    <li><b>Feeling and speed.</b> Have people rate how strongly they feel, moment by moment, while brain activity is recorded, against a neutral task matched for effort. Then repeat while body temperature is shifted by about one degree each way, with thinking shown to be intact. This is the only direct test we know of for whether the absolute speed of brain processes matters to feeling.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>How this connects to the earlier work</h2>
+  <p class="note">Our own remarks, not the scorer's.</p>
+  <p>Two of the seven versions touch your original hypothesis. If feeling is what motivates, it might seem that feeling must be about the future: where things are heading. The amnesia evidence counts against the strong form of that, though on five people. And the idea that feeling needs duration is close to the question from Update 4 of whether feeling tracks the level of a need or its rate of change, which is still untested.</p>
+  <p>The seventh version, real passage, is the one closest to "time <em>creates</em> sentience". It belongs with the philosophical choices listed in Update 11 and cannot be settled by experiment as far as anyone has shown.</p>
+</section>
+
+<section>
+  <h2>How sure are we?</h2>
+  <ul>
+    <li>The scoring was independent, against predictions and criteria saved before the evidence was gathered. The scorer read the key one-directionality studies in full and confirmed what they found for one anaesthetic; much of the rest of the evidence was read as summaries and is flagged in the report.</li>
+    <li>The sleep test was reproduced exactly by an independent reviewer, who then judged it uninformative. One of the 20 recordings was left out by a rule we had not stated in advance (too few deep-sleep stretches); including it does not change the outcome.</li>
+    <li>Web search was available again this round.</li>
+  </ul>
+</section>
+
+<footer>Predictions and amendment: <code>scenarios/21</code>. Sleep test: <code>scenarios/22</code>, <code>sims/sleep_irreversibility.py</code>. Fairness check, scoring and review: <code>reviews/round12-*</code>.</footer>
+
+</div>

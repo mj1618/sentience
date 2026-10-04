@@ -1,6 +1,6 @@
 # Ledger
 
-Updated 2026-10-03, after round 11.
+Updated 2026-10-03, after round 12.
 
 **Rule:** nothing is treated as reliable until an independent reviewer has tried to break
 it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower form) ·
@@ -51,6 +51,11 @@ it. Status: **survived** (attacked, held) · **weakened** (holds in a narrower f
 | C41 | No study found measures the availability of a value for planning and rated feeling in the same people while one is changed. Identity versus higher-order (LeDoux–Brown/Lau) was not tested; shift none. | adjudicated (round 11) | The brain-stimulation effect such a test would rely on did not replicate (53 analysed), and that null is itself weak. |
 | C42 | The owner's hypothesis, in the only form found defensible, says the same thing as Rolls's theory and differs from LeDoux–Brown/Lau only in predicted self-reports. | adjudicated (round 11) | |
 | C43 | Evidence of this kind can at most show which brain process accompanies reported feeling; it cannot show why any process is felt. | adjudicator's statement (round 11) | "On the owner's question in its strong form, the project has reached the edge of what evidence decides." |
+| C44 | No study found tests whether time itself (absolute speed, absolute duration, physical irreversibility) matters for feeling with organisation held fixed. Untested, not answered. | adjudicated (round 12; adjudicator's wording) | |
+| C45 | Brain activity is more one-directional in time in waking than in deep sleep, propofol anaesthesia and unresponsive patients, but the same measure is lower during film-watching than rest and rises with button-pressing; it has not been shown to track experience. Ketamine: three analyses of one monkey dataset disagree. No adequate data for dreaming sleep or generalised seizures. | adjudicated (round 12) | |
+| C46 | Five people with severe amnesia rated sadness and happiness as strongly as controls or more: against "feeling requires imagining one's future". Research on perceptual rhythms does not support one fixed frame rate for experience. | adjudicated (round 12) | Small sample. |
+| C47 | Our own sleep-EEG test (19 subjects): REM was not more time-irreversible than deep sleep in any subject, but the single-channel measure is at chance in sleep and does not separate in-bed wake from deep sleep. Uninformative. | red-teamed (round 12; reviewer reproduced the numbers) | |
+| C48 | Whether the real passage of time is needed for feeling cannot be settled by any evidence we know of. | adjudicator's statement | |
 | C24 | "Report barrier": in our seven rounds, evidence from non-reporting systems did not separate theories. | our description of our own results; **not a principle**. Audit objections: nulls traced to mis-stated rivals, abstract-only reading and experiments not yet done; the barrier is porous (calibrate in reporting humans, extend by homology; non-verbal report). | |
 | C18 | A 302-neuron worm shows a hunger-dependent trade-off between threat and food; flies show an anxiety-like state that responds to an anti-anxiety drug; bees show a pessimism-like bias. Play-like behaviour is reported in flies and bees only. The claim of trace conditioning in the worm had no source and is withdrawn. | source-checked (round 11); three papers read in full | These may detect a valence signal and not whether it is felt. |
 
@@ -102,6 +107,7 @@ The percentages were not connected to any test and are removed. Families still o
 | Rate, not level | 4 | untested (confounded data) |
 | The brain's electric field is the experience | 6 | untested by existing data; field influence on neurons moderately supported |
 | Wanting tilts external chance (lottery) | 6 | not shown; small tilt not excluded |
+| Time creates or helps create sentience | 12 | trivially true that feeling takes time; "time itself matters" untested; two specific versions contradicted (needs imagining the future; one fixed frame rate) |
 | Felt valence is necessary for flexible action (owner's hypothesis) | 9–10 | not refuted, not confirmed, never put at risk; as defensible now, an identity claim (feeling = value accessible to the planner) |
 | The mystery is an illusion of a limited self-model | 7 | not testable against its rival; premise unverified |
 | Ownership gate | 4 | weakened: modulates, no evidence of a gate |
@@ -122,7 +128,7 @@ The percentages were not connected to any test and are removed. Families still o
 5. Split-brain: does a learned aversion taught to one hemisphere transfer to the other?
 6. Xenon isotopes done properly (gases interleaved within a day, blends of the two kinds, no second anaesthetic).
 
-## Where the project stands (after round 11)
+## Where the project stands (after round 12)
 
 Three independent adjudicators (rounds 9, 10, 11) reached the same place: the owner's
 hypothesis is defensible as an identity claim; that claim coincides with one existing

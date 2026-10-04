@@ -114,3 +114,30 @@ What follows replaces Part 1 for scoring.
 
 **Cannot be decided by evidence:** T7; T4\* in its implicit (Husserlian) form; and N\* versus T6\* for rate changes beyond what a living brain tolerates.
 
+
+## Part 2 — Independent scoring (from `reviews/round12-adjudication.md`)
+
+| Row | Conjecture | Its rival |
+|---|---|---|
+| 1 Duration floor (T1\*) | strained (weak) | consistent |
+| 3 Irreversibility as a marker (T2\*) | strained | consistent, unconfirmed |
+| 3–4 Irreversibility as constituent (T2c) | no test | N\*: no test |
+| 5 Needs imagining one's future (T3e) | contradicted (n = 5) | consistent |
+| 6 Needs bodily prediction (T3\*) | strained | consistent |
+| 7 Needs felt passage (strong T4) | strained | consistent |
+| 9 One fixed frame rate (T5\*) | contradicted | consistent |
+| 10 Absolute rate (T6\*) | no test | N\*: no test |
+
+Shift for N\* against the "time itself" conjectures: none. N\* was not tested and stands
+by default, not by evidence.
+
+## Part 3 — Summary sentences permitted by the adjudicator (verbatim)
+
+1. "Every process takes time, so saying that feeling needs time is true of everything and tells us nothing by itself."
+2. "We found no study that tests whether time itself (absolute speed, absolute duration, or physical irreversibility) matters for feeling when a system's organisation is held fixed; that question is untested, not answered."
+3. "Brain activity is more one-directional in time during waking than in deep sleep, propofol anaesthesia and unresponsive patients, but the same measure is lower while people watch a film than while they rest, and rises with how often people press buttons, so it has not been shown to track experience."
+4. "The decisive cases are missing or conflicting: for ketamine, three analyses of one monkey dataset disagree, and we found no adequate data for dreaming sleep or generalised seizures."
+5. "In one study of five people with severe amnesia, self-rated sadness and happiness were as strong as in controls or stronger, which counts against the idea that feeling requires imagining one's own future; the sample is small."
+6. "Research on rhythms in perception does not support a single fixed frame rate for experience."
+7. "We found no study relating the time-asymmetry of brain activity to how strongly people rate their feelings."
+8. "Whether the real passage of time is needed for feeling cannot be settled by any evidence we know of."

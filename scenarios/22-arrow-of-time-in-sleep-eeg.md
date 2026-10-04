@@ -96,7 +96,7 @@ content but is time-reversible by construction.
 During all sleep stages the single-channel measure sits barely above its floor. Only
 waking is clearly above it, and waking recordings contain blinks and muscle activity.
 
-## Reading (ours; to be reviewed before use)
+## Reading (ours; SUPERSEDED by Part 4)
 
 On one scalp channel, by these measures, dreaming sleep is not more one-directional in
 time than deep sleep, and looks nothing like waking. That is the outcome the conjecture
@@ -106,3 +106,20 @@ measure would. Published claims use many channels and relations between brain re
 
 Code: `sims/sleep_irreversibility.py`. Data: Sleep-EDF Expanded (PhysioNet), not stored
 in the repository.
+
+## Part 4 — Review outcome (from `reviews/round12-sleep-redteam.md`)
+
+The reviewer reproduced the numbers exactly with an independent implementation, then
+showed the test is uninformative: the "wake" epochs were almost all daytime recording
+with artefacts; wake during the night scored the same as REM; and the estimator's bias
+differs by sleep stage. Our sentence "looks nothing like waking" is withdrawn. One
+subject was excluded by a threshold (at least 10 epochs per stage) that we had not stated
+in advance.
+
+Sentences permitted by the reviewer (verbatim):
+
+1. "On our pre-registered single-channel measure, dreaming (REM) sleep was not more time-irreversible than deep sleep in any of 19 subjects, and this direction survived a correction for estimator bias (0 of 19 on a pooled estimate; 3 of 19 on a per-epoch surrogate-normalised score)."
+2. "However, the measure is close to chance during sleep: about 7% of REM epochs, 9% of deep-sleep epochs and 6% of light-sleep epochs exceeded all 20 of their own time-reversible surrogates, where about 5% is expected by chance."
+3. "The high value we first reported for waking came from daytime recording: roughly 98% of wake epochs lay outside the sleep period, and wake during the night scored the same as REM (0.00070 vs 0.00072) and exceeded deep sleep in only 3 of 16 subjects."
+4. "Because the measure does not separate being awake in bed from deep sleep, we regard this test as uninformative about the conjecture, although the rule we fixed in advance labels the outcome 'strained'; the small excess in deep sleep is consistent with the asymmetric shape of slow waves and possibly the recorder's filter."
+5. "Nobody was woken and asked what they were experiencing, so this was a comparison of sleep stages, not of experience."
